@@ -69,10 +69,7 @@ section.feature
         position: absolute
         width: 100%
         height: 100%
-        -webkit-transition: top .3s
-        -moz-transition: top .3s
-        -ms-transition: top .3s
-        transition: top .3s
+        @include single-transition(top)
 
       #tick
         top: 0
@@ -89,7 +86,7 @@ section.feature
     border-top: 1px dashed $main-fg
 
   .actions h4 a
-    -webkit-transition: background-color .3s
+    @include single-transition(background-color)
     @include button-style($alt-fg)
     @include radius
     color: $main-bg
@@ -112,9 +109,7 @@ section.feature
       border-bottom: 1px dashed lighten($main-bg, 30%)
       margin-bottom: 0
       padding: .25em 0
-      -webkit-transition: background-color .3s
-      -moz-transition: background-color .3s
-      transition: background-color .3s
+      @include single-transition(background-color)
 
       &.talk h6
         color: $alt-fg
@@ -162,10 +157,8 @@ section.feature
       width: 1.5em
       height: 1.5em
       line-height: 1.5em
-      -webkit-transition: color .3s, background-color .3s
-      -moz-transition: color .3s, background-color .3s
-      transition: color .3s, background-color .3s
       margin: 0 .25em
+      @include single-transition(color)
 
       &:hover, &:focus
         color: $main-fg
@@ -183,7 +176,6 @@ section.feature
   $main-fg: $white
   $main-bg: $dark
 
-  display: none
   width: 100%
   height: 40em
 
