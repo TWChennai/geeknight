@@ -1,0 +1,218 @@
+@charset "UTF-8"
+@import "normalize", "variables", "foundation/components/global", "icons/social_foundicons"
+
+body
+  padding-top: $topbar-height
+
+@media only screen and (max-width:#{$medium-screen})
+  body
+    font-size: 125%
+
+@media only screen and (max-width:#{$small-screen})
+  body
+    font-size: 112.5%
+
+//
+// GENERAL AND TOP SECTION
+//
+.section
+  @import "foundation/components/type", "foundation/components/grid", "foundation/components/visibility", "foundation/components/top-bar"
+
+  padding: 1em 0 2em 0
+
+  &.header
+    padding: 0
+    background: $topbar-bg
+
+  .row
+    margin-bottom: 1em
+    max-width: 1000px
+    text-align: center
+
+//
+// INTRO SECTION
+//
+.intro
+  $main-fg: $dark
+  $main-bg: $white
+  $alt-fg: $blue
+
+  $header-font-color: $main-fg
+  $subheader-font-color: $main-fg
+  $primary-color: $main-fg
+
+  $include-html-global-classes: false
+  $include-html-button-classes: false
+  @import "foundation/components/global", "foundation/components/type", "foundation/components/buttons"
+
+  color: $main-fg
+  background-color: $main-bg
+
+  img
+    display: block
+    margin: 0 auto
+    max-width: 14em
+
+  .countdown h4
+    color: $alt-fg
+
+  .counter h4
+    border-bottom: 1px dashed $main-fg
+
+    &#seconds
+      overflow: hidden
+      position: relative
+
+      span
+        display: block
+        position: absolute
+        width: 100%
+        height: 100%
+        -webkit-transition: top .3s
+        -moz-transition: top .3s
+        -ms-transition: top .3s
+        transition: top .3s
+
+      #tick
+        top: 0
+      #tock
+        top: 100%
+
+      &.odd
+        #tick
+          top: -100%
+        #tock
+          top: 0
+
+  .date h4
+    border-top: 1px dashed $main-fg
+
+  .actions h4
+    @include button-style($alt-fg)
+    @include radius
+    padding: .25em 0
+    a
+      color: $main-bg
+
+//
+// AGENDA SECTION
+//
+.agenda
+  $main-fg: $dark
+  $main-bg: $blue
+  $alt-fg: $white
+
+  $header-font-color: $main-fg
+  $subheader-font-color: $main-fg
+  $primary-color: $main-fg
+
+  $include-html-global-classes: false
+  $include-html-button-classes: false
+  @import "foundation/components/global", "foundation/components/type", "foundation/components/buttons"
+
+  color: $main-fg
+  background-color: $main-bg
+
+  .timings
+    .row
+      border-bottom: 1px dashed lighten($main-bg, 30%)
+      margin-bottom: 0
+      padding: .25em 0
+      -webkit-transition: background-color .3s
+      -moz-transition: background-color .3s
+      transition: background-color .3s
+
+      &.talk h6
+        color: $alt-fg
+
+      &:last-child
+        border-bottom: 0
+
+      .small-4 h6
+        text-align: right
+
+      .small-8 h6
+        text-align: left
+
+      &:hover
+        background-color: lighten($main-bg, 10%)
+
+//
+// LOCATION SECTION
+//
+.location
+  $main-fg: $white
+  $main-bg: $darkblue
+
+  $header-font-color: $main-fg
+  $subheader-font-color: $main-fg
+  $primary-color: $main-fg
+
+  $include-html-global-classes: false
+  $include-html-button-classes: false
+  @import "foundation/components/global", "foundation/components/type", "foundation/components/buttons"
+
+  color: $main-fg
+  background-color: $main-bg
+  padding-bottom: 1em
+
+#map
+  width: 100%
+  height: 50em
+
+//
+// ABOUT SECTION
+//
+.about
+  $main-fg: $white
+  $main-bg: $dark
+  $alt-fg: $blue
+
+  $header-font-color: $main-fg
+  $subheader-font-color: $main-fg
+  $body-font-color: $main-fg
+  $primary-color: $main-fg
+  $code-color: darken($main-fg, 30%)
+
+  $include-html-global-classes: false
+  $include-html-button-classes: false
+  @import "foundation/components/global", "foundation/components/type", "foundation/components/buttons"
+
+  color: $main-fg
+  background-color: $main-bg
+
+  blockquote
+    text-align: left
+
+  .social
+    margin-top: -2.25em
+
+    a
+      font-size: 1.5em
+      display: inline-block
+      color: $main-fg
+      background-color: $main-bg
+      border-radius: 50%
+      width: 1.5em
+      height: 1.5em
+      line-height: 1.5em
+      -webkit-transition: color .3s, background-color .3s
+      -moz-transition: color .3s, background-color .3s
+      transition: color .3s, background-color .3s
+      margin: 0 .25em
+
+      &:hover, &:focus
+        color: $main-fg
+        background-color: $alt-fg
+
+#map
+  .leaflet-popup-content-wrapper, .leaflet-popup-tip
+    background-color: $darkblue
+    color: $white
+
+  #address h6
+    font-family: $header-font-family
+    font-weight: 300
+    font-size: 1.5em
+    text-align: center
+    margin: 0

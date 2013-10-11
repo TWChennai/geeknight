@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+$white: #FFFFFF;
+$dark: #222222;
+$blue: #26ADE4;
+$darkblue: #435a6b;
+
+$base-font-size: 140% !default;
+$h6-font-size: .75em !default;
+
+$body-font-weight: 300 !default;
+$topbar-title-weight: 300 !default;
+$topbar-link-weight: 300 !default;
+$header-font-weight: 300 !default;
+
+$topbar-height: 45px !default;
+$topbar-bg-color: darken($blue, 15%) !default;
+$header-top-margin: 0 !default;
+$header-bottom-margin: 0 !default;
+$header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
+$body-font-family: $header-font-family;
+
+@import "foundation/variables";

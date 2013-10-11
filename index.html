@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title></title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/app.css" />
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+        <![endif]-->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="header section">
+            <div class="fixed">
+                <nav class="top-bar">
+                    <ul class="title-area">
+                        <li class="name"><h1><a href="#top">Geek Night Chennai</a></h1></li>
+                        <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+                    </ul>
+                    <section class="top-bar-section">
+                        <ul class="left">
+                            <li><a href="http://www.thoughtworks.com" target="_blank">ThoughtWorks</a></li>
+                        </ul>
+                        <ul class="right">
+                            <li><a href="https://docs.google.com/forms/d/1CZHZHbaKp74ZjHm-3YnTlyiiC6VaW-oS8V4idaliSQg/viewform" target="_blank">Participate</a></li>
+                            <li><a href="#speak">Talk</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#agenda">Agenda</a></li>
+                            <li><a href="#location">Location</a></li>
+                            <li><a href="#archive">Previous Events</a></li>
+                        </ul>
+                    </section>
+                </nav>
+            </div>
+        </div>
+
+        <div class="intro section">
+            <div class="row">
+                <div class="large-12 columns">
+                    <a href="http://www.thoughtworks.com" target="_blank">
+                        <img src="img/tw-logo.png" alt="ThoughtWorks" align="center" />
+                    </a>
+                    <h1>Geek Night Chennai</h1>
+                    <h5 class="subheader">an open forum for geeks to connect, discuss &amp; learn latest ideas, technologies and trends in software development</h5>
+                </div>
+            </div>
+
+            <div class="row countdown">
+                <div class="small-8 small-offset-2 large-4 large-offset-0 columns date">
+                    <h6 class="subheader">4<sup>th</sup> edition</h6>
+                    <h4>oct 24</h4>
+                </div>
+                <div class="small-6 large-2 columns counter">
+                    <h4><span id="days"></span></h4>
+                    <h6 class="subheader">days</h6>
+                </div>
+                <div class="small-6 large-2 columns counter">
+                    <h4><span id="hours"></span></h4>
+                    <h6 class="subheader">hours</h6>
+                </div>
+                <div class="small-6 large-2 columns counter">
+                    <h4><span id="minutes"></span></h4>
+                    <h6 class="subheader">minutes</h6>
+                </div>
+                <div class="small-6 large-2 columns counter">
+                    <h4 id="seconds">
+                        &nbsp; <!-- the nbsp is required -->
+                        <span id="tick"></span><span id="tock"></span>
+                    </h4>
+                    <h6 class="subheader">seconds</h6>
+                </div>
+            </div>
+
+            <div class="row actions">
+                <div class="large-5 columns">
+                    <h6 class="subheader">register to</h6>
+                    <h4><a href="https://docs.google.com/forms/d/1CZHZHbaKp74ZjHm-3YnTlyiiC6VaW-oS8V4idaliSQg/viewform" id="participate" target="_blank">Participate</a></h4>
+                    <h6 class="subheader">
+                        <small>&bull; attendance is free but limited seats, so hurry up!</small>
+                    </h6>
+                </div>
+                <div class="large-2 columns">
+                    <hr class="show-for-small" />
+                    <h5 class="subheader hide-for-small"><br />&laquo; or &raquo;</h5>
+                </div>
+                <div class="large-5 columns">
+                    <h6 class="subheader">submit your</h6>
+                    <h4>Talk</h4>
+                    <h6 class="subheader"><small>&bull; talks must be technical in nature</small></h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="about section" id="about">
+            <div class="row">
+                <div class="large-12 columns social">
+                    <a href="#"><i class="foundicon-facebook"></i></a>
+                    <a href="#"><i class="foundicon-twitter"></i></a>
+                    <a href="#"><i class="foundicon-thumb-up"></i></a>
+                    <a href="#"><i class="foundicon-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <blockquote>
+                    Geek Night is a monthly event for geeks in Chennai to meet, share, learn &amp; collaborate. It is organized by a passionate group of programmers and sponsored by ThoughtWorks. For any queries or suggestions, feel free to drop a mail to <code>geeknight.chennai at thoughtworks.com</code>
+                </blockquote>
+            </div>
+        </div>
+
+        <div class="agenda section" id="agenda">
+            <div class="row">
+                <h2>Agenda</h2>
+                <small>(talks are being finalized, will be updated by end of this week)</small>
+            </div>
+
+            <div class="timings">
+                <div class="row">
+                    <div class="small-4 columns"><h6>5.00 pm</h6></div>
+                    <div class="small-8 columns"><h6>Registration</h6></div>
+                </div>
+                <div class="row">
+                    <div class="small-4 columns"><h6>5.30 pm</h6></div>
+                    <div class="small-8 columns"><h6>Welcome Note</h6></div>
+                </div>
+                <div class="row talk">
+                    <div class="small-4 columns"><h6>5.45 pm</h6></div>
+                    <div class="small-8 columns"><h6>Session 1</h6></div>
+                </div>
+                <div class="row talk">
+                    <div class="small-4 columns"><h6>6.15 pm</h6></div>
+                    <div class="small-8 columns"><h6>Session 2</h6></div>
+                </div>
+                <div class="row">
+                    <div class="small-4 columns"><h6>6.45 pm</h6></div>
+                    <div class="small-8 columns"><h6>Break</h6></div>
+                </div>
+                <div class="row talk">
+                    <div class="small-4 columns"><h6>7.00 pm</h6></div>
+                    <div class="small-8 columns"><h6>Session 3</h6></div>
+                </div>
+                <div class="row talk">
+                    <div class="small-4 columns"><h6>7.30 pm</h6></div>
+                    <div class="small-8 columns"><h6>Session 4</h6></div>
+                </div>
+                <div class="row talk">
+                    <div class="small-4 columns"><h6>8.00 pm</h6></div>
+                    <div class="small-8 columns"><h6>Session 5</h6></div>
+                </div>
+                <div class="row">
+                    <div class="small-4 columns"><h6>8.30 pm</h6></div>
+                    <div class="small-8 columns"><h6>Networking &amp; Dinner</h6></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="location section" id="location">
+            <div class="row">
+                <h2>Location</h2>
+
+                <div id="address">
+                    <h6>
+                        ThoughtWorks Technologies Pvt Ltd, <br />
+                        9th Floor, Phase 3 <br />
+                        Ascendas International Tech Park <br />
+                        Taramani, Chennai
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+
+        <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!-- script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script -->
+    </body>
+</html>
