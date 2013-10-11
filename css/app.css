@@ -2573,10 +2573,6 @@ body {
       .location .show-for-print {
         display: inherit !important; } }
 
-#map {
-  width: 100%;
-  height: 50em; }
-
 .about {
   /* Typography resets */
   /* Default Link Styles */
@@ -2869,12 +2865,15 @@ body {
         color: white;
         background-color: #26ade4; }
 
-#map .leaflet-popup-content-wrapper, #map .leaflet-popup-tip {
-  background-color: #435a6b;
-  color: white; }
-#map #address h6 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 1.5em;
-  text-align: center;
-  margin: 0; }
+#map {
+  width: 100%;
+  height: 40em; }
+  #map .leaflet-popup-content-wrapper, #map .leaflet-popup-tip, #map a {
+    background-color: #435a6b;
+    color: white; }
+  #map #address h6 {
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0; }
