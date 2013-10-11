@@ -16,7 +16,7 @@ body
   color: $main-fg
   background-color: $main-bg
 
-  h1, h2, h3, h4, h5, h6, .subheader, p, blockquote, a
+  h1, h2, h3, h4, h5, h6, .subheader, p, blockquote, a, small
     color: $main-fg
 
   code, abbr, acronym
@@ -27,8 +27,10 @@ body
 //
 section.feature
   padding: 1em 0 2em 0
+  position: relative
 
   .row
+    z-index: 10
     margin-bottom: 1em
     max-width: 1000px
     text-align: center
@@ -103,6 +105,7 @@ section.feature
   $alt-fg: $white
 
   @include override-colors($main-fg,$main-bg)
+  border-top: .25em dashed $dark
 
   .timings
     .row
@@ -136,6 +139,7 @@ section.feature
   $main-bg: $dark
 
   @include override-colors($main-fg,$main-bg)
+  border-top: .25em dashed $blue
 
 //
 // ABOUT SECTION
@@ -146,18 +150,14 @@ section.feature
   $alt-fg: $blue
 
   @include override-colors($main-fg,$main-bg)
-
-  blockquote
-    text-align: left
+  border-top: .25em dashed $white
 
   .social
-    margin-top: -2.25em
-
     a
       font-size: 1.5em
       display: inline-block
-      color: $main-fg
-      background-color: $main-bg
+      color: $main-bg
+      background-color: $main-fg
       border-radius: 50%
       width: 1.5em
       height: 1.5em
@@ -171,17 +171,27 @@ section.feature
         color: $main-fg
         background-color: $alt-fg
 
+  blockquote
+    text-align: left
+    cite
+      text-align: right
+
 //
 // LEAFLET MAP
 //
 #map
+  $main-fg: $white
+  $main-bg: $dark
+
   display: none
   width: 100%
   height: 40em
 
-  .leaflet-popup-content-wrapper, .leaflet-popup-tip, a
-    background-color: $dark
-    color: $white
+  @include override-colors($main-fg,$main-bg)
+
+  .leaflet-popup-content-wrapper, .leaflet-popup-tip
+    background-color: $main-bg
+    color: $main-fg
 
   #address h6
     font-family: $header-font-family
