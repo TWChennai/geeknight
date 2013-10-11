@@ -2009,6 +2009,7 @@ body {
     .intro .actions h4:hover, .intro .actions h4:focus {
       color: white; }
     .intro .actions h4 a {
+      display: block;
       color: white; }
 
 .agenda {
