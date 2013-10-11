@@ -2321,7 +2321,7 @@ body {
    * Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
   */
   color: white;
-  background-color: #435a6b;
+  background-color: #222222;
   padding-bottom: 1em; }
   .location meta.foundation-mq-small {
     font-family: "only screen and (min-width: 768px)";
@@ -2870,7 +2870,7 @@ body {
   width: 100%;
   height: 40em; }
   #map .leaflet-popup-content-wrapper, #map .leaflet-popup-tip, #map a {
-    background-color: #435a6b;
+    background-color: #222222;
     color: white; }
   #map #address h6 {
     font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
