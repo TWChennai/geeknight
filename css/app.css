@@ -1997,19 +1997,18 @@ body {
         top: 0; }
   .intro .date h4 {
     border-top: 1px dashed #222222; }
-  .intro .actions h4 {
+  .intro .actions h4 a {
     background-color: #26ade4;
     border-color: #188fbf;
     color: white;
     -webkit-border-radius: 3px;
     border-radius: 3px;
+    color: white;
+    display: block;
     padding: 0.25em 0; }
-    .intro .actions h4:hover, .intro .actions h4:focus {
+    .intro .actions h4 a:hover, .intro .actions h4 a:focus {
       background-color: #188fbf; }
-    .intro .actions h4:hover, .intro .actions h4:focus {
-      color: white; }
-    .intro .actions h4 a {
-      display: block;
+    .intro .actions h4 a:hover, .intro .actions h4 a:focus {
       color: white; }
 
 .agenda {

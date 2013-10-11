@@ -87,13 +87,12 @@ body
   .date h4
     border-top: 1px dashed $main-fg
 
-  .actions h4
+  .actions h4 a
     @include button-style($alt-fg)
     @include radius
+    color: $main-bg
+    display: block
     padding: .25em 0
-    a
-      display: block
-      color: $main-bg
 
 //
 // AGENDA SECTION
