@@ -1,5 +1,4 @@
-var targetDate = new Date("Oct 24 2013 17:00")
-    targetTS = targetDate.getTime(),
+var targetTS = targetDate.getTime(),
     $d = document.getElementById("days"),
     $h = document.getElementById("hours"),
     $m = document.getElementById("minutes"),
