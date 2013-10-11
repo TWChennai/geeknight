@@ -1,5 +1,5 @@
 @charset "UTF-8"
-@import "normalize", "variables", "foundation/components/global", "icons/social_foundicons"
+@import "normalize", "variables", "foundation/components/global", "icons/social_foundicons", "foundation/components/type", "foundation/components/grid", "foundation/components/visibility", "foundation/components/top-bar", "foundation/components/buttons"
 
 body
   padding-top: $topbar-height
@@ -12,41 +12,40 @@ body
   body
     font-size: 112.5%
 
+@mixin override-colors($main-fg,$main-bg)
+  color: $main-fg
+  background-color: $main-bg
+
+  h1, h2, h3, h4, h5, h6, .subheader, p, blockquote, a
+    color: $main-fg
+
+  code
+    color: darken($main-fg, 15%)
+
 //
 // GENERAL AND TOP SECTION
 //
-.section
-  @import "foundation/components/type", "foundation/components/grid", "foundation/components/visibility", "foundation/components/top-bar"
-
+section.feature
   padding: 1em 0 2em 0
-
-  &.header
-    padding: 0
-    background: $topbar-bg
 
   .row
     margin-bottom: 1em
     max-width: 1000px
     text-align: center
 
+#header
+  padding: 0
+  background: $topbar-bg
+
 //
 // INTRO SECTION
 //
-.intro
+#intro
   $main-fg: $dark
   $main-bg: $white
   $alt-fg: $blue
 
-  $header-font-color: $main-fg
-  $subheader-font-color: $main-fg
-  $primary-color: $main-fg
-
-  $include-html-global-classes: false
-  $include-html-button-classes: false
-  @import "foundation/components/global", "foundation/components/type", "foundation/components/buttons"
-
-  color: $main-fg
-  background-color: $main-bg
+  @include override-colors($main-fg,$main-bg)
 
   img
     display: block
@@ -98,21 +97,12 @@ body
 //
 // AGENDA SECTION
 //
-.agenda
+#agenda
   $main-fg: $dark
   $main-bg: $blue
   $alt-fg: $white
 
-  $header-font-color: $main-fg
-  $subheader-font-color: $main-fg
-  $primary-color: $main-fg
-
-  $include-html-global-classes: false
-  $include-html-button-classes: false
-  @import "foundation/components/global", "foundation/components/type", "foundation/components/buttons"
-
-  color: $main-fg
-  background-color: $main-bg
+  @include override-colors($main-fg,$main-bg)
 
   .timings
     .row
@@ -141,42 +131,21 @@ body
 //
 // LOCATION SECTION
 //
-.location
+#location
   $main-fg: $white
   $main-bg: $dark
 
-  $header-font-color: $main-fg
-  $subheader-font-color: $main-fg
-  $primary-color: $main-fg
-
-  $include-html-global-classes: false
-  $include-html-button-classes: false
-  @import "foundation/components/global", "foundation/components/type", "foundation/components/buttons"
-
-  color: $main-fg
-  background-color: $main-bg
-  padding-bottom: 1em
+  @include override-colors($main-fg,$main-bg)
 
 //
 // ABOUT SECTION
 //
-.about
+#about
   $main-fg: $white
   $main-bg: $dark
   $alt-fg: $blue
 
-  $header-font-color: $main-fg
-  $subheader-font-color: $main-fg
-  $body-font-color: $main-fg
-  $primary-color: $main-fg
-  $code-color: darken($main-fg, 30%)
-
-  $include-html-global-classes: false
-  $include-html-button-classes: false
-  @import "foundation/components/global", "foundation/components/type", "foundation/components/buttons"
-
-  color: $main-fg
-  background-color: $main-bg
+  @include override-colors($main-fg,$main-bg)
 
   blockquote
     text-align: left

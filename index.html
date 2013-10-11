@@ -13,10 +13,6 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="css/app.css" />
-        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
-        <!--[if lte IE 8]>
-            <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
-        <![endif]-->
         <script>var targetDate = new Date("Oct 29 2013 17:00")</script>
     </head>
     <body>
@@ -24,7 +20,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="header section">
+        <section id="header" class="feature">
             <div class="fixed">
                 <nav class="top-bar">
                     <ul class="title-area">
@@ -46,9 +42,9 @@
                     </section>
                 </nav>
             </div>
-        </div>
+        </section>
 
-        <div class="intro section">
+        <section id="intro" class="feature">
             <div class="row">
                 <div class="large-12 columns">
                     <a href="http://www.thoughtworks.com" target="_blank">
@@ -103,9 +99,9 @@
                     <h6 class="subheader"><small>&bull; talks must be technical in nature</small></h6>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="about section" id="about">
+        <section id="about" class="feature">
             <div class="row">
                 <div class="large-12 columns social">
                     <a href="https://www.facebook.com/GeeknightChennai?viewer_id=100006569229519" target="_blank"><i class="foundicon-thumb-up"></i></a>
@@ -117,12 +113,12 @@
 
             <div class="row">
                 <blockquote>
-                    Geek Night is a monthly event for geeks in Chennai to meet, share, learn &amp; collaborate. It is organized by a passionate group of programmers and sponsored by ThoughtWorks. For any queries or suggestions, feel free to drop a mail to <code>geeknight.chennai at thoughtworks.com</code>
+                    Geek Night is a monthly event for geeks in Chennai to meet, share, learn &amp; collaborate. It is organized by a passionate group of programmers and sponsored by ThoughtWorks. For any queries or suggestions, feel free to drop a mail to <code>[geeknight.chennai at thoughtworks.com]</code>
                 </blockquote>
             </div>
-        </div>
+        </section>
 
-        <div class="agenda section" id="agenda">
+        <section id="agenda" class="feature">
             <div class="row">
                 <h2>Agenda</h2>
                 <small>(sessions are being finalized, will be updated next week)</small>
@@ -162,9 +158,9 @@
                     <div class="small-8 columns"><h6>Networking &amp; Dinner</h6></div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="location section" id="location">
+        <section id="location" class="feature">
             <div class="row">
                 <h2>Location</h2>
 
@@ -174,15 +170,20 @@
                         9th Floor, Phase 3 <br />
                         Ascendas International Tech Park <br />
                         Taramani, Chennai <br />
-                        <small><a href="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=thoughtworks+chennai&aq=&sll=37.0625,-95.677068&sspn=61.153041,114.169922&vpsrc=0&ie=UTF8&hq=thoughtworks&hnear=Chennai,+Tamil+Nadu,+India&t=m&z=13&iwloc=A&cid=1639595661799347847" target="_blank">Open in Google Maps</a></small>
+                        <small><a href="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=thoughtworks+chennai&aq=&sll=37.0625,-95.677068&sspn=61.153041,114.169922&vpsrc=0&ie=UTF8&hq=thoughtworks&hnear=Chennai,+Tamil+Nadu,+India&t=m&z=13&iwloc=A&cid=1639595661799347847" target="_blank">[ Open in Google Maps ]</a></small>
                     </h6>
                 </div>
             </div>
-        </div>
+        </section>
+
         <div id="map"></div>
 
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+        <![endif]-->
         <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/ticker.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <!-- script>

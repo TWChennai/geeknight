@@ -35,7 +35,7 @@ function updateCountDown() {
 updateCountDown();
 setInterval(updateCountDown, 1000);
 
-var twLocation = [ 12.98398, 80.24626], mapLoaded = false;
+var twLocation = [ 12.98398, 80.24626 ], mapLoaded = false;
 
 var map = L.map('map', {
   scrollWheelZoom: false,
