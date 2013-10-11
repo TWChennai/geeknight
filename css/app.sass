@@ -19,7 +19,7 @@ body
   h1, h2, h3, h4, h5, h6, .subheader, p, blockquote, a
     color: $main-fg
 
-  code
+  code, abbr, acronym
     color: darken($main-fg, 15%)
 
 //
@@ -171,7 +171,11 @@ section.feature
         color: $main-fg
         background-color: $alt-fg
 
+//
+// LEAFLET MAP
+//
 #map
+  display: none
   width: 100%
   height: 40em
 
