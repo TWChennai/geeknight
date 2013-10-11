@@ -1998,6 +1998,7 @@ body {
   .intro .date h4 {
     border-top: 1px dashed #222222; }
   .intro .actions h4 a {
+    -webkit-transition: background-color 0.3s;
     background-color: #26ade4;
     border-color: #188fbf;
     color: white;
