@@ -18,8 +18,10 @@ $topbar-link-weight: 300 !default;
 $header-font-weight: 300 !default;
 $paragraph-font-weight: 300 !default;
 
-$topbar-height: 45px !default;
-$topbar-bg-color: darken($blue, 15%) !default;
+$topbar-bg-color: darken($white, 3%);
+$topbar-link-color: $dark;
+$topbar-link-bg-hover: $blue;
+
 $header-top-margin: 0 !default;
 $header-bottom-margin: 0 !default;
 $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
