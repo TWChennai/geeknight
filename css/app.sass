@@ -23,7 +23,7 @@ body
     color: darken($main-fg, 15%)
 
 //
-// GENERAL AND TOP SECTION
+// SECTION STYLES
 //
 .feature
   padding: 1em 0 2em 0
@@ -38,6 +38,9 @@ body
   padding: 0
   background: $topbar-bg
 
+  .fixed
+    opacity: .75
+
 //
 // INTRO SECTION
 //
@@ -47,6 +50,7 @@ body
   $alt-fg: $blue
 
   @include override-colors($main-fg,$main-bg)
+  background: $white url(../img/white-bg.png) fixed
 
   img
     display: block

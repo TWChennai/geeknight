@@ -764,8 +764,9 @@ body { padding-top: 45px; }
 .feature .row { margin-bottom: 1em; max-width: 1000px; text-align: center; }
 
 #header { padding: 0; background: #f2f2f2; }
+#header .fixed { opacity: 0.75; }
 
-#intro { color: #222222; background-color: white; }
+#intro { color: #222222; background-color: white; background: white url(../img/white-bg.png) fixed; }
 #intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6, #intro .subheader, #intro p, #intro blockquote, #intro a, #intro small { color: #222222; }
 #intro code, #intro abbr, #intro acronym { color: black; }
 #intro img { display: block; margin: 0 auto; max-width: 14em; }
