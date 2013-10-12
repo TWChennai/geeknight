@@ -25,12 +25,11 @@ body
 //
 // GENERAL AND TOP SECTION
 //
-section.feature
+.feature
   padding: 1em 0 2em 0
   position: relative
 
   .row
-    z-index: 10
     margin-bottom: 1em
     max-width: 1000px
     text-align: center
@@ -191,3 +190,19 @@ section.feature
     font-size: 1.5em
     text-align: center
     margin: 0
+
+//
+// FOOTER
+//
+#footer
+  $main-fg: darken($topbar-bg-color, 30%)
+  $main-bg: $topbar-bg-color
+  $alt-fg: lighten($blue, 15%)
+  @include override-colors($main-fg,$main-bg)
+
+  label, label a
+    color: $alt-fg
+
+  padding: .5em 0
+  .row
+    margin-bottom: 0
