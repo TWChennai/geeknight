@@ -13,15 +13,15 @@ $body-font-color: $dark !default;
 $body-font-weight: 300 !default;
 $body-font-family: "Segoe UI Light", Helvetica, "Segoe UI", Arial, sans-serif !default;
 
-
 $header-top-margin: 0 !default;
 $header-bottom-margin: .1em !default;
 $header-font-family: $body-font-family;
 $header-font-weight: 300 !default;
 
 $paragraph-font-size: .75em !default;
-$paragraph-margin-bottom: .1em !default;
+$paragraph-margin-bottom: .5em !default;
 $paragraph-font-weight: 300 !default;
+$paragraph-line-height: 1.25 !default;
 
 $topbar-bg-color: darken($white, 5%);
 $topbar-link-color: $dark;

@@ -14,7 +14,7 @@ body
 
 @mixin override-colors($main-fg,$main-bg)
   color: $main-fg
-  background-color: $main-bg
+  background: $main-bg url(../img/white-bg.png) fixed
 
   h1, h2, h3, h4, h5, h6, .subheader, p, blockquote, a, small
     color: $main-fg
@@ -48,9 +48,7 @@ body
   $main-fg: $dark
   $main-bg: $white
   $alt-fg: $blue
-
   @include override-colors($main-fg,$main-bg)
-  background: $white url(../img/white-bg.png) fixed
 
   img
     display: block
@@ -103,9 +101,7 @@ body
   $main-fg: $dark
   $main-bg: $blue
   $alt-fg: $white
-
   @include override-colors($main-fg,$main-bg)
-  border-top: .25em dashed $dark
 
   .timings
     .row
@@ -126,6 +122,13 @@ body
       .small-4
         text-align: right
 
+        p:after
+          display: block
+          position: absolute
+          top: .5em
+          right: -.5em
+          content: '§'
+
       .small-8
         text-align: left
 
@@ -138,9 +141,8 @@ body
 #location
   $main-fg: $white
   $main-bg: $dark
-
   @include override-colors($main-fg,$main-bg)
-  border-top: .25em dashed $blue
+  background-image: url(../img/dark-bg.jpg)
 
 //
 // ABOUT SECTION
@@ -149,9 +151,8 @@ body
   $main-fg: $white
   $main-bg: $dark
   $alt-fg: $blue
-
   @include override-colors($main-fg,$main-bg)
-  border-top: .25em dashed $white
+  background-image: url(../img/dark-bg.jpg)
 
   .social
     a
