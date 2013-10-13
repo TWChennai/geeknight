@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ========================================================================== HTML5 display definitions ========================================================================== */
 /** Correct `block` display not defined in IE 8/9. */
@@ -165,138 +164,6 @@ img { display: inline-block; vertical-align: middle; }
 textarea { height: auto; min-height: 50px; }
 
 select { width: 100%; }
-
-/* font-face */
-@font-face { font-family: "SocialFoundicons"; src: url("../fonts/social_foundicons.eot"); src: url("../fonts/social_foundicons.eot?#iefix") format("embedded-opentype"), url("../fonts/social_foundicons.woff") format("woff"), url("../fonts/social_foundicons.ttf") format("truetype"), url("../fonts/social_foundicons.svg#SocialFoundicons") format("svg"); font-weight: normal; font-style: normal; }
-
-/* global foundicon styles */
-[class*="foundicon-"] { display: inline; width: auto; height: auto; line-height: inherit; vertical-align: baseline; background-image: none; background-position: 0 0; background-repeat: repeat; }
-
-[class*="foundicon-"]:before { font-family: "SocialFoundicons"; font-weight: normal; font-style: normal; text-decoration: inherit; }
-
-/* icons */
-.foundicon-thumb-up:before { content: "\f000"; }
-
-.foundicon-thumb-down:before { content: "\f001"; }
-
-.foundicon-rss:before { content: "\f002"; }
-
-.foundicon-facebook:before { content: "\f003"; }
-
-.foundicon-twitter:before { content: "\f004"; }
-
-.foundicon-pinterest:before { content: "\f005"; }
-
-.foundicon-github:before { content: "\f006"; }
-
-.foundicon-path:before { content: "\f007"; }
-
-.foundicon-linkedin:before { content: "\f008"; }
-
-.foundicon-dribbble:before { content: "\f009"; }
-
-.foundicon-stumble-upon:before { content: "\f00a"; }
-
-.foundicon-behance:before { content: "\f00b"; }
-
-.foundicon-reddit:before { content: "\f00c"; }
-
-.foundicon-google-plus:before { content: "\f00d"; }
-
-.foundicon-youtube:before { content: "\f00e"; }
-
-.foundicon-vimeo:before { content: "\f00f"; }
-
-.foundicon-flickr:before { content: "\f010"; }
-
-.foundicon-slideshare:before { content: "\f011"; }
-
-.foundicon-picassa:before { content: "\f012"; }
-
-.foundicon-skype:before { content: "\f013"; }
-
-.foundicon-steam:before { content: "\f014"; }
-
-.foundicon-instagram:before { content: "\f015"; }
-
-.foundicon-foursquare:before { content: "\f016"; }
-
-.foundicon-delicious:before { content: "\f017"; }
-
-.foundicon-chat:before { content: "\f018"; }
-
-.foundicon-torso:before { content: "\f019"; }
-
-.foundicon-tumblr:before { content: "\f01a"; }
-
-.foundicon-video-chat:before { content: "\f01b"; }
-
-.foundicon-digg:before { content: "\f01c"; }
-
-.foundicon-wordpress:before { content: "\f01d"; }
-
-/* general icons for IE7 */
-[class*="foundicon-"] { font-family: "SocialFoundicons"; font-weight: normal; font-style: normal; }
-
-.foundicon-thumb-up { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf000;"); }
-
-.foundicon-thumb-down { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf001;"); }
-
-.foundicon-rss { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf002;"); }
-
-.foundicon-facebook { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf003;"); }
-
-.foundicon-twitter { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf004;"); }
-
-.foundicon-pinterest { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf005;"); }
-
-.foundicon-github { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf006;"); }
-
-.foundicon-path { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf007;"); }
-
-.foundicon-linkedin { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf008;"); }
-
-.foundicon-dribbble { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf009;"); }
-
-.foundicon-stumble-upon { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf00a;"); }
-
-.foundicon-behance { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf00b;"); }
-
-.foundicon-reddit { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf00c;"); }
-
-.foundicon-google-plus { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf00d;"); }
-
-.foundicon-youtube { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf00e;"); }
-
-.foundicon-vimeo { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf00f;"); }
-
-.foundicon-flickr { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf010;"); }
-
-.foundicon-slideshare { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf011;"); }
-
-.foundicon-picassa { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf012;"); }
-
-.foundicon-skype { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf013;"); }
-
-.foundicon-steam { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf014;"); }
-
-.foundicon-instagram { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf015;"); }
-
-.foundicon-foursquare { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf016;"); }
-
-.foundicon-delicious { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf017;"); }
-
-.foundicon-chat { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf018;"); }
-
-.foundicon-torso { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf019;"); }
-
-.foundicon-tumblr { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf01a;"); }
-
-.foundicon-video-chat { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf01b;"); }
-
-.foundicon-digg { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf01c;"); }
-
-.foundicon-wordpress { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf01d;"); }
 
 p.lead { font-size: 0.96875em; line-height: 1.6; }
 
@@ -792,7 +659,7 @@ body { padding-top: 45px; }
 #agenda .timings .row.talk p { color: white; }
 #agenda .timings .row:last-child { border-bottom: 0; }
 #agenda .timings .row .small-4 { text-align: right; }
-#agenda .timings .row .small-4 p:after { display: block; position: absolute; top: 0.5em; right: -0.5em; content: "§"; }
+#agenda .timings .row .small-4 p::after { display: block; position: absolute; top: 0.5em; right: -0.5em; content: "\00A7"; }
 #agenda .timings .row .small-8 { text-align: left; }
 #agenda .timings .row:hover { background-color: #53beea; }
 
@@ -803,10 +670,12 @@ body { padding-top: 45px; }
 #about { color: white; background: #222222 url(../img/white-bg.png) fixed; background-image: url(../img/dark-bg.jpg); }
 #about h1, #about h2, #about h3, #about h4, #about h5, #about h6, #about .subheader, #about p, #about blockquote, #about a, #about small { color: white; }
 #about code, #about abbr, #about acronym { color: #d9d9d9; }
-#about .social a { font-size: 1.5em; display: inline-block; color: #222222; background-color: white; border-radius: 50%; width: 1.5em; height: 1.5em; line-height: 1.5em; margin: 0 0.25em; -webkit-transition: color 300ms ease-out; -moz-transition: color 300ms ease-out; transition: color 300ms ease-out; }
+#about .social a { font-size: 1.5em; display: inline-block; color: #222222; background-color: white; border-radius: 50%; width: 1.5em; height: 1.5em; line-height: 1.5em; margin: 0 0.1em; -webkit-transition: color 300ms ease-out; -moz-transition: color 300ms ease-out; transition: color 300ms ease-out; }
 #about .social a:hover, #about .social a:focus { color: white; background-color: #26ade4; }
-#about blockquote { text-align: left; }
-#about blockquote cite { text-align: right; }
+#about blockquote p { text-align: left; font-size: 1em; margin-bottom: 1em; }
+#about blockquote p + p { font-size: 0.8125em; }
+#about blockquote a { color: #26ade4; }
+#about blockquote cite { margin: 0.25em 0; text-align: right; }
 
 #map { width: 100%; height: 40em; color: white; background: #222222 url(../img/white-bg.png) fixed; }
 #map h1, #map h2, #map h3, #map h4, #map h5, #map h6, #map .subheader, #map p, #map blockquote, #map a, #map small { color: white; }
@@ -818,5 +687,5 @@ body { padding-top: 45px; }
 #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer .subheader, #footer p, #footer blockquote, #footer a, #footer small { color: #a6a6a6; }
 #footer code, #footer abbr, #footer acronym { color: gray; }
 #footer .row { margin-bottom: 0; }
-#footer .row label, #footer .row label a { color: #6ac7ec; }
 #footer .row p { line-height: 1em; }
+#footer .row p a { color: #6ac7ec; }

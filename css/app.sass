@@ -1,5 +1,5 @@
 @charset "UTF-8"
-@import "normalize", "variables", "foundation/components/global", "icons/social_foundicons", "icons/social_foundicons_ie7", "foundation/components/type", "foundation/components/grid", "foundation/components/visibility", "foundation/components/top-bar", "foundation/components/buttons"
+@import "normalize", "variables", "foundation/components/global", "foundation/components/type", "foundation/components/grid", "foundation/components/visibility", "foundation/components/top-bar", "foundation/components/buttons"
 
 body
   padding-top: $topbar-height
@@ -122,12 +122,12 @@ body
       .small-4
         text-align: right
 
-        p:after
+        p::after
           display: block
           position: absolute
           top: .5em
           right: -.5em
-          content: '§'
+          content: '\00A7'
 
       .small-8
         text-align: left
@@ -164,7 +164,7 @@ body
       width: 1.5em
       height: 1.5em
       line-height: 1.5em
-      margin: 0 .25em
+      margin: 0 .1em
       @include single-transition(color)
 
       &:hover, &:focus
@@ -172,8 +172,19 @@ body
         background-color: $alt-fg
 
   blockquote
-    text-align: left
+    p
+      text-align: left
+      font-size: 1em
+      margin-bottom: 1em
+
+    p+p
+      font-size: $blockquote-cite-font-size
+
+    a
+      color: $alt-fg
+
     cite
+      margin: .25em 0
       text-align: right
 
 //
@@ -212,9 +223,7 @@ body
 
   .row
     margin-bottom: 0
-
-    label, label a
-      color: $alt-fg
-
     p
       line-height: 1em
+      a
+        color: $alt-fg
