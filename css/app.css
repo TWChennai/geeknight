@@ -297,7 +297,7 @@ select { width: 100%; }
 
 .foundicon-wordpress { *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf01d;"); }
 
-p.lead { font-size: 0.71875em; line-height: 1.6; }
+p.lead { font-size: 0.96875em; line-height: 1.6; }
 
 .subheader { line-height: 1.4; color: #6f6f6f; font-weight: 300; margin-top: 0.2em; margin-bottom: 0.5em; }
 
@@ -310,11 +310,11 @@ a:hover, a:focus { color: #151515; }
 a img { border: none; }
 
 /* Default paragraph styles */
-p { font-family: inherit; font-weight: 300; font-size: 0.5em; line-height: 1.6; margin-bottom: 1.25em; text-rendering: optimizeLegibility; }
+p { font-family: inherit; font-weight: 300; font-size: 0.75em; line-height: 1.6; margin-bottom: 0.1em; text-rendering: optimizeLegibility; }
 p aside { font-size: 0.875em; line-height: 1.35; font-style: italic; }
 
 /* Default header styles */
-h1, h2, h3, h4, h5, h6 { font-family: "Segoe UI Light", Helvetica, "Segoe UI", Arial, sans-serif; font-weight: 300; font-style: normal; color: #222222; text-rendering: optimizeLegibility; margin-top: 0; margin-bottom: 0; line-height: 1.2125em; }
+h1, h2, h3, h4, h5, h6 { font-family: "Segoe UI Light", Helvetica, "Segoe UI", Arial, sans-serif; font-weight: 300; font-style: normal; color: #222222; text-rendering: optimizeLegibility; margin-top: 0; margin-bottom: 0.1em; line-height: 1.2125em; }
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-size: 60%; color: #6f6f6f; line-height: 0; }
 
 h1 { font-size: 2.125em; }
@@ -327,7 +327,7 @@ h4 { font-size: 1.125em; }
 
 h5 { font-size: 1.125em; }
 
-h6 { font-size: 0.75em; }
+h6 { font-size: 1em; }
 
 hr { border: solid #dddddd; border-width: 1px 0 0; clear: both; margin: 1.25em 0 1.1875em; height: 0; }
 
@@ -341,7 +341,7 @@ small { font-size: 60%; line-height: inherit; }
 code { font-family: Consolas, "Liberation Mono", Courier, monospace; font-weight: bold; color: #7f0a0c; }
 
 /* Lists */
-ul, ol, dl { font-size: 0.5em; line-height: 1.6; margin-bottom: 1.25em; list-style-position: outside; font-family: inherit; }
+ul, ol, dl { font-size: 0.75em; line-height: 1.6; margin-bottom: 0.1em; list-style-position: outside; font-family: inherit; }
 
 ul, ol { margin-left: 0; }
 ul.no-bullet, ol.no-bullet { margin-left: 0; }
@@ -367,7 +367,7 @@ abbr, acronym { text-transform: uppercase; font-size: 90%; color: #222222; borde
 abbr { text-transform: none; }
 
 /* Blockquotes */
-blockquote { margin: 0 0 1.25em; padding: 0.5625em 1.25em 0 1.1875em; border-left: 1px solid #dddddd; }
+blockquote { margin: 0 0 0.1em; padding: 0.5625em 1.25em 0 1.1875em; border-left: 1px solid #dddddd; }
 blockquote cite { display: block; font-size: 0.8125em; color: #555555; }
 blockquote cite:before { content: "\2014 \0020"; }
 blockquote cite a, blockquote cite a:visited { color: #555555; }
@@ -786,11 +786,12 @@ body { padding-top: 45px; }
 #agenda { color: #222222; background-color: #26ade4; border-top: 0.25em dashed #222222; }
 #agenda h1, #agenda h2, #agenda h3, #agenda h4, #agenda h5, #agenda h6, #agenda .subheader, #agenda p, #agenda blockquote, #agenda a, #agenda small { color: #222222; }
 #agenda code, #agenda abbr, #agenda acronym { color: black; }
-#agenda .timings .row { border-bottom: 1px dashed #aee0f5; margin-bottom: 0; padding: 0.25em 0; -webkit-transition: background-color 300ms ease-out; -moz-transition: background-color 300ms ease-out; transition: background-color 300ms ease-out; }
-#agenda .timings .row.talk h6 { color: white; }
+#agenda .timings .row { border-bottom: 1px dashed #aee0f5; margin-bottom: 0; -webkit-transition: background-color 300ms ease-out; -moz-transition: background-color 300ms ease-out; transition: background-color 300ms ease-out; }
+#agenda .timings .row p { padding: 0.5em 0; margin-bottom: 0; }
+#agenda .timings .row.talk p { color: white; }
 #agenda .timings .row:last-child { border-bottom: 0; }
-#agenda .timings .row .small-4 h6 { text-align: right; }
-#agenda .timings .row .small-8 h6 { text-align: left; }
+#agenda .timings .row .small-4 { text-align: right; }
+#agenda .timings .row .small-8 { text-align: left; }
 #agenda .timings .row:hover { background-color: #53beea; }
 
 #location { color: white; background-color: #222222; border-top: 0.25em dashed #26ade4; }
@@ -814,5 +815,6 @@ body { padding-top: 45px; }
 #footer { color: #a6a6a6; background-color: #f2f2f2; padding: 0.5em 0; }
 #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer .subheader, #footer p, #footer blockquote, #footer a, #footer small { color: #a6a6a6; }
 #footer code, #footer abbr, #footer acronym { color: gray; }
-#footer label, #footer label a { color: #6ac7ec; }
 #footer .row { margin-bottom: 0; }
+#footer .row label, #footer .row label a { color: #6ac7ec; }
+#footer .row p { line-height: 1em; }

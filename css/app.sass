@@ -111,19 +111,22 @@ body
     .row
       border-bottom: 1px dashed lighten($main-bg, 30%)
       margin-bottom: 0
-      padding: .25em 0
       @include single-transition(background-color)
 
-      &.talk h6
+      p
+        padding: .5em 0
+        margin-bottom: 0
+
+      &.talk p
         color: $alt-fg
 
       &:last-child
         border-bottom: 0
 
-      .small-4 h6
+      .small-4
         text-align: right
 
-      .small-8 h6
+      .small-8
         text-align: left
 
       &:hover
@@ -204,9 +207,13 @@ body
   $alt-fg: lighten($blue, 15%)
   @include override-colors($main-fg,$main-bg)
 
-  label, label a
-    color: $alt-fg
-
   padding: .5em 0
+
   .row
     margin-bottom: 0
+
+    label, label a
+      color: $alt-fg
+
+    p
+      line-height: 1em
