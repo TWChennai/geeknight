@@ -13,12 +13,6 @@
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
-preprocess do
-  items.delete_if do |item|
-    item.identifier.ends_with? ".scss/"
-  end
-end
-
 compile 'css/app.sass' do
   filter :sass, filename: item.raw_filename, load_paths: [ '.', 'assets/css/' ], cache: false
 end
@@ -27,13 +21,18 @@ compile '*' do
   if item.binary?
     # don’t filter binary items
   else
-    @start = Time.parse @item[:start]
     filter :erb
-    layout @start.future? ? 'default' : 'archive'
+    layout start_date.future? ? 'default' : 'archive'
   end
 end
 
+route 'css/*.scss' do
+  # Ignore all SCSS files, we'll process only app.SASS
+  nil
+end
+
 route 'css/app.sass' do
+  # Compile app.SASS to app.CSS
   '/css/app.css'
 end
 

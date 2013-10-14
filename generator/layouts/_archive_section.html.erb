@@ -1,0 +1,24 @@
+<% if archives.any? %>
+<section id="archive" class="feature">
+    <div class="row">
+        <h2>Previous Editions</h2>
+    </div>
+
+    <div class="row">
+        <div class="large-12 columns">
+            <ul class="grid small-block-grid-2 large-block-grid-4">
+                <% archives.each do |archive| %>
+                <li>
+                    <a href=".<%= archive.path %>">
+                        <span class="version">
+                            <%= archive[:edition] %><sup><%= archive[:edition].ordinal %></sup> edition
+                        </span>
+                        <span class="date"><%= Time.parse(archive[:start]).strftime("%b %d") %></span>
+                    </a>
+                </li>
+                <% end %>
+            </ul>
+        </div>
+    </div>
+</section>
+<% end %>

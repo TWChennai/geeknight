@@ -41,6 +41,13 @@ body
   .fixed
     opacity: .75
 
+    .name h1 a
+      width: auto
+
+      span
+        display: inline-block
+        color: $blue
+
 //
 // INTRO SECTION
 //
@@ -137,15 +144,16 @@ body
         a
           color: $alt-fg
 
-        p
-          padding-right: 3.15em
+        &.with-image
+          p
+            padding-right: 3.15em
 
-        img
-          position: absolute
-          max-width: 3em
-          right: 1em
-          top: 50%
-          margin-top: -1.5em
+          img
+            position: absolute
+            max-width: 3em
+            right: 1em
+            top: 50%
+            margin-top: -1.5em
 
       &:hover
         background-color: lighten($main-bg, 10%)

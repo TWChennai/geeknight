@@ -1,0 +1,18 @@
+<header id="header" class="feature">
+    <div class="fixed">
+        <nav class="top-bar">
+            <ul class="title-area">
+                <li class="name"><h1><a href="./">Geek Night Chennai &raquo; <span><%= start_date(latest).strftime("%b %-d") %></span></a></h1></li>
+                <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+            </ul>
+            <section class="top-bar-section">
+                <ul class="left">
+                    <li><a href="http://www.thoughtworks.com" target="_blank">ThoughtWorks</a></li>
+                </ul>
+                <ul class="right">
+                    <%= yield %>
+                </ul>
+            </section>
+        </nav>
+    </div>
+</header>

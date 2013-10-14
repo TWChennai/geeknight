@@ -2193,6 +2193,11 @@ body {
   background: #f2f2f2; }
   #header .fixed {
     opacity: 0.75; }
+    #header .fixed .name h1 a {
+      width: auto; }
+      #header .fixed .name h1 a span {
+        display: inline-block;
+        color: #26ade4; }
 
 #intro {
   color: #222222;
@@ -2281,9 +2286,9 @@ body {
       position: relative; }
       #agenda .timings .row .summary a {
         color: white; }
-      #agenda .timings .row .summary p {
+      #agenda .timings .row .summary.with-image p {
         padding-right: 3.15em; }
-      #agenda .timings .row .summary img {
+      #agenda .timings .row .summary.with-image img {
         position: absolute;
         max-width: 3em;
         right: 1em;

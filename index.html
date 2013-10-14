@@ -3,290 +3,337 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Geek Night Chennai - Oct 2013</title>
-        <meta name="description" content="" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Geek Night Chennai - Oct 2013</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/app.css" />
-        <link rel="stylesheet" href="css/icons/fontello.css" />
-        <!--[if IE 7]>
-            <link rel="stylesheet" href="css/icons/fontello-ie7.css" />
-        <![endif] -->
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/icons/fontello.css" />
+    <!--[if IE 7]>
+        <link rel="stylesheet" href="css/icons/fontello-ie7.css" />
+    <![endif] -->
 
-        <script src="js/custom.modernizr.js"></script>
-        <script>var targetDate = new Date(1383048000 * 1000)</script>
-    </head>
-    <body>
-        <!--[if lte IE 8]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" rel="nofollow">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <script src="js/custom.modernizr.js"></script>
+  </head>
+  <body>
+    <!--[if lte IE 8]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" rel="nofollow">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
 
-        <header id="header" class="feature">
-            <div class="fixed">
-                <nav class="top-bar">
-                    <ul class="title-area">
-                        <li class="name"><h1><a href="/">Geek Night Chennai</a></h1></li>
-                        <li class="toggle-topbar menu-icon"><a href="#"></a></li>
-                    </ul>
-                    <section class="top-bar-section">
-                        <ul class="left">
-                            <li><a href="http://www.thoughtworks.com" target="_blank">ThoughtWorks</a></li>
-                        </ul>
-                        <ul class="right">
-                            <li><a href="https://docs.google.com/forms/d/1CZHZHbaKp74ZjHm-3YnTlyiiC6VaW-oS8V4idaliSQg/viewform" target="_blank" rel="nofollow">Participate</a></li>
-                            <li><a href="https://docs.google.com/forms/d/1g6CYZrDNnz2-JRSdqO91ml-UBKOi-Se-98dy2YBm0t0/viewform" target="_blank" rel="nofollow">Talk</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#agenda">Agenda</a></li>
-                            <li><a href="#location">Location</a></li>
-                            <li><a href="#archive">Previous Editions</a></li>
-                        </ul>
-                    </section>
-                </nav>
+    
+    <section id="intro" class="feature">
+        <div class="row">
+            <div class="large-12 columns">
+                <a href="http://www.thoughtworks.com" target="_blank">
+                    <img src="./img/tw-logo.png" alt="ThoughtWorks" align="center" />
+                </a>
+                <h1>Geek Night Chennai</h1>
+                <h5>an open forum for geeks to connect, discuss &amp; learn latest ideas, technologies and trends in software development</h5>
             </div>
-        </header>
+        </div>
 
-        <section id="intro" class="feature">
-            <div class="row">
-                <div class="large-12 columns">
-                    <a href="http://www.thoughtworks.com" target="_blank">
-                        <img src="./img/tw-logo.png" alt="ThoughtWorks" align="center" />
+        <div class="row countdown">
+            <div class="small-8 small-offset-2 large-4 large-offset-0 columns date">
+                <p>4<sup>th</sup> edition</p>
+                <h4>oct 29</h4>
+            </div>
+            <div class="small-6 large-2 columns counter">
+                <h4><span id="days"></span></h4>
+                <p>days</p>
+            </div>
+            <div class="small-6 large-2 columns counter">
+                <h4><span id="hours"></span></h4>
+                <p>hours</p>
+            </div>
+            <div class="small-6 large-2 columns counter">
+                <h4><span id="minutes"></span></h4>
+                <p>minutes</p>
+            </div>
+            <div class="small-6 large-2 columns counter">
+                <h4 id="seconds">
+                    &nbsp; <!-- the nbsp is required -->
+                    <span id="tick"></span><span id="tock"></span>
+                </h4>
+                <p>seconds</p>
+            </div>
+        </div>
+
+        <div class="row actions">
+            <div class="large-5 columns">
+                <p>register to</p>
+                <h4><a href="https://docs.google.com/forms/d/1CZHZHbaKp74ZjHm-3YnTlyiiC6VaW-oS8V4idaliSQg/viewform" id="participate" target="_blank" rel="nofollow">Participate</a></h4>
+                <p><small>&bull; free participation &amp; dinner</small></p>
+            </div>
+            <div class="large-2 columns">
+                <hr class="show-for-small" />
+                <h5 class="hide-for-small"><br />&laquo; or &raquo;</h5>
+            </div>
+            <div class="large-5 columns">
+                <p>submit your</p>
+                <h4><a href="https://docs.google.com/forms/d/1g6CYZrDNnz2-JRSdqO91ml-UBKOi-Se-98dy2YBm0t0/viewform" target="_blank" rel="nofollow">Talk</a></h4>
+                <p><small>&bull; this is an open forum, any technical talks welcome</small></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="feature">
+    <div class="row">
+        <div class="large-12 columns social">
+            <a rel="nofollow" href="https://www.facebook.com/GeeknightChennai?viewer_id=100006569229519" target="_blank" title="Like us on FaceBook"><i class="icon-like"></i></a>
+            <a rel="nofollow" href="https://www.facebook.com/groups/chennaigeeks/" target="_blank"><i class="icon-facebook" title="FaceBook discussion group"></i></a>
+            <a rel="nofollow" href="https://twitter.com/intent/tweet?url=twchennai.github.io/geeknight&text=Whats+up&hashtags=geeknightchennai" target="_blank" title="Tweet hashtag #geeknightchennai"><i class="icon-twitter"></i></a>
+            <a rel="nofollow" href="mailto:geeknight.chennai@thoughtworks.com" title="Email us"><i class="icon-mail"></i></a>
+            <!-- NOTE: Last video link is line-wrapping in small screens like iOS a rel="nofollow" href="#" title="Videos (coming soon)"><i class="icon-youtube"></i></a -->
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="large-12 columns">
+            <blockquote>
+                <p>Geek Night is a monthly event for geeks in Chennai to meet, share, learn &amp; collaborate. It is organized by a passionate group of programmers and sponsored by ThoughtWorks. To know more, pay a visit to the next Geek Night, or get in touch using any of the above social media.</p>
+
+                <p>We love feedback! If you have any suggestions or cribs, feel free to fill out our <a rel="nofollow" href="https://docs.google.com/forms/d/1Xb7TWBrMY2rBzbtMKS9Fdnr63nG0C1vV6_mUUO8OT6w/viewform" target="_blank">feedback form</a>. Don't worry, its completely anonymous.</p>
+
+                <cite>Geek Night Volunteers</cite>
+            </blockquote>
+        </div>
+    </div>
+</section>
+
+
+    <section id="agenda" class="feature">
+    <div class="row">
+        <h2>Agenda</h2>
+    </div>
+
+    <div class="timings">
+        
+          <div class="row">
+            <div class="small-4 columns time"><p>5:45 pm</p></div>
+            <div class="small-8 columns summary "><p>
+                Welcome Note <br />
+                
+                
+            </p></div>
+          </div>
+        
+          <div class="row">
+            <div class="small-4 columns time"><p>6:00 pm</p></div>
+            <div class="small-8 columns summary "><p>
+                Session 1 <br />
+                
+                    <small>by
+                    
+                        (not yet decided)
+                    
+                    </small>
+                
+                
+            </p></div>
+          </div>
+        
+          <div class="row">
+            <div class="small-4 columns time"><p>6:45 pm</p></div>
+            <div class="small-8 columns summary with-image"><p>
+                Creating Parallax websites (<a href="//railsgirls.com/chennai">like this</a>) using Skrollr <br />
+                
+                    <small>by
+                    
+                    <a href="//facebook.com/rdx.subhas" rel="nofollow" target="_blank">Subhas Dandapani (RDX)</a>
+                    
+                    </small>
+                
+                
+                    <img src="img/speaker/rdx.jpg" alt="Subhas Dandapani (RDX)" />
+                
+            </p></div>
+          </div>
+        
+          <div class="row">
+            <div class="small-4 columns time"><p>7:30 pm</p></div>
+            <div class="small-8 columns summary "><p>
+                Break <br />
+                
+                
+            </p></div>
+          </div>
+        
+          <div class="row">
+            <div class="small-4 columns time"><p>7:45 pm</p></div>
+            <div class="small-8 columns summary with-image"><p>
+                Demystifying Apache Drill <br />
+                
+                    <small>by
+                    
+                    <a href="mailto:varadham@thoughtworks.com" rel="nofollow" target="_blank">Varadharajan M</a>
+                    
+                    </small>
+                
+                
+                    <img src="img/speaker/varadha.jpg" alt="Varadharajan M" />
+                
+            </p></div>
+          </div>
+        
+          <div class="row">
+            <div class="small-4 columns time"><p>8:30 pm</p></div>
+            <div class="small-8 columns summary "><p>
+                Lightning Talks <br />
+                
+                
+            </p></div>
+          </div>
+        
+          <div class="row">
+            <div class="small-4 columns time"><p>9:00 pm</p></div>
+            <div class="small-8 columns summary "><p>
+                Networking &amp; Dinner <br />
+                
+                
+            </p></div>
+          </div>
+        
+      </div>
+    </div>
+</section>
+
+
+    <section id="location" class="feature">
+    <div class="row">
+        <h2>Location</h2>
+
+        <div id="address">
+            <h6>
+                ThoughtWorks Technologies Pvt Ltd<br />
+                9th Floor, Phase 3 <br />
+                Ascendas International Tech Park <br />
+                Taramani, Chennai <br />
+                <small><a href="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=thoughtworks+chennai&aq=&sll=37.0625,-95.677068&sspn=61.153041,114.169922&vpsrc=0&ie=UTF8&hq=thoughtworks&hnear=Chennai,+Tamil+Nadu,+India&t=m&z=13&iwloc=A&cid=1639595661799347847" target="_blank" rel="nofollow">&laquo; Open in Google Maps &raquo;</a></small>
+            </h6>
+        </div>
+    </div>
+</section>
+
+<div id="map" class="hide"></div>
+
+
+    
+<section id="archive" class="feature">
+    <div class="row">
+        <h2>Previous Editions</h2>
+    </div>
+
+    <div class="row">
+        <div class="large-12 columns">
+            <ul class="grid small-block-grid-2 large-block-grid-4">
+                
+                <li>
+                    <a href="./sep2013.html">
+                        <span class="version">
+                            3<sup>rd</sup> edition
+                        </span>
+                        <span class="date">Sep 25</span>
                     </a>
-                    <h1>Geek Night Chennai</h1>
-                    <h5>an open forum for geeks to connect, discuss &amp; learn latest ideas, technologies and trends in software development</h5>
-                </div>
-            </div>
-
-            <div class="row countdown">
-                <div class="small-8 small-offset-2 large-4 large-offset-0 columns date">
-                    <p>4<sup>th</sup> edition</p>
-                    <h4>oct 29</h4>
-                </div>
-                <div class="small-6 large-2 columns counter">
-                    <h4><span id="days"></span></h4>
-                    <p>days</p>
-                </div>
-                <div class="small-6 large-2 columns counter">
-                    <h4><span id="hours"></span></h4>
-                    <p>hours</p>
-                </div>
-                <div class="small-6 large-2 columns counter">
-                    <h4><span id="minutes"></span></h4>
-                    <p>minutes</p>
-                </div>
-                <div class="small-6 large-2 columns counter">
-                    <h4 id="seconds">
-                        &nbsp; <!-- the nbsp is required -->
-                        <span id="tick"></span><span id="tock"></span>
-                    </h4>
-                    <p>seconds</p>
-                </div>
-            </div>
-
-            <div class="row actions">
-                <div class="large-5 columns">
-                    <p>register to</p>
-                    <h4><a href="https://docs.google.com/forms/d/1CZHZHbaKp74ZjHm-3YnTlyiiC6VaW-oS8V4idaliSQg/viewform" id="participate" target="_blank" rel="nofollow">Participate</a></h4>
-                    <p><small>&bull; free participation &amp; dinner</small></p>
-                </div>
-                <div class="large-2 columns">
-                    <hr class="show-for-small" />
-                    <h5 class="hide-for-small"><br />&laquo; or &raquo;</h5>
-                </div>
-                <div class="large-5 columns">
-                    <p>submit your</p>
-                    <h4><a href="https://docs.google.com/forms/d/1g6CYZrDNnz2-JRSdqO91ml-UBKOi-Se-98dy2YBm0t0/viewform" target="_blank" rel="nofollow">Talk</a></h4>
-                    <p><small>&bull; this is an open forum, any technical talks welcome</small></p>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="feature">
-            <div class="row">
-                <div class="large-12 columns social">
-                    <a rel="nofollow" href="https://www.facebook.com/GeeknightChennai?viewer_id=100006569229519" target="_blank" title="Like us on FaceBook"><i class="icon-like"></i></a>
-                    <a rel="nofollow" href="https://www.facebook.com/groups/chennaigeeks/" target="_blank"><i class="icon-facebook" title="FaceBook discussion group"></i></a>
-                    <a rel="nofollow" href="https://twitter.com/intent/tweet?url=twchennai.github.io/geeknight&text=Whats+up&hashtags=geeknightchennai" target="_blank" title="Tweet hashtag #geeknightchennai"><i class="icon-twitter"></i></a>
-                    <a rel="nofollow" href="mailto:geeknight.chennai@thoughtworks.com" title="Email us"><i class="icon-mail"></i></a>
-                    <!-- NOTE: Last video link is line-wrapping in small screens like iOS a rel="nofollow" href="#" title="Videos (coming soon)"><i class="icon-youtube"></i></a -->
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="large-12 columns">
-                    <blockquote>
-                        <p>Geek Night is a monthly event for geeks in Chennai to meet, share, learn &amp; collaborate. It is organized by a passionate group of programmers and sponsored by ThoughtWorks. To know more, pay a visit to the next Geek Night, or get in touch using any of the above social media.</p>
-
-                        <p>We love feedback! If you have any suggestions or cribs, feel free to fill out our <a rel="nofollow" href="https://docs.google.com/forms/d/1Xb7TWBrMY2rBzbtMKS9Fdnr63nG0C1vV6_mUUO8OT6w/viewform" target="_blank">feedback form</a>. Don't worry, its completely anonymous.</p>
-
-                        <cite>Geek Night Volunteers</cite>
-                    </blockquote>
-                </div>
-            </div>
-        </section>
-
-        <section id="agenda" class="feature">
-            <div class="row">
-                <h2>Agenda</h2>
-                <p><small>(sessions are being finalized, will be updated next week)</small></p>
-            </div>
-
-            <div class="timings">
+                </li>
                 
-                  <div class="row">
-                    <div class="small-4 columns time"><p>5:45 pm</p></div>
-                    <div class="small-8 columns summary"><p>
-                        Welcome Note</p>
-                    </div>
-                  </div>
+                <li>
+                    <a href="./aug2013.html">
+                        <span class="version">
+                            2<sup>nd</sup> edition
+                        </span>
+                        <span class="date">Aug 22</span>
+                    </a>
+                </li>
                 
-                  <div class="row">
-                    <div class="small-4 columns time"><p>6:00 pm</p></div>
-                    <div class="small-8 columns summary"><p>
-                        Session 1</p>
-                    </div>
-                  </div>
+                <li>
+                    <a href="./july2013.html">
+                        <span class="version">
+                            1<sup>st</sup> edition
+                        </span>
+                        <span class="date">Jul 25</span>
+                    </a>
+                </li>
                 
-                  <div class="row">
-                    <div class="small-4 columns time"><p>6:45 pm</p></div>
-                    <div class="small-8 columns summary"><p>
-                        Session 2</p>
-                    </div>
-                  </div>
-                
-                  <div class="row">
-                    <div class="small-4 columns time"><p>7:30 pm</p></div>
-                    <div class="small-8 columns summary"><p>
-                        Break</p>
-                    </div>
-                  </div>
-                
-                  <div class="row">
-                    <div class="small-4 columns time"><p>7:45 pm</p></div>
-                    <div class="small-8 columns summary"><p>
-                        Session 3</p>
-                    </div>
-                  </div>
-                
-                  <div class="row">
-                    <div class="small-4 columns time"><p>8:30 pm</p></div>
-                    <div class="small-8 columns summary"><p>
-                        Lightning Sessions</p>
-                    </div>
-                  </div>
-                
-                  <div class="row">
-                    <div class="small-4 columns time"><p>9:00 pm</p></div>
-                    <div class="small-8 columns summary"><p>
-                        Networking &amp; Dinner</p>
-                    </div>
-                  </div>
-                
-              </div>
-            </div>
-        </section>
+            </ul>
+        </div>
+    </div>
+</section>
 
-        <section id="location" class="feature">
-            <div class="row">
-                <h2>Location</h2>
 
-                <div id="address">
-                    <h6>
-                        ThoughtWorks Technologies Pvt Ltd<br />
-                        9th Floor, Phase 3 <br />
-                        Ascendas International Tech Park <br />
-                        Taramani, Chennai <br />
-                        <small><a href="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=thoughtworks+chennai&aq=&sll=37.0625,-95.677068&sspn=61.153041,114.169922&vpsrc=0&ie=UTF8&hq=thoughtworks&hnear=Chennai,+Tamil+Nadu,+India&t=m&z=13&iwloc=A&cid=1639595661799347847" target="_blank" rel="nofollow">&laquo; Open in Google Maps &raquo;</a></small>
-                    </h6>
-                </div>
-            </div>
-        </section>
 
-        <div id="map" class="hide"></div>
+    <header id="header" class="feature">
+    <div class="fixed">
+        <nav class="top-bar">
+            <ul class="title-area">
+                <li class="name"><h1><a href="./">Geek Night Chennai &raquo; <span>Oct 29</span></a></h1></li>
+                <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+            </ul>
+            <section class="top-bar-section">
+                <ul class="left">
+                    <li><a href="http://www.thoughtworks.com" target="_blank">ThoughtWorks</a></li>
+                </ul>
+                <ul class="right">
+                    
+        <li><a href="https://docs.google.com/forms/d/1CZHZHbaKp74ZjHm-3YnTlyiiC6VaW-oS8V4idaliSQg/viewform" target="_blank" rel="nofollow">Participate</a></li>
+        <li><a href="https://docs.google.com/forms/d/1g6CYZrDNnz2-JRSdqO91ml-UBKOi-Se-98dy2YBm0t0/viewform" target="_blank" rel="nofollow">Talk</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#archive">Previous Editions</a></li>
+    
+                </ul>
+            </section>
+        </nav>
+    </div>
+</header>
 
-        
-        <section id="archive" class="feature">
-            <div class="row">
-                <h2>Previous Editions</h2>
-            </div>
 
-            <div class="row">
-                <div class="large-12 columns">
-                    <ul class="grid small-block-grid-2 large-block-grid-4">
-                        
-                        <li>
-                            <a href="/sep2013.html">
-                                <span class="version">
-                                    3<sup>rd</sup> edition
-                                </span>
-                                <span class="date">Sep 25</span>
-                            </a>
-                        </li>
-                        
-                        <li>
-                            <a href="/aug2013.html">
-                                <span class="version">
-                                    2<sup>nd</sup> edition
-                                </span>
-                                <span class="date">Aug 22</span>
-                            </a>
-                        </li>
-                        
-                        <li>
-                            <a href="/july2013.html">
-                                <span class="version">
-                                    1<sup>st</sup> edition
-                                </span>
-                                <span class="date">Jul 25</span>
-                            </a>
-                        </li>
-                        
-                    </ul>
-                </div>
-            </div>
-        </section>
-        
+    <footer id="footer" class="feature">
+    <div class="row">
+        <div class="large-12 columns">
+            <p><small>
+                Geek Night Chennai sponsored by
+                <a rel="nofollow" target="_blank" href="//thoughtworks.com">ThoughtWorks</a><br />
+                Built with
+                <a rel="nofollow" target="_blank" href="//html5boilerplate.com">HTML5 Boilerplate</a>,
+                <a rel="nofollow" target="_blank" href="//foundation.zurb.com">Zurb Foundation</a> &amp;
+                <a rel="nofollow" target="_blank" href="//leafletjs.com">Leaflet</a>
+                <br />
+                Assets from <a rel="nofollow" target="_blank" href="//openstreetmap.org">OpenStreetMap</a>,
+                <a rel="nofollow" target="_blank" href="//fontello.com">Fontello</a> &amp;
+                <a rel="nofollow" target="_blank" href="//modernpictograms.com">Modern Pictograms</a>
+            </small></p>
+        </div>
+    </div>
+</footer>
 
-        <footer id="footer" class="feature">
-            <div class="row">
-                <div class="large-12 columns">
-                    <p><small>
-                        Geek Night Chennai sponsored by
-                        <a rel="nofollow" target="_blank" href="//thoughtworks.com">ThoughtWorks</a><br />
-                        Built with
-                        <a rel="nofollow" target="_blank" href="//html5boilerplate.com">HTML5 Boilerplate</a>,
-                        <a rel="nofollow" target="_blank" href="//foundation.zurb.com">Zurb Foundation</a> &amp;
-                        <a rel="nofollow" target="_blank" href="//leafletjs.com">Leaflet</a>
-                        <br />
-                        Assets from <a rel="nofollow" target="_blank" href="//openstreetmap.org">OpenStreetMap</a>,
-                        <a rel="nofollow" target="_blank" href="//fontello.com">Fontello</a> &amp;
-                        <a rel="nofollow" target="_blank" href="//modernpictograms.com">Modern Pictograms</a>
-                    </small></p>
-                </div>
-            </div>
-        </footer>
 
-        <script src="js/ticker.js"></script>
-        <link rel="stylesheet" href="//cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
-        <!--[if lte IE 8]>
-            <link rel="stylesheet" href="//cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
-        <![endif]-->
-        <script src="//cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
-        <script src="js/map.js"></script>
+    <script>window.targetDate = new Date(1383048000 * 1000)</script>
+    <script src="js/ticker.js"></script>
 
-        <!-- Google Analytics -->
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <link rel="stylesheet" href="//cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="//cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+    <![endif]-->
+    <script src="//cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+    <script src="js/map.js"></script>
 
-          ga('create', 'UA-44837835-1', 'twchennai.github.io');
-          ga('send', 'pageview');
-        </script>
-    </body>
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-44837835-1', 'twchennai.github.io');
+      ga('send', 'pageview');
+    </script>
+  </body>
 </html>
+

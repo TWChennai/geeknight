@@ -15,10 +15,10 @@ module GeekHelper
   def archives
     events.select do |event|
       event[:edition] < @item[:edition]
-    end
+    end[0..11]
   end
 
   def latest
-    events.last
+    events.first
   end
 end
