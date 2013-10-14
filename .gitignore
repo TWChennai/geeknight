@@ -23,3 +23,9 @@ Icon
 
 # SASS
 .sass-cache
+
+# Nanoc
+generator/tmp
+generator/output
+*.log
+

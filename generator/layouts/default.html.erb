@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Geek Night Chennai - Oct 2013</title>
+        <title>Geek Night Chennai - <%= start_date.strftime("%b %Y") %></title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -19,7 +19,7 @@
         <![endif] -->
 
         <script src="js/custom.modernizr.js"></script>
-        <script>var targetDate = new Date(1383048000 * 1000)</script>
+        <script>var targetDate = new Date(<%= start_date.to_i %> * 1000)</script>
     </head>
     <body>
         <!--[if lte IE 8]>
@@ -43,7 +43,7 @@
                             <li><a href="#about">About</a></li>
                             <li><a href="#agenda">Agenda</a></li>
                             <li><a href="#location">Location</a></li>
-                            <li><a href="#archive">Previous Editions</a></li>
+                            <% if archives.any? %><li><a href="#archive">Previous Editions</a></li><% end %>
                         </ul>
                     </section>
                 </nav>
@@ -63,8 +63,8 @@
 
             <div class="row countdown">
                 <div class="small-8 small-offset-2 large-4 large-offset-0 columns date">
-                    <p>4<sup>th</sup> edition</p>
-                    <h4>oct 29</h4>
+                    <p><%= @item[:edition] %><sup><%= @item[:edition].ordinal %></sup> edition</p>
+                    <h4><%= start_date.strftime("%b %-d").downcase %></h4>
                 </div>
                 <div class="small-6 large-2 columns counter">
                     <h4><span id="days"></span></h4>
@@ -136,56 +136,14 @@
             </div>
 
             <div class="timings">
-                
+                <% @item[:agenda].each do |agenda| %>
                   <div class="row">
-                    <div class="small-4 columns time"><p>5:45 pm</p></div>
+                    <div class="small-4 columns time"><p><%= agenda[:time] %> pm</p></div>
                     <div class="small-8 columns summary"><p>
-                        Welcome Note</p>
+                        <%= agenda[:name] %></p>
                     </div>
                   </div>
-                
-                  <div class="row">
-                    <div class="small-4 columns time"><p>6:00 pm</p></div>
-                    <div class="small-8 columns summary"><p>
-                        Session 1</p>
-                    </div>
-                  </div>
-                
-                  <div class="row">
-                    <div class="small-4 columns time"><p>6:45 pm</p></div>
-                    <div class="small-8 columns summary"><p>
-                        Session 2</p>
-                    </div>
-                  </div>
-                
-                  <div class="row">
-                    <div class="small-4 columns time"><p>7:30 pm</p></div>
-                    <div class="small-8 columns summary"><p>
-                        Break</p>
-                    </div>
-                  </div>
-                
-                  <div class="row">
-                    <div class="small-4 columns time"><p>7:45 pm</p></div>
-                    <div class="small-8 columns summary"><p>
-                        Session 3</p>
-                    </div>
-                  </div>
-                
-                  <div class="row">
-                    <div class="small-4 columns time"><p>8:30 pm</p></div>
-                    <div class="small-8 columns summary"><p>
-                        Lightning Sessions</p>
-                    </div>
-                  </div>
-                
-                  <div class="row">
-                    <div class="small-4 columns time"><p>9:00 pm</p></div>
-                    <div class="small-8 columns summary"><p>
-                        Networking &amp; Dinner</p>
-                    </div>
-                  </div>
-                
+                <% end %>
               </div>
             </div>
         </section>
@@ -208,7 +166,7 @@
 
         <div id="map" class="hide"></div>
 
-        
+        <% if archives.any? %>
         <section id="archive" class="feature">
             <div class="row">
                 <h2>Previous Editions</h2>
@@ -217,39 +175,21 @@
             <div class="row">
                 <div class="large-12 columns">
                     <ul class="grid small-block-grid-2 large-block-grid-4">
-                        
+                        <% archives.each do |archive| %>
                         <li>
-                            <a href="/sep2013.html">
+                            <a href="<%= archive.path %>">
                                 <span class="version">
-                                    3<sup>rd</sup> edition
+                                    <%= archive[:edition] %><sup><%= archive[:edition].ordinal %></sup> edition
                                 </span>
-                                <span class="date">Sep 25</span>
+                                <span class="date"><%= Time.parse(archive[:start]).strftime("%b %d") %></span>
                             </a>
                         </li>
-                        
-                        <li>
-                            <a href="/aug2013.html">
-                                <span class="version">
-                                    2<sup>nd</sup> edition
-                                </span>
-                                <span class="date">Aug 22</span>
-                            </a>
-                        </li>
-                        
-                        <li>
-                            <a href="/july2013.html">
-                                <span class="version">
-                                    1<sup>st</sup> edition
-                                </span>
-                                <span class="date">Jul 25</span>
-                            </a>
-                        </li>
-                        
+                        <% end %>
                     </ul>
                 </div>
             </div>
         </section>
-        
+        <% end %>
 
         <footer id="footer" class="feature">
             <div class="row">

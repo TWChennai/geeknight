@@ -119,7 +119,7 @@ body
       &:last-child
         border-bottom: 0
 
-      .small-4
+      .time
         text-align: right
 
         p::after
@@ -129,8 +129,23 @@ body
           right: -.5em
           content: '\00A7'
 
-      .small-8
+      .summary
         text-align: left
+        overflow: hidden
+        position: relative
+
+        a
+          color: $alt-fg
+
+        p
+          padding-right: 3.15em
+
+        img
+          position: absolute
+          max-width: 3em
+          right: 1em
+          top: 50%
+          margin-top: -1.5em
 
       &:hover
         background-color: lighten($main-bg, 10%)
