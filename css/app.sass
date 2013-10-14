@@ -1,5 +1,5 @@
 @charset "UTF-8"
-@import "normalize", "variables", "foundation/components/global", "foundation/components/type", "foundation/components/grid", "foundation/components/visibility", "foundation/components/top-bar", "foundation/components/buttons"
+@import "normalize", "variables", "foundation/components/global", "foundation/components/type", "foundation/components/grid", "foundation/components/block-grid", "foundation/components/visibility", "foundation/components/top-bar", "foundation/components/buttons"
 
 body
   padding-top: $topbar-height
@@ -196,6 +196,7 @@ body
 
   width: 100%
   height: 40em
+  margin-top: -5.25em
 
   @include override-colors($main-fg,$main-bg)
 
@@ -209,6 +210,37 @@ body
     font-size: 1.5em
     text-align: center
     margin: 0
+
+//
+// ARCHIVE AREA
+//
+#archive
+  $main-fg: $dark
+  $main-bg: $white
+  $alt-fg: $blue
+  @include override-colors($main-fg,$main-bg)
+
+  .grid a
+    display: block
+    color: $alt-fg
+    border-left: 1px dashed $main-fg
+    border-right: 1px dashed $main-fg
+    border-radius: 1em
+
+    &:hover
+      color: $main-bg
+      background: $alt-fg
+
+    span
+      display: block
+      padding: .5em 0
+
+    .version
+      border-bottom: 1px dashed $main-fg
+      margin-bottom: 1px
+
+    .date
+      border-top: 1px dashed $main-fg
 
 //
 // FOOTER

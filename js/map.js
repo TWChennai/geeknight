@@ -10,13 +10,9 @@ if (window.L) {
 
   L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-  }).on('tileload', function() {
-    if (!mapLoaded) {
-      document.getElementById("location").style.display = 'none';
-      L.marker(twLocation).addTo(map)
-        .bindPopup(document.getElementById("address"))
-      .openPopup();
-      mapLoaded = true;
-    }
-  }).addTo(map)
+  }).addTo(map);
+
+  L.marker(twLocation).addTo(map)
+    .bindPopup(document.getElementById("address"))
+  .openPopup();
 }
