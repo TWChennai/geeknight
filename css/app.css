@@ -1808,9 +1808,9 @@ th.hide-for-touch {
       .top-bar-section ul li > a.button:hover {
         background: #090909; }
     .top-bar-section ul li > a.button.secondary {
-      background: #26ade4; }
+      background: #00aeef; }
       .top-bar-section ul li > a.button.secondary:hover {
-        background: #188fbf; }
+        background: #0089bc; }
     .top-bar-section ul li > a.button.success {
       background: #5da423; }
       .top-bar-section ul li > a.button.success:hover {
@@ -1820,7 +1820,7 @@ th.hide-for-touch {
       .top-bar-section ul li > a.button.alert:hover {
         background: #970b0e; }
   .top-bar-section ul li:hover > a {
-    background: #26ade4;
+    background: #00aeef;
     color: white; }
   .top-bar-section ul li.active > a {
     background: #ebebeb;
@@ -1927,14 +1927,14 @@ th.hide-for-touch {
         .top-bar-section ul li .js-generated {
           display: none; }
     .top-bar-section li.hover > a:not(.button) {
-      background: #26ade4;
+      background: #00aeef;
       color: white; }
     .top-bar-section li a:not(.button) {
       padding: 0 15px;
       line-height: 45px;
       background: #f2f2f2; }
       .top-bar-section li a:not(.button):hover {
-        background: #26ade4; }
+        background: #00aeef; }
     .top-bar-section .has-dropdown > a {
       padding-right: 35px !important; }
       .top-bar-section .has-dropdown > a:after {
@@ -1995,7 +1995,7 @@ th.hide-for-touch {
         right: 100%; }
 
   .no-js .top-bar-section ul li:hover > a {
-    background: #26ade4;
+    background: #00aeef;
     color: white; }
   .no-js .top-bar-section ul li:active > a {
     background: #ebebeb;
@@ -2027,11 +2027,11 @@ button, .button {
   button:hover, button:focus, .button:hover, .button:focus {
     color: white; }
   button.secondary, .button.secondary {
-    background-color: #26ade4;
-    border-color: #188fbf;
+    background-color: #00aeef;
+    border-color: #0089bc;
     color: white; }
     button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
-      background-color: #188fbf; }
+      background-color: #0089bc; }
     button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
       color: white; }
   button.success, .button.success {
@@ -2093,19 +2093,19 @@ button, .button {
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
       background-color: #222222; }
     button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
-      background-color: #26ade4;
-      border-color: #188fbf;
+      background-color: #00aeef;
+      border-color: #0089bc;
       color: white;
       cursor: default;
       opacity: 0.6;
       -webkit-box-shadow: none;
       box-shadow: none; }
       button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
-        background-color: #188fbf; }
+        background-color: #0089bc; }
       button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
         color: white; }
       button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
-        background-color: #26ade4; }
+        background-color: #00aeef; }
     button.disabled.success, button[disabled].success, .button.disabled.success, .button[disabled].success {
       background-color: #5da423;
       border-color: #457a1a;
@@ -2196,8 +2196,9 @@ body {
     #header .fixed .name h1 a {
       width: auto; }
       #header .fixed .name h1 a span {
+        font-weight: normal;
         display: inline-block;
-        color: #26ade4; }
+        color: #00aeef; }
 
 #intro {
   color: #222222;
@@ -2209,9 +2210,10 @@ body {
   #intro img {
     display: block;
     margin: 0 auto;
-    max-width: 14em; }
+    width: 14em;
+    max-width: 80%; }
   #intro .countdown h4 {
-    color: #26ade4; }
+    color: #00aeef; }
   #intro .counter h4 {
     border-bottom: 1px dashed #222222; }
     #intro .counter h4#seconds {
@@ -2239,8 +2241,8 @@ body {
     -webkit-transition: background-color 300ms ease-out;
     -moz-transition: background-color 300ms ease-out;
     transition: background-color 300ms ease-out;
-    background-color: #26ade4;
-    border-color: #188fbf;
+    background-color: #00aeef;
+    border-color: #0089bc;
     color: white;
     -webkit-border-radius: 3px;
     border-radius: 3px;
@@ -2248,19 +2250,19 @@ body {
     display: block;
     padding: 0.25em 0; }
     #intro .actions h4 a:hover, #intro .actions h4 a:focus {
-      background-color: #188fbf; }
+      background-color: #0089bc; }
     #intro .actions h4 a:hover, #intro .actions h4 a:focus {
       color: white; }
 
 #agenda {
   color: #222222;
-  background: #26ade4 url(../img/white-bg.png) fixed; }
+  background: #00aeef url(../img/white-bg.png) fixed; }
   #agenda h1, #agenda h2, #agenda h3, #agenda h4, #agenda h5, #agenda h6, #agenda .subheader, #agenda p, #agenda blockquote, #agenda a, #agenda small {
     color: #222222; }
   #agenda code, #agenda abbr, #agenda acronym {
     color: black; }
   #agenda .timings .row {
-    border-bottom: 1px dashed #aee0f5;
+    border-bottom: 1px dashed #89dfff;
     margin-bottom: 0;
     -webkit-transition: background-color 300ms ease-out;
     -moz-transition: background-color 300ms ease-out;
@@ -2286,16 +2288,21 @@ body {
       position: relative; }
       #agenda .timings .row .summary a {
         color: white; }
-      #agenda .timings .row .summary.with-image p {
-        padding-right: 3.15em; }
       #agenda .timings .row .summary.with-image img {
-        position: absolute;
-        max-width: 3em;
-        right: 1em;
-        top: 50%;
-        margin-top: -1.5em; }
+        display: none; }
+      @media only screen and (min-width: 1280px) {
+        #agenda .timings .row .summary.with-image p {
+          padding-right: 3.15em; }
+        #agenda .timings .row .summary.with-image img {
+          display: block;
+          position: absolute;
+          max-width: 3em;
+          right: 1em;
+          top: 50%;
+          margin-top: -1.5em;
+          border-radius: 50%; } }
     #agenda .timings .row:hover {
-      background-color: #53beea; }
+      background-color: #23c3ff; }
 
 #location {
   color: white;
@@ -2329,18 +2336,22 @@ body {
     transition: color 300ms ease-out; }
     #about .social a:hover, #about .social a:focus {
       color: white;
-      background-color: #26ade4; }
-  #about blockquote p {
-    text-align: left;
-    font-size: 1em;
-    margin-bottom: 1em; }
-  #about blockquote p + p {
-    font-size: 0.8125em; }
-  #about blockquote a {
-    color: #26ade4; }
-  #about blockquote cite {
-    margin: 0.25em 0;
-    text-align: right; }
+      background-color: #00aeef; }
+  #about blockquote {
+    border: 0;
+    padding: 0;
+    margin: 0; }
+    #about blockquote p {
+      text-align: left;
+      font-size: 1em;
+      margin-bottom: 1em; }
+    #about blockquote small {
+      font-size: 0.8125em; }
+    #about blockquote a {
+      color: #00aeef; }
+    #about blockquote cite {
+      margin: 0.25em 0;
+      text-align: right; }
 
 #map {
   width: 100%;
@@ -2371,13 +2382,13 @@ body {
     color: black; }
   #archive .grid a {
     display: block;
-    color: #26ade4;
+    color: #00aeef;
     border-left: 1px dashed #222222;
     border-right: 1px dashed #222222;
     border-radius: 1em; }
     #archive .grid a:hover {
       color: white;
-      background: #26ade4; }
+      background: #00aeef; }
     #archive .grid a span {
       display: block;
       padding: 0.5em 0; }
@@ -2400,4 +2411,4 @@ body {
     #footer .row p {
       line-height: 1em; }
       #footer .row p a {
-        color: #6ac7ec; }
+        color: #3dcaff; }

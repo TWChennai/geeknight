@@ -45,6 +45,7 @@ body
       width: auto
 
       span
+        font-weight: normal
         display: inline-block
         color: $blue
 
@@ -60,7 +61,8 @@ body
   img
     display: block
     margin: 0 auto
-    max-width: 14em
+    width: 14em
+    max-width: 80%
 
   .countdown h4
     color: $alt-fg
@@ -145,15 +147,21 @@ body
           color: $alt-fg
 
         &.with-image
-          p
-            padding-right: 3.15em
-
           img
-            position: absolute
-            max-width: 3em
-            right: 1em
-            top: 50%
-            margin-top: -1.5em
+            display: none
+
+          @media #{$medium}
+            p
+              padding-right: 3.15em
+
+            img
+              display: block
+              position: absolute
+              max-width: 3em
+              right: 1em
+              top: 50%
+              margin-top: -1.5em
+              border-radius: 50%
 
       &:hover
         background-color: lighten($main-bg, 10%)
@@ -195,12 +203,16 @@ body
         background-color: $alt-fg
 
   blockquote
+    border: 0
+    padding: 0
+    margin: 0
+
     p
       text-align: left
       font-size: 1em
       margin-bottom: 1em
 
-    p+p
+    small
       font-size: $blockquote-cite-font-size
 
     a

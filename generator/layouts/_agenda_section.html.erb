@@ -8,9 +8,15 @@
           <div class="row">
             <div class="small-4 columns time"><p><%= agenda[:time] %> pm</p></div>
             <div class="small-8 columns summary <%= "with-image" if agenda[:image] %>"><p>
-                <%= agenda[:name] %> <br />
+                <%= agenda[:title] %>
+                <% if agenda[:subtitle] %>
+                    <br /><small><%= agenda[:subtitle] %></small>
+                <% end %>
+                <% if agenda[:image] %>
+                    <img src="img/speaker/<%= agenda[:image] %>" alt="<%= agenda[:speaker] %>" />
+                <% end %>
                 <% if agenda[:speaker] %>
-                    <small>by
+                    <br /><small class="speaker">By:
                     <% if agenda[:profile] %>
                     <a href="<%= agenda[:profile] %>" rel="nofollow" target="_blank"><%= agenda[:speaker] %></a>
                     <% else %>
@@ -18,8 +24,13 @@
                     <% end %>
                     </small>
                 <% end %>
-                <% if agenda[:image] %>
-                    <img src="img/speaker/<%= agenda[:image] %>" alt="<%= agenda[:speaker] %>" />
+                <% if agenda[:resources] %>
+                    <br /><small class="resources">Resources:
+                    <% agenda[:resources].each_with_index do |resource, i| %>
+                        <a href="<%= resource[:url] %>" rel="nofollow" target="_blank"><%= resource[:title] %></a>
+                        <%= ' &bull; ' if i != agenda[:resources].length - 1 %>
+                    <% end %>
+                    </small>
                 <% end %>
             </p></div>
           </div>
