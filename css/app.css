@@ -2237,22 +2237,31 @@ body {
         top: 0; }
   #intro .date h4 {
     border-top: 1px dashed #222222; }
-  #intro .actions h4 a {
-    -webkit-transition: background-color 300ms ease-out;
-    -moz-transition: background-color 300ms ease-out;
-    transition: background-color 300ms ease-out;
-    background-color: #00aeef;
-    border-color: #0089bc;
-    color: white;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    color: white;
-    display: block;
-    padding: 0.25em 0; }
-    #intro .actions h4 a:hover, #intro .actions h4 a:focus {
-      background-color: #0089bc; }
-    #intro .actions h4 a:hover, #intro .actions h4 a:focus {
-      color: white; }
+  #intro .actions {
+    padding-top: 1em; }
+    #intro .actions h4 a {
+      -webkit-transition: background-color 300ms ease-out;
+      -moz-transition: background-color 300ms ease-out;
+      transition: background-color 300ms ease-out;
+      background-color: #00aeef;
+      border-color: #0089bc;
+      color: white;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      color: white;
+      display: block;
+      padding: 0.25em;
+      margin-bottom: 0.25em; }
+      #intro .actions h4 a:hover, #intro .actions h4 a:focus {
+        background-color: #0089bc; }
+      #intro .actions h4 a:hover, #intro .actions h4 a:focus {
+        color: white; }
+      @media only screen and (max-width: 768px) {
+        #intro .actions h4 a {
+          padding: 0.5em; } }
+    #intro .actions h6.delimiter {
+      color: #a2a2a2;
+      line-height: 2.5; }
 
 #agenda {
   color: #222222;
