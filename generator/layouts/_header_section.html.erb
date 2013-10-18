@@ -10,7 +10,14 @@
                     <li><a href="http://www.thoughtworks.com" target="_blank">ThoughtWorks</a></li>
                 </ul>
                 <ul class="right">
-                    <%= yield %>
+                    <li><a href="<%= latest[:participate] %>" target="_blank" rel="nofollow">Participate</a></li>
+                    <li><a href="<%= latest[:talk] %>" target="_blank" rel="nofollow">Talk</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#agenda">Agenda</a></li>
+                    <% if @item == latest %>
+                        <li><a href="#location">Location</a></li>
+                    <% end %>
+                    <% if archives.any? %><li><a href="#archive">Previous Editions</a></li><% end %>
                 </ul>
             </section>
         </nav>

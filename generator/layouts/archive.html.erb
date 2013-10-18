@@ -24,11 +24,7 @@
 
     <%= render '_archive_section' %>
 
-    <% render '_header_section' do %>
-        <li><a href="#about">About</a></li>
-        <li><a href="#agenda">Agenda</a></li>
-        <% if archives.any? %><li><a href="#archive">Previous Editions</a></li><% end %>
-    <% end %>
+    <%= render '_header_section' %>
 
     <%= render '_footer_section' %>
 <% end %>

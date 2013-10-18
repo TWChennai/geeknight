@@ -2393,19 +2393,15 @@ body {
     display: block;
     color: #00aeef;
     border-left: 1px dashed #222222;
-    border-right: 1px dashed #222222;
-    border-radius: 1em; }
+    border-right: 1px dashed #222222; }
     #archive .grid a:hover {
       color: white;
       background: #00aeef; }
     #archive .grid a span {
       display: block;
-      padding: 0.5em 0; }
+      padding: 0.25em 0; }
     #archive .grid a .version {
-      border-bottom: 1px dashed #222222;
-      margin-bottom: 1px; }
-    #archive .grid a .date {
-      border-top: 1px dashed #222222; }
+      border-bottom: 1px dashed #222222; }
 
 #footer {
   color: #a6a6a6;
