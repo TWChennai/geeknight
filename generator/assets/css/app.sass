@@ -133,52 +133,48 @@ body
     .row
       border-bottom: 1px dashed lighten($main-bg, 30%)
       margin-bottom: 0
+      padding: .5em 0
+      overflow: hidden
       @include single-transition(background-color)
-
-      p
-        padding: .5em 0
-        margin-bottom: 0
-
-      &.talk p
-        color: $alt-fg
 
       &:last-child
         border-bottom: 0
 
-      .time
-        text-align: right
-
-        p::after
-          display: block
-          position: absolute
-          top: .5em
-          right: -.5em
-          content: '\00A7'
-
       .summary
-        text-align: left
-        overflow: hidden
         position: relative
 
         a
           color: $alt-fg
+        p
+          margin-bottom: 0
+        img
+          display: block
+          margin: $paragraph-margin-bottom auto
+          max-width: 3em
+          border-radius: 50%
 
-        &.with-image
+      @media #{$small}
+        p
+          margin-bottom: 0
+
+        .time
+          text-align: right
+          p:after
+            display: block
+            content: '\00A7'
+            position: absolute
+            top: 0
+            right: -.25em
+
+        .summary
+          text-align: left
+          p
+            padding-right: 3.15em
           img
-            display: none
-
-          @media #{$medium}
-            p
-              padding-right: 3.15em
-
-            img
-              display: block
-              position: absolute
-              max-width: 3em
-              right: 1em
-              top: 50%
-              margin-top: -1.5em
-              border-radius: 50%
+            position: absolute
+            right: 1em
+            top: 50%
+            margin-top: -1.5em
 
       &:hover
         background-color: lighten($main-bg, 10%)

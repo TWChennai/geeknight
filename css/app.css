@@ -2290,43 +2290,44 @@ body {
   #agenda .timings .row {
     border-bottom: 1px dashed #89dfff;
     margin-bottom: 0;
+    padding: 0.5em 0;
+    overflow: hidden;
     -webkit-transition: background-color 300ms ease-out;
     -moz-transition: background-color 300ms ease-out;
     transition: background-color 300ms ease-out; }
-    #agenda .timings .row p {
-      padding: 0.5em 0;
-      margin-bottom: 0; }
-    #agenda .timings .row.talk p {
-      color: white; }
     #agenda .timings .row:last-child {
       border-bottom: 0; }
-    #agenda .timings .row .time {
-      text-align: right; }
-      #agenda .timings .row .time p::after {
-        display: block;
-        position: absolute;
-        top: 0.5em;
-        right: -0.5em;
-        content: "\00A7"; }
     #agenda .timings .row .summary {
-      text-align: left;
-      overflow: hidden;
       position: relative; }
       #agenda .timings .row .summary a {
         color: white; }
-      #agenda .timings .row .summary.with-image img {
-        display: none; }
-      @media only screen and (min-width: 1280px) {
-        #agenda .timings .row .summary.with-image p {
-          padding-right: 3.15em; }
-        #agenda .timings .row .summary.with-image img {
+      #agenda .timings .row .summary p {
+        margin-bottom: 0; }
+      #agenda .timings .row .summary img {
+        display: block;
+        margin: 0.5em auto;
+        max-width: 3em;
+        border-radius: 50%; }
+    @media only screen and (min-width: 768px) {
+      #agenda .timings .row p {
+        margin-bottom: 0; }
+      #agenda .timings .row .time {
+        text-align: right; }
+        #agenda .timings .row .time p:after {
           display: block;
+          content: "\00A7";
           position: absolute;
-          max-width: 3em;
+          top: 0;
+          right: -0.25em; }
+      #agenda .timings .row .summary {
+        text-align: left; }
+        #agenda .timings .row .summary p {
+          padding-right: 3.15em; }
+        #agenda .timings .row .summary img {
+          position: absolute;
           right: 1em;
           top: 50%;
-          margin-top: -1.5em;
-          border-radius: 50%; } }
+          margin-top: -1.5em; } }
     #agenda .timings .row:hover {
       background-color: #23c3ff; }
 
