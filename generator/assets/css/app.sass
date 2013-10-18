@@ -81,16 +81,20 @@ body
         height: 100%
         @include single-transition(top)
 
-      #tick
-        top: 0
-      #tock
-        top: 100%
+      @mixin tickerState($current, $previous, $next)
+        &.#{$current}
+          ##{$current}
+            visibility: visible
+            top: 0
+          ##{$previous}
+            top: -100%
+          ##{$next}
+            visibility: hidden
+            top: 100%
 
-      &.odd
-        #tick
-          top: -100%
-        #tock
-          top: 0
+      @include tickerState("tick", "tock", "tack")
+      @include tickerState("tock", "tack", "tick")
+      @include tickerState("tack", "tick", "tock")
 
   .date h4
     border-top: 1px dashed $main-fg
@@ -98,14 +102,16 @@ body
   .actions
     padding-top: 1em
 
-    h4 a
-      @include single-transition(background-color)
-      @include button-style($alt-fg)
-      @include radius
-      color: $main-bg
+    a
       display: block
-      padding: .25em
-      margin-bottom: .25em
+
+      h4
+        @include single-transition(background-color)
+        @include button-style($alt-fg)
+        @include radius
+        color: $main-bg
+        padding: .25em
+        margin-bottom: .25em
 
       @media only screen and (max-width:#{$small-screen})
         padding: .5em

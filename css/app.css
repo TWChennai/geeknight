@@ -2227,37 +2227,54 @@ body {
         -webkit-transition: top 300ms ease-out;
         -moz-transition: top 300ms ease-out;
         transition: top 300ms ease-out; }
-      #intro .counter h4#seconds #tick {
+      #intro .counter h4#seconds.tick #tick {
+        visibility: visible;
         top: 0; }
-      #intro .counter h4#seconds #tock {
-        top: 100%; }
-      #intro .counter h4#seconds.odd #tick {
+      #intro .counter h4#seconds.tick #tock {
         top: -100%; }
-      #intro .counter h4#seconds.odd #tock {
+      #intro .counter h4#seconds.tick #tack {
+        visibility: hidden;
+        top: 100%; }
+      #intro .counter h4#seconds.tock #tock {
+        visibility: visible;
         top: 0; }
+      #intro .counter h4#seconds.tock #tack {
+        top: -100%; }
+      #intro .counter h4#seconds.tock #tick {
+        visibility: hidden;
+        top: 100%; }
+      #intro .counter h4#seconds.tack #tack {
+        visibility: visible;
+        top: 0; }
+      #intro .counter h4#seconds.tack #tick {
+        top: -100%; }
+      #intro .counter h4#seconds.tack #tock {
+        visibility: hidden;
+        top: 100%; }
   #intro .date h4 {
     border-top: 1px dashed #222222; }
   #intro .actions {
     padding-top: 1em; }
-    #intro .actions h4 a {
-      -webkit-transition: background-color 300ms ease-out;
-      -moz-transition: background-color 300ms ease-out;
-      transition: background-color 300ms ease-out;
-      background-color: #00aeef;
-      border-color: #0089bc;
-      color: white;
-      -webkit-border-radius: 3px;
-      border-radius: 3px;
-      color: white;
-      display: block;
-      padding: 0.25em;
-      margin-bottom: 0.25em; }
-      #intro .actions h4 a:hover, #intro .actions h4 a:focus {
-        background-color: #0089bc; }
-      #intro .actions h4 a:hover, #intro .actions h4 a:focus {
-        color: white; }
+    #intro .actions a {
+      display: block; }
+      #intro .actions a h4 {
+        -webkit-transition: background-color 300ms ease-out;
+        -moz-transition: background-color 300ms ease-out;
+        transition: background-color 300ms ease-out;
+        background-color: #00aeef;
+        border-color: #0089bc;
+        color: white;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        color: white;
+        padding: 0.25em;
+        margin-bottom: 0.25em; }
+        #intro .actions a h4:hover, #intro .actions a h4:focus {
+          background-color: #0089bc; }
+        #intro .actions a h4:hover, #intro .actions a h4:focus {
+          color: white; }
       @media only screen and (max-width: 768px) {
-        #intro .actions h4 a {
+        #intro .actions a {
           padding: 0.5em; } }
     #intro .actions h6.delimiter {
       color: #a2a2a2;

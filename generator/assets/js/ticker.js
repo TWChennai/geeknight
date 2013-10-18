@@ -4,7 +4,10 @@ var targetTS = targetDate.getTime(),
     $m = document.getElementById("minutes"),
     $s = document.getElementById("seconds"),
     $tick = document.getElementById("tick"),
-    $tock = document.getElementById("tock");
+    $tock = document.getElementById("tock"),
+    $tack = document.getElementById("tack"),
+    $sElements = [ $tick, $tock, $tack ],
+    $sClasses = [ "tick", "tock", "tack" ];
 
 function updateCountDown() {
   var currentDate = new Date().getTime();
@@ -23,13 +26,9 @@ function updateCountDown() {
   $h.innerHTML = hours;
   $m.innerHTML = minutes;
 
-  if (seconds % 2 == 0) {
-    $tick.innerHTML = seconds;
-    $s.className = "";
-  } else {
-    $tock.innerHTML = seconds;
-    $s.className = "odd";
-  }
+  var i = seconds % 3;
+  $s.className = $sClasses[i];
+  $sElements[i].innerHTML = seconds;
 }
 
 updateCountDown();

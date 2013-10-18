@@ -30,7 +30,9 @@
             <div class="small-6 large-2 columns counter">
                 <h4 id="seconds">
                     &nbsp; <!-- the nbsp is required -->
-                    <span id="tick"></span><span id="tock"></span>
+                    <span id="tick"></span>
+                    <span id="tock"></span>
+                    <span id="tack"></span>
                 </h4>
                 <p>seconds</p>
             </div>
@@ -38,7 +40,9 @@
 
         <div class="row actions">
             <div class="large-5 columns">
-                <h4><a href="<%= @item[:participate] %>" id="participate" target="_blank" rel="nofollow">Participate</a></h4>
+                <a href="<%= @item[:participate] %>" id="participate" target="_blank" rel="nofollow">
+                    <h4>Participate</h4>
+                </a>
                 <p>to learn exciting new stuff</p>
             </div>
             <div class="large-2 columns">
@@ -46,7 +50,9 @@
                 <h6 class="hide-for-small delimiter">&laquo; or &raquo;</h6>
             </div>
             <div class="large-5 columns">
-                <h4><a href="<%= @item[:talk] %>" target="_blank" rel="nofollow">Talk</a></h4>
+                <a href="<%= @item[:talk] %>" target="_blank" rel="nofollow">
+                    <h4>Talk</h4>
+                </a>
                 <p>to share exciting new stuff</p>
             </div>
         </div>
