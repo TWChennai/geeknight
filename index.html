@@ -67,7 +67,8 @@
 
         <div class="row actions">
             <div class="large-5 columns">
-                <a href="http://info.thoughtworks.com/geek_night_chennai_october_29_attendee_registration.html" id="participate" target="_blank" rel="nofollow">
+                <a href="http://info.thoughtworks.com/geek_night_chennai_october_29_attendee_registration.html" id="participate" target="_blank" rel="nofollow"
+                   onclick="ga.push(['_trackEvent','Register','Participate','Participate'])">
                     <h4>Participate</h4>
                 </a>
                 <p>to learn exciting new stuff</p>
@@ -77,7 +78,8 @@
                 <h6 class="hide-for-small delimiter">&laquo; or &raquo;</h6>
             </div>
             <div class="large-5 columns">
-                <a href="http://info.thoughtworks.com/geek_night_chennai_october_29_speaker_registration.html" target="_blank" rel="nofollow">
+                <a href="http://info.thoughtworks.com/geek_night_chennai_october_29_speaker_registration.html" target="_blank" rel="nofollow"
+                   onclick="ga.push(['_trackEvent','Register','Talk','Talk'])">
                     <h4>Talk</h4>
                 </a>
                 <p>to share exciting new stuff</p>
@@ -314,8 +316,18 @@
                     <li><a href="http://www.thoughtworks.com" target="_blank">ThoughtWorks</a></li>
                 </ul>
                 <ul class="right">
-                    <li><a href="http://info.thoughtworks.com/geek_night_chennai_october_29_attendee_registration.html" target="_blank" rel="nofollow">Participate</a></li>
-                    <li><a href="http://info.thoughtworks.com/geek_night_chennai_october_29_speaker_registration.html" target="_blank" rel="nofollow">Talk</a></li>
+                    <li>
+                        <a href="http://info.thoughtworks.com/geek_night_chennai_october_29_attendee_registration.html" target="_blank" rel="nofollow"
+                           onclick="ga.push(['_trackEvent','Register','Participate','Participate'])">
+                            Participate
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://info.thoughtworks.com/geek_night_chennai_october_29_speaker_registration.html" target="_blank" rel="nofollow"
+                           onclick="ga.push(['_trackEvent','Register','Talk','Talk'])">
+                            Talk
+                        </a>
+                    </li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#agenda">Agenda</a></li>
                     
@@ -337,8 +349,9 @@
                 <a rel="nofollow" target="_blank" href="//thoughtworks.com">ThoughtWorks</a><br />
                 Built with
                 <a rel="nofollow" target="_blank" href="//html5boilerplate.com">HTML5 Boilerplate</a>,
-                <a rel="nofollow" target="_blank" href="//foundation.zurb.com">Zurb Foundation</a> &amp;
-                <a rel="nofollow" target="_blank" href="//leafletjs.com">Leaflet</a>
+                <a rel="nofollow" target="_blank" href="//foundation.zurb.com">Zurb Foundation</a>,
+                <a rel="nofollow" target="_blank" href="//leafletjs.com">Leaflet</a> &amp;
+                <a rel="nofollow" target="_blank" href="//nanoc.ws">Nanoc</a>
                 <br />
                 Assets from <a rel="nofollow" target="_blank" href="//openstreetmap.org">OpenStreetMap</a>,
                 <a rel="nofollow" target="_blank" href="//fontello.com">Fontello</a> &amp;
