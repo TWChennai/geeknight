@@ -1,5 +1,5 @@
 @charset "UTF-8"
-@import "normalize", "animate", "variables", "foundation/components/global", "foundation/components/type", "foundation/components/grid", "foundation/components/block-grid", "foundation/components/visibility", "foundation/components/top-bar", "foundation/components/buttons"
+@import "normalize", "variables", "foundation/components/global", "foundation/components/type", "foundation/components/grid", "foundation/components/block-grid", "foundation/components/visibility", "foundation/components/top-bar", "foundation/components/buttons"
 
 body
   padding-top: $topbar-height
@@ -112,12 +112,6 @@ body
         color: $main-bg
         padding: .25em
         margin-bottom: .25em
-
-      &:hover
-        -webkit-animation-name: tada
-        -moz-animation-name: tada
-        -o-animation-name: tada
-        animation-name: tada
 
       @media only screen and (max-width:#{$small-screen})
         padding: .5em

@@ -14,7 +14,7 @@
 #   because “*” matches zero or more characters.
 
 compile 'css/app.sass' do
-  filter :sass, filename: item.raw_filename, load_paths: [ '.', 'assets/css/' ], cache: false, style: :compact
+  filter :sass, filename: item.raw_filename, load_paths: [ '.', 'assets/css/' ], cache: false
 end
 
 compile '*' do
