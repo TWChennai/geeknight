@@ -14,7 +14,7 @@
 #   because “*” matches zero or more characters.
 
 compile 'css/app.sass' do
-  filter :sass, filename: item.raw_filename, load_paths: [ '.', 'assets/css/' ], cache: false
+  filter :sass, filename: item.raw_filename, load_paths: [ '.', 'assets/css/' ], cache: false, style: :compact
 end
 
 compile '*' do
@@ -24,6 +24,11 @@ compile '*' do
     filter :erb
     layout start_date.future? ? 'default' : 'archive'
   end
+end
+
+compile "/", rep: :index do
+  filter :erb
+  layout start_date.future? ? 'default' : 'archive'
 end
 
 route 'css/*.scss' do
@@ -40,8 +45,12 @@ route '*' do
   if item.binary?
     item.identifier.chop
   else
-    (item.identifier == '/' ? '/index' : item.identifier.chop) + '.html'
+    start_date.strftime('/%b%Y.html').downcase
   end
+end
+
+route '/', rep: :index do
+  '/index.html'
 end
 
 layout '*', :erb
