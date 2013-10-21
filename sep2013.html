@@ -29,7 +29,8 @@
     <section id="intro" class="feature">
         <div class="row">
             <div class="large-12 columns">
-                <a href="http://www.thoughtworks.com" target="_blank">
+                <a href="http://www.thoughtworks.com" target="_blank"
+                   onclick="ga('send', 'event', 'tw', 'tw')">
                     <img src="./img/tw-logo.png" alt="ThoughtWorks" align="center" />
                 </a>
                 <h1>Geek Night Chennai</h1>
@@ -184,10 +185,10 @@
     <section id="about" class="feature">
     <div class="row">
         <div class="large-12 columns social">
-            <a rel="nofollow" href="https://www.facebook.com/GeeknightChennai?viewer_id=100006569229519" target="_blank" title="Like us on FaceBook"><i class="icon-like"></i></a>
-            <a rel="nofollow" href="https://www.facebook.com/groups/chennaigeeks/" target="_blank"><i class="icon-facebook" title="FaceBook discussion group"></i></a>
-            <a rel="nofollow" href="https://twitter.com/intent/tweet?url=twchennai.github.io/geeknight&text=Whats+up&hashtags=geeknightchennai" target="_blank" title="Tweet hashtag #geeknightchennai"><i class="icon-twitter"></i></a>
-            <a rel="nofollow" href="mailto:geeknight.chennai@thoughtworks.com" title="Email us"><i class="icon-mail"></i></a>
+            <a rel="nofollow" href="https://www.facebook.com/GeeknightChennai?viewer_id=100006569229519" target="_blank" title="Like us on FaceBook" onclick="ga('send', 'event', 'social', 'like')"><i class="icon-like"></i></a>
+            <a rel="nofollow" href="https://www.facebook.com/groups/chennaigeeks/" target="_blank"><i class="icon-facebook" title="FaceBook discussion group" onclick="ga('send', 'event', 'social', 'facebook')"></i></a>
+            <a rel="nofollow" href="https://twitter.com/intent/tweet?url=twchennai.github.io/geeknight&text=Whats+up&hashtags=geeknightchennai" target="_blank" title="Tweet hashtag #geeknightchennai" onclick="ga('send', 'event', 'social', 'twitter')"><i class="icon-twitter"></i></a>
+            <a rel="nofollow" href="mailto:geeknight.chennai@thoughtworks.com" title="Email us" onclick="ga('send', 'event', 'social', 'email')"><i class="icon-mail"></i></a>
             <!-- NOTE: Last video link is line-wrapping in small screens like iOS a rel="nofollow" href="#" title="Videos (coming soon)"><i class="icon-youtube"></i></a -->
         </div>
     </div>
@@ -250,7 +251,9 @@
             </ul>
             <section class="top-bar-section">
                 <ul class="left">
-                    <li><a href="http://www.thoughtworks.com" target="_blank">ThoughtWorks</a></li>
+                    <li><a href="http://www.thoughtworks.com" target="_blank"
+                           onclick="ga('send', 'event', 'tw', 'tw')">ThoughtWorks</a>
+                    </li>
                 </ul>
                 <ul class="right">
                     <li>
