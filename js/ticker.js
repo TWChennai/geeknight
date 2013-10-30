@@ -12,6 +12,7 @@ var targetTS = targetDate.getTime(),
 function updateCountDown() {
   var currentDate = new Date().getTime();
   var secondsLeft = (targetTS - currentDate) / 1000;
+  if (secondsLeft < 0) secondsLeft = 0;
 
   var days = parseInt(secondsLeft / 86400);
   secondsLeft = secondsLeft % 86400;
