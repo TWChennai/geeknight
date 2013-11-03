@@ -11,22 +11,22 @@ $base-font-size: 140% !default;
 $body-bg: $white !default;
 $body-font-color: $dark !default;
 $body-font-weight: 300 !default;
-$body-font-family: "Segoe UI Light", Helvetica, "Segoe UI", Arial, sans-serif !default;
+$body-font-family: Raleway, "Segoe UI Light", Helvetica, "Segoe UI", Arial, sans-serif !default;
 
 $header-top-margin: 0 !default;
 $header-bottom-margin: .1em !default;
 $header-font-family: $body-font-family;
-$header-font-weight: 300 !default;
+$header-font-weight: $body-font-weight !default;
 
 $paragraph-font-size: .75em !default;
 $paragraph-margin-bottom: .5em !default;
-$paragraph-font-weight: 300 !default;
+$paragraph-font-weight: $body-font-weight !default;
 $paragraph-line-height: 1.25 !default;
 
 $topbar-bg-color: darken($white, 5%);
 $topbar-link-color: $dark;
 $topbar-link-bg-hover: $blue;
-$topbar-title-weight: 300 !default;
-$topbar-link-weight: 300 !default;
+$topbar-title-weight: $body-font-weight !default;
+$topbar-link-weight: $body-font-weight !default;
 
 @import "foundation/variables";

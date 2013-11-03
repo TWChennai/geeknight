@@ -1,6 +1,6 @@
 <% render '_layout', title: start_date.strftime("%b %Y") do %>
     <section id="intro" class="feature">
-        <div class="row">
+        <div class="row logo">
             <div class="large-12 columns">
                 <a href="http://www.thoughtworks.com" target="_blank"
                    onclick="ga('send', 'event', 'tw', 'tw')">
@@ -94,11 +94,4 @@
 
     <script src="js/skrollr.min.js"></script>
     <script>var s = skrollr.init()</script>
-
-    <link rel="stylesheet" href="//cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
-    <!--[if lte IE 8]>
-        <link rel="stylesheet" href="//cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
-    <![endif]-->
-    <script src="//cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
-    <script src="js/map.js"></script>
 <% end %>

@@ -1,13 +1,13 @@
 <% render '_layout', title: start_date.strftime("%b %Y") do %>
     <section id="intro" class="feature">
-        <div class="row">
+        <div class="row logo">
             <div class="large-12 columns">
                 <a href="http://www.thoughtworks.com" target="_blank"
                    onclick="ga('send', 'event', 'tw', 'tw')">
                     <img src="./img/tw-logo.png" alt="ThoughtWorks" align="center" />
                 </a>
                 <h1>Geek Night Chennai</h1>
-                <h3>Flashback</h3>
+                <h5>Flashback</h5>
             </div>
         </div>
 
@@ -28,7 +28,4 @@
     <%= render '_header_section' %>
 
     <%= render '_footer_section' %>
-
-    <script src="js/skrollr.min.js"></script>
-    <script>var s = skrollr.init()</script>
 <% end %>

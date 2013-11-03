@@ -7,12 +7,20 @@ var targetTS = targetDate.getTime(),
     $tock = document.getElementById("tock"),
     $tack = document.getElementById("tack"),
     $sElements = [ $tick, $tock, $tack ],
-    $sClasses = [ "tick", "tock", "tack" ];
+    $sClasses = [ "tick", "tock", "tack" ],
+    countdownTimer = null;
 
 function updateCountDown() {
   var currentDate = new Date().getTime();
   var secondsLeft = (targetTS - currentDate) / 1000;
-  if (secondsLeft < 0) secondsLeft = 0;
+  if (secondsLeft < 0) {
+    $d.innerHTML = "&times;";
+    $h.innerHTML = "&times;";
+    $m.innerHTML = "&times;";
+    $s.innerHTML = "&times;";
+    clearInterval(countdownTimer);
+    return;
+  }
 
   var days = parseInt(secondsLeft / 86400);
   secondsLeft = secondsLeft % 86400;
@@ -33,4 +41,4 @@ function updateCountDown() {
 }
 
 updateCountDown();
-setInterval(updateCountDown, 1000);
+countdownTimer = setInterval(updateCountDown, 1000);

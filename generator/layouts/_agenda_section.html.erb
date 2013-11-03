@@ -1,13 +1,19 @@
 <section id="agenda" class="feature">
-    <div class="row">
+    <div class="row" data-bottom="transform:translateY(-10em)" data--100-bottom="transform:translateY(0em)">
         <h2>Agenda</h2>
     </div>
 
     <div class="timings">
-        <% @item[:agenda].each do |agenda| %>
+        <% @item[:agenda].each_with_index do |agenda, i| %>
           <div class="row">
-            <div class="large-4 columns time"><p><%= agenda[:time] %> pm</p></div>
-            <div class="large-8 columns summary">
+            <div class="large-4 columns time" id="agenda-<%= i %>"
+                 data-bottom="transform:rotateX(90deg) scale(0);opacity:0"
+                 data--200-bottom="transform:rotateX(0) scale(1);opacity:1">
+                <p><%= agenda[:time] %> pm</p>
+            </div>
+            <div class="large-8 columns summary" data-anchor-target="#agenda-<%= i %>"
+                 data-bottom="transform:rotateX(90deg) scale(0);opacity:0"
+                 data--200-bottom="transform:rotateX(0) scale(1);opacity:1">
                 <p><%= agenda[:title] %></p>
                 <% if agenda[:subtitle] %>
                     <p><small><%= agenda[:subtitle] %></small></p>
@@ -32,7 +38,7 @@
                     <% end %>
                     </small></p>
                 <% end %>
-            </p></div>
+            </div>
           </div>
         <% end %>
       </div>

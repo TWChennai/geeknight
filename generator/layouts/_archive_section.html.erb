@@ -1,6 +1,6 @@
 <% if archives.any? %>
 <section id="archive" class="feature">
-    <div class="row">
+    <div class="row" data-bottom="transform:translateY(-10em)" data--100-bottom="transform:translateY(0em)">
         <h2>Previous Editions</h2>
     </div>
 
@@ -9,7 +9,7 @@
             <ul class="grid small-block-grid-2 large-block-grid-4">
                 <% archives.each do |archive| %>
                 <li>
-                    <a href=".<%= archive.path %>">
+                    <a href=".<%= archive.path %>" data-bottom="transform:rotate(360deg) scale(0)" data--100-bottom="transform:rotate(0deg) scale(1)">
                         <span class="version">
                             <%= archive[:edition] %><sup><%= archive[:edition].ordinal %></sup> edition
                         </span>

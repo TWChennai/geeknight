@@ -31,14 +31,17 @@ compile "/", rep: :index do
   layout start_date.future? ? 'default' : 'archive'
 end
 
-route 'css/*.scss' do
-  # Ignore all SCSS files, we'll process only app.SASS
-  nil
-end
-
 route 'css/app.sass' do
   # Compile app.SASS to app.CSS
   '/css/app.css'
+end
+
+route 'css/**/_*' do
+  nil
+end
+
+route 'css/_*' do
+  nil
 end
 
 route '*' do
