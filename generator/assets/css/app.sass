@@ -1,9 +1,6 @@
 @charset "UTF-8"
 @import "normalize", "variables", "foundation/components/global", "foundation/components/type", "foundation/components/grid", "foundation/components/block-grid", "foundation/components/visibility", "foundation/components/top-bar", "foundation/components/buttons", "animate"
 
-body
-  padding-top: $topbar-height
-
 @media only screen and (max-width:#{$medium-screen})
   body
     font-size: 125%
@@ -11,7 +8,6 @@ body
 @media only screen and (max-width:#{$small-screen})
   body
     font-size: 112.5%
-    padding-top: 0
 
 =override-colors($main-fg,$main-bg)
   color: $main-fg
@@ -61,9 +57,12 @@ body
   $main-fg: $dark
   $main-bg: $white
   $alt-fg: $blue
-  @include override-colors($main-fg,$main-bg)
+  +override-colors($main-fg,$main-bg)
   border-radius: 0
   margin-top: 0
+
+  @media #{$small}
+    margin-top: $topbar-height
 
   .logo
     img
@@ -97,9 +96,9 @@ body
         position: absolute
         width: 100%
         height: 100%
-        @include single-transition(top)
+        +single-transition(top)
 
-      @mixin tickerState($current, $previous, $next)
+      =tickerOrder($current, $previous, $next)
         &.#{$current}
           ##{$current}
             visibility: visible
@@ -110,9 +109,9 @@ body
             visibility: hidden
             top: 100%
 
-      @include tickerState("tick", "tock", "tack")
-      @include tickerState("tock", "tack", "tick")
-      @include tickerState("tack", "tick", "tock")
+      +tickerOrder("tick", "tock", "tack")
+      +tickerOrder("tock", "tack", "tick")
+      +tickerOrder("tack", "tick", "tock")
 
   .date h4
     border-top: 1px dashed $main-fg
@@ -128,9 +127,9 @@ body
         +animate(tada, 1s)
 
       h4
-        @include single-transition(background-color)
-        @include button-style($alt-fg)
-        @include radius
+        +single-transition(background-color)
+        +button-style($alt-fg)
+        +radius
         color: $main-bg
         padding: .25em
         margin-bottom: .25em
@@ -149,7 +148,7 @@ body
   $main-fg: $dark
   $main-bg: $blue
   $alt-fg: $white
-  @include override-colors($main-fg,$main-bg)
+  +override-colors($main-fg,$main-bg)
 
   .timings
     .row
@@ -157,7 +156,7 @@ body
       margin-bottom: 0
       padding: .5em 0
       overflow: hidden
-      @include single-transition(background-color)
+      +single-transition(background-color)
 
       &:last-child
         border-bottom: 0
@@ -213,7 +212,7 @@ body
 #location
   $main-fg: $white
   $main-bg: $dark
-  @include override-colors($main-fg,$main-bg)
+  +override-colors($main-fg,$main-bg)
   background-image: url(../img/dark-bg.jpg)
 
   .row
@@ -239,7 +238,7 @@ body
   $main-fg: $white
   $main-bg: $dark
   $alt-fg: $blue
-  @include override-colors($main-fg,$main-bg)
+  +override-colors($main-fg,$main-bg)
   background-image: url(../img/dark-bg.jpg)
 
   .social
@@ -298,7 +297,7 @@ body
   $main-fg: $dark
   $main-bg: $white
   $alt-fg: $blue
-  @include override-colors($main-fg,$main-bg)
+  +override-colors($main-fg,$main-bg)
 
   .grid a
     display: block
@@ -324,7 +323,7 @@ body
   $main-fg: darken($topbar-bg-color, 30%)
   $main-bg: $topbar-bg-color
   $alt-fg: lighten($blue, 15%)
-  @include override-colors($main-fg,$main-bg)
+  +override-colors($main-fg,$main-bg)
 
   border-radius: 0
   margin-top: 0

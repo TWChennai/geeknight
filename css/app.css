@@ -4219,16 +4219,12 @@ button, .button {
   100% {
     transform: scale(1) rotate(0); } }
 
-body {
-  padding-top: 45px; }
-
 @media only screen and (max-width: 1280px) {
   body {
     font-size: 125%; } }
 @media only screen and (max-width: 768px) {
   body {
-    font-size: 112.5%;
-    padding-top: 0; } }
+    font-size: 112.5%; } }
 .feature {
   padding: 1em 0 2em 0;
   position: relative;
@@ -4262,6 +4258,9 @@ body {
     color: #222222; }
   #intro code, #intro abbr, #intro acronym {
     color: black; }
+  @media only screen and (min-width: 768px) {
+    #intro {
+      margin-top: 45px; } }
   #intro .logo img {
     display: block;
     margin: 0 auto;
