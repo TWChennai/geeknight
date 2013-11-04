@@ -40,7 +40,7 @@
         </div>
 
         <div class="row actions">
-            <div class="large-5 columns">
+            <div class="large-5 columns participate">
                 <% if item[:participate] %>
                     <a href="<%= @item[:participate] %>" target="_blank" rel="nofollow"
                        onclick="ga('send', 'event', 'participate', 'participate')">
@@ -60,11 +60,11 @@
                     </p>
                 <% end %>
             </div>
-            <div class="large-2 columns">
+            <div class="large-2 columns participate-or-talk">
                 <hr class="show-for-small" />
                 <h6 class="hide-for-small delimiter">&laquo; or &raquo;</h6>
             </div>
-            <div class="large-5 columns">
+            <div class="large-5 columns talk">
                 <a href="<%= @item[:talk] %>" target="_blank" rel="nofollow"
                    onclick="ga('send', 'event', 'talk', 'talk')">
                     <h4>Talk</h4>
@@ -93,5 +93,5 @@
     <script src="js/ticker.js"></script>
 
     <script src="js/skrollr.min.js"></script>
-    <script>var s = skrollr.init()</script>
+    <script>var s = skrollr.init({ forceHeight: false })</script>
 <% end %>

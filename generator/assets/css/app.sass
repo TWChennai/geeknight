@@ -1,6 +1,16 @@
 @charset "UTF-8"
 @import "normalize", "variables", "foundation/components/global", "foundation/components/type", "foundation/components/grid", "foundation/components/block-grid", "foundation/components/visibility", "foundation/components/top-bar", "foundation/components/buttons", "animate"
 
+=experimental($property, $values...)
+  -webkit-#{$property} : $values
+  -moz-#{$property} : $values
+  -ms-#{$property} : $values
+  -o-#{$property} : $values
+  #{$property} : $values
+
+=animate($name: fadeIn, $duration: 1s, $delay: .2s, $function: ease, $mode: both)
+  +experimental(animation, $name $duration $delay $function $mode)
+
 @media only screen and (max-width:#{$medium-screen})
   body
     font-size: 125%
@@ -66,58 +76,74 @@
 
   .logo
     img
-      display: block
+      display: inline-block
       margin: 0 auto
       height: 2em
-      +animate(bounceInLeft, 1s, 0s)
+      +animate(lightSpeedInLeft, 1s, 0s)
 
     h1
-      +animate(bounceInRight, 1s, 0s)
+      +animate(lightSpeedInRight, 1s, 0s)
 
     h5
-      +animate(fadeInDown, 1s, .5s)
+      +animate(flipInX, 1s, .5s)
 
-  .countdown .columns
-    +animate(rotateIn, 1s, 1s)
+  .countdown
+    h4
+      color: $alt-fg
 
-  .countdown h4
-    color: $alt-fg
+    .date
+      p
+        +animate(fadeInDown, 1s, 1s)
 
-  .counter h4
-    border-bottom: 1px dashed $main-fg
+      h4
+        +animate(fadeInUp, 1s, 1s)
+        border-top: 1px dashed $main-fg
 
-    &#seconds
-      overflow: hidden
-      position: relative
+    .counter
+      p
+        +animate(fadeInUp, 1s, 1.5s)
 
-      span
-        display: block
-        position: absolute
-        width: 100%
-        height: 100%
-        +single-transition(top)
+      h4
+        +animate(fadeInDown, 1s, 1.5s)
+        border-bottom: 1px dashed $main-fg
 
-      =tickerOrder($current, $previous, $next)
-        &.#{$current}
-          ##{$current}
-            visibility: visible
-            top: 0
-          ##{$previous}
-            top: -100%
-          ##{$next}
-            visibility: hidden
-            top: 100%
+        &#seconds
+          overflow: hidden
+          position: relative
 
-      +tickerOrder("tick", "tock", "tack")
-      +tickerOrder("tock", "tack", "tick")
-      +tickerOrder("tack", "tick", "tock")
+          span
+            display: block
+            position: absolute
+            width: 100%
+            height: 100%
+            +single-transition(top)
 
-  .date h4
-    border-top: 1px dashed $main-fg
+          =tickerOrder($current, $previous, $next)
+            &.#{$current}
+              ##{$current}
+                visibility: visible
+                top: 0
+              ##{$previous}
+                top: -100%
+              ##{$next}
+                visibility: hidden
+                top: 100%
+
+          +tickerOrder("tick", "tock", "tack")
+          +tickerOrder("tock", "tack", "tick")
+          +tickerOrder("tack", "tick", "tock")
 
   .actions
-    +animate(bounceIn, 1s, 1.5s)
     padding-top: 1em
+
+    .participate
+      +animate(rollInLeft, 1s, 2s)
+
+    .talk
+      +animate(rollInRight, 1s, 2s)
+
+    .participate-or-talk
+      +animate(rotateIn, 1s, 2.5s)
 
     a
       display: block

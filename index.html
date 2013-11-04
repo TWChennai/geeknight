@@ -67,7 +67,7 @@
         </div>
 
         <div class="row actions">
-            <div class="large-5 columns">
+            <div class="large-5 columns participate">
                 
                     <a href="javascript:void(0)" target="_blank" rel="nofollow"
                        onclick="ga('send', 'event', 'participate', 'participate')">
@@ -79,11 +79,11 @@
                     </p>
                 
             </div>
-            <div class="large-2 columns">
+            <div class="large-2 columns participate-or-talk">
                 <hr class="show-for-small" />
                 <h6 class="hide-for-small delimiter">&laquo; or &raquo;</h6>
             </div>
-            <div class="large-5 columns">
+            <div class="large-5 columns talk">
                 <a href="http://info.thoughtworks.com/geek_night_chennai_october_29_speaker_registration.html" target="_blank" rel="nofollow"
                    onclick="ga('send', 'event', 'talk', 'talk')">
                     <h4>Talk</h4>
@@ -301,7 +301,7 @@
             <ul class="grid small-block-grid-2 large-block-grid-4">
                 
                 <li>
-                    <a href="./oct2013.html" data-bottom="transform:rotate(360deg) scale(0)" data--100-bottom="transform:rotate(0deg) scale(1)">
+                    <a href="./oct2013.html" data-bottom="transform:rotate(360deg) scale(0)" data--150-bottom="transform:rotate(0deg) scale(1)">
                         <span class="version">
                             4<sup>th</sup> edition
                         </span>
@@ -310,7 +310,7 @@
                 </li>
                 
                 <li>
-                    <a href="./sep2013.html" data-bottom="transform:rotate(360deg) scale(0)" data--100-bottom="transform:rotate(0deg) scale(1)">
+                    <a href="./sep2013.html" data-bottom="transform:rotate(360deg) scale(0)" data--150-bottom="transform:rotate(0deg) scale(1)">
                         <span class="version">
                             3<sup>rd</sup> edition
                         </span>
@@ -319,7 +319,7 @@
                 </li>
                 
                 <li>
-                    <a href="./aug2013.html" data-bottom="transform:rotate(360deg) scale(0)" data--100-bottom="transform:rotate(0deg) scale(1)">
+                    <a href="./aug2013.html" data-bottom="transform:rotate(360deg) scale(0)" data--150-bottom="transform:rotate(0deg) scale(1)">
                         <span class="version">
                             2<sup>nd</sup> edition
                         </span>
@@ -328,7 +328,7 @@
                 </li>
                 
                 <li>
-                    <a href="./jul2013.html" data-bottom="transform:rotate(360deg) scale(0)" data--100-bottom="transform:rotate(0deg) scale(1)">
+                    <a href="./jul2013.html" data-bottom="transform:rotate(360deg) scale(0)" data--150-bottom="transform:rotate(0deg) scale(1)">
                         <span class="version">
                             1<sup>st</sup> edition
                         </span>
@@ -394,6 +394,7 @@
                 <a rel="nofollow" target="_blank" href="//html5boilerplate.com">HTML5 Boilerplate</a>,
                 <a rel="nofollow" target="_blank" href="//foundation.zurb.com">Zurb Foundation</a>,
                 <a rel="nofollow" target="_blank" href="//github.com/Prinzhorn/skrollr">Skrollr</a>,
+                <a rel="nofollow" target="_blank" href="//daneden.me/animate/">Animate</a>,
                 <a rel="nofollow" target="_blank" href="//nanoc.ws">Nanoc</a> &amp;
                 <a rel="nofollow" target="_blank" href="//fontello.com">Fontello</a>
             </small></p>
@@ -406,7 +407,7 @@
     <script src="js/ticker.js"></script>
 
     <script src="js/skrollr.min.js"></script>
-    <script>var s = skrollr.init()</script>
+    <script>var s = skrollr.init({ forceHeight: false })</script>
 
 
     <!-- Google Analytics -->
