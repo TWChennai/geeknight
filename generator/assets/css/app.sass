@@ -79,10 +79,10 @@
       display: inline-block
       margin: 0 auto
       height: 2em
-      +animate(lightSpeedInLeft, 1s, 0s)
+      +animate(bounceInLeft, 1s, 0s)
 
     h1
-      +animate(lightSpeedInRight, 1s, 0s)
+      +animate(bounceInRight, 1s, 0s)
 
     h5
       +animate(flipInX, 1s, .5s)
@@ -101,10 +101,10 @@
 
     .counter
       p
-        +animate(fadeInUp, 1s, 1.5s)
+        +animate(fadeInUp, 1s, 1s)
 
       h4
-        +animate(fadeInDown, 1s, 1.5s)
+        +animate(fadeInDown, 1s, 1s)
         border-bottom: 1px dashed $main-fg
 
         &#seconds
@@ -137,13 +137,13 @@
     padding-top: 1em
 
     .participate
-      +animate(rollInLeft, 1s, 2s)
+      +animate(rotateInUpLeft, 1s, 1.5s)
 
     .talk
-      +animate(rollInRight, 1s, 2s)
+      +animate(rotateInUpRight, 1s, 1.5s)
 
     .participate-or-talk
-      +animate(rotateIn, 1s, 2.5s)
+      +animate(fadeInUp, 1s, 2s)
 
     a
       display: block

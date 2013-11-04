@@ -3621,17 +3621,17 @@ button, .button {
     display: inline-block;
     margin: 0 auto;
     height: 2em;
-    -webkit-animation: lightSpeedInLeft 1s 0s ease both;
-    -moz-animation: lightSpeedInLeft 1s 0s ease both;
-    -ms-animation: lightSpeedInLeft 1s 0s ease both;
-    -o-animation: lightSpeedInLeft 1s 0s ease both;
-    animation: lightSpeedInLeft 1s 0s ease both; }
+    -webkit-animation: bounceInLeft 1s 0s ease both;
+    -moz-animation: bounceInLeft 1s 0s ease both;
+    -ms-animation: bounceInLeft 1s 0s ease both;
+    -o-animation: bounceInLeft 1s 0s ease both;
+    animation: bounceInLeft 1s 0s ease both; }
   #intro .logo h1 {
-    -webkit-animation: lightSpeedInRight 1s 0s ease both;
-    -moz-animation: lightSpeedInRight 1s 0s ease both;
-    -ms-animation: lightSpeedInRight 1s 0s ease both;
-    -o-animation: lightSpeedInRight 1s 0s ease both;
-    animation: lightSpeedInRight 1s 0s ease both; }
+    -webkit-animation: bounceInRight 1s 0s ease both;
+    -moz-animation: bounceInRight 1s 0s ease both;
+    -ms-animation: bounceInRight 1s 0s ease both;
+    -o-animation: bounceInRight 1s 0s ease both;
+    animation: bounceInRight 1s 0s ease both; }
   #intro .logo h5 {
     -webkit-animation: flipInX 1s 0.5s ease both;
     -moz-animation: flipInX 1s 0.5s ease both;
@@ -3654,17 +3654,17 @@ button, .button {
     animation: fadeInUp 1s 1s ease both;
     border-top: 1px dashed #222222; }
   #intro .countdown .counter p {
-    -webkit-animation: fadeInUp 1s 1.5s ease both;
-    -moz-animation: fadeInUp 1s 1.5s ease both;
-    -ms-animation: fadeInUp 1s 1.5s ease both;
-    -o-animation: fadeInUp 1s 1.5s ease both;
-    animation: fadeInUp 1s 1.5s ease both; }
+    -webkit-animation: fadeInUp 1s 1s ease both;
+    -moz-animation: fadeInUp 1s 1s ease both;
+    -ms-animation: fadeInUp 1s 1s ease both;
+    -o-animation: fadeInUp 1s 1s ease both;
+    animation: fadeInUp 1s 1s ease both; }
   #intro .countdown .counter h4 {
-    -webkit-animation: fadeInDown 1s 1.5s ease both;
-    -moz-animation: fadeInDown 1s 1.5s ease both;
-    -ms-animation: fadeInDown 1s 1.5s ease both;
-    -o-animation: fadeInDown 1s 1.5s ease both;
-    animation: fadeInDown 1s 1.5s ease both;
+    -webkit-animation: fadeInDown 1s 1s ease both;
+    -moz-animation: fadeInDown 1s 1s ease both;
+    -ms-animation: fadeInDown 1s 1s ease both;
+    -o-animation: fadeInDown 1s 1s ease both;
+    animation: fadeInDown 1s 1s ease both;
     border-bottom: 1px dashed #222222; }
     #intro .countdown .counter h4#seconds {
       overflow: hidden;
@@ -3704,23 +3704,23 @@ button, .button {
   #intro .actions {
     padding-top: 1em; }
     #intro .actions .participate {
-      -webkit-animation: rollInLeft 1s 2s ease both;
-      -moz-animation: rollInLeft 1s 2s ease both;
-      -ms-animation: rollInLeft 1s 2s ease both;
-      -o-animation: rollInLeft 1s 2s ease both;
-      animation: rollInLeft 1s 2s ease both; }
+      -webkit-animation: rotateInUpLeft 1s 1.5s ease both;
+      -moz-animation: rotateInUpLeft 1s 1.5s ease both;
+      -ms-animation: rotateInUpLeft 1s 1.5s ease both;
+      -o-animation: rotateInUpLeft 1s 1.5s ease both;
+      animation: rotateInUpLeft 1s 1.5s ease both; }
     #intro .actions .talk {
-      -webkit-animation: rollInRight 1s 2s ease both;
-      -moz-animation: rollInRight 1s 2s ease both;
-      -ms-animation: rollInRight 1s 2s ease both;
-      -o-animation: rollInRight 1s 2s ease both;
-      animation: rollInRight 1s 2s ease both; }
+      -webkit-animation: rotateInUpRight 1s 1.5s ease both;
+      -moz-animation: rotateInUpRight 1s 1.5s ease both;
+      -ms-animation: rotateInUpRight 1s 1.5s ease both;
+      -o-animation: rotateInUpRight 1s 1.5s ease both;
+      animation: rotateInUpRight 1s 1.5s ease both; }
     #intro .actions .participate-or-talk {
-      -webkit-animation: rotateIn 1s 2.5s ease both;
-      -moz-animation: rotateIn 1s 2.5s ease both;
-      -ms-animation: rotateIn 1s 2.5s ease both;
-      -o-animation: rotateIn 1s 2.5s ease both;
-      animation: rotateIn 1s 2.5s ease both; }
+      -webkit-animation: fadeInUp 1s 2s ease both;
+      -moz-animation: fadeInUp 1s 2s ease both;
+      -ms-animation: fadeInUp 1s 2s ease both;
+      -o-animation: fadeInUp 1s 2s ease both;
+      animation: fadeInUp 1s 2s ease both; }
     #intro .actions a {
       display: block; }
       #intro .actions a:hover {
