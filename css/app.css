@@ -4228,7 +4228,8 @@ button, .button {
 .feature {
   padding: 1em 0 2em 0;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  clear: both; }
   .feature .row {
     margin-bottom: 1em;
     max-width: 1000px;
@@ -4252,8 +4253,7 @@ button, .button {
 #intro {
   color: #222222;
   background: white url(../img/white-bg.png);
-  border-radius: 0;
-  margin-top: 0; }
+  border-radius: 0; }
   #intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6, #intro .subheader, #intro p, #intro blockquote, #intro a, #intro small {
     color: #222222; }
   #intro code, #intro abbr, #intro acronym {
@@ -4264,8 +4264,7 @@ button, .button {
   #intro .logo img {
     display: block;
     margin: 0 auto;
-    width: 14em;
-    max-width: 80%;
+    height: 2em;
     -webkit-animation: bounceInLeft 1s 0s ease both;
     -moz-animation: bounceInLeft 1s 0s ease both;
     -ms-animation: bounceInLeft 1s 0s ease both;

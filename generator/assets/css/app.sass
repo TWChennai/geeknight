@@ -26,6 +26,7 @@
   padding: 1em 0 2em 0
   position: relative
   overflow: hidden
+  clear: both
 
   .row
     margin-bottom: 1em
@@ -59,7 +60,6 @@
   $alt-fg: $blue
   +override-colors($main-fg,$main-bg)
   border-radius: 0
-  margin-top: 0
 
   @media #{$small}
     margin-top: $topbar-height
@@ -68,8 +68,7 @@
     img
       display: block
       margin: 0 auto
-      width: 14em
-      max-width: 80%
+      height: 2em
       +animate(bounceInLeft, 1s, 0s)
 
     h1
