@@ -280,7 +280,7 @@
       position: relative
       +experimental(transition, color .3s, background-color .3s)
 
-      &::before
+      &:before
         display: block
         position: absolute
         content: ''
@@ -326,20 +326,34 @@
 
   .grid a
     display: block
-    color: $alt-fg
-    border-left: 1px dashed $main-fg
-    border-right: 1px dashed $main-fg
+    overflow: hidden
+    padding: .25em
+    background-color: darken($main-bg, 30%)
+    border-radius: .5em
+    +experimental(transition, background-color .3s)
 
     &:hover
+      background-color: $alt-fg
+
+    h6
       color: $main-bg
-      background: $alt-fg
+      margin: 0
+      padding-bottom: .1em
 
-    span
-      display: block
-      padding: .25em 0
+      &:before,
+      &:after
+        content: '\2022'
+        display: inline-block
+      &:before
+        float: left
+      &:after
+        float: right
 
-    .version
-      border-bottom: 1px dashed $main-fg
+    h3
+      background-color: $main-bg
+      margin: 0
+      padding: .1em 0
+      border-radius: 0 0 .25em .25em
 
 //
 // FOOTER

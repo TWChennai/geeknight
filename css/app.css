@@ -3865,7 +3865,7 @@ button, .button {
     -ms-transition: color 0.3s, background-color 0.3s;
     -o-transition: color 0.3s, background-color 0.3s;
     transition: color 0.3s, background-color 0.3s; }
-    #about .social a::before {
+    #about .social a:before {
       display: block;
       position: absolute;
       content: "";
@@ -3903,17 +3903,33 @@ button, .button {
     color: black; }
   #archive .grid a {
     display: block;
-    color: #00aeef;
-    border-left: 1px dashed #222222;
-    border-right: 1px dashed #222222; }
+    overflow: hidden;
+    padding: 0.25em;
+    background-color: #b3b3b3;
+    border-radius: 0.5em;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s; }
     #archive .grid a:hover {
+      background-color: #00aeef; }
+    #archive .grid a h6 {
       color: white;
-      background: #00aeef; }
-    #archive .grid a span {
-      display: block;
-      padding: 0.25em 0; }
-    #archive .grid a .version {
-      border-bottom: 1px dashed #222222; }
+      margin: 0;
+      padding-bottom: 0.1em; }
+      #archive .grid a h6:before, #archive .grid a h6:after {
+        content: "\2022";
+        display: inline-block; }
+      #archive .grid a h6:before {
+        float: left; }
+      #archive .grid a h6:after {
+        float: right; }
+    #archive .grid a h3 {
+      background-color: white;
+      margin: 0;
+      padding: 0.1em 0;
+      border-radius: 0 0 0.25em 0.25em; }
 
 #footer {
   color: #a6a6a6;
