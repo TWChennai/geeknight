@@ -9,9 +9,12 @@
             <ul class="grid small-block-grid-3 large-block-grid-6">
                 <% archives.each do |archive| %>
                 <li>
-                    <a href=".<%= archive.path %>" data-bottom="transform:rotate(360deg) scale(0)" data--150-bottom="transform:rotate(0deg) scale(1)">
-                        <h6><%= Time.parse(archive[:start]).strftime("%b") %></h6>
-                        <h3><%= Time.parse(archive[:start]).strftime("%d") %></h3>
+                    <a href=".<%= archive.path %>" data-bottom="transform:rotate(-90deg) scale(.5);opacity:0;transform-origin:-50% 100%" data--150-bottom="transform:rotate(0deg) scale(1);opacity:1">
+                        <h6><%= start_date(archive).strftime("%b") %></h6>
+                        <h3>
+                            <%= start_date(archive).strftime("%d") %>
+                            <span><%= start_date(archive).strftime("%Y") %></span>
+                        </h3>
                     </a>
                 </li>
                 <% end %>

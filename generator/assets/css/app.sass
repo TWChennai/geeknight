@@ -337,8 +337,8 @@
 
     h6
       color: $main-bg
+      line-height: 1.5em
       margin: 0
-      padding-bottom: .1em
 
       &:before,
       &:after
@@ -352,8 +352,14 @@
     h3
       background-color: $main-bg
       margin: 0
-      padding: .1em 0
+      line-height: 1.5em
       border-radius: 0 0 .25em .25em
+
+      span
+        display: block
+        border-top: 1px dashed darken($main-bg, 30%)
+        font-size: .5em
+        line-height: 2em
 
 //
 // FOOTER
