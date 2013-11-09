@@ -8,7 +8,7 @@
   -o-#{$property} : $values
   #{$property} : $values
 
-=animate($name: fadeIn, $duration: 1s, $delay: .2s, $function: ease, $mode: both)
+=animate($name: fadeIn, $duration: 1s, $delay: 0s, $function: ease, $mode: both)
   +experimental(animation, $name $duration $delay $function $mode)
 
 @media only screen and (max-width:#{$medium-screen})
@@ -149,7 +149,7 @@
       display: block
 
       &:hover
-        +animate(tada, 1s)
+        +animate(tada)
 
       h4
         +single-transition(background-color)
@@ -280,6 +280,9 @@
       position: relative
       +experimental(transition, color .3s, background-color .3s)
 
+      i
+        display: inline-block
+
       &:before
         display: block
         position: absolute
@@ -294,6 +297,8 @@
       &:hover, &:focus
         color: $main-fg
         background-color: $alt-fg
+        i
+          +animate(flip)
 
   blockquote
     border: 0
@@ -335,7 +340,8 @@
     &:hover
       background-color: $alt-fg
 
-    h6
+    .month
+      @extend h6
       color: $main-bg
       line-height: 1.5em
       margin: 0
@@ -349,17 +355,18 @@
       &:after
         float: right
 
-    h3
+    .day
+      @extend h3
       background-color: $main-bg
       margin: 0
       line-height: 1.5em
-      border-radius: 0 0 .25em .25em
 
-      span
-        display: block
-        border-top: 1px dashed darken($main-bg, 30%)
-        font-size: .5em
-        line-height: 2em
+    .year
+      @extend small
+      background-color: $main-bg
+      border-top: 1px dashed darken($main-bg, 30%)
+      line-height: 2em
+      border-radius: 0 0 .25em .25em
 
 //
 // FOOTER
