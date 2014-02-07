@@ -21,10 +21,12 @@
                     <% end %>
                     </li>
                     <li>
+                    <% if latest[:talk] %>
                         <a href="<%= latest[:talk] %>" target="_blank" rel="nofollow"
                            onclick="ga('send', 'event', 'talk', 'talk')">
                             Talk
                         </a>
+                    <% end %>
                     </li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#agenda">Agenda</a></li>
