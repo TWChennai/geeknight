@@ -1,24 +1,29 @@
 # Geek Night Chennai
 
-an open forum for geeks to connect, discuss &amp; learn latest ideas, technologies and trends in software development
+An open forum for geeks to connect, discuss &amp; learn latest ideas, technologies and trends in software development
 
-# Development
+# Quick Start
 
-Using [nanoc](//nanoc.ws) for static site generation. Jekyll/Octopress are hard-coded for blogging, while Nanoc is much simpler, doesn't take any assumptions and allows to build whatever type of content (not just blogs).
-
-To start developing,
+** IGNORE ANYTHING IN THE ROOT FOLDER, THEY ARE AUTOMATICALLY GENERATED **
+** THE REAL SOURCE IS INSIDE `generator` **
 
 * Clone this repository
-* Forget about whatever present in the root folder
-* Worry only about the `generator` folder
 * `cd generator` and do `bundle install`. You'll need RVM + Ruby 2.0
-* Make changes (see below folder structure). Mostly you'll be dealing with `generator/content`
-* Run `nanoc` to compile the website
-* Run `nanoc view` to start a server and browse to `localhost:3000`
+* Go to `generator/content`, you will see `.yml` files for each event page.
+* Edit `index.yml`, change the date, change some of the content (speakers), etc. For a complete example, see the first `jul2013.yml`
+* Run `bundle exec nanoc` to compile the website
+* Run `bundle exec nanoc view` to start a server and browse to `localhost:3000`
+* If you're going to keep on making changes, run `bundle exec guard` in one terminal (it will continously recompile), and then run `nanoc view` in another terminal. Now you can keep making changes and refresh the browser to see the latest.
 
-For ease, there is a Guardfile. You can run `bundle exec guard`, it will keep watching for changes and re-compile the site whenever any file is changed.
+# Changing the UI/Layout
 
-# Folders of interest
+* Each `yml` file is read, sent to a simple Rails-style ERB template, and then generated as a file.
+* All templates are inside `layouts` folder.
+  * `default.html.erb` is used for the latest event
+  * `archive.html.erb` is used for old event pages
+* So if you want to change the layout, just edit these templates. For ease, they are split into partials, just like Rails style.
+
+# Folder Structure
 
 * `generator` - this is the main source code, rest are all generated source code that can be ignored
 * `generator/assets` - contains all assets
@@ -28,9 +33,10 @@ For ease, there is a Guardfile. You can run `bundle exec guard`, it will keep wa
 * `generator/layouts` - layouts for default and archive versions
 * `generator/Rules` - routing rules
 
-# Front-End Development
+# Tools
 
 * Pure HTML/CSS/Javascript website. No JQuery.
+* Uses [nanoc](//nanoc.ws) for static site generation. Jekyll/Octopress are hard-coded for blogging, while Nanoc is much simpler, doesn't take any assumptions and allows to build whatever type of content (not just blogs)
 * Used [HTML5 Boilerplate](//html5boilerplate.com) to generate the skeleton.
 * Used [colourlovers.com](//colourlovers.com) for the color swatches.
 * Using [SASS](//sass-lang.com) and [Foundation](//foundation.zurb.com) for all the Styling.
