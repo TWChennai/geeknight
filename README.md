@@ -4,8 +4,8 @@ An open forum for geeks to connect, discuss &amp; learn latest ideas, technologi
 
 # Quick Start
 
-** IGNORE ANYTHING IN THE ROOT FOLDER, THEY ARE AUTOMATICALLY GENERATED **
-** THE REAL SOURCE IS INSIDE `generator` **
+##### IGNORE ANYTHING IN THE ROOT FOLDER, THEY ARE AUTOMATICALLY GENERATED
+##### THE REAL SOURCE IS INSIDE `generator` FOLDER
 
 * Clone this repository
 * `cd generator` and do `bundle install`. You'll need RVM + Ruby 2.0
