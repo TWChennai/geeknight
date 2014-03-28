@@ -3670,6 +3670,10 @@ button, .button {
     -ms-animation: flipInX 1s 0.5s ease both;
     -o-animation: flipInX 1s 0.5s ease both;
     animation: flipInX 1s 0.5s ease both; }
+  #intro .logo h5.subheader {
+    color: #00aeef;
+    font-size: 0.85em;
+    margin: 1em 0 0 0; }
   #intro .countdown h4 {
     color: #00aeef; }
   #intro .countdown .date p {
