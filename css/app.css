@@ -3818,6 +3818,9 @@ button, .button {
         color: white; }
       #agenda .timings .row .summary p {
         margin-bottom: 0; }
+      #agenda .timings .row .summary small, #agenda .timings .row .summary #archive .grid a .year, #archive .grid a #agenda .timings .row .summary .year {
+        line-height: 1rem;
+        display: inline-block; }
       #agenda .timings .row .summary img {
         display: block;
         margin: 0.5em auto;
