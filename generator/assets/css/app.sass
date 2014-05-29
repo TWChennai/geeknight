@@ -84,14 +84,19 @@
     h1
       +animate(bounceInRight, 1s, 0s)
 
-    h5
+    h6
       +animate(flipInX, 1s, .5s)
 
-    h5.subheader
+    h3.subheader
       $subheader-color: darken($alt-fg, 0%)
       color: $subheader-color
-      font-size: 0.85em
       margin: 1em 0 0 0
+
+    .subnote
+      line-height: 1.5
+      display: block
+      font-size: 0.85em
+
 
   .countdown
     h4
