@@ -3664,16 +3664,19 @@ button, .button {
     -ms-animation: bounceInRight 1s 0s ease both;
     -o-animation: bounceInRight 1s 0s ease both;
     animation: bounceInRight 1s 0s ease both; }
-  #intro .logo h5 {
+  #intro .logo h6, #intro .logo #archive .grid a .month, #archive .grid a #intro .logo .month {
     -webkit-animation: flipInX 1s 0.5s ease both;
     -moz-animation: flipInX 1s 0.5s ease both;
     -ms-animation: flipInX 1s 0.5s ease both;
     -o-animation: flipInX 1s 0.5s ease both;
     animation: flipInX 1s 0.5s ease both; }
-  #intro .logo h5.subheader {
+  #intro .logo h3.subheader, #intro .logo #archive .grid a .subheader.day, #archive .grid a #intro .logo .subheader.day {
     color: #00aeef;
-    font-size: 0.85em;
     margin: 1em 0 0 0; }
+  #intro .logo .subnote {
+    line-height: 1.5;
+    display: block;
+    font-size: 0.85em; }
   #intro .countdown h4 {
     color: #00aeef; }
   #intro .countdown .date p {
