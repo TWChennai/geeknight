@@ -22,7 +22,7 @@ bundle exec nanoc
 echo "Pushing result..."
 cd gh-pages
 git add -f .
-git commit -q -m "Built"
+git commit --amend --allow-empty -q -m "Built $SNAP_COMMIT_SHORT"
 git push -fq origin gh-pages
 
 echo "Cleaning up..."
