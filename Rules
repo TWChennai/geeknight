@@ -47,6 +47,8 @@ end
 route '*' do
   if item.binary?
     item.identifier.chop
+  elsif item == latest
+    '/index.html'
   else
     start_date.strftime('/%b%Y.html').downcase
   end

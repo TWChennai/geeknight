@@ -25,8 +25,8 @@ Icon
 .sass-cache
 
 # Nanoc
-generator/tmp
-generator/output
+/tmp
+/output
 *.log
 .bundle
 .rvmrc

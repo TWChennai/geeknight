@@ -19,6 +19,6 @@ module GeekHelper
   end
 
   def latest
-    events.first
+    @@first ||= events.first
   end
 end

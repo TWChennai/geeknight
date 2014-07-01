@@ -6,7 +6,7 @@ text_extensions: [ 'coffee', 'css', 'erb', 'haml', 'handlebars', 'hb', 'htm', 'h
 # The path to the directory where all generated files will be written to. This
 # can be an absolute path starting with a slash, but it can also be path
 # relative to the site directory.
-output_dir: ..
+output_dir: output
 
 # A list of index filenames, i.e. names of files that will be served by a web
 # server when a directory is requested. Usually, index files are named
@@ -27,7 +27,7 @@ prune:
   # Which files and directories you want to exclude from pruning. If you version
   # your output directory, you should probably exclude VCS directories such as
   # .git, .svn etc.
-  exclude: [ '.git', '.gitignore', '.gitattributes', 'generator' ]
+  exclude: [ '.git', '.gitignore', '.gitattributes', 'generator', 'LICENSE.md', 'README.md' ]
 
 # The data sources where nanoc loads its data from. This is an array of
 # hashes; each array element represents a single data source. By default,
