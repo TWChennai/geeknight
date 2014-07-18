@@ -4,15 +4,13 @@
 
 an open forum for geeks to connect, discuss &amp; learn latest ideas, technologies and trends in software development
 
-# Development
-
-Using [nanoc](//nanoc.ws) for static site generation. Jekyll/Octopress are hard-coded for blogging, while Nanoc is much simpler, doesn't take any assumptions and allows to build whatever type of content (not just blogs).
-
 ## Quick Start & Auto Deployment
 
 From the GitHub page, navigate to `content` folder and create/edit a new `yml` file. If you save, the changes are automatically deployed using [Snap-CI](https://snap-ci.com/TWChennai/geeknight/branch/master).
 
 ## Manual Development
+
+We're using [nanoc](//nanoc.ws) for static site generation. Jekyll/Octopress are hard-coded for blogging, while Nanoc is much simpler, doesn't take any assumptions and allows to build whatever type of content (not just blogs).
 
 * Make sure you have RVM installed
 * Clone this repo
