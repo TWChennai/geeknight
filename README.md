@@ -6,7 +6,7 @@ an open forum for geeks to connect, discuss &amp; learn latest ideas, technologi
 
 ## Quick Start & Auto Deployment
 
-From the GitHub page, navigate to `content` folder and create/edit a new `yml` file. If you save, the changes are automatically deployed using [Snap-CI](https://snap-ci.com/TWChennai/geeknight/branch/master).
+From the GitHub page, navigate to `content` folder and create/edit a `yyyy-mm.html` file. If you save, the changes are automatically deployed using [Snap-CI](https://snap-ci.com/TWChennai/geeknight/branch/master).
 
 ## Manual Development
 
