@@ -14,6 +14,7 @@
 #   because “*” matches zero or more characters.
 
 ignore '/example/'
+ignore 'css/*.scss'
 
 compile 'css/app.sass' do
   filter :sass, filename: item.raw_filename, load_paths: [ '.', 'assets/css/' ], cache: false
@@ -36,14 +37,6 @@ end
 route 'css/app.sass' do
   # Compile app.SASS to app.CSS
   '/css/app.css'
-end
-
-route 'css/**/_*' do
-  nil
-end
-
-route 'css/_*' do
-  nil
 end
 
 route '*' do
