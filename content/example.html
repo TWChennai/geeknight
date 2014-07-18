@@ -1,0 +1,39 @@
+# Sample geeknight page configuration
+---
+published: false # ignore this, don't use this unless you want to hide a page
+start: "<YYYY-MM-DD hh:mm, used by the ticker, usually time is publicized as 5:30>"
+edition: "<1/2/3/etc, TODO: this can be auto-inferred from the order of html files>"
+subheader: "<any special sub-header, typically used for themed geek nights>"
+subnote: "<longer note below the sub-header, e.g. special instructions like 'bring your laptop'>"
+participate: "<link to participant registration, if left empty will strike out the 'Participate' link in home page>"
+talk: "<link to speaker registration, if left empty will strike out the 'Present' link in home page>"
+agenda:
+  -
+    # usually all geek nights start at this
+    time: "5:45"
+    title: Welcome Note
+  -
+    time: "<time as a plain string, e.g. 5:30>"
+    title: "<title>"
+    subtitle: "<short description for the talk, shown below the title>"
+    speaker: "<speaker name>"
+    profile: "<link/url when clicking on the speaker name, e.g. twitter, facebook, website, etc>"
+    image: "<upload the image to assets/img/speaker and give the filename here>"
+    resources: # array of resources for the talk
+      -
+        title: "<name of the resource>"
+        url: "<link to the resource, e.g. slideshare, github, etc>"
+      -
+        # ...
+        # more resources
+        # ...
+  -
+    # ...
+    # more talks
+    # ...
+  -
+    # usually all geek nights end at this
+    time: "9:00"
+    title: "Networking &amp; Dinner"
+---
+# Nothing else needed down here
