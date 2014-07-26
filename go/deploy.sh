@@ -14,14 +14,19 @@ rm -Rf gh-pages
 git config --global user.email "snap@snap-ci.org"
 git config --global user.name "snap-ci"
 git clone --quiet --branch=gh-pages git@github.com:TWChennai/geeknight.git gh-pages
-(cd gh-pages && git rm -rfq *)
 
 echo "Building site..."
 bundle exec nanoc
 
-echo "Pushing result..."
+echo "Checking for changes..."
 cd gh-pages
-git add -f .
+if [[ -z $(git status -s) ]]; then
+  echo "No changes to push"
+  exit 0
+fi
+
+echo "Pushing result..."
+git add --all .
 git commit --amend --allow-empty -q -m "Built $SNAP_COMMIT_SHORT"
 git push -fq origin gh-pages
 
