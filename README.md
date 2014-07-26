@@ -1,12 +1,12 @@
 # Geek Night Chennai
 
-[![Build Status](https://snap-ci.com/TWChennai/geeknight/branch/master/build_image)](https://snap-ci.com/TWChennai/geeknight/branch/master)
-
-an open forum for geeks to connect, discuss &amp; learn latest ideas, technologies and trends in software development
+An open forum for geeks to connect, discuss &amp; learn latest ideas, technologies and trends in software development
 
 ## Quick Start & Auto Deployment
 
 From the GitHub page, navigate to `content` folder and create/edit a `yyyy-mm.html` file. See [content/example.html](content/example.html) for possible parameters. If you save, the changes are automatically deployed at [Snap-CI](https://snap-ci.com/TWChennai/geeknight/branch/master).
+
+[![Build Status](https://snap-ci.com/TWChennai/geeknight/branch/master/build_image)](https://snap-ci.com/TWChennai/geeknight/branch/master)
 
 **NOTE:** GitHub's "create/edit file" buttons are very small and hard to find, but they are there (as long as you're logged in and have push rights to this repo).
 
