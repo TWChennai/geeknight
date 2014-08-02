@@ -4,7 +4,7 @@
     </div>
 
     <div class="timings">
-        <% @item[:agenda].each_with_index do |agenda, i| %>
+        <% @item[:agenda] && @item[:agenda].each_with_index do |agenda, i| %>
           <div class="row">
             <div class="large-4 columns time" id="agenda-<%= i %>"
                  data-bottom="transform:rotateX(90deg) scale(0);opacity:0"
