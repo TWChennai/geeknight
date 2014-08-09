@@ -3,7 +3,7 @@
         <div class="row logo">
             <div class="large-12 columns">
                 <a href="http://www.thoughtworks.com" target="_blank"
-                   onclick="ga('send', 'event', 'tw', 'tw')">
+                   onclick="ga('send', 'event', 'tw', 'tw')" class="tw-logo">
                     <img src="./img/tw-logo.png" alt="ThoughtWorks" align="center" />
                 </a>
                 <h1>Geek Night Chennai</h1>
@@ -11,12 +11,10 @@
                 <h6>an open forum for geeks to connect, discuss &amp; learn latest ideas, technologies and trends in software development</h6>
 
                 <% if @item[:subheader] %>
-                    <h3 class="subheader">
-                      <%= @item[:subheader] %>
-                    </h3>
-                    <% if @item[:subnote] %>
-                      <div class="subnote"><%= @item[:subnote] %></div>
-                    <% end %>
+                    <h5 class="subheader"><%= @item[:subheader] %></h5>
+                <% end %>
+                <% if @item[:subnote] %>
+                    <div class="subnote"><%= @item[:subnote] %></div>
                 <% end %>
             </div>
         </div>
