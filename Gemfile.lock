@@ -10,6 +10,9 @@ GEM
     adsf (1.1.1)
       rack (>= 1.0.0)
     atomic (1.1.14)
+    bourbon (3.2.3)
+      sass (~> 3.2)
+      thor
     coderay (1.0.9)
     colored (1.2)
     cri (2.4.0)
@@ -60,6 +63,7 @@ PLATFORMS
 DEPENDENCIES
   activesupport (~> 4.0.0)
   adsf (~> 1.1.1)
+  bourbon (~> 3.2.3)
   guard-nanoc (~> 1.0.0)
   listen (~> 1.3.1)
   multi_json (~> 1.8.0)

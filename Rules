@@ -16,7 +16,7 @@
 ignore '/example/'
 ignore 'css/*.scss'
 
-compile 'css/app.sass' do
+compile 'css/*.sass' do
   filter :sass, filename: item.raw_filename, load_paths: [ '.', 'assets/css/' ], cache: false
 end
 
@@ -29,14 +29,16 @@ compile '*' do
   end
 end
 
-compile "/", rep: :index do
-  filter :erb
-  layout start_date.future? ? 'default' : 'archive'
+compile '*', rep: :preview do
+  if item == latest
+    filter :erb
+    layout 'preview'
+  end
 end
 
-route 'css/app.sass' do
-  # Compile app.SASS to app.CSS
-  '/css/app.css'
+route 'css/*.sass' do
+  # Compile SASS to CSS
+  item.identifier.gsub('.sass', '.css').chop
 end
 
 route '*' do
@@ -46,6 +48,12 @@ route '*' do
     '/index.html'
   else
     start_date.strftime('/%b%Y.html').downcase
+  end
+end
+
+route '*', rep: :preview do
+  if item == latest
+    '/preview.html'
   end
 end
 

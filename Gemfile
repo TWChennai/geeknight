@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
 gem 'sass', '~> 3.2.12'
+gem 'bourbon', '~> 3.2.3'
 gem 'nanoc', '~> 3.6.5'
 gem 'multi_json', '~> 1.8.0'
 gem 'activesupport', '~> 4.0.0', require: 'active_support/all'
