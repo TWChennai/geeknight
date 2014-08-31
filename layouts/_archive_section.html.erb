@@ -1,15 +1,14 @@
-<% if archives.any? %>
 <section id="archive" class="feature">
     <div class="row" data-bottom="transform:translateY(-10em)" data--100-bottom="transform:translateY(0em)">
-        <h2>Previous Editions</h2>
+        <h2>Editions</h2>
     </div>
 
     <div class="row">
         <div class="large-12 columns">
-            <ul class="grid small-block-grid-3 large-block-grid-6">
-                <% archives.each do |archive| %>
+            <ul class="grid">
+                <% events.each do |archive| %>
                 <li>
-                    <a href=".<%= archive.path %>" data-bottom="transform:rotateZ(180deg) rotateY(90deg) scale(0);opacity:0;transform-origin:50% 0" data--150-bottom="transform:rotateZ(0deg) rotateY(0) scale(1);opacity:1">
+                    <a href=".<%= archive.path %>" data-bottom="transform:rotateZ(180deg) rotateY(90deg) scale(0);opacity:0;transform-origin:50% 0" data--150-bottom="transform:rotateZ(0deg) rotateY(0) scale(1);opacity:1" class="<%= 'active' if archive == @item %>">
                         <div class="month"><%= start_date(archive).strftime("%b") %></div>
                         <div class="day"><%= start_date(archive).strftime("%d") %></div>
                         <div class="year"><%= start_date(archive).strftime("%Y") %></div>
@@ -20,4 +19,3 @@
         </div>
     </div>
 </section>
-<% end %>

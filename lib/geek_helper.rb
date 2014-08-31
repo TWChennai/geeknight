@@ -12,12 +12,6 @@ module GeekHelper
     end
   end
 
-  def archives
-    events.select do |event|
-      event[:edition] < @item[:edition]
-    end[0..11]
-  end
-
   def latest
     @@first ||= events.first
   end

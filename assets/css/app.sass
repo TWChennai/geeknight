@@ -350,6 +350,16 @@
   $alt-fg: $blue
   +override-colors($main-fg,$main-bg,$alt-fg)
 
+  .grid
+    list-style-type: none
+    margin: 0
+    padding: 0
+    @include clearfix
+
+    li
+      display: inline-block
+      width: 5em
+
   .grid a
     display: block
     overflow: hidden
@@ -358,7 +368,7 @@
     border-radius: .5em
     +experimental(transition, background-color .3s)
 
-    &:hover
+    &:hover, &.active
       background-color: $alt-fg
 
     .month
@@ -380,7 +390,7 @@
       @extend h3
       background-color: $main-bg
       margin: 0
-      line-height: 1.5em
+      line-height: 1.25em
 
     .year
       @extend small
