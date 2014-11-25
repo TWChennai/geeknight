@@ -31,3 +31,4 @@ Icon
 *.log
 .bundle
 .rvmrc
+.idea/
