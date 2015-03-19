@@ -1,5 +1,10 @@
+
 # Geek Night Chennai
 
+=======
+# Geek Night Pune
+Snap not yet active
+>>>>>>> Stashed changes
 An open forum for geeks to connect, discuss &amp; learn latest ideas, technologies and trends in software development
 
 ## Quick Start & Auto Deployment
