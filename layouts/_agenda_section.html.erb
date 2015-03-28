@@ -31,9 +31,9 @@
                         <%= agenda[:speaker] %>
                     <% end %>
                     </small></p>
-                    <% if agenda[:speaker_profile] %>
-                      <p><small> <%= agenda[:speaker_profile] %> </small></p>
-                    <% end %>
+                <% end %>
+                <% if agenda[:speaker_profile] %>
+                  <p><small> <%= agenda[:speaker_profile] %> </small></p>
                 <% end %>
                 <% if agenda[:resources] %>
                     <p><small>Resources:
