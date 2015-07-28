@@ -25,7 +25,7 @@ Icon
 .sass-cache
 
 # Nanoc
-/tmp
+tmp
 /output
 /gh-pages
 *.log
