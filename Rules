@@ -13,52 +13,42 @@
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
-ignore '/example/'
-ignore 'css/*.scss'
+ignore '/example.html'
+ignore '/static/css/**/*.scss'
 
-compile 'css/*.sass' do
-  filter :sass, filename: item.raw_filename, load_paths: [ '.', 'assets/css/' ], cache: false
+compile '/static/css/*.sass' do
+  filter :sass, filename: item.raw_filename, load_paths: [ '.', '/static/assets/css/' ], cache: false
 end
 
-compile '*' do
+compile '/*.html' do
   if item.binary?
     # don’t filter binary items
   else
     filter :erb
-    layout start_date.future? ? 'default' : 'archive'
+    layout start_date.future? ? '/default.html.erb' : '/archive.html.erb'
   end
 end
 
-compile '*', rep: :preview do
-  if item == latest
-    filter :erb
-    layout 'preview'
-  end
+compile '/static/**/*' do
 end
 
-route 'css/*.sass' do
+route '/static/css/*.sass' do
   # Compile SASS to CSS
-  item.identifier.gsub('.sass', '.css').chop
+  item.identifier.to_s.gsub('.sass', '.css').sub(/\A\/static/, '')
 end
 
-route '*' do
+route '/*.html' do
   if item.binary?
     item.identifier.chop
   elsif item == latest
     '/index.html'
   else
-    start_date.strftime('/%b%Y.html').downcase
+    "/edition-#{@item[:edition]}.html"
   end
 end
 
-route '*', rep: :preview do
-  if item == latest
-    '/preview.html'
-  end
+route '/static/**/*' do
+  item.identifier.to_s.sub(/\A\/static/, '')
 end
 
-route '/', rep: :index do
-  '/index.html'
-end
-
-layout '*', :erb
+layout '/*', :erb

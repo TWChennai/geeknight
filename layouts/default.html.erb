@@ -1,4 +1,4 @@
-<% render '_layout', title: start_date.strftime("%b %Y") do %>
+<% render '/_layout.*', title: start_date.strftime("%b %Y") do %>
     <section id="intro" class="feature">
         <div class="row logo">
             <div class="large-12 columns">
@@ -102,17 +102,17 @@
         </div>
     </section>
 
-    <%= render '_about_section' %>
+    <%= render '/_about_section.*' %>
 
-    <%= render '_agenda_section' %>
+    <%= render '/_agenda_section.*' %>
 
-    <%= render '_location_section' %>
+    <%= render '/_location_section.*' %>
 
-    <%= render '_archive_section' %>
+    <%= render '/_archive_section.*' %>
 
-    <%= render '_header_section' %>
+    <%= render '/_header_section.*' %>
 
-    <%= render '_footer_section' %>
+    <%= render '/_footer_section.*' %>
 
     <script>window.targetDate = new Date(<%= start_date.to_i %> * 1000)</script>
     <script src="js/ticker.js"></script>
