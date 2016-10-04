@@ -16,7 +16,13 @@
             <div class="large-8 columns summary" data-anchor-target="#agenda-<%= i %>"
                  data-bottom="transform:rotateX(90deg) scale(0);opacity:0"
                  data--200-bottom="transform:rotateX(0) scale(1);opacity:1">
-                <p><%= agenda[:title] %></p>
+
+                <% if agenda[:video_link] %>
+                  <p><a href="<%= agenda[:video_link] %>" target="_blank"><%= agenda[:title] %></a></p>
+                <% else %>
+                  <p><%= agenda[:title] %></p>
+                <% end%>
+              
                 <% if agenda[:subtitle] %>
                     <p><small><%= agenda[:subtitle] %></small></p>
                 <% end %>
