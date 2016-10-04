@@ -22,25 +22,33 @@
                 <% else %>
                   <p><%= agenda[:title] %></p>
                 <% end%>
-              
+
                 <% if agenda[:subtitle] %>
                     <p><small><%= agenda[:subtitle] %></small></p>
                 <% end %>
-                <% if agenda[:image] %>
-                    <p><img src="img/speaker/<%= agenda[:image] %>" alt="<%= agenda[:speaker] %>" /></p>
+
+                <% if agenda[:speakers] %>
+                  <p><small>By:</small></p>
+                  <% agenda[:speakers].each_with_index do |speaker, i| %>
+                    <p>
+                      <% if speaker[:image] %>
+                          <img src="img/speaker/<%= speaker[:image] %>" alt="<%= speaker[:name] %>" />
+                      <% end %>
+                      <small>
+                        <% if speaker[:profile] %>
+                            <a href="<%= speaker[:profile] %>" rel="nofollow" target="_blank"><%= speaker[:name] %></a>
+                        <% else %>
+                            <%= speaker[:name] %>
+                        <% end %>
+                        <% if speaker[:description] %>
+                          <br />
+                          <%= speaker[:description] %>
+                        <% end %>
+                      </small>
+                    </p>
+                  <% end %>
                 <% end %>
-                <% if agenda[:speaker] %>
-                    <p><small>By:
-                    <% if agenda[:profile] %>
-                    <a href="<%= agenda[:profile] %>" rel="nofollow" target="_blank"><%= agenda[:speaker] %></a>
-                    <% else %>
-                        <%= agenda[:speaker] %>
-                    <% end %>
-                    </small></p>
-                <% end %>
-                <% if agenda[:speaker_profile] %>
-                  <p><small> <%= agenda[:speaker_profile] %> </small></p>
-                <% end %>
+
                 <% if agenda[:resources] %>
                     <p><small>Resources:
                     <% agenda[:resources].each_with_index do |resource, i| %>
