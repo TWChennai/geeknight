@@ -30,7 +30,7 @@ Commit changes to master dir (including `/docs` dir) and push
 * `content` - content for each geek night
 * `layouts` - layouts for default and archive versions
 * `Rules` - routing rules
-* `gh-pages` - folder containing the generated site
+* `docs` - folder containing the generated site
 
 # Front-End Development
 
