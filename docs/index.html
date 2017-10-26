@@ -263,6 +263,8 @@
                 
 
                 
+                    <p><small>At Indix we collect and process lots of data. Most of our processing initially were done as MapReduce (henceforth MR) jobs but as our data grew in size we moved towards stream processing. We monitor the behaviour of our systems through collection of business metrics. It was relatively easy to write Stats jobs on our MR output but things got tricky when we moved to Stream based processing. <p>Our key learnings over the years have been <ul> <li>Approximate stats now > Accurate stats tomorrow</li> <li>Our metrics were just aggregates (counts / uniques) with rollups</li> <li>Existing open source systems were more for system monitoring than business metrics</li> <li>Model aggregates as Commutative Monoids using <a href='https://twitter.github.io/algebird/typeclasses/monoid.html'>Algebird's</a> typeclasses.</li> </ul></p> <p>We put all our learnings and built a system called Abel which solved this for us. It aggregates a million events in ~15 minutes on a single box.</p></small></p>
+                
 
                 
                   <p><small>By:</small></p>
@@ -271,7 +273,7 @@
                       
                       <small>
                         
-                            <a href="https://www.linkedin.com/in/codingnirvana/" rel="nofollow" target="_blank">Ashwanth Kumar</a>
+                            <a href="https://www.linkedin.com/in/ashwanthkumar/" rel="nofollow" target="_blank">Ashwanth Kumar</a>
                         
                         
                       </small>
