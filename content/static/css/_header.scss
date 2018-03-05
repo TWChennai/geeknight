@@ -1,0 +1,44 @@
+.header {
+  background: $white;
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 0;
+  z-index: 999;
+  a {
+    text-decoration: none;
+    color: $pink;
+  }
+  .nav-bar {
+    width: 960px;
+    display: flex;
+    position: relative;
+    top: 15px;
+    bottom: 15px;
+    margin: auto;
+    opacity: 0.85;
+    .logo-section {
+      display: flex;
+      flex: 1 1 50%;
+      .logo {
+        background: $geeknight-logo no-repeat;
+        background-size: 140px;
+        height: 65px;
+        width: 160px;
+        margin-left: 5px;
+      }
+    }
+    .menu {
+      display: flex;
+      align-items: center;
+      flex: 1 1 30%;
+      &-item {
+        flex: 1 1 20%;
+        white-space: nowrap;
+        text-align: center;
+      }
+    }
+  }
+}

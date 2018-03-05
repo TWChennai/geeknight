@@ -1,41 +1,13 @@
-<header id="header" class="feature">
-    <div class="fixed">
-        <nav class="top-bar">
-            <ul class="title-area">
-                <li class="name"><h1><a href="./">Geek Night Chennai &raquo; <span><%= start_date(latest).strftime("%b %-d") %></span></a></h1></li>
-                <li class="toggle-topbar menu-icon"><a href="#"></a></li>
-            </ul>
-            <section class="top-bar-section">
-                <ul class="left">
-                    <li><a href="http://www.thoughtworks.com" target="_blank"
-                           onclick="ga('send', 'event', 'tw', 'tw')">ThoughtWorks</a>
-                    </li>
-                </ul>
-                <ul class="right">
-                    <li>
-                    <% if latest[:participate] %>
-                        <a href="<%= latest[:participate] %>" target="_blank" rel="nofollow"
-                           onclick="ga('send', 'event', 'participate', 'participate')">
-                            Participate
-                        </a>
-                    <% end %>
-                    </li>
-                    <li>
-                    <% if latest[:talk] %>
-                        <a href="<%= latest[:talk] %>" target="_blank" rel="nofollow"
-                           onclick="ga('send', 'event', 'talk', 'talk')">
-                            Talk
-                        </a>
-                    <% end %>
-                    </li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#agenda">Agenda</a></li>
-                    <% if @item == latest %>
-                        <li><a href="#location">Location</a></li>
-                    <% end %>
-                    <li><a href="#archive">All Editions</a></li>
-                </ul>
-            </section>
-        </nav>
-    </div>
+<header class="header">
+    <nav class="nav-bar">
+        <div class="logo-section">
+            <div class="logo"></div>
+        </div>
+        <div class="menu">
+            <div class="menu-item"><a href="#about">About</a></div>
+            <div class="menu-item"><a href="#agenda">Agenda</a></div>            
+            <div class="menu-item"><a href="#location">Location</a></div>            
+            <div class="menu-item"><a href="#archive">All Editions</a></div>
+        </div>
+    </nav>
 </header>

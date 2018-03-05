@@ -1,0 +1,102 @@
+<section id="intro" class="feature">
+    <div class="row logo">
+        <div class="large-12 columns">
+            <a href="http://www.thoughtworks.com" target="_blank"
+               onclick="ga('send', 'event', 'tw', 'tw')" class="tw-logo">
+                <img src="./img/tw-logo.png" alt="ThoughtWorks" align="center" />
+            </a>
+            <h1>Geek Night Chennai</h1>
+
+            <h6>An open forum for geeks to connect, discuss &amp; learn latest ideas, technologies and trends in software development</h6>
+
+            <% if @item[:subheader] %>
+                <h5 class="subheader"><%= @item[:subheader] %></h5>
+            <% end %>
+            <% if @item[:subnote] %>
+                <div class="subnote"><%= @item[:subnote] %></div>
+            <% end %>
+        </div>
+    </div>
+
+    <div class="row countdown">
+        <div class="small-8 small-offset-2 large-4 large-offset-0 columns date">
+            <p><%= @item[:edition] %><sup><%= @item[:edition].ordinal %></sup> edition</p>
+            <h4><%= start_date.strftime("%b %-d").upcase %></h4>
+        </div>
+        <div class="small-6 large-2 columns counter">
+            <h4><span id="days">&nbsp;</span></h4>
+            <p>days</p>
+        </div>
+        <div class="small-6 large-2 columns counter">
+            <h4><span id="hours">&nbsp;</span></h4>
+            <p>hours</p>
+        </div>
+        <div class="small-6 large-2 columns counter">
+            <h4><span id="minutes">&nbsp;</span></h4>
+            <p>minutes</p>
+        </div>
+        <div class="small-6 large-2 columns counter">
+            <h4 id="seconds">
+                &nbsp; <!-- the nbsp is required -->
+                <span id="tick">&nbsp;</span>
+                <span id="tock">&nbsp;</span>
+                <span id="tack">&nbsp;</span>
+            </h4>
+            <p>seconds</p>
+        </div>
+    </div>
+
+    <div class="row actions">
+        <div class="large-5 columns participate">
+            <% if item[:participate] %>
+                <a href="<%= @item[:participate] %>" target="_blank" rel="nofollow"
+                   onclick="ga('send', 'event', 'participate', 'participate')">
+                    <h4>Participate</h4>
+                </a>
+                <p>
+                    to learn exciting new stuff <br />
+                    <small>(and to connect with fellow geeks)</small>
+                </p>
+            <% else %>
+                <a href="javascript:void(0)">
+                    <h4><strike>Participate</strike></h4>
+                </a>
+                <% if start_date.future? %>
+                    <p>
+                        registrations not yet open <br />
+                        <small>(please check out in a few days)</small>
+                    </p>
+                <% else %>
+                    <p>
+                        registrations closed <br />
+                        <small>(sorry, but check out next geek night)</small>
+                    </p>
+                <% end %>
+            <% end %>
+        </div>
+        <div class="large-2 columns participate-or-talk">
+            <hr class="show-for-small" />
+            <h6 class="hide-for-small delimiter">&laquo; or &raquo;</h6>
+        </div>
+        <div class="large-5 columns talk">
+            <% if item[:talk] %>
+                <a href="<%= @item[:talk] %>" target="_blank" rel="nofollow"
+                   onclick="ga('send', 'event', 'talk', 'talk')">
+                    <h4>Present</h4>
+                </a>
+                <p>
+                    to share exciting new stuff <br />
+                    <small>(accepted for this and subsequent geek nights)</small>
+                </p>
+            <% else %>
+                <a href="javascript:void(0)">
+                    <h4><strike>Present</strike></h4>
+                </a>
+                <p>
+                    presentations not yet open <br />
+                    <small>(please check out in a few days)</small>
+                </p>
+            <% end %>
+        </div>
+    </div>
+</section>

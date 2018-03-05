@@ -1,6 +1,20 @@
 @charset "UTF-8"
 @import "normalize", "variables", "foundation/components/global", "foundation/components/type", "foundation/components/grid", "foundation/components/block-grid", "foundation/components/visibility", "foundation/components/top-bar", "foundation/components/buttons", "animate"
 
+//Colors
+$pink: #ef5ba1
+$white: #FFF
+$black: #000
+$seafoam-blue: #80c9d2
+$nice-blue: #1a73ba
+//Images
+$tw-logo: url("/assets/img/tw-logo-white.svg")
+$geeknight-logo: url("/assets/img/geek_night_logo.svg")
+$direction-img: url("/assets/img/direction.svg")
+$intro-background: url("/assets/img/intro_background.jpg")
+
+@import "header"
+
 =experimental($property, $values...)
   -webkit-#{$property} : $values
   -moz-#{$property} : $values
