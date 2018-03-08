@@ -51,6 +51,96 @@
         </div>
     </section>
 
+    <header class="header">
+    <nav class="nav-bar">
+        <div class="logo-section">
+            <div class="logo"></div>
+        </div>
+        <div class="menu">
+            <div class="menu-item"><a href="#about">About</a></div>
+            <div class="menu-item"><a href="#agenda">Agenda</a></div>            
+            <div class="menu-item"><a href="#location">Location</a></div>            
+            <div class="menu-item"><a href="#archive">All Editions</a></div>
+        </div>
+    </nav>
+</header>
+    <section id="intro" class="feature">
+    <div class="row logo">
+        <div class="large-12 columns">
+            <a href="http://www.thoughtworks.com" target="_blank"
+               onclick="ga('send', 'event', 'tw', 'tw')" class="tw-logo">
+                <img src="./img/tw-logo.png" alt="ThoughtWorks" align="center" />
+            </a>
+            <h1>Geek Night Chennai</h1>
+
+            <h6>An open forum for geeks to connect, discuss &amp; learn latest ideas, technologies and trends in software development</h6>
+
+            
+            
+                <div class="subnote">This event will be live streamed on <a href='https://www.youtube.com/playlist?list=PLH8WPOo4hnqxpP-yiDZLdQfa28PmHVxzI'>YouTube</a>.</div>
+            
+        </div>
+    </div>
+
+    <div class="row countdown">
+        <div class="small-8 small-offset-2 large-4 large-offset-0 columns date">
+            <p>44<sup>th</sup> edition</p>
+            <h4>JUN 29</h4>
+        </div>
+        <div class="small-6 large-2 columns counter">
+            <h4><span id="days">&nbsp;</span></h4>
+            <p>days</p>
+        </div>
+        <div class="small-6 large-2 columns counter">
+            <h4><span id="hours">&nbsp;</span></h4>
+            <p>hours</p>
+        </div>
+        <div class="small-6 large-2 columns counter">
+            <h4><span id="minutes">&nbsp;</span></h4>
+            <p>minutes</p>
+        </div>
+        <div class="small-6 large-2 columns counter">
+            <h4 id="seconds">
+                &nbsp; <!-- the nbsp is required -->
+                <span id="tick">&nbsp;</span>
+                <span id="tock">&nbsp;</span>
+                <span id="tack">&nbsp;</span>
+            </h4>
+            <p>seconds</p>
+        </div>
+    </div>
+
+    <div class="row actions">
+        <div class="large-5 columns participate">
+            
+                <a href="https://www.meetup.com/Chennai-Geek-Night/events/240933407/" target="_blank" rel="nofollow"
+                   onclick="ga('send', 'event', 'participate', 'participate')">
+                    <h4>Participate</h4>
+                </a>
+                <p>
+                    to learn exciting new stuff <br />
+                    <small>(and to connect with fellow geeks)</small>
+                </p>
+            
+        </div>
+        <div class="large-2 columns participate-or-talk">
+            <hr class="show-for-small" />
+            <h6 class="hide-for-small delimiter">&laquo; or &raquo;</h6>
+        </div>
+        <div class="large-5 columns talk">
+            
+                <a href="https://docs.google.com/forms/d/1llJxKCuEnPXOPHnXUQHnc8Unlt_Y4kPvWJqndjl_6Gg/viewform" target="_blank" rel="nofollow"
+                   onclick="ga('send', 'event', 'talk', 'talk')">
+                    <h4>Present</h4>
+                </a>
+                <p>
+                    to share exciting new stuff <br />
+                    <small>(accepted for this and subsequent geek nights)</small>
+                </p>
+            
+        </div>
+    </div>
+</section>
     <section id="agenda" class="feature">
     <div class="row" data-bottom="transform:translateY(-10em)" data--100-bottom="transform:translateY(0em)">
         <h2>Agenda</h2>
@@ -251,34 +341,29 @@
     </div>
 </section>
 
-
-    <section id="about" class="feature">
-    <div class="row"
-         data-bottom="transform:translateY(-5em)" data--100-bottom="transform:translateY(0)">
-        <div class="large-12 columns social">
-            <a rel="nofollow" href="https://www.facebook.com/GeeknightChennai?viewer_id=100006569229519" target="_blank" title="Like us on FaceBook" onclick="ga('send', 'event', 'social', 'like')"><i class="icon-like"></i></a>
-            <a rel="nofollow" href="https://www.facebook.com/groups/chennaigeeks/" target="_blank"><i class="icon-facebook-2" title="FaceBook discussion group" onclick="ga('send', 'event', 'social', 'facebook')"></i></a>
-            <a rel="nofollow" href="https://twitter.com/intent/tweet?url=twchennai.github.io/geeknight&text=Whats+up&hashtags=geeknightchennai" target="_blank" title="Tweet hashtag #geeknightchennai" onclick="ga('send', 'event', 'social', 'twitter')"><i class="icon-twitter-2"></i></a>
-            <a rel="nofollow" href="mailto:geeknight.chennai@thoughtworks.com" title="Email us" onclick="ga('send', 'event', 'social', 'email')"><i class="icon-mail"></i></a>
-            <!-- NOTE: Last video link is line-wrapping in small screens like iOS a rel="nofollow" href="#" title="Videos (coming soon)"><i class="icon-youtube"></i></a -->
-        </div>
+    <section id="location" class="feature">
+    <div class="row" data-bottom="transform:translateY(-10em)" data--100-bottom="transform:translateY(0em)">
+        <h2>Location</h2>
     </div>
 
     <div class="row">
-        <div class="large-12 columns" data-anchor-target="#_about">
-            <blockquote>
-                <p data--100-bottom-top="transform:perspective(400px) rotateX(90deg) scale(.5);transform-origin:50% 0" data--100-bottom="transform:perspective(400px) rotateX(0deg) scale(1)">Geek Night is a monthly event to promote sharing of technical knowledge and increase collaboration between geeks in Chennai. It is organized by a passionate group of programmers and sponsored by ThoughtWorks.</p>
+        <div class="large-4 columns address" data--100-bottom-top="transform:translateX(-100%)" data--100-bottom="transform:translateX(0)">
+            <p>
+                <span>ThoughtWorks Technologies Pvt Ltd</span>
+                <span>9th Floor, Phase 3</span>
+                <span>Ascendas Tech Park</span>
+                <span>Taramani, Chennai</span>
+                <span><small><a href="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=thoughtworks+chennai&aq=&sll=37.0625,-95.677068&sspn=61.153041,114.169922&vpsrc=0&ie=UTF8&hq=thoughtworks&hnear=Chennai,+Tamil+Nadu,+India&t=m&z=13&iwloc=A&cid=1639595661799347847" target="_blank" rel="nofollow">&laquo; Open in Google Maps &raquo;</a></small></span>
+            </p>
+        </div>
 
-                <p data--100-bottom-top="transform:perspective(400px) rotateX(90deg) scale(.5);transform-origin:50% 0" data--100-bottom="transform:perspective(400px) rotateX(0deg) scale(1)"><small>It happens on the <b>Last Thursday of every month</b>, unless that's a public holiday or any other unavoidable cause, like an Alien invasion.</small></p>
-
-                <p id="_about" data--100-bottom-top="transform:perspective(400px) rotateX(90deg) scale(.5);transform-origin:50% 0" data--100-bottom="transform:perspective(400px) rotateX(0deg) scale(1)"><small>We love feedback! If you have any suggestions or cribs, feel free to fill out our <a rel="nofollow" href="https://geeknight.typeform.com/to/cZEhey" target="_blank">feedback form</a>. Don't worry, its completely anonymous.</small></p>
-
-                <cite data--100-bottom-top="transform:translateX(100%)" data--100-bottom="transform:translateX(0)">Geek Night Volunteers</cite>
-            </blockquote>
+        <div class="large-8 columns map" data-anchor-target=".address" data--100-bottom-top="transform:translateX(100%)" data--100-bottom="transform:translateX(0)">
+            <a href="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=thoughtworks+chennai&aq=&sll=37.0625,-95.677068&sspn=61.153041,114.169922&vpsrc=0&ie=UTF8&hq=thoughtworks&hnear=Chennai,+Tamil+Nadu,+India&t=m&z=13&iwloc=A&cid=1639595661799347847" target="_blank" rel="nofollow">
+                <img src="./img/map.png" alt="Map" align="center" />
+            </a>
         </div>
     </div>
 </section>
-
 
     <section id="archive" class="feature">
     <div class="row" data-bottom="transform:translateY(-10em)" data--100-bottom="transform:translateY(0em)">
@@ -710,63 +795,42 @@
     </div>
 </section>
 
-
-    <header id="header" class="feature">
-    <div class="fixed">
-        <nav class="top-bar">
-            <ul class="title-area">
-                <li class="name"><h1><a href="./">Geek Night Chennai &raquo; <span>Feb 22</span></a></h1></li>
-                <li class="toggle-topbar menu-icon"><a href="#"></a></li>
-            </ul>
-            <section class="top-bar-section">
-                <ul class="left">
-                    <li><a href="http://www.thoughtworks.com" target="_blank"
-                           onclick="ga('send', 'event', 'tw', 'tw')">ThoughtWorks</a>
-                    </li>
-                </ul>
-                <ul class="right">
-                    <li>
-                    
-                        <a href="https://www.meetup.com/Chennai-Geek-Night/events/mxzvnnyxdbdc/" target="_blank" rel="nofollow"
-                           onclick="ga('send', 'event', 'participate', 'participate')">
-                            Participate
-                        </a>
-                    
-                    </li>
-                    <li>
-                    
-                        <a href="https://docs.google.com/forms/d/1llJxKCuEnPXOPHnXUQHnc8Unlt_Y4kPvWJqndjl_6Gg/viewform" target="_blank" rel="nofollow"
-                           onclick="ga('send', 'event', 'talk', 'talk')">
-                            Talk
-                        </a>
-                    
-                    </li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#agenda">Agenda</a></li>
-                    
-                    <li><a href="#archive">All Editions</a></li>
-                </ul>
-            </section>
-        </nav>
-    </div>
-</header>
-
-
-    <footer id="footer" class="feature">
-    <div class="row">
-        <div class="large-12 columns">
-            <p><small>
-                <a href=".">Geek Night Chennai</a> sponsored by
-                <a rel="nofollow" target="_blank" href="//thoughtworks.com">ThoughtWorks</a><br />
-                Built with
-                <a rel="nofollow" target="_blank" href="//html5boilerplate.com">HTML5 Boilerplate</a>,
-                <a rel="nofollow" target="_blank" href="//foundation.zurb.com">Zurb Foundation</a>,
-                <a rel="nofollow" target="_blank" href="//github.com/Prinzhorn/skrollr">Skrollr</a>,
-                <a rel="nofollow" target="_blank" href="//daneden.me/animate/">Animate</a>,
-                <a rel="nofollow" target="_blank" href="//nanoc.ws">Nanoc</a> &amp;
-                <a rel="nofollow" target="_blank" href="//fontello.com">Fontello</a>
-            </small></p>
+    <section id="about" class="feature">
+    <div class="row"
+         data-bottom="transform:translateY(-5em)" data--100-bottom="transform:translateY(0)">
+        <div class="large-12 columns social">
+            <a rel="nofollow" href="https://www.facebook.com/GeeknightChennai?viewer_id=100006569229519" target="_blank" title="Like us on FaceBook" onclick="ga('send', 'event', 'social', 'like')"><i class="icon-like"></i></a>
+            <a rel="nofollow" href="https://www.facebook.com/groups/chennaigeeks/" target="_blank"><i class="icon-facebook-2" title="FaceBook discussion group" onclick="ga('send', 'event', 'social', 'facebook')"></i></a>
+            <a rel="nofollow" href="https://twitter.com/intent/tweet?url=twchennai.github.io/geeknight&text=Whats+up&hashtags=geeknightchennai" target="_blank" title="Tweet hashtag #geeknightchennai" onclick="ga('send', 'event', 'social', 'twitter')"><i class="icon-twitter-2"></i></a>
+            <a rel="nofollow" href="mailto:geeknight.chennai@thoughtworks.com" title="Email us" onclick="ga('send', 'event', 'social', 'email')"><i class="icon-mail"></i></a>
+            <!-- NOTE: Last video link is line-wrapping in small screens like iOS a rel="nofollow" href="#" title="Videos (coming soon)"><i class="icon-youtube"></i></a -->
         </div>
+    </div>
+
+    <div class="row">
+        <div class="large-12 columns" data-anchor-target="#_about">
+            <blockquote>
+                <p data--100-bottom-top="transform:perspective(400px) rotateX(90deg) scale(.5);transform-origin:50% 0" data--100-bottom="transform:perspective(400px) rotateX(0deg) scale(1)">Geek Night is a monthly event to promote sharing of technical knowledge and increase collaboration between geeks in Chennai. It is organized by a passionate group of programmers and sponsored by ThoughtWorks.</p>
+
+                <p data--100-bottom-top="transform:perspective(400px) rotateX(90deg) scale(.5);transform-origin:50% 0" data--100-bottom="transform:perspective(400px) rotateX(0deg) scale(1)"><small>It happens on the <b>Last Thursday of every month</b>, unless that's a public holiday or any other unavoidable cause, like an Alien invasion.</small></p>
+
+                <p id="_about" data--100-bottom-top="transform:perspective(400px) rotateX(90deg) scale(.5);transform-origin:50% 0" data--100-bottom="transform:perspective(400px) rotateX(0deg) scale(1)"><small>We love feedback! If you have any suggestions or cribs, feel free to fill out our <a rel="nofollow" href="https://geeknight.typeform.com/to/cZEhey" target="_blank">feedback form</a>. Don't worry, its completely anonymous.</small></p>
+
+                <cite data--100-bottom-top="transform:translateX(100%)" data--100-bottom="transform:translateX(0)">Geek Night Volunteers</cite>
+            </blockquote>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer">
+    <div class="logo-section">
+        <a href="http://www.thoughtworks.com" target="_blank" onclick="ga('send', 'event', 'tw', 'tw')">
+            <span class="sponsored-by">Sponsored by</span>
+        </a>
+        <div class="logo"></div>
+    </div>
+    <div class="feedback-section">
+        <a rel="nofollow" href="https://geeknight.typeform.com/to/cZEhey" target="_blank">Feedback</a>.
     </div>
 </footer>
 
