@@ -60,6 +60,52 @@ html {
         white-space: nowrap;
         text-align: center; }
 
+.location {
+  position: relative; }
+  .location .live-map {
+    height: 500px;
+    width: 100%;
+    border: 0;
+    padding: 0; }
+  .location .map {
+    position: absolute;
+    height: 180px;
+    width: 500px;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 20px;
+    margin: 5px;
+    background-color: white;
+    box-shadow: 17px 19px 20px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    border-radius: 5px; }
+    .location .map-container {
+      position: relative;
+      display: flex; }
+    .location .map-address {
+      flex: 1 1 80%;
+      border-right: 1px solid #ef5ba1; }
+    .location .map-direction {
+      position: relative;
+      flex: 1 1 20%;
+      text-align: center;
+      align-self: center; }
+      .location .map-direction-logo {
+        height: 70px;
+        background: url("/img/direction.svg") no-repeat;
+        background-size: 50px;
+        background-position: 30px 20px; }
+  .location .location-heading {
+    background-color: #dfdfdf;
+    height: 90px;
+    text-align: center; }
+    .location .location-heading-text {
+      font-size: 36px;
+      font-weight: 800;
+      color: black;
+      padding: 20px 0 20px 0;
+      text-transform: uppercase; }
+
 .footer {
   background: #000;
   display: flex;
