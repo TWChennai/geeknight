@@ -1,0 +1,18 @@
+.about-heading {
+  background-color: #dfdfdf;
+  height: 90px;
+  text-align: center;
+  &-text {
+    font-size: 36px;
+    font-weight: 800;
+    color: black;
+    padding: 20px 0 20px 0;
+    text-transform: uppercase;
+  }
+}
+
+.about-details {
+  font-size: 18px;
+  margin: 0 180px;
+  text-align: justify;
+}
