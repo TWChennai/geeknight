@@ -1,24 +1,4 @@
 <% render '/_layout.*', title: start_date.strftime("%b %Y") do %>
-    <section id="intro" class="feature">
-        <div class="row logo">
-            <div class="large-12 columns">
-                <a href="http://www.thoughtworks.com" target="_blank"
-                   onclick="ga('send', 'event', 'tw', 'tw')">
-                    <img src="./img/tw-logo.png" alt="ThoughtWorks" align="center" />
-                </a>
-                <h1>Geek Night Chennai</h1>
-                <h5>Flashback</h5>
-            </div>
-        </div>
-
-        <div class="row countdown">
-            <div class="small-8 small-offset-2 large-8 large-offset-2 columns date">
-                <p><%= @item[:edition] %><sup><%= @item[:edition].ordinal %></sup> edition</p>
-                <h4><%= start_date.strftime("%b %-d %Y") %></h4>
-            </div>
-        </div>
-    </section>
-
     <%= render '/_header_section.*' %>
     <%= render '/_intro_section.*' %>
     <%= render '/_agenda_section.*' %>

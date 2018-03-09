@@ -10,18 +10,20 @@ $nice-blue: #1a73ba
 $tw-logo: url("/img/tw-logo-white.svg")
 $geeknight-logo: url("/img/geek_night_logo.svg")
 $direction-img: url("/img/direction.svg")
+$intro-background: url("/img/intro_background.jpg")
 
 html
   width: 100%
   height: 100%
-  overflow: auto
-  font-family: 'Open Sans', sans-serif
+  overflow: auto  
+  font-family: 'OpenSans', sans-serif
   body
     position: relative
     margin: auto
     min-width: 960px
   a
     color: $pink
+    text-decoration: none
 
 #toggle
   display: none
@@ -36,6 +38,7 @@ html
   height: 285px
 
 @import "header"
+@import "intro"
 @import "location"
 @import "about"
 @import "footer"

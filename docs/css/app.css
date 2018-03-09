@@ -2,13 +2,14 @@ html {
   width: 100%;
   height: 100%;
   overflow: auto;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "OpenSans", sans-serif; }
   html body {
     position: relative;
     margin: auto;
     min-width: 960px; }
   html a {
-    color: #ef5ba1; }
+    color: #ef5ba1;
+    text-decoration: none; }
 
 #toggle {
   display: none;
@@ -59,6 +60,85 @@ html {
         flex: 1 1 20%;
         white-space: nowrap;
         text-align: center; }
+
+.intro {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  min-height: 800px;
+  text-align: center; }
+  .intro .banner {
+    flex: 1 1 60%;
+    background: url("/img/intro_background.jpg") center center no-repeat;
+    background-size: 100%; }
+    .intro .banner-overlay {
+      background-color: rgba(255, 255, 255, 0.5);
+      margin: auto;
+      height: 320px;
+      max-width: 600px;
+      position: absolute;
+      top: -100px;
+      bottom: 0;
+      right: 0;
+      left: 0; }
+  .intro-text {
+    flex: 0 1 10%;
+    background-color: #80c9d2;
+    font-size: 34px;
+    font-weight: 600;
+    padding: 5% 5% 0 5%; }
+    .intro-text .read-more {
+      color: #ef5ba1; }
+    .intro-text .read-more::after {
+      content: "More";
+      cursor: pointer;
+      text-decoration: underline; }
+    .intro-text #toggle:checked ~ label::after {
+      content: "Less"; }
+  .intro-info {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%; }
+    .intro-info-place-title {
+      font-size: 33px;
+      font-weight: 800;
+      border-bottom: 2px solid #4a4a4a;
+      margin: 0 70px;
+      padding-top: 26px; }
+    .intro-info-edition {
+      padding-top: 15px;
+      font-size: 24px;
+      font-weight: bold; }
+      .intro-info-edition sup {
+        font-size: 18px; }
+    .intro-info-date {
+      padding-top: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      padding-bottom: 20px; }
+      .intro-info-date sup {
+        font-size: 14px; }
+    .intro-info-buttons {
+      display: flex;
+      justify-content: center; }
+      .intro-info-buttons-button {
+        border-radius: 4px;
+        border: 1px solid transparent;
+        width: 220px;
+        height: 60px;
+        cursor: pointer;
+        margin-left: 30px; }
+        .intro-info-buttons-button-text {
+          height: 60px;
+          font-size: 24px;
+          line-height: 58px;
+          border-radius: 4px;
+          background-color: #1a73ba;
+          color: #FFF; }
+        .intro-info-buttons-button-sub-text {
+          color: #000;
+          font-style: italic;
+          font-size: 14px; }
 
 .location {
   position: relative; }

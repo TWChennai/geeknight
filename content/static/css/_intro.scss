@@ -1,0 +1,111 @@
+.intro {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  min-height: 800px;
+  text-align: center;
+
+  .banner {
+    flex: 1 1 60%;
+    background: $intro-background center center no-repeat;
+    background-size: 100%;    
+
+    &-overlay {
+      background-color: rgba(255, 255, 255, 0.5);
+      margin: auto;
+      height: 320px;
+      max-width: 600px;
+      position: absolute;
+      top: -100px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+  }
+
+  &-text {
+    flex: 0 1 10%;
+    background-color: $seafoam-blue;
+    font-size: 34px;
+    font-weight: 600;
+    padding: 5% 5% 0 5%;
+
+    .read-more {
+      color: $pink;
+    }
+
+    .read-more::after {
+      content: "More";
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    #toggle:checked ~ label::after {
+      content: "Less";
+    }
+  }
+
+  &-info {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+
+    &-place {
+      &-title {
+        font-size: 33px;
+        font-weight: 800;
+        border-bottom: 2px solid #4a4a4a;
+        margin: 0 70px;
+        padding-top: 26px;
+      }
+    }
+
+    &-edition {
+      padding-top: 15px;
+      font-size:24px;
+      font-weight: bold;
+      sup {
+        font-size: 18px;
+      }
+    }
+
+    &-date {
+      padding-top: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      padding-bottom: 20px;
+      sup {
+        font-size: 14px;
+      }
+    }
+
+    &-buttons {
+      display: flex;
+      justify-content: center;
+
+      &-button {
+        border-radius: 4px;
+        border: 1px solid transparent;        
+        width: 220px;
+        height: 60px;
+        cursor: pointer;
+        margin-left: 30px;
+
+        &-text {
+          height: 60px;
+          font-size: 24px;
+          line-height: 58px;
+          border-radius: 4px;
+          background-color: $nice-blue;
+          color: $white;
+        }
+
+        &-sub-text {
+          color: $black;
+          font-style: italic;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
