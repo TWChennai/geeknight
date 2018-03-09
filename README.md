@@ -1,4 +1,4 @@
-# Geek Night Coimbatore
+# Geek Night Chennai
 
 An open forum for geeks to connect, discuss &amp; learn latest ideas, technologies and trends in software development
 
