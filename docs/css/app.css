@@ -173,11 +173,13 @@ html {
 
 .location {
   position: relative; }
-  .location .live-map {
-    height: 500px;
-    width: 100%;
-    border: 0;
-    padding: 0; }
+  .location .live-map-container {
+    margin: -5px; }
+    .location .live-map-container .live-map {
+      height: 500px;
+      width: 100%;
+      border: 0;
+      padding: 0; }
   .location .map {
     position: absolute;
     height: 180px;
@@ -216,6 +218,25 @@ html {
       font-weight: 800;
       color: #000;
       text-transform: uppercase; }
+
+.archive-heading {
+  background-color: #dfdfdf;
+  height: 90px;
+  line-height: 90px;
+  text-align: center; }
+  .archive-heading-text {
+    font-size: 36px;
+    font-weight: 800;
+    color: #000;
+    text-transform: uppercase; }
+.archive .previous-editions ul {
+  display: flex;
+  flex-flow: column wrap;
+  height: 768px;
+  list-style: none; }
+  .archive .previous-editions ul li {
+    text-align: center;
+    padding: 15px; }
 
 .about-heading {
   background-color: #dfdfdf;

@@ -1,0 +1,26 @@
+.archive {  
+  &-heading {
+    background-color: $section-heading-background;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    &-text {
+      font-size: 36px;
+      font-weight: 800;
+      color: $black;      
+      text-transform: uppercase;
+    }
+  }
+  .previous-editions {
+    ul {
+      display: flex;
+      flex-flow: column wrap;
+      height: 768px;
+      list-style: none;
+      li {
+        text-align: center;
+        padding: 15px;
+      }
+    }
+  }  
+}

@@ -1,10 +1,13 @@
 .location {
   position: relative;
-  .live-map {
-    height: 500px;
-    width: 100%;
-    border: 0;
-    padding: 0;
+  .live-map-container {
+    margin: -5px;
+    .live-map {
+      height: 500px;
+      width: 100%;
+      border: 0;
+      padding: 0;
+    }
   }
 
   .map {
