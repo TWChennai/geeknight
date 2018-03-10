@@ -72,7 +72,7 @@ html {
     background: url("/img/intro_background.jpg") center center no-repeat;
     background-size: 100%; }
     .intro .banner-overlay {
-      background-color: rgba(255, 255, 255, 0.5);
+      background-color: rgba(255, 255, 255, 0.8);
       margin: auto;
       height: 320px;
       max-width: 600px;
@@ -150,24 +150,26 @@ html {
     font-weight: 800;
     color: #000;
     text-transform: uppercase; }
-.agenda .content .speakers {
-  margin: 0px auto;
-  min-width: 768px;
-  width: 768px; }
-  .agenda .content .speakers:first-child {
-    border-top: none; }
-  .agenda .content .speakers:last-child {
-    border-bottom: 1px solid #000; }
-  .agenda .content .speakers .speaker-details {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    border-top: 1px solid #000;
-    padding: 20px 0; }
-    .agenda .content .speakers .speaker-details .time {
-      flex: 1 1 20%; }
-    .agenda .content .speakers .speaker-details .speaker-detail {
-      flex: 1 1 80%; }
+.agenda .content {
+  padding: 20px 0; }
+  .agenda .content .speakers {
+    margin: 0px auto;
+    min-width: 768px;
+    width: 768px; }
+    .agenda .content .speakers:first-child {
+      border-top: none; }
+    .agenda .content .speakers:last-child {
+      border-bottom: 1px solid #000; }
+    .agenda .content .speakers .speaker-details {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      border-top: 1px solid #000;
+      padding: 20px 0; }
+      .agenda .content .speakers .speaker-details .time {
+        flex: 1 1 20%; }
+      .agenda .content .speakers .speaker-details .speaker-detail {
+        flex: 1 1 80%; }
 
 .location {
   position: relative; }
@@ -218,6 +220,7 @@ html {
 .about-heading {
   background-color: #dfdfdf;
   height: 90px;
+  line-height: 90px;
   text-align: center; }
   .about-heading-text {
     font-size: 36px;
