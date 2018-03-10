@@ -1,62 +1,52 @@
-<section id="agenda" class="feature">
-    <div class="row" data-bottom="transform:translateY(-10em)" data--100-bottom="transform:translateY(0em)">
-        <h2>Agenda</h2>
-    </div>
-
-    <div class="timings">
+<section class="agenda">
+    <div class="agenda-heading">
+        <span class="agenda-heading-text">Agenda</span>
+    </div>        
+    <div class="content">
+      <div class="speakers">
         <% @item[:agenda] && @item[:agenda].each_with_index do |agenda, i| %>
-          <div class="row">
-            <div class="large-4 columns time" id="agenda-<%= i %>"
-                 data-bottom="transform:rotateX(90deg) scale(0);opacity:0"
-                 data--200-bottom="transform:rotateX(0) scale(1);opacity:1">
-                <p>
-                    <%= agenda[:time] %> <%= "pm" unless agenda[:time].ends_with?('m') %>
-                </p>
+          <div class="speaker-details">
+            <div class="time">
+                <%= agenda[:time] %> <%= "pm" unless agenda[:time].ends_with?('m') %>
             </div>
-            <div class="large-8 columns summary" data-anchor-target="#agenda-<%= i %>"
-                 data-bottom="transform:rotateX(90deg) scale(0);opacity:0"
-                 data--200-bottom="transform:rotateX(0) scale(1);opacity:1">
+            <div class="speaker-detail">
+              <% if agenda[:video_link] %>
+                <p><a href="<%= agenda[:video_link] %>" target="_blank"><%= agenda[:title] %></a></p>
+              <% else %>
+                <p><%= agenda[:title] %></p>
+              <% end%>
 
-                <% if agenda[:video_link] %>
-                  <p><a href="<%= agenda[:video_link] %>" target="_blank"><%= agenda[:title] %></a></p>
-                <% else %>
-                  <p><%= agenda[:title] %></p>
-                <% end%>
+              <% if agenda[:subtitle] %>
+                  <p><small><%= agenda[:subtitle] %></small></p>
+              <% end %>
 
-                <% if agenda[:subtitle] %>
-                    <p><small><%= agenda[:subtitle] %></small></p>
-                <% end %>
-
-                <% if agenda[:speakers] %>
-                  <p><small>By:</small></p>
-                  <% agenda[:speakers].each_with_index do |speaker, i| %>
-                    <p>
-                      <% if speaker[:image] %>
-                          <img src="img/speaker/<%= speaker[:image] %>" alt="<%= speaker[:name] %>" />
-                      <% end %>
-                      <small>
-                        <% if speaker[:profile] %>
-                            <a href="<%= speaker[:profile] %>" rel="nofollow" target="_blank"><%= speaker[:name] %></a>
-                        <% else %>
-                            <%= speaker[:name] %>
-                        <% end %>
-                        <% if speaker[:description] %>
-                          <br />
-                          <%= speaker[:description] %>
-                        <% end %>
-                      </small>
-                    </p>
-                  <% end %>
-                <% end %>
-
-                <% if agenda[:resources] %>
-                    <p><small>Resources:
-                    <% agenda[:resources].each_with_index do |resource, i| %>
-                        <a href="<%= resource[:url] %>" rel="nofollow" target="_blank"><%= resource[:title] %></a>
-                        <%= ' &bull; ' if i != agenda[:resources].length - 1 %>
+              <% if agenda[:speakers] %>
+                <p><small>By:</small></p>
+                <% agenda[:speakers].each_with_index do |speaker, i| %>                
+                    <% if speaker[:image] %>
+                        <img src="img/speaker/<%= speaker[:image] %>" alt="<%= speaker[:name] %>" />
                     <% end %>
-                    </small></p>
+                    <small>
+                      <% if speaker[:profile] %>
+                          <a href="<%= speaker[:profile] %>" rel="nofollow" target="_blank"><%= speaker[:name] %></a>
+                      <% else %>
+                          <%= speaker[:name] %>
+                      <% end %>
+                      <% if speaker[:description] %>                      
+                        <%= speaker[:description] %>
+                      <% end %>
+                    </small>                
                 <% end %>
+              <% end %>
+
+              <% if agenda[:resources] %>
+                  <p><small>Resources:
+                  <% agenda[:resources].each_with_index do |resource, i| %>
+                      <a href="<%= resource[:url] %>" rel="nofollow" target="_blank"><%= resource[:title] %></a>
+                      <%= ' &bull; ' if i != agenda[:resources].length - 1 %>
+                  <% end %>
+                  </small></p>
+              <% end %>
             </div>
           </div>
         <% end %>

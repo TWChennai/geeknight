@@ -45,14 +45,14 @@
   }
 
   .location-heading {
-    background-color: #dfdfdf;
+    background-color: $section-heading-background;
     height: 90px;
+    line-height: 90px;
     text-align: center;
     &-text {
       font-size: 36px;
       font-weight: 800;
-      color: black;
-      padding: 20px 0 20px 0;
+      color: $black;      
       text-transform: uppercase;
     }
   }

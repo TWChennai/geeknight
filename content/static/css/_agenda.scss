@@ -1,0 +1,41 @@
+.agenda {  
+  &-heading {
+    background-color: $section-heading-background;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    &-text {
+      font-size: 36px;
+      font-weight: 800;
+      color: $black;      
+      text-transform: uppercase;
+    }
+  }
+  .content {
+    padding: 20px 0;
+    .speakers {
+      margin: 0px auto;
+      min-width: 768px;
+      width: 768px;
+      &:first-child {
+        border-top: none;
+      }
+      &:last-child {
+        border-bottom: 1px solid $black;
+      }
+      .speaker-details {
+        display: flex;
+        flex-flow: row wrap;        
+        align-items: center;
+        border-top: 1px solid $black;
+        padding: 20px 0;
+        .time {
+          flex: 1 1 20%;
+        }
+        .speaker-detail {
+          flex: 1 1 80%;
+        }
+      }    
+    }
+  }
+}

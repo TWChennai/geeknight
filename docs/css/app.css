@@ -140,6 +140,35 @@ html {
           font-style: italic;
           font-size: 14px; }
 
+.agenda-heading {
+  background-color: #dfdfdf;
+  height: 90px;
+  line-height: 90px;
+  text-align: center; }
+  .agenda-heading-text {
+    font-size: 36px;
+    font-weight: 800;
+    color: #000;
+    text-transform: uppercase; }
+.agenda .content .speakers {
+  margin: 0px auto;
+  min-width: 768px;
+  width: 768px; }
+  .agenda .content .speakers:first-child {
+    border-top: none; }
+  .agenda .content .speakers:last-child {
+    border-bottom: 1px solid #000; }
+  .agenda .content .speakers .speaker-details {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    border-top: 1px solid #000;
+    padding: 20px 0; }
+    .agenda .content .speakers .speaker-details .time {
+      flex: 1 1 20%; }
+    .agenda .content .speakers .speaker-details .speaker-detail {
+      flex: 1 1 80%; }
+
 .location {
   position: relative; }
   .location .live-map {
@@ -178,12 +207,12 @@ html {
   .location .location-heading {
     background-color: #dfdfdf;
     height: 90px;
+    line-height: 90px;
     text-align: center; }
     .location .location-heading-text {
       font-size: 36px;
       font-weight: 800;
-      color: black;
-      padding: 20px 0 20px 0;
+      color: #000;
       text-transform: uppercase; }
 
 .about-heading {
