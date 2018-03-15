@@ -6,27 +6,27 @@
       <div class="speakers">
         <% @item[:agenda] && @item[:agenda].each_with_index do |agenda, i| %>
           <div class="speaker-details">
-            <div class="time">
+            <span class="time">
                 <%= agenda[:time] %> <%= "pm" unless agenda[:time].ends_with?('m') %>
-            </div>
+            </span>
             <div class="speaker-detail">
-              <% if agenda[:video_link] %>
-                <p><a href="<%= agenda[:video_link] %>" target="_blank"><%= agenda[:title] %></a></p>
-              <% else %>
-                <p><%= agenda[:title] %></p>
-              <% end%>
-
-              <% if agenda[:subtitle] %>
-                  <p><small><%= agenda[:subtitle] %></small></p>
-              <% end %>
-
               <% if agenda[:speakers] %>
-                <p><small>By:</small></p>
+                <% if agenda[:video_link] %>
+                  <span class="title"><a href="<%= agenda[:video_link] %>" target="_blank"><%= agenda[:title] %></a></span>
+                <% else %>
+                  <span class="title"><%= agenda[:title] %></span>
+                <% end%>
+
+                <% if agenda[:subtitle] %>
+                    <span class="subtitle"><%= agenda[:subtitle] %></span>
+                <% end %>
+
+                <span class="by">By</span>
                 <% agenda[:speakers].each_with_index do |speaker, i| %>                
                     <% if speaker[:image] %>
                         <img src="img/speaker/<%= speaker[:image] %>" alt="<%= speaker[:name] %>" />
                     <% end %>
-                    <small>
+                    <span class="name">
                       <% if speaker[:profile] %>
                           <a href="<%= speaker[:profile] %>" rel="nofollow" target="_blank"><%= speaker[:name] %></a>
                       <% else %>
@@ -35,7 +35,17 @@
                       <% if speaker[:description] %>                      
                         <%= speaker[:description] %>
                       <% end %>
-                    </small>                
+                    </span>
+                <% end %>
+              <% else %>
+                <% if agenda[:video_link] %>
+                  <span class="title-default"><a href="<%= agenda[:video_link] %>" target="_blank"><%= agenda[:title] %></a></span>
+                <% else %>
+                  <span class="title-default"><%= agenda[:title] %></span>
+                <% end%>
+
+                <% if agenda[:subtitle] %>
+                    <span class="subtitle"><%= agenda[:subtitle] %></span>
                 <% end %>
               <% end %>
 
