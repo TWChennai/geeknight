@@ -173,6 +173,10 @@ html {
         text-transform: uppercase; }
       .agenda .content .speakers .speaker-details .speaker-detail {
         flex: 1 1 85%; }
+        .agenda .content .speakers .speaker-details .speaker-detail .img {
+          border-radius: 50px;
+          width: 50px;
+          height: 50px; }
         .agenda .content .speakers .speaker-details .speaker-detail .title {
           color: #ef5ba1;
           font-size: 20px;
@@ -194,7 +198,8 @@ html {
         .agenda .content .speakers .speaker-details .speaker-detail .name {
           color: #ef5ba1;
           font-size: 15px;
-          font-weight: bold; }
+          font-weight: bold;
+          display: inline-block; }
 
 .location {
   position: relative; }
@@ -256,7 +261,7 @@ html {
 .archive .previous-editions ul {
   display: flex;
   flex-flow: column wrap;
-  height: 760px;
+  height: 768px;
   list-style: none; }
   .archive .previous-editions ul li {
     text-align: center;

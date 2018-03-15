@@ -37,6 +37,11 @@
         }
         .speaker-detail {
           flex: 1 1 85%;
+          .img {
+            border-radius: 50px;
+            width: 50px;
+            height: 50px;
+          }
           .title {
             color: $pink;
             font-size: 20px;
@@ -63,6 +68,7 @@
             color: $pink;
             font-size: 15px;
             font-weight: bold;
+            display: inline-block;
           }
         }
       }    

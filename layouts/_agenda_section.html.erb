@@ -22,15 +22,15 @@
                 <% end %>
 
                 <span class="by">By</span>
-                <% agenda[:speakers].each_with_index do |speaker, i| %>                
-                    <% if speaker[:image] %>
-                        <img src="img/speaker/<%= speaker[:image] %>" alt="<%= speaker[:name] %>" />
-                    <% end %>
+                <% agenda[:speakers].each_with_index do |speaker, i| %>
                     <span class="name">
                       <% if speaker[:profile] %>
                           <a href="<%= speaker[:profile] %>" rel="nofollow" target="_blank"><%= speaker[:name] %></a>
                       <% else %>
                           <%= speaker[:name] %>
+                      <% end %>
+                      <% if speaker[:image] %>
+                        <img class="img" src="img/speaker/<%= speaker[:image] %>" alt="<%= speaker[:name] %>" />
                       <% end %>
                       <% if speaker[:description] %>                      
                         <%= speaker[:description] %>
