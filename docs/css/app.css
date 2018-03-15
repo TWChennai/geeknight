@@ -256,7 +256,7 @@ html {
 .archive .previous-editions ul {
   display: flex;
   flex-flow: column wrap;
-  height: 768px;
+  height: 760px;
   list-style: none; }
   .archive .previous-editions ul li {
     text-align: center;

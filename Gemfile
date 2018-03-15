@@ -11,3 +11,8 @@ gem 'terminal-notifier-guard'
 
 gem 'listen', require: false
 gem 'adsf', require: false
+
+group :development do
+  gem 'pry'
+  gem 'rb-readline'
+end

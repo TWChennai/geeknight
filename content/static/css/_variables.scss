@@ -1,32 +1,16 @@
 @charset "UTF-8";
 
-$white: #FFFFFF;
-$dark: #222222;
-$blue: #00AEEF;
+//Colors
+$pink: #ef5ba1;
+$white: #FFF;
+$black: #000;
+$seafoam-blue: #80c9d2;
+$nice-blue: #1a73ba;
+$section-heading-background: #dfdfdf;
+$gray: #4a4a4a;
 
-$primary-color: $dark !default;
-$secondary-color: $blue !default;
-
-$base-font-size: 140% !default;
-$body-bg: $white !default;
-$body-font-color: $dark !default;
-$body-font-weight: 300 !default;
-$body-font-family: 'Open Sans', sans-serif !default;
-
-$header-top-margin: 0 !default;
-$header-bottom-margin: .1em !default;
-$header-font-family: $body-font-family;
-$header-font-weight: $body-font-weight !default;
-
-$paragraph-font-size: .75em !default;
-$paragraph-margin-bottom: .5em !default;
-$paragraph-font-weight: $body-font-weight !default;
-$paragraph-line-height: 1.25 !default;
-
-$topbar-bg-color: darken($white, 5%);
-$topbar-link-color: $dark;
-$topbar-link-bg-hover: $blue;
-$topbar-title-weight: $body-font-weight !default;
-$topbar-link-weight: $body-font-weight !default;
-
-@import "foundation/variables";
+//Images
+$tw-logo: url("/img/tw-logo-white.svg");
+$geeknight-logo: url("/img/geek_night_logo.svg");
+$direction-img: url("/img/direction.svg");
+$intro-background: url("/img/intro_background.jpg");
