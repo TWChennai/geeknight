@@ -23,6 +23,9 @@ html {
 #toggle:checked ~ #expand {
   height: 285px; }
 
+.link {
+  text-decoration: underline; }
+
 .header {
   background: #FFF;
   position: fixed;
@@ -174,9 +177,10 @@ html {
       .agenda .content .speakers .speaker-details .speaker-detail {
         flex: 1 1 85%; }
         .agenda .content .speakers .speaker-details .speaker-detail .img {
-          border-radius: 50px;
-          width: 50px;
-          height: 50px; }
+          border-radius: 32px;
+          width: 32px;
+          height: 32px;
+          padding: 5px; }
         .agenda .content .speakers .speaker-details .speaker-detail .title {
           color: #ef5ba1;
           font-size: 20px;
@@ -193,13 +197,13 @@ html {
           font-style: italic;
           text-align: justify;
           padding: 0 0 10px 0; }
-        .agenda .content .speakers .speaker-details .speaker-detail .by {
-          font-size: 15px; }
         .agenda .content .speakers .speaker-details .speaker-detail .name {
           color: #ef5ba1;
           font-size: 15px;
           font-weight: bold;
-          display: inline-block; }
+          display: flex;
+          align-items: center;
+          justify-content: flex-start; }
 
 .location {
   position: relative; }

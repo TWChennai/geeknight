@@ -38,15 +38,16 @@
         .speaker-detail {
           flex: 1 1 85%;
           .img {
-            border-radius: 50px;
-            width: 50px;
-            height: 50px;
+            border-radius: 32px;
+            width: 32px;
+            height: 32px;
+            padding: 5px; 
           }
           .title {
             color: $pink;
             font-size: 20px;
             font-weight: bold;
-            display: block;            
+            display: block;
           }          
           .title-default {
             color: $black;
@@ -55,20 +56,19 @@
           }
           .subtitle {
             display: block;
-            color: $gray;                          
-            font-size: 15px;            
+            color: $gray;
+            font-size: 15px;
             font-style: italic;
             text-align: justify;
             padding: 0 0 10px 0;
-          }
-          .by {
-            font-size: 15px;
           }
           .name {
             color: $pink;
             font-size: 15px;
             font-weight: bold;
-            display: inline-block;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
           }
         }
       }    
