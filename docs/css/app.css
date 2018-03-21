@@ -34,7 +34,8 @@ html {
   left: 0;
   top: 0;
   padding: 0;
-  z-index: 999; }
+  z-index: 999;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2); }
   .header a {
     text-decoration: none;
     color: #ef5ba1; }
@@ -253,23 +254,106 @@ html {
       color: #000;
       text-transform: uppercase; }
 
-.archive-heading {
-  height: 90px;
-  line-height: 90px;
-  text-align: center; }
-  .archive-heading-text {
-    font-size: 36px;
-    font-weight: 800;
-    color: #000;
-    text-transform: uppercase; }
-.archive .previous-editions ul {
-  display: flex;
-  flex-flow: column wrap;
-  height: 768px;
-  list-style: none; }
-  .archive .previous-editions ul li {
-    text-align: center;
-    padding: 15px; }
+.archive {
+  padding-bottom: 40px; }
+  .archive-heading {
+    height: 90px;
+    line-height: 90px;
+    text-align: center; }
+    .archive-heading-text {
+      font-size: 36px;
+      font-weight: 800;
+      color: #000;
+      text-transform: uppercase; }
+  .archive .previous-editions {
+    display: flex;
+    margin: auto;
+    align-content: center;
+    width: 800px; }
+    .archive .previous-editions .events {
+      display: flex;
+      flex-flow: row nowrap;
+      text-align: center;
+      flex: 1 1 25%; }
+      .archive .previous-editions .events .years {
+        flex: 1 1 10%;
+        background-color: #f5f5f5; }
+        .archive .previous-editions .events .years .year {
+          padding: 0px 0 10px 0;
+          height: 20px;
+          padding: 20px; }
+      .archive .previous-editions .events .months {
+        flex: 1 1 10%;
+        background-color: #f1f1f1; }
+        .archive .previous-editions .events .months .event {
+          padding: 0px 0 10px 0;
+          height: 20px;
+          padding: 20px;
+          display: none; }
+    .archive .previous-editions .content {
+      flex: 1 1 75%; }
+      .archive .previous-editions .content .speakers {
+        display: none;
+        padding: 20px;
+        background-color: #ededed; }
+        .archive .previous-editions .content .speakers .edition {
+          padding-top: 15px;
+          font-size: 24px;
+          font-weight: bold;
+          text-align: center; }
+          .archive .previous-editions .content .speakers .edition sup {
+            font-size: 18px; }
+        .archive .previous-editions .content .speakers .speaker-details {
+          display: flex;
+          border-top: 1px solid #000;
+          padding: 10px 0; }
+          .archive .previous-editions .content .speakers .speaker-details:nth-child(2) {
+            border-top: none; }
+          .archive .previous-editions .content .speakers .speaker-details:last-child {
+            padding-bottom: 25px; }
+          .archive .previous-editions .content .speakers .speaker-details .time {
+            flex: 1 1 10%;
+            align-self: flex-start;
+            padding-top: 5px;
+            font-weight: 800;
+            text-transform: uppercase; }
+          .archive .previous-editions .content .speakers .speaker-details .speaker-detail {
+            flex: 1 1 85%; }
+            .archive .previous-editions .content .speakers .speaker-details .speaker-detail .img {
+              border-radius: 32px;
+              width: 32px;
+              height: 32px;
+              padding: 5px; }
+            .archive .previous-editions .content .speakers .speaker-details .speaker-detail .title {
+              color: #ef5ba1;
+              font-size: 20px;
+              font-weight: bold;
+              display: block; }
+            .archive .previous-editions .content .speakers .speaker-details .speaker-detail .title-default {
+              color: #000;
+              font-size: 20px;
+              font-weight: bold; }
+            .archive .previous-editions .content .speakers .speaker-details .speaker-detail .subtitle {
+              display: block;
+              color: #4a4a4a;
+              font-size: 15px;
+              font-style: italic;
+              text-align: justify;
+              padding: 0 0 10px 0; }
+            .archive .previous-editions .content .speakers .speaker-details .speaker-detail .name {
+              color: #ef5ba1;
+              font-size: 15px;
+              font-weight: bold;
+              display: flex;
+              align-items: center;
+              justify-content: flex-start; }
+    .archive .previous-editions .speakers.active {
+      display: block; }
+    .archive .previous-editions .events .year.active {
+      background-color: rgba(255, 255, 255, 0.8); }
+    .archive .previous-editions .events .event.active {
+      display: block;
+      background-color: rgba(255, 255, 255, 0.8); }
 
 .about-heading {
   background-color: #dfdfdf;
