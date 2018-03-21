@@ -1,18 +1,27 @@
-.about-heading {
-  background-color: #dfdfdf;
-  height: 90px;
-  line-height: 90px;
-  text-align: center;
-  &-text {
-    font-size: 36px;
-    font-weight: 800;
-    color: black;
-    text-transform: uppercase;
+#about {
+  p {
+    padding: 5px 0;
+    margin: 0;
+    &:last-child {
+      padding-bottom: 50px;
+    }
   }
-}
+  background-color: #dfdfdf;
+  .about-heading {
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    &-text {
+      font-size: 36px;
+      font-weight: 800;
+      color: black;
+      text-transform: uppercase;
+    }
+  }
 
-.about-details {
-  font-size: 18px;
-  margin: 0 180px;
-  text-align: justify;
+  .about-details {
+    font-size: 18px;
+    margin: 0 180px;
+    text-align: justify;
+  }
 }

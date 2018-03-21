@@ -355,21 +355,26 @@ html {
       display: block;
       background-color: rgba(255, 255, 255, 0.8); }
 
-.about-heading {
-  background-color: #dfdfdf;
-  height: 90px;
-  line-height: 90px;
-  text-align: center; }
-  .about-heading-text {
-    font-size: 36px;
-    font-weight: 800;
-    color: black;
-    text-transform: uppercase; }
-
-.about-details {
-  font-size: 18px;
-  margin: 0 180px;
-  text-align: justify; }
+#about {
+  background-color: #dfdfdf; }
+  #about p {
+    padding: 5px 0;
+    margin: 0; }
+    #about p:last-child {
+      padding-bottom: 50px; }
+  #about .about-heading {
+    height: 90px;
+    line-height: 90px;
+    text-align: center; }
+    #about .about-heading-text {
+      font-size: 36px;
+      font-weight: 800;
+      color: black;
+      text-transform: uppercase; }
+  #about .about-details {
+    font-size: 18px;
+    margin: 0 180px;
+    text-align: justify; }
 
 .footer {
   background: #000;
