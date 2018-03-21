@@ -13,7 +13,7 @@
     &-overlay {
       background-color: rgba(255, 255, 255, 0.8);
       margin: auto;
-      height: 320px;
+      height: 350px;
       max-width: 600px;
       position: absolute;
       top: -100px;
@@ -70,7 +70,6 @@
     }
 
     &-date {
-      padding-top: 10px;
       font-size: 18px;
       font-weight: bold;
       padding-bottom: 20px;
@@ -104,8 +103,20 @@
           color: $black;
           font-style: italic;
           font-size: 14px;
+          padding: 5px;
         }
       }
+    }
+    &-subnote {
+      padding: 10px;
+      .youtube {
+        background: $youtube-logo center no-repeat;
+        background-size: 70px;
+        display: inline-block;
+        height: 50px;
+        width: 100px;
+        transform: translate(-10px,20px);
+      } 
     }
   }
 }

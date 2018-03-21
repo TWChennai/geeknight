@@ -12,9 +12,6 @@
                 <% if @item[:subheader] %>
                     <h5 class="subheader"><%= @item[:subheader] %></h5>
                 <% end %>
-                <% if @item[:subnote] %>
-                    <div class="subnote"><%= @item[:subnote] %></div>
-                <% end %>
                 <div class="intro-info-buttons">
                     <div class="intro-info-buttons-button">
                         <% if item[:participate] %>
@@ -51,6 +48,9 @@
                         <% end %>
                     </div>
                 </div>
+                <% if @item[:subnote] %>
+                    <div class="intro-info-subnote"><%= @item[:subnote] %></div>
+                <% end %>
             </div>
         </div>
     </div>
