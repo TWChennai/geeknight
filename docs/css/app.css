@@ -34,8 +34,7 @@ html {
   left: 0;
   top: 0;
   padding: 0;
-  z-index: 999;
-  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2); }
+  z-index: 999; }
   .header a {
     text-decoration: none;
     color: #ef5ba1; }
@@ -64,6 +63,9 @@ html {
         flex: 1 1 20%;
         white-space: nowrap;
         text-align: center; }
+
+.shadow {
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2); }
 
 .intro {
   position: relative;

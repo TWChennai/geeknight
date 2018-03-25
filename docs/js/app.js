@@ -14,5 +14,14 @@ function getEventsFor(id, value) {
 }
 
 $(document).ready(function() {
-$($(".months")[0].childNodes[1]).addClass("active");
+	$($(".months")[0].childNodes[1]).addClass("active");
+});
+
+$(document).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y > 600) {
+        $('#header').addClass('shadow');
+    } else {
+        $('#header').removeClass('shadow')
+    }
 });
