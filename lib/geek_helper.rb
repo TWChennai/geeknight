@@ -9,16 +9,16 @@ module GeekHelper
       !!event[:edition]
     end.sort_by do |event|
       -event[:edition]
-    end.drop(1)
+    end
   end
 
-  def getEvents
+  def groupYearMonths
     return @items.select {|event| !event[:start].nil?}.sort_by { |i| i[:edition]}.reverse.group_by {|i| [i[:start].to_date.year, i[:start].to_date.strftime("%b %d")]}
   end
 
-  def toMap
+  def getEvents
     events=[]
-    getEvents.drop(1).each do |event|
+    groupYearMonths.each do |event|
       events.push({event[0].first=>event[0].last})
     end
     return Hash[events.group_by {|i| i.keys}.map{|k,v| [k, v.map{ |k1|  k1.map{|k2,v2| v2 }}.flatten] }]

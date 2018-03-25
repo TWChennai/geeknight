@@ -14,7 +14,9 @@
 
     <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/app.css" />    
+    <script type="text/javascript" src="js/vendor/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
     
     <script type="application/ld+json">
       {"@context":"http://schema.org","@type":"EducationEvent","name":"Geek Night Chennai - Mar 2017","startDate":"2017-03-30T17:45:00+05:30","url":"http://twchennai.github.io/geeknight/edition-41.html","location":{"@type":"Place","name":"ThoughtWorks","address":{"@type":"PostalAddress","addressLocality":"Chennai","addressRegion":"Tamil Nadu","postalCode":"600113","streetAddress":"Ascendas"}}}
@@ -250,140 +252,436 @@
         <div class="events">
             <div class="years">
                 
-                    <div class="year active"> 2018</div>
+                    <div id="year-2018"
+                        class="year active"
+                        onclick="getEventsFor(this.id, this.textContent)">2018</div>
                 
-                    <div class="year "> 2017</div>
+                    <div id="year-2017"
+                        class="year "
+                        onclick="getEventsFor(this.id, this.textContent)">2017</div>
                 
-                    <div class="year "> 2016</div>
+                    <div id="year-2016"
+                        class="year "
+                        onclick="getEventsFor(this.id, this.textContent)">2016</div>
                 
-                    <div class="year "> 2015</div>
+                    <div id="year-2015"
+                        class="year "
+                        onclick="getEventsFor(this.id, this.textContent)">2015</div>
                 
-                    <div class="year "> 2014</div>
+                    <div id="year-2014"
+                        class="year "
+                        onclick="getEventsFor(this.id, this.textContent)">2014</div>
                 
-                    <div class="year "> 2013</div>
+                    <div id="year-2013"
+                        class="year "
+                        onclick="getEventsFor(this.id, this.textContent)">2013</div>
                 
             </div>
             <div class="months">
                 
                     
-                        <div class="event active">Jan 23</div>
+                        <div id="2018"
+                            class="event show"
+                            onclick="getAgenda(event, this.id, this.textContent)">Feb 22
+                        </div>
+                    
+                        <div id="2018"
+                            class="event show"
+                            onclick="getAgenda(event, this.id, this.textContent)">Jan 23
+                        </div>
                     
                 
                     
-                        <div class="event ">Dec 21</div>
+                        <div id="2017"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Dec 21
+                        </div>
                     
-                        <div class="event ">Nov 30</div>
+                        <div id="2017"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Nov 30
+                        </div>
                     
-                        <div class="event ">Oct 26</div>
+                        <div id="2017"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Oct 26
+                        </div>
                     
-                        <div class="event ">Sep 21</div>
+                        <div id="2017"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Sep 21
+                        </div>
                     
-                        <div class="event ">Aug 31</div>
+                        <div id="2017"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Aug 31
+                        </div>
                     
-                        <div class="event ">Jul 27</div>
+                        <div id="2017"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Jul 27
+                        </div>
                     
-                        <div class="event ">Jun 29</div>
+                        <div id="2017"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Jun 29
+                        </div>
                     
-                        <div class="event ">May 25</div>
+                        <div id="2017"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">May 25
+                        </div>
                     
-                        <div class="event ">Apr 27</div>
+                        <div id="2017"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Apr 27
+                        </div>
                     
-                        <div class="event ">Mar 30</div>
+                        <div id="2017"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Mar 30
+                        </div>
                     
-                        <div class="event ">Feb 23</div>
+                        <div id="2017"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Feb 23
+                        </div>
                     
-                        <div class="event ">Jan 19</div>
-                    
-                
-                    
-                        <div class="event ">Dec 22</div>
-                    
-                        <div class="event ">Nov 24</div>
-                    
-                        <div class="event ">Nov 03</div>
-                    
-                        <div class="event ">Sep 29</div>
-                    
-                        <div class="event ">Aug 25</div>
-                    
-                        <div class="event ">Jul 28</div>
-                    
-                        <div class="event ">Jun 30</div>
-                    
-                        <div class="event ">May 26</div>
-                    
-                        <div class="event ">Apr 28</div>
-                    
-                        <div class="event ">Mar 31</div>
-                    
-                        <div class="event ">Feb 25</div>
-                    
-                        <div class="event ">Jan 28</div>
-                    
-                        <div class="event ">Jan 07</div>
-                    
-                
-                    
-                        <div class="event ">Nov 26</div>
-                    
-                        <div class="event ">Oct 29</div>
-                    
-                        <div class="event ">Sep 23</div>
-                    
-                        <div class="event ">Aug 13</div>
-                    
-                        <div class="event ">Jun 25</div>
-                    
-                        <div class="event ">May 28</div>
-                    
-                        <div class="event ">Apr 30</div>
-                    
-                        <div class="event ">Mar 26</div>
-                    
-                        <div class="event ">Feb 26</div>
+                        <div id="2017"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Jan 19
+                        </div>
                     
                 
                     
-                        <div class="event ">Nov 27</div>
+                        <div id="2016"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Dec 22
+                        </div>
                     
-                        <div class="event ">Sep 26</div>
+                        <div id="2016"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Nov 24
+                        </div>
                     
-                        <div class="event ">Aug 28</div>
+                        <div id="2016"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Nov 03
+                        </div>
                     
-                        <div class="event ">Jul 31</div>
+                        <div id="2016"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Sep 29
+                        </div>
                     
-                        <div class="event ">Jun 26</div>
+                        <div id="2016"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Aug 25
+                        </div>
                     
-                        <div class="event ">May 29</div>
+                        <div id="2016"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Jul 28
+                        </div>
                     
-                        <div class="event ">Apr 30</div>
+                        <div id="2016"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Jun 30
+                        </div>
                     
-                        <div class="event ">Mar 27</div>
+                        <div id="2016"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">May 26
+                        </div>
                     
-                        <div class="event ">Feb 27</div>
+                        <div id="2016"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Apr 28
+                        </div>
                     
-                        <div class="event ">Jan 30</div>
+                        <div id="2016"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Mar 31
+                        </div>
+                    
+                        <div id="2016"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Feb 25
+                        </div>
+                    
+                        <div id="2016"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Jan 28
+                        </div>
+                    
+                        <div id="2016"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Jan 07
+                        </div>
                     
                 
                     
-                        <div class="event ">Dec 19</div>
+                        <div id="2015"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Nov 26
+                        </div>
                     
-                        <div class="event ">Nov 28</div>
+                        <div id="2015"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Oct 29
+                        </div>
                     
-                        <div class="event ">Oct 29</div>
+                        <div id="2015"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Sep 23
+                        </div>
                     
-                        <div class="event ">Sep 25</div>
+                        <div id="2015"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Aug 13
+                        </div>
                     
-                        <div class="event ">Aug 22</div>
+                        <div id="2015"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Jun 25
+                        </div>
                     
-                        <div class="event ">Jul 25</div>
+                        <div id="2015"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">May 28
+                        </div>
+                    
+                        <div id="2015"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Apr 30
+                        </div>
+                    
+                        <div id="2015"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Mar 26
+                        </div>
+                    
+                        <div id="2015"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Feb 26
+                        </div>
+                    
+                
+                    
+                        <div id="2014"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Nov 27
+                        </div>
+                    
+                        <div id="2014"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Sep 26
+                        </div>
+                    
+                        <div id="2014"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Aug 28
+                        </div>
+                    
+                        <div id="2014"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Jul 31
+                        </div>
+                    
+                        <div id="2014"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Jun 26
+                        </div>
+                    
+                        <div id="2014"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">May 29
+                        </div>
+                    
+                        <div id="2014"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Apr 30
+                        </div>
+                    
+                        <div id="2014"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Mar 27
+                        </div>
+                    
+                        <div id="2014"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Feb 27
+                        </div>
+                    
+                        <div id="2014"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Jan 30
+                        </div>
+                    
+                
+                    
+                        <div id="2013"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Dec 19
+                        </div>
+                    
+                        <div id="2013"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Nov 28
+                        </div>
+                    
+                        <div id="2013"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Oct 29
+                        </div>
+                    
+                        <div id="2013"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Sep 25
+                        </div>
+                    
+                        <div id="2013"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Aug 22
+                        </div>
+                    
+                        <div id="2013"
+                            class="event "
+                            onclick="getAgenda(event, this.id, this.textContent)">Jul 25
+                        </div>
                     
                 
             </div>
         </div>
         <div class="content">
             
-              <div id="2018-Jan-23" class="speakers active">
+              <div id="2018-Feb 22" class="speakers active">
+                <div class="edition">52<sup>nd</sup> Edition</p></div>
+                
+                  <div class="speaker-details">
+                    <span class="time">
+                        6:00 pm
+                    </span>
+                    <div class="speaker-detail">
+                      
+                        
+                          <span class="title">Creating Isomorphic React WebApps</span>
+                        
+
+                        
+
+                                        
+                            <span class="name">
+                              
+                                <img class="img" src="img/speaker/no_user_image.svg" alt="Nilesh Rathi" />
+                              
+                              
+                                  Nilesh Rathi
+                              
+                              
+                            </span>
+                        
+                      
+
+                      
+                    </div>
+                  </div>
+                
+                  <div class="speaker-details">
+                    <span class="time">
+                        6:30 pm
+                    </span>
+                    <div class="speaker-detail">
+                      
+                        
+                          <span class="title-default">Break</span>
+                        
+
+                        
+                      
+
+                      
+                    </div>
+                  </div>
+                
+                  <div class="speaker-details">
+                    <span class="time">
+                        6:45 pm
+                    </span>
+                    <div class="speaker-detail">
+                      
+                        
+                          <span class="title">Android Things - A peep into the world of IOT through Android</span>
+                        
+
+                        
+
+                                        
+                            <span class="name">
+                              
+                                <img class="img" src="img/speaker/no_user_image.svg" alt="Ashwin S" />
+                              
+                              
+                                  Ashwin S
+                              
+                              
+                            </span>
+                        
+                      
+
+                      
+                    </div>
+                  </div>
+                
+                  <div class="speaker-details">
+                    <span class="time">
+                        7:15 pm
+                    </span>
+                    <div class="speaker-detail">
+                      
+                        
+                          <span class="title">Mastering Android Studio Template Creation</span>
+                        
+
+                        
+
+                                        
+                            <span class="name">
+                              
+                                <img class="img" src="img/speaker/no_user_image.svg" alt="Chandrasekar Kuppusamy" />
+                              
+                              
+                                  Chandrasekar Kuppusamy
+                              
+                              
+                            </span>
+                        
+                      
+
+                      
+                    </div>
+                  </div>
+                
+                  <div class="speaker-details">
+                    <span class="time">
+                        7:45 pm
+                    </span>
+                    <div class="speaker-detail">
+                      
+                        
+                          <span class="title-default">Networking & Dinner</span>
+                        
+
+                        
+                      
+
+                      
+                    </div>
+                  </div>
+                
+              </div>
+            
+              <div id="2018-Jan 23" class="speakers ">
                 <div class="edition">51<sup>st</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -529,7 +827,7 @@
                 
               </div>
             
-              <div id="2017-Dec-21" class="speakers ">
+              <div id="2017-Dec 21" class="speakers ">
                 <div class="edition">50<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -628,7 +926,7 @@
                 
               </div>
             
-              <div id="2017-Nov-30" class="speakers ">
+              <div id="2017-Nov 30" class="speakers ">
                 <div class="edition">49<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -754,7 +1052,7 @@
                 
               </div>
             
-              <div id="2017-Oct-26" class="speakers ">
+              <div id="2017-Oct 26" class="speakers ">
                 <div class="edition">48<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -886,7 +1184,7 @@
                 
               </div>
             
-              <div id="2017-Sep-21" class="speakers ">
+              <div id="2017-Sep 21" class="speakers ">
                 <div class="edition">47<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -939,7 +1237,7 @@
                 
               </div>
             
-              <div id="2017-Aug-31" class="speakers ">
+              <div id="2017-Aug 31" class="speakers ">
                 <div class="edition">46<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -1065,7 +1363,7 @@
                 
               </div>
             
-              <div id="2017-Jul-27" class="speakers ">
+              <div id="2017-Jul 27" class="speakers ">
                 <div class="edition">45<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -1214,7 +1512,7 @@
                 
               </div>
             
-              <div id="2017-Jun-29" class="speakers ">
+              <div id="2017-Jun 29" class="speakers ">
                 <div class="edition">44<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -1363,7 +1661,7 @@
                 
               </div>
             
-              <div id="2017-May-25" class="speakers ">
+              <div id="2017-May 25" class="speakers ">
                 <div class="edition">43<sup>rd</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -1495,7 +1793,7 @@
                 
               </div>
             
-              <div id="2017-Apr-27" class="speakers ">
+              <div id="2017-Apr 27" class="speakers ">
                 <div class="edition">42<sup>nd</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -1627,7 +1925,7 @@
                 
               </div>
             
-              <div id="2017-Mar-30" class="speakers ">
+              <div id="2017-Mar 30" class="speakers ">
                 <div class="edition">41<sup>st</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -1759,7 +2057,7 @@
                 
               </div>
             
-              <div id="2017-Feb-23" class="speakers ">
+              <div id="2017-Feb 23" class="speakers ">
                 <div class="edition">40<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -1891,7 +2189,7 @@
                 
               </div>
             
-              <div id="2017-Jan-19" class="speakers ">
+              <div id="2017-Jan 19" class="speakers ">
                 <div class="edition">39<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -2017,7 +2315,7 @@
                 
               </div>
             
-              <div id="2016-Dec-22" class="speakers ">
+              <div id="2016-Dec 22" class="speakers ">
                 <div class="edition">38<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -2143,7 +2441,7 @@
                 
               </div>
             
-              <div id="2016-Nov-24" class="speakers ">
+              <div id="2016-Nov 24" class="speakers ">
                 <div class="edition">37<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -2281,7 +2579,7 @@
                 
               </div>
             
-              <div id="2016-Nov-03" class="speakers ">
+              <div id="2016-Nov 03" class="speakers ">
                 <div class="edition">36<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -2409,7 +2707,7 @@
                 
               </div>
             
-              <div id="2016-Sep-29" class="speakers ">
+              <div id="2016-Sep 29" class="speakers ">
                 <div class="edition">35<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -2535,7 +2833,7 @@
                 
               </div>
             
-              <div id="2016-Aug-25" class="speakers ">
+              <div id="2016-Aug 25" class="speakers ">
                 <div class="edition">34<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -2615,7 +2913,7 @@
                 
               </div>
             
-              <div id="2016-Jul-28" class="speakers ">
+              <div id="2016-Jul 28" class="speakers ">
                 <div class="edition">33<sup>rd</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -2791,7 +3089,7 @@
                 
               </div>
             
-              <div id="2016-Jun-30" class="speakers ">
+              <div id="2016-Jun 30" class="speakers ">
                 <div class="edition">32<sup>nd</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -2927,7 +3225,7 @@
                 
               </div>
             
-              <div id="2016-May-26" class="speakers ">
+              <div id="2016-May 26" class="speakers ">
                 <div class="edition">31<sup>st</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -3031,7 +3329,7 @@
                 
               </div>
             
-              <div id="2016-Apr-28" class="speakers ">
+              <div id="2016-Apr 28" class="speakers ">
                 <div class="edition">30<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -3157,7 +3455,7 @@
                 
               </div>
             
-              <div id="2016-Mar-31" class="speakers ">
+              <div id="2016-Mar 31" class="speakers ">
                 <div class="edition">29<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -3293,7 +3591,7 @@
                 
               </div>
             
-              <div id="2016-Feb-25" class="speakers ">
+              <div id="2016-Feb 25" class="speakers ">
                 <div class="edition">28<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -3390,7 +3688,7 @@
                 
               </div>
             
-              <div id="2016-Jan-28" class="speakers ">
+              <div id="2016-Jan 28" class="speakers ">
                 <div class="edition">27<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -3487,7 +3785,7 @@
                 
               </div>
             
-              <div id="2016-Jan-07" class="speakers ">
+              <div id="2016-Jan 07" class="speakers ">
                 <div class="edition">26<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -3616,7 +3914,7 @@
                 
               </div>
             
-              <div id="2015-Nov-26" class="speakers ">
+              <div id="2015-Nov 26" class="speakers ">
                 <div class="edition">25<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -3725,7 +4023,7 @@
                 
               </div>
             
-              <div id="2015-Oct-29" class="speakers ">
+              <div id="2015-Oct 29" class="speakers ">
                 <div class="edition">24<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -3851,7 +4149,7 @@
                 
               </div>
             
-              <div id="2015-Sep-23" class="speakers ">
+              <div id="2015-Sep 23" class="speakers ">
                 <div class="edition">23<sup>rd</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -3977,7 +4275,7 @@
                 
               </div>
             
-              <div id="2015-Aug-13" class="speakers ">
+              <div id="2015-Aug 13" class="speakers ">
                 <div class="edition">22<sup>nd</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -4084,7 +4382,7 @@
                 
               </div>
             
-              <div id="2015-Jun-25" class="speakers ">
+              <div id="2015-Jun 25" class="speakers ">
                 <div class="edition">21<sup>st</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -4210,7 +4508,7 @@
                 
               </div>
             
-              <div id="2015-May-28" class="speakers ">
+              <div id="2015-May 28" class="speakers ">
                 <div class="edition">20<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -4373,7 +4671,7 @@
                 
               </div>
             
-              <div id="2015-Apr-30" class="speakers ">
+              <div id="2015-Apr 30" class="speakers ">
                 <div class="edition">19<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -4516,7 +4814,7 @@
                 
               </div>
             
-              <div id="2015-Mar-26" class="speakers ">
+              <div id="2015-Mar 26" class="speakers ">
                 <div class="edition">18<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -4635,7 +4933,7 @@
                 
               </div>
             
-              <div id="2015-Feb-26" class="speakers ">
+              <div id="2015-Feb 26" class="speakers ">
                 <div class="edition">17<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -4814,7 +5112,7 @@
                 
               </div>
             
-              <div id="2014-Nov-27" class="speakers ">
+              <div id="2014-Nov 27" class="speakers ">
                 <div class="edition">16<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -4942,7 +5240,7 @@
                 
               </div>
             
-              <div id="2014-Sep-26" class="speakers ">
+              <div id="2014-Sep 26" class="speakers ">
                 <div class="edition">15<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -5017,7 +5315,7 @@
                 
               </div>
             
-              <div id="2014-Aug-28" class="speakers ">
+              <div id="2014-Aug 28" class="speakers ">
                 <div class="edition">14<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -5183,7 +5481,7 @@
                 
               </div>
             
-              <div id="2014-Jul-31" class="speakers ">
+              <div id="2014-Jul 31" class="speakers ">
                 <div class="edition">13<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -5315,7 +5613,7 @@
                 
               </div>
             
-              <div id="2014-Jun-26" class="speakers ">
+              <div id="2014-Jun 26" class="speakers ">
                 <div class="edition">12<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -5470,7 +5768,7 @@
                 
               </div>
             
-              <div id="2014-May-29" class="speakers ">
+              <div id="2014-May 29" class="speakers ">
                 <div class="edition">11<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -5626,7 +5924,7 @@
                 
               </div>
             
-              <div id="2014-Apr-30" class="speakers ">
+              <div id="2014-Apr 30" class="speakers ">
                 <div class="edition">10<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -5761,7 +6059,7 @@
                 
               </div>
             
-              <div id="2014-Mar-27" class="speakers ">
+              <div id="2014-Mar 27" class="speakers ">
                 <div class="edition">9<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -5932,7 +6230,7 @@
                 
               </div>
             
-              <div id="2014-Feb-27" class="speakers ">
+              <div id="2014-Feb 27" class="speakers ">
                 <div class="edition">8<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -6096,7 +6394,7 @@
                 
               </div>
             
-              <div id="2014-Jan-30" class="speakers ">
+              <div id="2014-Jan 30" class="speakers ">
                 <div class="edition">7<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -6307,7 +6605,7 @@
                 
               </div>
             
-              <div id="2013-Dec-19" class="speakers ">
+              <div id="2013-Dec 19" class="speakers ">
                 <div class="edition">6<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -6471,7 +6769,7 @@
                 
               </div>
             
-              <div id="2013-Nov-28" class="speakers ">
+              <div id="2013-Nov 28" class="speakers ">
                 <div class="edition">5<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -6639,7 +6937,7 @@
                 
               </div>
             
-              <div id="2013-Oct-29" class="speakers ">
+              <div id="2013-Oct 29" class="speakers ">
                 <div class="edition">4<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -6861,7 +7159,7 @@
                 
               </div>
             
-              <div id="2013-Sep-25" class="speakers ">
+              <div id="2013-Sep 25" class="speakers ">
                 <div class="edition">3<sup>rd</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -7062,7 +7360,7 @@
                 
               </div>
             
-              <div id="2013-Aug-22" class="speakers ">
+              <div id="2013-Aug 22" class="speakers ">
                 <div class="edition">2<sup>nd</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -7263,7 +7561,7 @@
                 
               </div>
             
-              <div id="2013-Jul-25" class="speakers ">
+              <div id="2013-Jul 25" class="speakers ">
                 <div class="edition">1<sup>st</sup> Edition</p></div>
                 
                   <div class="speaker-details">

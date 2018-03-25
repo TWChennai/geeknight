@@ -278,7 +278,8 @@ html {
     display: flex;
     margin: auto;
     align-content: center;
-    width: 800px; }
+    width: 800px;
+    background-color: #ededed; }
     .archive .previous-editions .events {
       display: flex;
       flex-flow: row nowrap;
@@ -286,19 +287,31 @@ html {
       flex: 1 1 25%; }
       .archive .previous-editions .events .years {
         flex: 1 1 10%;
+        font-weight: 800;
+        font-size: 15px;
         background-color: #f5f5f5; }
         .archive .previous-editions .events .years .year {
           padding: 0px 0 10px 0;
           height: 20px;
-          padding: 20px; }
+          padding: 20px;
+          cursor: pointer; }
+        .archive .previous-editions .events .years .year.active {
+          background-color: rgba(255, 255, 255, 0.8); }
       .archive .previous-editions .events .months {
         flex: 1 1 10%;
+        font-weight: bold;
+        font-size: 15px;
         background-color: #f1f1f1; }
         .archive .previous-editions .events .months .event {
           padding: 0px 0 10px 0;
           height: 20px;
           padding: 20px;
-          display: none; }
+          display: none;
+          cursor: pointer; }
+        .archive .previous-editions .events .months .event.active {
+          background-color: rgba(255, 255, 255, 0.8); }
+        .archive .previous-editions .events .months .event.show {
+          display: block; }
     .archive .previous-editions .content {
       flex: 1 1 75%; }
       .archive .previous-editions .content .speakers {
@@ -356,13 +369,8 @@ html {
               display: flex;
               align-items: center;
               justify-content: flex-start; }
-    .archive .previous-editions .speakers.active {
-      display: block; }
-    .archive .previous-editions .events .year.active {
-      background-color: rgba(255, 255, 255, 0.8); }
-    .archive .previous-editions .events .event.active {
-      display: block;
-      background-color: rgba(255, 255, 255, 0.8); }
+      .archive .previous-editions .content .speakers.active {
+        display: block; }
 
 #about {
   background-color: #dfdfdf; }

@@ -16,6 +16,7 @@
     margin: auto;
     align-content: center;
     width: 800px;
+    background-color: $archive-bg-content;
     .events {
       display: flex;
       flex-flow: row nowrap;
@@ -23,21 +24,36 @@
       flex: 1 1 25%;
       .years {
         flex: 1 1 10%;
+        font-weight: 800;
+        font-size: 15px;
         background-color: $archive-bg-year;
         .year {
           padding: 0px 0 10px 0;
           height: 20px;
           padding: 20px;
+          cursor: pointer;
+        }
+        .year.active {
+          background-color: $archive-active;
         }
       }
       .months {
         flex: 1 1 10%;
+        font-weight: bold;
+        font-size: 15px;
         background-color: $archive-bg-month;        
         .event {
           padding: 0px 0 10px 0;
           height: 20px;
           padding: 20px;
           display: none;
+          cursor: pointer;
+        }
+        .event.active {
+          background-color: $archive-active;
+        }
+        .event.show {
+          display: block;
         }
       }
     }    
@@ -111,16 +127,9 @@
           }
         }
       }
-    }
-    .speakers.active{
-      display: block;
-    }
-    .events .year.active {
-      background-color: $archive-active;
-    }
-    .events  .event.active{
-      display: block;
-      background-color: $archive-active;
+      .speakers.active {
+        display: block;
+      }
     }
   }
 }
