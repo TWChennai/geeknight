@@ -50,7 +50,7 @@ html {
       display: flex;
       flex: 1 1 50%; }
       .header .nav-bar .logo-section .logo {
-        background: url("/img/geek_night_logo.svg") no-repeat;
+        background: url("../img/geek_night_logo.svg") no-repeat;
         background-size: 140px;
         height: 65px;
         width: 160px;
@@ -76,7 +76,7 @@ html {
   padding-top: 100px; }
   .intro .banner {
     flex: 1 1 60%;
-    background: url("/img/intro_background.jpg") center center no-repeat;
+    background: url("../img/intro_background.jpg") center center no-repeat;
     background-size: 100%; }
     .intro .banner-overlay {
       margin: auto;
@@ -152,7 +152,7 @@ html {
       justify-content: center;
       padding: 20px; }
       .intro-info-subnote .youtube {
-        background: url("/img/youtube-logo.svg") center no-repeat;
+        background: url("../img/youtube-logo.svg") center no-repeat;
         background-size: 70px;
         flex: 0 1 20%; }
   .intro .line {
@@ -255,7 +255,7 @@ html {
       align-self: center; }
       .location .map-direction-logo {
         height: 70px;
-        background: url("/img/direction.svg") no-repeat;
+        background: url("../img/direction.svg") no-repeat;
         background-size: 50px;
         background-position: 30px 20px; }
   .location .location-heading {
@@ -421,7 +421,7 @@ html {
       font-size: 14px;
       font-weight: 100; }
     .footer .logo-section .logo {
-      background: url("/img/tw-logo-white.svg") no-repeat;
+      background: url("../img/tw-logo-white.svg") no-repeat;
       background-size: 140px;
       height: 35px;
       width: 140px;
