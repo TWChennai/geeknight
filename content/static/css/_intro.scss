@@ -2,58 +2,54 @@
   position: relative;
   display: flex;
   flex-flow: column;
-  min-height: 800px;
+  min-height: 500px;
   text-align: center;
+  padding-top: 100px;
   .banner {
     flex: 1 1 60%;
     background: $intro-background center center no-repeat;
     background-size: 100%;    
 
     &-overlay {
-      background-color: rgba(255, 255, 255, 0.8);
       margin: auto;
       height: 350px;
-      max-width: 600px;
+      width: 530px;
       position: absolute;
-      top: -100px;
+      top: 100px;
       bottom: 0;
       right: 0;
       left: 0;
     }
-  }
-
-  &-text {
-    flex: 0 1 10%;
-    background-color: $seafoam-blue;
-    font-size: 34px;
-    font-weight: 600;
-    padding: 5% 5% 0 5%;
-
-    .read-more {
-      color: $pink;
-    }
-
-    .read-more::after {
-      content: "More";
-      cursor: pointer;
-      text-decoration: underline;
-    }
-
-    #toggle:checked ~ label::after {
-      content: "Less";
+    .mask {
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      overflow: hidden;
+      .blur {
+        position: absolute;
+        background-color: rgba(255, 255, 255, .5);
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        filter: blur(2px);
+      }
     }
   }
 
   &-info {
-    display: flex;
-    flex-flow: column nowrap;
-    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
 
     &-place {
       &-title {
         font-size: 33px;
         font-weight: 800;
-        border-bottom: 2px solid #4a4a4a;
         margin: 0 70px;
         padding-top: 26px;
       }
@@ -79,15 +75,15 @@
 
     &-buttons {
       display: flex;
-      justify-content: center;
+      flex-flow: row nowrap;
+      justify-content: space-around;
 
       &-button {
         border-radius: 4px;
         border: 1px solid transparent;        
         width: 220px;
-        height: 60px;
         cursor: pointer;
-        margin-left: 30px;
+        padding-bottom: 20px;
 
         &-text {
           height: 60px;
@@ -107,15 +103,19 @@
       }
     }
     &-subnote {
-      padding: 10px;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
       .youtube {
         background: $youtube-logo center no-repeat;
         background-size: 70px;
-        display: inline-block;
-        height: 50px;
-        width: 100px;
-        transform: translate(-10px,20px);
-      } 
+        flex: 0 1 20%;
+      }
     }
+  }
+  .line {
+    border-top: 1px solid;
+    margin: 0 50px;
+
   }
 }

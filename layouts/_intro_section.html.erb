@@ -1,9 +1,11 @@
 <section id="intro" class="intro">
     <div class="banner">
         <div class="banner-overlay">
+            <div class="mask"><div class="blur"></div></div>
             <div class="intro-info">
                 <div class="intro-info-place">
                     <div class="intro-info-place-title">CHENNAI</div>
+                    <div class="line"></div>
                 </div>
                 <div class="intro-info-edition"><%= @item[:edition] %><sup><%= @item[:edition].ordinal %></sup> Edition</p></div>
                 <div class="intro-info-date">
@@ -48,6 +50,7 @@
                         <% end %>
                     </div>
                 </div>
+                <div class="line"></div>
                 <% if @item[:subnote] %>
                     <div class="intro-info-subnote"><%= @item[:subnote] %></div>
                 <% end %>
