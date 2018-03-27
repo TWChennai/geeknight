@@ -276,126 +276,125 @@ html {
       color: #000;
       text-transform: uppercase; }
 
-.archive {
-  padding-bottom: 40px; }
-  .archive-heading {
-    height: 90px;
-    line-height: 90px;
-    text-align: center; }
-    .archive-heading-text {
-      font-size: 36px;
-      font-weight: 800;
-      color: #000;
-      text-transform: uppercase; }
-  .archive .previous-editions {
+.archive-heading {
+  height: 90px;
+  line-height: 90px;
+  text-align: center; }
+  .archive-heading-text {
+    font-size: 36px;
+    font-weight: 800;
+    color: #000;
+    text-transform: uppercase; }
+.archive .previous-editions {
+  display: flex;
+  margin: auto;
+  align-content: center;
+  width: 800px;
+  background-color: #ededed; }
+  .archive .previous-editions .events {
     display: flex;
-    margin: auto;
-    align-content: center;
-    width: 800px;
-    background-color: #ededed; }
-    .archive .previous-editions .events {
-      display: flex;
-      flex-flow: row nowrap;
-      text-align: center;
-      flex: 1 1 25%; }
-      .archive .previous-editions .events .years {
-        flex: 1 1 10%;
-        font-weight: 800;
-        font-size: 15px;
-        background-color: #f5f5f5; }
-        .archive .previous-editions .events .years .year {
-          padding: 0px 0 10px 0;
-          height: 20px;
-          padding: 20px;
-          cursor: pointer; }
-        .archive .previous-editions .events .years .year.active {
-          background-color: rgba(255, 255, 255, 0.8); }
-      .archive .previous-editions .events .months {
-        flex: 1 1 10%;
-        font-weight: bold;
-        font-size: 15px;
-        background-color: #f1f1f1; }
-        .archive .previous-editions .events .months .event {
-          padding: 0px 0 10px 0;
-          height: 20px;
-          padding: 20px;
-          display: none;
-          cursor: pointer; }
-        .archive .previous-editions .events .months .event.active {
-          background-color: rgba(255, 255, 255, 0.8); }
-        .archive .previous-editions .events .months .event.show {
-          display: block; }
-    .archive .previous-editions .content {
-      flex: 1 1 75%; }
-      .archive .previous-editions .content .speakers {
-        display: none;
+    flex-flow: row nowrap;
+    text-align: center;
+    flex: 1 1 25%; }
+    .archive .previous-editions .events .years {
+      flex: 1 1 10%;
+      font-weight: 800;
+      font-size: 15px;
+      background-color: #f5f5f5; }
+      .archive .previous-editions .events .years .year {
+        padding: 0px 0 10px 0;
+        height: 20px;
         padding: 20px;
-        background-color: #ededed; }
-        .archive .previous-editions .content .speakers .edition {
-          padding-top: 15px;
-          font-size: 24px;
-          font-weight: bold;
-          text-align: center; }
-          .archive .previous-editions .content .speakers .edition sup {
-            font-size: 18px; }
-        .archive .previous-editions .content .speakers .speaker-details {
-          display: flex;
-          border-top: 1px solid #000;
-          padding: 10px 0; }
-          .archive .previous-editions .content .speakers .speaker-details:nth-child(2) {
-            border-top: none; }
-          .archive .previous-editions .content .speakers .speaker-details:last-child {
-            padding-bottom: 25px; }
-          .archive .previous-editions .content .speakers .speaker-details .time {
-            flex: 1 1 10%;
-            align-self: flex-start;
-            padding-top: 5px;
-            font-weight: 800;
-            text-transform: uppercase; }
-          .archive .previous-editions .content .speakers .speaker-details .speaker-detail {
-            flex: 1 1 85%; }
-            .archive .previous-editions .content .speakers .speaker-details .speaker-detail .img {
-              border-radius: 32px;
-              width: 32px;
-              height: 32px;
-              padding: 5px; }
-            .archive .previous-editions .content .speakers .speaker-details .speaker-detail .title {
-              color: #ef5ba1;
-              font-size: 20px;
-              font-weight: bold;
-              display: block; }
-            .archive .previous-editions .content .speakers .speaker-details .speaker-detail .title-default {
-              color: #000;
-              font-size: 20px;
-              font-weight: bold; }
-            .archive .previous-editions .content .speakers .speaker-details .speaker-detail .subtitle {
-              display: block;
-              color: #4a4a4a;
-              font-size: 15px;
-              font-style: italic;
-              text-align: justify;
-              padding: 0 0 10px 0; }
-            .archive .previous-editions .content .speakers .speaker-details .speaker-detail .name {
-              color: #ef5ba1;
-              font-size: 15px;
-              font-weight: bold;
-              display: flex;
-              align-items: center;
-              justify-content: flex-start; }
-      .archive .previous-editions .content .speakers.active {
+        cursor: pointer; }
+      .archive .previous-editions .events .years .year.active {
+        background-color: rgba(255, 255, 255, 0.8); }
+    .archive .previous-editions .events .months {
+      flex: 1 1 10%;
+      font-weight: bold;
+      font-size: 15px;
+      background-color: #f1f1f1; }
+      .archive .previous-editions .events .months .event {
+        padding: 0px 0 10px 0;
+        height: 20px;
+        padding: 20px;
+        display: none;
+        cursor: pointer; }
+      .archive .previous-editions .events .months .event.active {
+        background-color: rgba(255, 255, 255, 0.8); }
+      .archive .previous-editions .events .months .event.show {
         display: block; }
+  .archive .previous-editions .content {
+    flex: 1 1 75%; }
+    .archive .previous-editions .content .speakers {
+      display: none;
+      padding: 20px;
+      background-color: #ededed; }
+      .archive .previous-editions .content .speakers .edition {
+        padding-top: 15px;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center; }
+        .archive .previous-editions .content .speakers .edition sup {
+          font-size: 18px; }
+      .archive .previous-editions .content .speakers .speaker-details {
+        display: flex;
+        border-top: 1px solid #000;
+        padding: 10px 0; }
+        .archive .previous-editions .content .speakers .speaker-details:nth-child(2) {
+          border-top: none; }
+        .archive .previous-editions .content .speakers .speaker-details:last-child {
+          padding-bottom: 25px; }
+        .archive .previous-editions .content .speakers .speaker-details .time {
+          flex: 1 1 10%;
+          align-self: flex-start;
+          padding-top: 5px;
+          font-weight: 800;
+          text-transform: uppercase; }
+        .archive .previous-editions .content .speakers .speaker-details .speaker-detail {
+          flex: 1 1 85%; }
+          .archive .previous-editions .content .speakers .speaker-details .speaker-detail .img {
+            border-radius: 32px;
+            width: 32px;
+            height: 32px;
+            padding: 5px; }
+          .archive .previous-editions .content .speakers .speaker-details .speaker-detail .title {
+            color: #ef5ba1;
+            font-size: 20px;
+            font-weight: bold;
+            display: block; }
+          .archive .previous-editions .content .speakers .speaker-details .speaker-detail .title-default {
+            color: #000;
+            font-size: 20px;
+            font-weight: bold; }
+          .archive .previous-editions .content .speakers .speaker-details .speaker-detail .subtitle {
+            display: block;
+            color: #4a4a4a;
+            font-size: 15px;
+            font-style: italic;
+            text-align: justify;
+            padding: 0 0 10px 0; }
+          .archive .previous-editions .content .speakers .speaker-details .speaker-detail .name {
+            color: #ef5ba1;
+            font-size: 15px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; }
+    .archive .previous-editions .content .speakers.active {
+      display: block; }
 
 #about {
-  background-color: #dfdfdf; }
+  padding-top: 40px; }
   #about p {
-    padding: 5px 0;
+    padding: 20px 0;
     margin: 0; }
     #about p:last-child {
       padding-bottom: 50px; }
   #about .about-heading {
     height: 90px;
     line-height: 90px;
-    text-align: center; }
+    text-align: center;
+    background-color: #dfdfdf; }
     #about .about-heading-text {
       font-size: 36px;
       font-weight: 800;
@@ -403,8 +402,9 @@ html {
       text-transform: uppercase; }
   #about .about-details {
     font-size: 18px;
-    margin: 0 180px;
-    text-align: justify; }
+    padding: 0 180px;
+    text-align: justify;
+    background-color: #dfdfdf; }
 
 .footer {
   background: #000;
