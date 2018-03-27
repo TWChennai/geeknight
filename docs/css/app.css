@@ -37,7 +37,11 @@ html {
   z-index: 999; }
   .header a {
     text-decoration: none;
-    color: #ef5ba1; }
+    color: #ef5ba1;
+    -webkit-transition: .5s all ease-out;
+    -moz-transition: .5s all ease-out;
+    transition: .5s all ease-out;
+    animation: all; }
   .header .nav-bar {
     width: 960px;
     display: flex;
@@ -63,6 +67,9 @@ html {
         flex: 1 1 20%;
         white-space: nowrap;
         text-align: center; }
+      .header .nav-bar .menu .active a {
+        border-bottom: 5px solid #ef5ba1;
+        padding-bottom: 5px; }
 
 .shadow {
   box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2); }
