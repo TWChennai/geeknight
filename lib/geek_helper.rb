@@ -18,7 +18,7 @@ module GeekHelper
 
   def getEvents
     events=[]
-    groupYearMonths.drop(1).each do |event|
+    groupYearMonths.each do |event|
       events.push({event[0].first=>event[0].last})
     end
     return Hash[events.group_by {|i| i.keys}.map{|k,v| [k, v.map{ |k1|  k1.map{|k2,v2| v2 }}.flatten] }]
