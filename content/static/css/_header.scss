@@ -11,9 +11,9 @@
   a {
     text-decoration: none;
     color: $pink;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    transition: all .5s ease;
+    -webkit-transition: left .5s ease;
+    -moz-transition: left .5s ease;
+    transition: left .5s ease;
   }
   .nav-bar {
     width: 960px;

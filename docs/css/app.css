@@ -40,9 +40,9 @@ html {
   .header a {
     text-decoration: none;
     color: #ef5ba1;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    transition: all .5s ease; }
+    -webkit-transition: left .5s ease;
+    -moz-transition: left .5s ease;
+    transition: left .5s ease; }
   .header .nav-bar {
     width: 960px;
     display: flex;
