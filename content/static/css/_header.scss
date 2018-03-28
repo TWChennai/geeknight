@@ -3,17 +3,17 @@
   position: fixed;
   height: 100px;
   width: 100%;
-  left: 0;
-  top: 0;
-  padding: 0;
   z-index: 999;
+  padding: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   a {
     text-decoration: none;
     color: $pink;
-    -webkit-transition: .5s all ease-out;
-    -moz-transition: .5s all ease-out;
-    transition: .5s all ease-out;
-    animation: all;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
   }
   .nav-bar {
     width: 960px;
@@ -22,7 +22,6 @@
     top: 15px;
     bottom: 15px;
     margin: auto;
-    opacity: 0.85;
     .logo-section {
       display: flex;
       flex: 1 1 50%;
@@ -37,11 +36,9 @@
     .menu {
       display: flex;
       align-items: center;
-      flex: 1 1 30%;
+      flex: 1 1 40%;
       &-item {
-        flex: 1 1 20%;
-        white-space: nowrap;
-        text-align: center;
+        flex: 1 1 25%;
       }
       .active {
         a {
