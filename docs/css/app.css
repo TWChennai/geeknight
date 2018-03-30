@@ -28,7 +28,7 @@ html {
   text-decoration: underline; }
 
 .header {
-  background: #ffffffeb;
+  background: rgba(255, 255, 255, 0.9);
   position: fixed;
   height: 100px;
   width: 100%;
@@ -147,7 +147,7 @@ html {
           line-height: 60px;
           border-radius: 4px;
           background-color: #1a73ba;
-          color: #ffffffeb; }
+          color: #fff; }
         .intro-info-buttons-button-sub-text {
           color: #000;
           font-style: italic;
@@ -414,14 +414,14 @@ html {
   align-items: center; }
   .footer a {
     text-decoration: none;
-    color: #ffffffeb; }
+    color: #fff; }
   .footer .logo-section {
     display: flex;
     flex: 1 1 50%;
     justify-content: center;
     margin-top: 10px; }
     .footer .logo-section .sponsored-by {
-      color: #ffffffeb;
+      color: #fff;
       font-size: 14px;
       font-weight: 100; }
     .footer .logo-section .logo {

@@ -17,7 +17,7 @@ function getEventsFor(id, value) {
 
 function setClickListiners() {
 	topMenu = $("#menu"),
-	topMenuHeight = topMenu.outerHeight()+30,    
+	topMenuHeight = topMenu.outerHeight()+80,
 	menuItems = topMenu.find("a"),
 	scrollItems = menuItems.map(function(){
 		var item = $($(this).attr("href"));
