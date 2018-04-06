@@ -114,7 +114,14 @@
               font-style: italic;
               text-align: justify;
               padding: 0 0 10px 0;
+              height: 160px;
+              overflow: hidden;
+              transition: height .5s;
             }
+            .show {
+                height: auto;
+                transition: height .5s;
+              }
             .name {
               color: $pink;
               font-size: 15px;

@@ -1015,7 +1015,7 @@
                         
 
                         
-                            <span class="subtitle">While crypto currencies are making news in the market, technology behind these are interesting. This session aims to introduct basic concepts behind Bitcoin network, and will be done by playing a simple game.</span>
+                            <div class="subtitle">While crypto currencies are making news in the market, technology behind these are interesting. This session aims to introduct basic concepts behind Bitcoin network, and will be done by playing a simple game.</div>
                         
 
                                         
@@ -1194,7 +1194,7 @@
                         
 
                         
-                            <span class="subtitle">Real world Software Engineering is an iterative process and one of its main objectives is to get changes all of types - including new features, configuration changes, bug fixes and experiments into production and into the hands of the users, safely, quickly and in a sustainable way. Continuous Delivery (CD), a software engineering discipline, with its principled approach allows you to solve this exact problem. The core idea of CD is to create a repeatable, reliable and incrementally improving process for taking software from concept to the end user. Like software development, building real world machine learning (ML) algorithms is an also an iterative process with a similar objective - How do I get my ML algorithms into production and in the hands of the users in a safe, quick and sustainable way. The current process of building models, testing and deploying them into production is at best an ad-hoc process in most companies.</br> At Indix, while building the Google of Products, we have had some good success in combining the best practices of continuous delivery in building our machine learning pipelines using open source tools and frameworks. The talk will not focus on the theory of ML or about choosing the right ML algorithm but specifically on the last mile problem of taking models to production and the lessons learned while applying the concept of CD to ML.. Here are some of the key questions that the talk with try to answer.</br> 1. ML Models Repository as analogous to Software Artifacts Repository - Similar to a software repository, what are the features of a Models Repository to aid traceability and reproducibility? Specifically, how do you manage models end to end - managing model metadata, visualization and lineage etc?</br> 2. ML Pipelines to orchestrate and visualize the end to end flow - A typical ML workflow has multiple stages. How do you model your entire workflow as a pipeline (similar to Build Pipeline in CD) to automate the entire process and help visualize the entire end to end flow?</br> 3. Model Quality Assurance - What quality gates and evaluation metrics, either manual and automated, should be used before exporting (promoting) models for serving in production? What happens when several different models are in play? How do you measure the models individually and then also in combination</br> 4. Serving Models in Production - How do you serve and scale these models in production? What happens when these models are heterogenous (built using different languages - Scala, Python etc.)?</span>
+                            <div class="subtitle">Real world Software Engineering is an iterative process and one of its main objectives is to get changes all of types - including new features, configuration changes, bug fixes and experiments into production and into the hands of the users, safely, quickly and in a sustainable way. Continuous Delivery (CD), a software engineering discipline, with its principled approach allows you to solve this exact problem. The core idea of CD is to create a repeatable, reliable and incrementally improving process for taking software from concept to the end user. Like software development, building real world machine learning (ML) algorithms is an also an iterative process with a similar objective - How do I get my ML algorithms into production and in the hands of the users in a safe, quick and sustainable way. The current process of building models, testing and deploying them into production is at best an ad-hoc process in most companies.</br> At Indix, while building the Google of Products, we have had some good success in combining the best practices of continuous delivery in building our machine learning pipelines using open source tools and frameworks. The talk will not focus on the theory of ML or about choosing the right ML algorithm but specifically on the last mile problem of taking models to production and the lessons learned while applying the concept of CD to ML.. Here are some of the key questions that the talk with try to answer.</br> 1. ML Models Repository as analogous to Software Artifacts Repository - Similar to a software repository, what are the features of a Models Repository to aid traceability and reproducibility? Specifically, how do you manage models end to end - managing model metadata, visualization and lineage etc?</br> 2. ML Pipelines to orchestrate and visualize the end to end flow - A typical ML workflow has multiple stages. How do you model your entire workflow as a pipeline (similar to Build Pipeline in CD) to automate the entire process and help visualize the entire end to end flow?</br> 3. Model Quality Assurance - What quality gates and evaluation metrics, either manual and automated, should be used before exporting (promoting) models for serving in production? What happens when several different models are in play? How do you measure the models individually and then also in combination</br> 4. Serving Models in Production - How do you serve and scale these models in production? What happens when these models are heterogenous (built using different languages - Scala, Python etc.)?</div>
                         
 
                                         
@@ -1242,7 +1242,7 @@
                         
 
                         
-                            <span class="subtitle">This talk is about why and how we built our internal data pipeline platform. At Indix we have data in different formats - html pages, thrift records, avro records and the usual culprits - CSVs and other plain text formats. We have data in TBs and in a few KBs and data consisting of billions of records and data consisting of a few hundred rows. And all this data - in one form or another - is consumed by the engineers, the product managers, the customer success team and even our CEO. Our biggest challenge was in knowing which data exists and where, and how to access it efficiently while balancing costs and productivity of the people involved. We had to make do with adhoc Scalding jobs. There was no single place where people can discover the different 'datasets' that we had, what format they were in, where they were stored and how frequently a new version was published. Running jobs was also not straightforward since things like finding a cluster to use were not trivial. In order to democratize the access to data and make it easy for anyone within the organization to work and play with the data we had, we went about building a data pipeline platform for our internal users. Leveraging the power of Spark, the platform allows the users to define datasets (along with their schema) and create pipelines to work with the datasets. The pipelines can be configured via a wizard based UI or a JSON config and all the jobs run on dedicated and auto scaled Spark clusters. Predefined transformations to filter, project, sample and even type in sql queries have made it powerful but simple to use for any type of user. Support for S3, Sftp and even Google sheets made it usable for different internal and customer use cases. The platform also enables us to load the same data and perform similar operations on them via notebooks with just couple of lines of client code. Today we run over 300 pipelines across over 100 datasets and thousands of versions of the datasets using this platform. The data pipeline platform has truly changed the way we ingest, manipulate, analyze and egress data across the organization, and is on course to be converted into a self-serve platform for our (external) customers too.</span>
+                            <div class="subtitle">This talk is about why and how we built our internal data pipeline platform. At Indix we have data in different formats - html pages, thrift records, avro records and the usual culprits - CSVs and other plain text formats. We have data in TBs and in a few KBs and data consisting of billions of records and data consisting of a few hundred rows. And all this data - in one form or another - is consumed by the engineers, the product managers, the customer success team and even our CEO. Our biggest challenge was in knowing which data exists and where, and how to access it efficiently while balancing costs and productivity of the people involved. We had to make do with adhoc Scalding jobs. There was no single place where people can discover the different 'datasets' that we had, what format they were in, where they were stored and how frequently a new version was published. Running jobs was also not straightforward since things like finding a cluster to use were not trivial. In order to democratize the access to data and make it easy for anyone within the organization to work and play with the data we had, we went about building a data pipeline platform for our internal users. Leveraging the power of Spark, the platform allows the users to define datasets (along with their schema) and create pipelines to work with the datasets. The pipelines can be configured via a wizard based UI or a JSON config and all the jobs run on dedicated and auto scaled Spark clusters. Predefined transformations to filter, project, sample and even type in sql queries have made it powerful but simple to use for any type of user. Support for S3, Sftp and even Google sheets made it usable for different internal and customer use cases. The platform also enables us to load the same data and perform similar operations on them via notebooks with just couple of lines of client code. Today we run over 300 pipelines across over 100 datasets and thousands of versions of the datasets using this platform. The data pipeline platform has truly changed the way we ingest, manipulate, analyze and egress data across the organization, and is on course to be converted into a self-serve platform for our (external) customers too.</div>
                         
 
                                         
@@ -1273,7 +1273,7 @@
                         
 
                         
-                            <span class="subtitle">At Indix we collect and process lots of data. Most of our processing initially were done as MapReduce jobs but as our data grew in size we moved towards stream processing. We monitor the behaviour of our systems through collection of business metrics. It was relatively easy to write Stats jobs on our MapReduce output but things got tricky when we moved to Stream based processing. <p>Our key learnings over the years have been <ul> <li>Approximate stats now > Accurate stats tomorrow</li> <li>Our metrics were just aggregates (counts / uniques) with rollups</li> <li>Existing open source systems were more for system monitoring than business metrics</li> <li>Model aggregates as Commutative Monoids using <a href='https://twitter.github.io/algebird/typeclasses/monoid.html'>Algebird's</a> typeclasses.</li> </ul></p> <p>We put all our learnings and built a system called Abel which solved this for us. It aggregates a million events in ~15 minutes on a single box.</p></span>
+                            <div class="subtitle">At Indix we collect and process lots of data. Most of our processing initially were done as MapReduce jobs but as our data grew in size we moved towards stream processing. We monitor the behaviour of our systems through collection of business metrics. It was relatively easy to write Stats jobs on our MapReduce output but things got tricky when we moved to Stream based processing. <p>Our key learnings over the years have been <ul> <li>Approximate stats now > Accurate stats tomorrow</li> <li>Our metrics were just aggregates (counts / uniques) with rollups</li> <li>Existing open source systems were more for system monitoring than business metrics</li> <li>Model aggregates as Commutative Monoids using <a href='https://twitter.github.io/algebird/typeclasses/monoid.html'>Algebird's</a> typeclasses.</li> </ul></p> <p>We put all our learnings and built a system called Abel which solved this for us. It aggregates a million events in ~15 minutes on a single box.</p></div>
                         
 
                                         
@@ -1326,7 +1326,7 @@
                         
 
                         
-                            <span class="subtitle">We are happy to announce an Incremental Design Workshop for Software Developers. For all you developers who can't wait to test your software design skills, here's your chance!.Over a period of 3 hours, you find out how Incremental Design works - or does it? You can either pair with a fellow participant or work solo on a given problem statement in any programming language of your choice.A series of check points during the course of the workshop will ensure that we pause, observe and learn to design the right way.  At the end of the session, each individual/team can also present their design and learnings</span>
+                            <div class="subtitle">We are happy to announce an Incremental Design Workshop for Software Developers. For all you developers who can't wait to test your software design skills, here's your chance!.Over a period of 3 hours, you find out how Incremental Design works - or does it? You can either pair with a fellow participant or work solo on a given problem statement in any programming language of your choice.A series of check points during the course of the workshop will ensure that we pause, observe and learn to design the right way.  At the end of the session, each individual/team can also present their design and learnings</div>
                         
 
                                         
@@ -1505,7 +1505,7 @@
                         
 
                         
-                            <span class="subtitle">Lets look at potential issues that might hamper the availability and performance of your website across the globe through a case study.</span>
+                            <div class="subtitle">Lets look at potential issues that might hamper the availability and performance of your website across the globe through a case study.</div>
                         
 
                                         
@@ -1553,7 +1553,7 @@
                         
 
                         
-                            <span class="subtitle">In this talk we'll break down a spark application to its components and as result enable ourselves to utilize our spark clusters efficiently. We'll also take a look at the spark ui which will help us understand our sparks applications better through visualisation.</span>
+                            <div class="subtitle">In this talk we'll break down a spark application to its components and as result enable ourselves to utilize our spark clusters efficiently. We'll also take a look at the spark ui which will help us understand our sparks applications better through visualisation.</div>
                         
 
                                         
@@ -1601,7 +1601,7 @@
                         
 
                         
-                            <span class="subtitle">With all systems adapting microservices architecture, consul is a tool that allows solving how services are discovered among each other while also being distributed and highly available. As part of the talk, we will be looking at the architecture of consul, how it scales to support large cluster of nodes and also a demo on how simple they integrate with our systems.</span>
+                            <div class="subtitle">With all systems adapting microservices architecture, consul is a tool that allows solving how services are discovered among each other while also being distributed and highly available. As part of the talk, we will be looking at the architecture of consul, how it scales to support large cluster of nodes and also a demo on how simple they integrate with our systems.</div>
                         
 
                                         
@@ -1654,7 +1654,7 @@
                         
 
                         
-                            <span class="subtitle">Kotlin will be now shipped with Android Studio working out of the box, starting with version 3.0. No extra installations needed. No more incompatible plugins. All thanks to close collaboration between JetBrains and Google.Let's see how to get started with Kotlin.</span>
+                            <div class="subtitle">Kotlin will be now shipped with Android Studio working out of the box, starting with version 3.0. No extra installations needed. No more incompatible plugins. All thanks to close collaboration between JetBrains and Google.Let's see how to get started with Kotlin.</div>
                         
 
                                         
@@ -1702,7 +1702,7 @@
                         
 
                         
-                            <span class="subtitle">This talk is about introduction to Etherium</span>
+                            <div class="subtitle">This talk is about introduction to Etherium</div>
                         
 
                                         
@@ -1750,7 +1750,7 @@
                         
 
                         
-                            <span class="subtitle">Chatbots are around for more than 2 decades now but their commercial adoption began in late 2015 as the user base on instant messaging apps exceeding that of social media platform. These conversational agents are disrupting the way retailers engage customers with a personalized touch. Fintech are transforming boring bill payments into to indulging conversation. Increasingly trivial tasks in service desk are automated with conversational agents. With Google reckoning 'AI First' as the new mantra, these interactive agents are set to become an essential feature of apps.In this talk, I will walk you through building your own bot using NLP, ML and Deep Learning techniques. And then discuss available tools and technology on the market.</span>
+                            <div class="subtitle">Chatbots are around for more than 2 decades now but their commercial adoption began in late 2015 as the user base on instant messaging apps exceeding that of social media platform. These conversational agents are disrupting the way retailers engage customers with a personalized touch. Fintech are transforming boring bill payments into to indulging conversation. Increasingly trivial tasks in service desk are automated with conversational agents. With Google reckoning 'AI First' as the new mantra, these interactive agents are set to become an essential feature of apps.In this talk, I will walk you through building your own bot using NLP, ML and Deep Learning techniques. And then discuss available tools and technology on the market.</div>
                         
 
                                         
@@ -1803,7 +1803,7 @@
                         
 
                         
-                            <span class="subtitle">Computational epigraphy is an interdisciplinary area that combines computing and the study of ancient inscriptions. The main challenge or bottleneck faced in the field of epigraphical research is the lack of standardized corpora of the ancient scripts under study. Preparing such data from raw archaeological records, requires laborious human effort, expertise and a lot of time. Machine Learning has been used in the past to reduce human effort in epigraphical research, in problems such as classification and search for graphemic patterns. However, ML and in specific Deep Learning has not been applied yet, for the complementary task of corpus preparation. This talk will be focusing on how a deep learned pipeline architecture was designed to serve as an OCR (Optical Character Recognition) engine that is capable of reading the Indus script, one of the ancient and undeciphered inscriptions of the Harappan Civilization. This pipeline takes as input, images of the undeciphered Indus script, as found in archaeological artifacts, and returns as output a string of graphemes, suitable for inclusion in a standard corpus.</span>
+                            <div class="subtitle">Computational epigraphy is an interdisciplinary area that combines computing and the study of ancient inscriptions. The main challenge or bottleneck faced in the field of epigraphical research is the lack of standardized corpora of the ancient scripts under study. Preparing such data from raw archaeological records, requires laborious human effort, expertise and a lot of time. Machine Learning has been used in the past to reduce human effort in epigraphical research, in problems such as classification and search for graphemic patterns. However, ML and in specific Deep Learning has not been applied yet, for the complementary task of corpus preparation. This talk will be focusing on how a deep learned pipeline architecture was designed to serve as an OCR (Optical Character Recognition) engine that is capable of reading the Indus script, one of the ancient and undeciphered inscriptions of the Harappan Civilization. This pipeline takes as input, images of the undeciphered Indus script, as found in archaeological artifacts, and returns as output a string of graphemes, suitable for inclusion in a standard corpus.</div>
                         
 
                                         
@@ -1851,7 +1851,7 @@
                         
 
                         
-                            <span class="subtitle">The primary focus of talk is about the performance of the system and strategies used to implement the features like partitioning, distribution, replication, prefix scans and distributed scans.</span>
+                            <div class="subtitle">The primary focus of talk is about the performance of the system and strategies used to implement the features like partitioning, distribution, replication, prefix scans and distributed scans.</div>
                         
 
                                         
@@ -1882,7 +1882,7 @@
                         
 
                         
-                            <span class="subtitle">Talk would answer the following questions.</br> 1. How are transactions handled internally in Hive?</br> 2. How do Hive and PostgreSQL guarantee Serializable Isolation?</span>
+                            <div class="subtitle">Talk would answer the following questions.</br> 1. How are transactions handled internally in Hive?</br> 2. How do Hive and PostgreSQL guarantee Serializable Isolation?</div>
                         
 
                                         
@@ -1935,7 +1935,7 @@
                         
 
                         
-                            <span class="subtitle">The autonomy of robotics is going to continue to influence the way humans and computers interact in our world. They currently serve many hobby, commercial, and military uses and we’ll take a dive into those use cases and how sensor fusion enables the ability to navigate autonomously and avoid obstacles in real time.</span>
+                            <div class="subtitle">The autonomy of robotics is going to continue to influence the way humans and computers interact in our world. They currently serve many hobby, commercial, and military uses and we’ll take a dive into those use cases and how sensor fusion enables the ability to navigate autonomously and avoid obstacles in real time.</div>
                         
 
                                         
@@ -1983,7 +1983,7 @@
                         
 
                         
-                            <span class="subtitle">This talk is about image classification using convolutional neural networks</span>
+                            <div class="subtitle">This talk is about image classification using convolutional neural networks</div>
                         
 
                                         
@@ -2014,7 +2014,7 @@
                         
 
                         
-                            <span class="subtitle"><b>Introduction to Containers</b><br/> 1. Operating system level virtualization<br/> 2. Insights into container on the way it works<br/> <b>Introduction to Docker</b><br/> 1. Why it becomes essential to use Docker these days<br/> 2. How to build Docker image<br/> 3. What is Docker registry and push/pull<br/> <b>Introduction to Kubernetes</b><br/> 1. Architectural overview of Kubernetes [ Pod, Replication Controller, Container, Secret, ConfigMap, Services ]<br/> 2. Kubectl CLI Specifications<br/> 3. Kubernetes template system [ Kind: Deployment, kind: Pod ]</span>
+                            <div class="subtitle"><b>Introduction to Containers</b><br/> 1. Operating system level virtualization<br/> 2. Insights into container on the way it works<br/> <b>Introduction to Docker</b><br/> 1. Why it becomes essential to use Docker these days<br/> 2. How to build Docker image<br/> 3. What is Docker registry and push/pull<br/> <b>Introduction to Kubernetes</b><br/> 1. Architectural overview of Kubernetes [ Pod, Replication Controller, Container, Secret, ConfigMap, Services ]<br/> 2. Kubectl CLI Specifications<br/> 3. Kubernetes template system [ Kind: Deployment, kind: Pod ]</div>
                         
 
                                         
@@ -2067,7 +2067,7 @@
                         
 
                         
-                            <span class="subtitle">Data Science helps companies build models about sales, demand, finance, customer information and what not. R is widely used among data scientists for analysis and model building. But most R users have used it only for research and prototyping, not in actual production analytics code.<br/> - How to deploy R models in a production environment? Pros and cons of these methods.<br/> - Comparing R with other options for data science work. </span>
+                            <div class="subtitle">Data Science helps companies build models about sales, demand, finance, customer information and what not. R is widely used among data scientists for analysis and model building. But most R users have used it only for research and prototyping, not in actual production analytics code.<br/> - How to deploy R models in a production environment? Pros and cons of these methods.<br/> - Comparing R with other options for data science work. </div>
                         
 
                                         
@@ -2115,7 +2115,7 @@
                         
 
                         
-                            <span class="subtitle">From tools and technology to people and requirements, what's different in the data engineering space? App development is traditional now. All enterprises want to become data-guided. Data     lake is good start yet the know-hows and do-hows are so many. There's much anew to be learnt and also unlearnt. Everyone has their version of a big data stack, keeps continuously re-inventing.<br/> Sharing experiences from building a data lake in the retail domain, I will be talking about - what is this vast new space of data engineering,<br/> - why it is critical to think in terms of data rather than features and<br/> - how important it is to understand these technologies and create a data lake that is usable and insightful to business<br/></span>
+                            <div class="subtitle">From tools and technology to people and requirements, what's different in the data engineering space? App development is traditional now. All enterprises want to become data-guided. Data     lake is good start yet the know-hows and do-hows are so many. There's much anew to be learnt and also unlearnt. Everyone has their version of a big data stack, keeps continuously re-inventing.<br/> Sharing experiences from building a data lake in the retail domain, I will be talking about - what is this vast new space of data engineering,<br/> - why it is critical to think in terms of data rather than features and<br/> - how important it is to understand these technologies and create a data lake that is usable and insightful to business<br/></div>
                         
 
                                         
@@ -2146,7 +2146,7 @@
                         
 
                         
-                            <span class="subtitle">This talk gives a brief overview of the Spark Architecture along with the common issues that are encountered while running spark jobs and how to go about avoiding them. It will also cover the best practices one should adopt to maximize performance and ensure efficient memory utilization. </span>
+                            <div class="subtitle">This talk gives a brief overview of the Spark Architecture along with the common issues that are encountered while running spark jobs and how to go about avoiding them. It will also cover the best practices one should adopt to maximize performance and ensure efficient memory utilization. </div>
                         
 
                                         
@@ -2199,7 +2199,7 @@
                         
 
                         
-                            <span class="subtitle">This talk is about Tkinter and PyQt tools/program that can be used for GUI. We will have a demo of these tools, compare and contrast both the tools.</span>
+                            <div class="subtitle">This talk is about Tkinter and PyQt tools/program that can be used for GUI. We will have a demo of these tools, compare and contrast both the tools.</div>
                         
 
                                         
@@ -2247,7 +2247,7 @@
                         
 
                         
-                            <span class="subtitle">1. Intro to Terraform<br /> 2. Some useful Terraform commands<br /> 3. State file in Terraform.<br /> 4. Intro to dynamic inventory in Ansibe (as using this we'll cover how can we use terraform created resources without hardcoding IPs)</span>
+                            <div class="subtitle">1. Intro to Terraform<br /> 2. Some useful Terraform commands<br /> 3. State file in Terraform.<br /> 4. Intro to dynamic inventory in Ansibe (as using this we'll cover how can we use terraform created resources without hardcoding IPs)</div>
                         
 
                                         
@@ -2278,7 +2278,7 @@
                         
 
                         
-                            <span class="subtitle">Phoenix framework for Elixir language which runs on erlang Beam VM is very performant and similar to Ruby on Rails in many ways. We want to introduce this framework to Ruby on Rails developers so that they have one more tool under their tool belt.</span>
+                            <div class="subtitle">Phoenix framework for Elixir language which runs on erlang Beam VM is very performant and similar to Ruby on Rails in many ways. We want to introduce this framework to Ruby on Rails developers so that they have one more tool under their tool belt.</div>
                         
 
                                         
@@ -2612,7 +2612,7 @@
                         
 
                         
-                            <span class="subtitle">Continuous Delivery in iOS Using Fastlane</span>
+                            <div class="subtitle">Continuous Delivery in iOS Using Fastlane</div>
                         
 
                                         
@@ -2796,7 +2796,7 @@
                         
 
                         
-                            <span class="subtitle">Taking simple functions, we'll observe how progressively adding various constraints enables us to read and reason about our code in a much better fashion.</span>
+                            <div class="subtitle">Taking simple functions, we'll observe how progressively adding various constraints enables us to read and reason about our code in a much better fashion.</div>
                         
 
                                         
@@ -5019,8 +5019,8 @@
                         
 
                         
-                            <span class="subtitle"><p>Fast becoming a hot topic in the world of Reactive JVM applications is CQRS/ES (Command Query Responsibility Segregation and Event sourcing). These design patterns, while not new, present a fresh way to reason about application design that is a natural fit for distributed computing.</p>
-<p>This video talk will explain the rationale behind CQRS/ES, how it fits the Reactive paradigm and the advantages at both the technology and business level. We will also discuss the implications of consistency models and how this approach affects Domain Driven Design.</p></span>
+                            <div class="subtitle"><p>Fast becoming a hot topic in the world of Reactive JVM applications is CQRS/ES (Command Query Responsibility Segregation and Event sourcing). These design patterns, while not new, present a fresh way to reason about application design that is a natural fit for distributed computing.</p>
+<p>This video talk will explain the rationale behind CQRS/ES, how it fits the Reactive paradigm and the advantages at both the technology and business level. We will also discuss the implications of consistency models and how this approach affects Domain Driven Design.</p></div>
                         
 
                                         
@@ -5092,7 +5092,7 @@
                         
 
                         
-                            <span class="subtitle">How to overcome the pitfalls of OO using functional programming</span>
+                            <div class="subtitle">How to overcome the pitfalls of OO using functional programming</div>
                         
 
                                         
@@ -5133,7 +5133,7 @@
                         
 
                         
-                            <span class="subtitle">Evolution of Navigation</span>
+                            <div class="subtitle">Evolution of Navigation</div>
                         
 
                                         
@@ -5181,7 +5181,7 @@
                         
 
                         
-                            <span class="subtitle">Introduction to 'Go' language</span>
+                            <div class="subtitle">Introduction to 'Go' language</div>
                         
 
                                         
@@ -5254,7 +5254,7 @@
                         
 
                         
-                            <span class="subtitle">How a tool can help to improve yourself continuously</span>
+                            <div class="subtitle">How a tool can help to improve yourself continuously</div>
                         
 
                                         
@@ -5623,7 +5623,7 @@
                         
 
                         
-                            <span class="subtitle">Come find out the good parts and the not so good parts which R brings to the table when it comes to number crunching</span>
+                            <div class="subtitle">Come find out the good parts and the not so good parts which R brings to the table when it comes to number crunching</div>
                         
 
                                         
@@ -5671,7 +5671,7 @@
                         
 
                         
-                            <span class="subtitle">on{X} lets you control and extend the capabilities of your Android phone using a JavaScript API to remotely program it</span>
+                            <div class="subtitle">on{X} lets you control and extend the capabilities of your Android phone using a JavaScript API to remotely program it</div>
                         
 
                                         
@@ -5702,7 +5702,7 @@
                         
 
                         
-                            <span class="subtitle">Build responsive mobile apps using html, css & javascript with Ionic framework</span>
+                            <div class="subtitle">Build responsive mobile apps using html, css & javascript with Ionic framework</div>
                         
 
                                         
@@ -5910,7 +5910,7 @@
                         
 
                         
-                            <span class="subtitle">Go is an open source continuous delivery tool</span>
+                            <div class="subtitle">Go is an open source continuous delivery tool</div>
                         
 
                                         
@@ -5975,7 +5975,7 @@
                         
 
                         
-                            <span class="subtitle">There will be two parallel workshops, one for Using Go, and one for Developing/Extending Go, participants are free to choose which one they want to attend</span>
+                            <div class="subtitle">There will be two parallel workshops, one for Using Go, and one for Developing/Extending Go, participants are free to choose which one they want to attend</div>
                         
 
                                         
@@ -6553,7 +6553,7 @@
                         
 
                         
-                            <span class="subtitle">for a World Leader in Consumer Electronics</span>
+                            <div class="subtitle">for a World Leader in Consumer Electronics</div>
                         
 
                                         
@@ -6584,7 +6584,7 @@
                         
 
                         
-                            <span class="subtitle">Experiences and solutions at Indix when collecting billions of data daily</span>
+                            <div class="subtitle">Experiences and solutions at Indix when collecting billions of data daily</div>
                         
 
                                         
@@ -6632,7 +6632,7 @@
                         
 
                         
-                            <span class="subtitle">A JavaScript framework for developing great single-page web applications</span>
+                            <div class="subtitle">A JavaScript framework for developing great single-page web applications</div>
                         
 
                                         
@@ -6663,7 +6663,7 @@
                         
 
                         
-                            <span class="subtitle">Exploring the current state of technology</span>
+                            <div class="subtitle">Exploring the current state of technology</div>
                         
 
                                         
@@ -6957,7 +6957,7 @@
                         
 
                         
-                            <span class="subtitle">A brief intro to Raspi , its capabilities and projects done with it.. with a small demo</span>
+                            <div class="subtitle">A brief intro to Raspi , its capabilities and projects done with it.. with a small demo</div>
                         
 
                                         
@@ -7005,7 +7005,7 @@
                         
 
                         
-                            <span class="subtitle">At Indix, we crawl millions of products from hundreds of e-commerce web sites to provide product and pricing intelligence to product managers. The talk will mainly focus on how we addressed most of the challenges faced in building such a system using the Akka framework</span>
+                            <div class="subtitle">At Indix, we crawl millions of products from hundreds of e-commerce web sites to provide product and pricing intelligence to product managers. The talk will mainly focus on how we addressed most of the challenges faced in building such a system using the Akka framework</div>
                         
 
                                         
@@ -7214,7 +7214,7 @@
                         
 
                         
-                            <span class="subtitle">Lightning Talk</span>
+                            <div class="subtitle">Lightning Talk</div>
                         
 
                                         

@@ -18,7 +18,7 @@
                 <% end%>
 
                 <% if agenda[:subtitle] %>
-                    <span class="subtitle"><%= agenda[:subtitle] %></span>
+                    <div class="subtitle"><%= agenda[:subtitle] %></div>
                 <% end %>                
                 <% agenda[:speakers].each_with_index do |speaker, i| %>
                     <span class="name">

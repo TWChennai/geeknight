@@ -34,8 +34,4 @@ Commit changes to master dir (including `/docs` dir) and push
 
 # Front-End Development
 
-* Pure HTML/CSS/Javascript website. No JQuery.
-* Used [HTML5 Boilerplate](//html5boilerplate.com) to generate the skeleton.
-* Used [colourlovers.com](//colourlovers.com) for the color swatches.
-* Using [SASS](//sass-lang.com) and [Foundation](//foundation.zurb.com) for all the Styling.
-* Icon fonts were generated and downloaded from [Fontello](//fontello.com). Only icons from the *Modern Pictogram* set were used for consistency.
+* Pure HTML/CSS/Jquery.
