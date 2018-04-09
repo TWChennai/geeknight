@@ -165,7 +165,7 @@ html {
       .intro-info-subnote .youtube {
         background: url("../img/youtube-logo.svg") center no-repeat;
         background-size: 70px;
-        flex: 0 1 20%; }
+        flex: 0 1 15%; }
   .intro .line {
     border-top: 1px solid;
     margin: 0 50px; }
