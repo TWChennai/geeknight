@@ -13,6 +13,7 @@ function getEventsFor(id, value) {
   $('.event').removeClass("active");
   $('#' + id).addClass("active");
   $("*[id*=" + value + "]").addClass("show");
+  $($("*[id*=" + value + "]")[1]).trigger( "click" );
 }
 
 function setClickListiners() {
