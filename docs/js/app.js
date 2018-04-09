@@ -12,8 +12,9 @@ function getEventsFor(id, value) {
   $('.event').removeClass("show");
   $('.event').removeClass("active");
   $('#' + id).addClass("active");
-  $("*[id*=" + value + "]").addClass("show");
-  $($("*[id*=" + value + "]")[1]).trigger( "click" );
+  var months = $("*[id*=" + value + "]");
+  months.addClass("show");
+  $(months[1]).trigger("click");
 }
 
 function setClickListiners() {
@@ -68,12 +69,7 @@ $(document).ready(function() {
 });
 
 $(document).scroll(function() {
-  var y = $(this).scrollTop();
-  if (y > 600) {
-    $("#header").addClass("shadow");
-  } else {
-    $("#header").removeClass("shadow");
-  }
+  $("#header").toggleClass("shadow", $(this).scrollTop() > 600);
   highlightMenu();
 });
 
