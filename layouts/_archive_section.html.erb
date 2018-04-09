@@ -32,7 +32,7 @@
                     <div class="speaker-detail">
                       <% if agenda[:speakers] %>
                         <% if agenda[:video_link] %>
-                          <span class="title"><a href="<%= agenda[:video_link] %>" target="_blank"><%= agenda[:title] %></a></span>
+                          <span class="title"><a href="<%= agenda[:video_link] %>" target="_blank" class="link"><%= agenda[:title] %></a></span>
                         <% else %>
                           <span class="title"><%= agenda[:title] %></span>
                         <% end%>
@@ -60,7 +60,7 @@
                         <% end %>
                       <% else %>
                         <% if agenda[:video_link] %>
-                          <span class="title-default"><a href="<%= agenda[:video_link] %>" target="_blank"><%= agenda[:title] %></a></span>
+                          <span class="title-default"><a href="<%= agenda[:video_link] %>" target="_blank" class="link"><%= agenda[:title] %></a></span>
                         <% else %>
                           <span class="title-default"><%= agenda[:title] %></span>
                         <% end%>
@@ -73,7 +73,7 @@
                       <% if agenda[:resources] %>
                           <p><small>Resources:
                           <% agenda[:resources].each_with_index do |resource, i| %>
-                              <a href="<%= resource[:url] %>" rel="nofollow" target="_blank"><%= resource[:title] %></a>
+                              <a href="<%= resource[:url] %>" rel="nofollow" target="_blank" class="link"><%= resource[:title] %></a>
                               <%= ' &bull; ' if i != agenda[:resources].length - 1 %>
                           <% end %>
                           </small></p>
