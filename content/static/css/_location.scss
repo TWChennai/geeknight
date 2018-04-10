@@ -1,5 +1,8 @@
 .location {
   position: relative;
+  mix-width: 1024px;
+  max-width: 1440px;
+  margin: auto;
   .live-map-container {
     .live-map {
       height: 500px;

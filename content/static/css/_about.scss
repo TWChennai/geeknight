@@ -1,5 +1,6 @@
 #about {
   padding-top: 40px;
+  background-color: $section-heading-background;
   p {
     padding: 20px 0;
     margin: 0;
@@ -22,8 +23,10 @@
 
   .about-details {
     font-size: 18px;
-    padding: 0 180px;
+    padding: 0 50px;
     text-align: justify;
+    max-width: 1024px;
+    margin: auto;
     background-color: $section-heading-background;
   }
 }

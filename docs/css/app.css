@@ -1,13 +1,13 @@
 html {
   width: 100%;
   height: 100%;
-  min-width: 1024px;
+  min-width: 924px;
   overflow: auto;
   font-family: "OpenSans", sans-serif; }
   html body {
     position: relative;
     margin: auto;
-    min-width: 960px; }
+    min-width: 924px; }
   html a {
     color: #ef5ba1;
     text-decoration: none; }
@@ -233,7 +233,10 @@ html {
           justify-content: flex-start; }
 
 .location {
-  position: relative; }
+  position: relative;
+  mix-width: 1024px;
+  max-width: 1440px;
+  margin: auto; }
   .location .live-map-container .live-map {
     height: 500px;
     width: 100%;
@@ -392,7 +395,8 @@ html {
       display: block; }
 
 #about {
-  padding-top: 40px; }
+  padding-top: 40px;
+  background-color: #dfdfdf; }
   #about p {
     padding: 20px 0;
     margin: 0; }
@@ -410,8 +414,10 @@ html {
       text-transform: uppercase; }
   #about .about-details {
     font-size: 18px;
-    padding: 0 180px;
+    padding: 0 50px;
     text-align: justify;
+    max-width: 1024px;
+    margin: auto;
     background-color: #dfdfdf; }
 
 .footer {
