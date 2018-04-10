@@ -377,11 +377,11 @@ html {
             font-style: italic;
             text-align: justify;
             padding: 0 0 10px 0;
-            height: 160px;
+            max-height: 150px;
             overflow: hidden;
             transition: height .5s; }
           .archive .previous-editions .content .speakers .speaker-details .speaker-detail .show {
-            height: auto;
+            max-height: 1000px;
             transition: height .5s; }
           .archive .previous-editions .content .speakers .speaker-details .speaker-detail .name {
             color: #ef5ba1;
