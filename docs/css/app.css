@@ -394,7 +394,7 @@ html {
       display: block; }
 
 #about {
-  padding-top: 40px;
+  margin-top: 40px;
   background-color: #dfdfdf; }
   #about p {
     padding: 20px 0;
