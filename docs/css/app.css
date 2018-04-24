@@ -207,7 +207,7 @@ html {
           border-radius: 32px;
           width: 32px;
           height: 32px;
-          padding: 5px 5px 5px 0; }
+          margin: 5px 5px 5px 0; }
         .agenda .content .speakers .speaker-details .speaker-detail .title {
           color: #ef5ba1;
           font-size: 20px;
@@ -360,7 +360,7 @@ html {
             border-radius: 32px;
             width: 32px;
             height: 32px;
-            padding: 5px 5px 5px 0; }
+            margin: 5px 5px 5px 0; }
           .archive .previous-editions .content .speakers .speaker-details .speaker-detail .title {
             color: #ef5ba1;
             font-size: 20px;
