@@ -16,6 +16,61 @@
     transition: left .5s ease;
   }
   .nav-bar {
+    display: flex;
+    position: relative;
+    top: 15px;
+    bottom: 15px;
+    margin: auto;
+    .logo-section {
+      display: flex;
+      flex: 1 1 50%;
+      .logo {
+        background: $geeknight-logo no-repeat;
+        background-size: 140px;
+        height: 65px;
+        width: 160px;
+        margin-left: 5px;
+      }
+    }
+    .menu {
+      display: flex;
+      align-items: center;
+      flex: 1 1 40%;
+      &-item {
+        flex: 1 1 25%;
+      }
+      .active {
+        a {
+          border-bottom: 5px solid $pink;
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+.shadow {
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (min-width: $desktop-min-width) {
+  .header {
+  background: $white-90-percent-opacity;
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  z-index: 999;
+  padding: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  a {
+    text-decoration: none;
+    color: $pink;
+    -webkit-transition: left .5s ease;
+    -moz-transition: left .5s ease;
+    transition: left .5s ease;
+  }
+  .nav-bar {
     width: 960px;
     display: flex;
     position: relative;
@@ -51,4 +106,5 @@
 }
 .shadow {
   box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
 }
