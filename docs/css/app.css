@@ -3,34 +3,29 @@ html {
   height: 100%;
   min-width: 924px;
   overflow: auto;
-  font-family: "OpenSans", sans-serif; }
+  font-family: 'OpenSans', sans-serif; }
   html body {
     position: relative;
     margin: auto;
     min-width: 924px; }
-  html a {
-    color: #ef5ba1;
-    text-decoration: none; }
-
-.read-more {
-  color: #ef5ba1; }
-
-.read-more::after {
-  content: "Show More";
-  cursor: pointer;
-  text-decoration: underline;
-  font-size: 18px;
-  font-weight: 700; }
-
-.toggle:checked ~ label::after {
-  content: "Show Less"; }
-
-.toggle {
-  display: none;
-  visibility: hidden; }
-
-.link {
-  text-decoration: underline; }
+    html body a {
+      color: #ef5ba1;
+      text-decoration: none; }
+  html .read-more {
+    color: #ef5ba1; }
+  html .read-more::after {
+    content: "Show More";
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: 700; }
+  html .toggle:checked ~ label::after {
+    content: "Show Less"; }
+  html .toggle {
+    display: none;
+    visibility: hidden; }
+  html .link {
+    text-decoration: underline; }
 
 .header {
   background: rgba(255, 255, 255, 0.9);
