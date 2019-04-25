@@ -1,199 +1,199 @@
 fileignoreconfig:
 - filename: docs/edition-1.html
-  checksum: ccc971647ef57c5e89a2ff532a34b97c316fdeacbda71cd3a8b4229cea474722
+  checksum: 0eb5dc6fa1d8b0da5e03105503f189e800bc74ab521ea4896cb23e9e327dcc57
   ignore_detectors: []
 - filename: docs/edition-10.html
-  checksum: 4c2b64eb45c2b3e2303269cce00c31958128cb948582c9092bf2c4ac4e5966c7
+  checksum: 20494decd9e4a43dca45628dc151673e986c9595b2ea76a3d7fb1b472cb0bf52
   ignore_detectors: []
 - filename: docs/edition-11.html
-  checksum: ba1ce9bb38e02e905c47ae24ef573f5b8060b5eed0ac3147fd0870629fcb8493
+  checksum: bee5ab33142d6fc36c14fbc73936b5b0beb14cf2b8c73023559790ba6441cd3b
   ignore_detectors: []
 - filename: docs/edition-12.html
-  checksum: 3baf53458d95ed59948f4e8a8c1b7427a375464a9464da4837c2d67db9b203d5
+  checksum: 214e30d8e25614151f994e599389a2e7e0b3cc8b928a5c6c2843846e98d6e147
   ignore_detectors: []
 - filename: docs/edition-13.html
-  checksum: 434b909bb3262af4452dedfbb0c254ce01f04818eb1aff49f17d258d9fd19914
+  checksum: b9372c898915d0c6da529b494f2337c9b4f276c69a17940304efb7ce81362ce4
   ignore_detectors: []
 - filename: docs/edition-14.html
-  checksum: aa0beede52ec4ffa152efefb0898090c1c0655fa32e3cdd1177f295975a4278a
+  checksum: 8c84d02f66fbbbeb78e33c8f815f0b7b5ca7af5c677999922d00d11885d1c17d
   ignore_detectors: []
 - filename: docs/edition-15.html
-  checksum: 8dfa5938e52bebb464b98b514a855d07f403a8845439fa8adaebff1bb4902819
+  checksum: 98829f77c120b848d1a78cdbaaa9365059b87ce87d9ab1a584a96f6e0bf09f4c
   ignore_detectors: []
 - filename: docs/edition-16.html
-  checksum: 33ef8f7b8a4e5db020ab5d31bacac72d3fbf3544cc284e28e0fcae6ce9390a9e
+  checksum: c54ff5c9b761be195f56e6ee238fb34f66e4e781cb947008730038f5aafe9f5d
   ignore_detectors: []
 - filename: docs/edition-17.html
-  checksum: 72ac45058305f381bfa50d3fff2aeb8bd8df6eec1f296d2a8d82113625c35c3f
+  checksum: 7f30c4483ec7ed7904e3bf8ec94f31df2863dd95ad9c55cc4a7c8a1de86d3080
   ignore_detectors: []
 - filename: docs/edition-18.html
-  checksum: 52885ef003807c7774a22916c3d4a55b8d0702bfdb9e7b76ec46b0c53220d389
+  checksum: 4ae03154ff902ea4db81f9624c41d1c09b1742dd5acf25975b04eadbfe7f3eba
   ignore_detectors: []
 - filename: docs/edition-19.html
-  checksum: 95099e0d807a0d1a6c0864d5aaa70a06053c6ae1b01b8de6796f6f286d530da1
+  checksum: 5e8f5361bf3fd1f42042992a0fb134c119dde69207ed503c2ef1b8540f6a9470
   ignore_detectors: []
 - filename: docs/edition-2.html
-  checksum: 211c332ed48d207793d459472f3af9ae943d0335d244f2300624e89e9cd65f48
+  checksum: ea716d505a042598a09c3bc81d960df0a5c7b04467c1d07ef63ad32ec4f64dff
   ignore_detectors: []
 - filename: docs/edition-20.html
-  checksum: 0d9daca8fd3028d0f25e86cdfff4160e1a2ed2c8e8f0bd5e352f7c1994dc9811
+  checksum: 98c0c0e9e066fa111e38c8c43786b5b1b41cac3c246b47ec10522a07534bcb23
   ignore_detectors: []
 - filename: docs/edition-21.html
-  checksum: cef34a818174c2d6d4866c53e4594e55d65e65f835f551e45e022ed466f5238a
+  checksum: 7df93cc29362665c49f825642c08bb50a172678d808b0a0624365d6804334fc3
   ignore_detectors: []
 - filename: docs/edition-22.html
-  checksum: 4d55ae7fc1d21a45f4d8be4e9614e33a13dc5b5634bd2ba02fd0df08b749dc6f
+  checksum: 739bbef90217b57f53a4d4979b3ee4f1ca6f904cee4b78914b9d12871eea52bd
   ignore_detectors: []
 - filename: docs/edition-23.html
-  checksum: 7e510cf82bb51f9f5838fd89ee3eec3ba978cd987c1262a618810362edccef13
+  checksum: 92d697494feb4f7f5e2316d1bd157cf2ae23a2fddbd50f4ce0fcf58836155b6c
   ignore_detectors: []
 - filename: docs/edition-24.html
-  checksum: dcbb7541c8d14183d533e841a96230ec40321dfbf339076b2a930dbbca0e2165
+  checksum: e179223da705f032dd76ac7717611d9e31ec2df9b4adf004da96b66cecae163d
   ignore_detectors: []
 - filename: docs/edition-25.html
-  checksum: fd6dacc13f4a6c4f938fd30ecf3a07d7f5be7e690ddcc3da29453caffc38eba1
+  checksum: 1e84debe0b67a5348278c1020d618d3e8aaeb0abdfb72db4742affd212442308
   ignore_detectors: []
 - filename: docs/edition-26.html
-  checksum: 9bbb7e8009478907d8f88b007dbc961b1c2b0d84241cefbd68818a4034bebe5b
+  checksum: 8a747bddbac0512d924a85515b5569672292aab92cd21af1852910c5192da7ac
   ignore_detectors: []
 - filename: docs/edition-27.html
-  checksum: d96fa739e17b927d8597ff987de3e7eb227b745755a697017066b4c622c4589a
+  checksum: c2df126bd64516ef86184be77ffa4bb5aff3ad89caa895e71da063a732197813
   ignore_detectors: []
 - filename: docs/edition-28.html
-  checksum: ce432ead63163c8bc8b140142f6ae41be4b769080362b6f1853126b7505af401
+  checksum: 8bda4ec1cacc2546353a238c23fb68ea53845cf7eaedb1ecd8ec3d38ac167ef4
   ignore_detectors: []
 - filename: docs/edition-29.html
-  checksum: 7366cf1da7e652370778145827870fe501edb0e84ec966c96c94b2e3c3d5c0b4
+  checksum: 75695d719b2830a6eabdfebe3ec808b13052f2a85729cb7ce70fd416ccfa9afc
   ignore_detectors: []
 - filename: docs/edition-3.html
-  checksum: e5224c549ad9fe2ea430eff7caab82c93c4158ac2980c3ed7ef4712b8c2e8967
+  checksum: 6c69bf6f2f61658007a05b4b54fd40ec8310d8beea2f1d23d4ec6a31e264d53f
   ignore_detectors: []
 - filename: docs/edition-30.html
-  checksum: 05fe44034d54ab6c87e0ef40f9ae77d4d08c5caa508bc95256cbf504d4cca1a5
+  checksum: 235643a8ca9335f948fb5e2e1cd968abd26d07064b8616b05ca42e9d8982b1d1
   ignore_detectors: []
 - filename: docs/edition-31.html
-  checksum: 2f207e577d74ced3b523c05aaf7c911c25e28811ea7b8ce86591639a74649b52
+  checksum: 02234cb97bd5619be4ce004f3a5e984ad04acc6b3a6cc6f143bf61734e86a4ad
   ignore_detectors: []
 - filename: docs/edition-32.html
-  checksum: 4af67e5542f30268e24517094201e953aaeb2b74fc7a6e800a265fa74f631595
+  checksum: 6da230f6c6e4bcc0947e20a06efe5fc63ba352ca8add0ad5747b0824d8d2534d
   ignore_detectors: []
 - filename: docs/edition-33.html
-  checksum: a892f4ea7f0c5357fff94b39a60184ae6f1e2ea77542e33dc01a606a7af8743f
+  checksum: 9378526a7ba3cdd9c3db6f1788d73294af69b04f82d938f45b84debbe552bc21
   ignore_detectors: []
 - filename: docs/edition-34.html
-  checksum: d33030d95d35a162f4e01103b0a979765cb00a322c3ea3e233800f23c2eb9ecc
+  checksum: 7986214eaa01e8b33fcf677c660252754c1e67d60d9c7ae5d0dde2a085d1b531
   ignore_detectors: []
 - filename: docs/edition-35.html
-  checksum: 996cf0224546fd5eedfe5bc2c7064bc654efe817a73e60f6d4b504c346fb9af1
+  checksum: a8aa4ab2b568f96d74bcf4860c64a330f0a28a6d7075720dca094e48f60bbfad
   ignore_detectors: []
 - filename: docs/edition-36.html
-  checksum: 6b2da4ee7729bb6587e4f87d6e5e328d35492b868d25985e5a5fa0a5d7448f49
+  checksum: 9448bcc1ecf9a20ffc4d9d39a2ae30ef7415a9776ecd57ce42637d95afdf927b
   ignore_detectors: []
 - filename: docs/edition-37.html
-  checksum: 73cf2d113674fb216b43797cdac15e7bc5e958e5c8745baed85961b3fd3cf8fa
+  checksum: 85d7800d3649b57153cccc06405fbbd896e407c4b0d3a0229a35f1a10c855533
   ignore_detectors: []
 - filename: docs/edition-38.html
-  checksum: 60c555e892e82232b4956794670552953711997141e4aa7ef305d2d1243a5326
+  checksum: b6e3cfc241655551650d38363b8a91a4f491f59e73c7087a02da75fe521c2a83
   ignore_detectors: []
 - filename: docs/edition-39.html
-  checksum: 2fc83f639c4b32b5906aaebc7e487ba2ec118ab31b270ef8879e7cf3d87296df
+  checksum: f42e4388ff2b88d8f31cd028ba4196da1f717726bc9b41a9aebc23398784f3c8
   ignore_detectors: []
 - filename: docs/edition-4.html
-  checksum: 3407374c40a1d4a3f6a918ca27570d77dbc4b7addb390a551bef3abe7995d792
+  checksum: 1caeb4ab45090cd5327824410161ec5b5ff978baa904930631375f26e2b13e18
   ignore_detectors: []
 - filename: docs/edition-40.html
-  checksum: 86ac56cba72e9fe9b9a23bb3da84547ee0c4741957ad3ffbedbd690be4f0a4d3
+  checksum: 290c568f9ec3f6384df64042a3e81fcf97b1d9460747b791f1198a2f31bdfd77
   ignore_detectors: []
 - filename: docs/edition-41.html
-  checksum: 2644f979ac4e6dc068794fcc1667cab9609780b5846646fcd4eb8bc27837c8a4
+  checksum: 4503198f09135eb3809dc91bfe0a4f0c95aa1aa90cc004e9ed45565355c311ce
   ignore_detectors: []
 - filename: docs/edition-42.html
-  checksum: c6ce77e490c5e2c6f3e59f7500750f33c3d5e0b6c3acda6f33f7d72122bdb3d8
+  checksum: 890d8d7621ac7d79cbdfcd2aa3d12093c8fe7c5dfd7a111d0a72b8e8f58c6ee4
   ignore_detectors: []
 - filename: docs/edition-43.html
-  checksum: efab653ab168e56b065f324269876467804b48087c47b66c7144ee050e5d3d10
+  checksum: 3393a50b2392a3c18267e3d594d309566dc1fa885b76b521d342e4243419f671
   ignore_detectors: []
 - filename: docs/edition-44.html
-  checksum: 81acee5dcc52d0e331ae982b56f9a79b455a5dbe6d75cfac7187e3a5e33ecacf
+  checksum: 0ce3b13528ce87cb54c6df6d2d04d69e051b4551af71079dd01f0fc82e9e6160
   ignore_detectors: []
 - filename: docs/edition-45.html
-  checksum: 07b56521246842ffdc5f48e9f26583b99cbbbda953b57ef99eefd8bc2fbe88f4
+  checksum: 76171e17fc7f35a5d0cf448a2091e1f5fe64aa120952b21e6f9a6089b43f1f84
   ignore_detectors: []
 - filename: docs/edition-46.html
-  checksum: b85b0c69cf5b332c05775f33d009ac9a31b3250b548b0d93fa71e98b99ff7b45
+  checksum: 8b23ca6e4776cd7f870c29fa2970212945913b66809761d57d216a6fd442059d
   ignore_detectors: []
 - filename: docs/edition-47.html
-  checksum: 2bc9c783ae68da09f7debc8d283e4ef32685394a1fe16062c7ecb24b3b0a5777
+  checksum: 32ffd05c5ca42159481884221df7785402b3c2fb4fb66165773b99b3bdad4981
   ignore_detectors: []
 - filename: docs/edition-48.html
-  checksum: 3f24f295675f9477dfe6eaefc564b9e05097b28b1df709cc94be62d08d82f16b
+  checksum: d6691d1ac5fb6e5cc4d6c3cfc9d0515316cea10514cd26ebd9dd6e4b68ad69a0
   ignore_detectors: []
 - filename: docs/edition-49.html
-  checksum: 2a11c16c5ebbfb836041023c4c81a15afe82a46521a8bd035b59e88b80770e90
+  checksum: b93bbc48cdddb934f5ce818cdb284ead0f6d439ee4e44dd42e4bd40b1a2ffb75
   ignore_detectors: []
 - filename: docs/edition-5.html
-  checksum: 2711e27a374c73aac38de9b35763cc7556e1e897cd127b542c2b27d9d594d13f
+  checksum: fabe124bb1d99c1f28846425dbdaca7b35b87fde1a5238401ebef2f87f3a7d32
   ignore_detectors: []
 - filename: docs/edition-50.html
-  checksum: e44e8d9fdbb4935015362b3815d1744274c83de13ffccb9589520be474978cdd
+  checksum: ef6e9e2da8805709e89e116b47d00efbb028d130b29ce4fb9d898757ceb19996
   ignore_detectors: []
 - filename: docs/edition-51.html
-  checksum: 18d2749fa54876355878f32d6659481bac238d6ae0f510ef1803505f0c1c054f
+  checksum: 9404ffdb0caea60512592e06c0ae31e9bddcafb21175a7624eba6595438a38d1
   ignore_detectors: []
 - filename: docs/edition-52.html
-  checksum: e9b11e36e37543af2d43d2db41a7a5f353bbb87bffc04ec6a391c6899858ed75
+  checksum: b4db4a5908dc9f6009a4da3780993cdb289acd416c134e393bd75c1b991cf17a
   ignore_detectors: []
 - filename: docs/edition-53.html
-  checksum: 0378a9c77294908e5e438b83124ad390d90faa5eb9f2c05d1d1d3b3358f773b0
+  checksum: dbf34d648a45078302d7e191f85d5e87278b54bbcf3bab0e8e9d3e5c4d8ddaaf
   ignore_detectors: []
 - filename: docs/edition-54.html
-  checksum: df226f4e4a7ae704b5554df2a45d82d2cb6a78ec821fc0d0be9dce127bef3a0e
+  checksum: 14daf49ad6de2743fd360a2c3ac38a8f14c50b3caf2ec6629081f34328dac1d9
   ignore_detectors: []
 - filename: docs/edition-55.html
-  checksum: e349f8bc3b1bb03c255a745756de708dc23c60617d10ae6abe51f3aa36df24c3
+  checksum: c78445a52d247086c9b237728695dbaacb472e99eec018efd2a887d3f5ab7337
   ignore_detectors: []
 - filename: docs/edition-56.html
-  checksum: bff2c9919553eee92e7ac438e8cdca4551ce6de07aef0062ae292e968f1c1b1a
+  checksum: 1f751742901d15c3bd0e02c91155f114ff333a5f41f48581722657e7c862f0c1
   ignore_detectors: []
 - filename: docs/edition-57.html
-  checksum: 7bbcd076d230e5b05d0f3c54589ec2349221dd389994ddd24c473937c471d7e1
+  checksum: 19dcbd5b0456b4c6e1cec4bde66d03737c56adeb9642795d45a7d584a591f450
   ignore_detectors: []
 - filename: docs/edition-58.html
-  checksum: b2e071e65d7286fbd3f8cc8c55d4c19b39d20a997cb8580c238c849075b5c921
+  checksum: 30c9fbb8880fec2d4f821be5df862669eb0271a6da43c599426681d5b265fcfe
   ignore_detectors: []
 - filename: docs/edition-59.html
-  checksum: df2916fa2c175d00e9e1cdff724d3bfe5f1c042ff987ba580fb9b82ffcfe217e
+  checksum: 06bdc4851b257e69c4fc218fe92abde2e6e1ed5b985dde8debdddee2e03214f2
   ignore_detectors: []
 - filename: docs/edition-6.html
-  checksum: ab3241270d40a986b7d0b94a6e40da8b642be96018cca3a0e63b3425304e4aac
+  checksum: a5e7c44bd233fd3ccca5bd240bd319c9dbc67536feb06608657876bf18d8e08b
   ignore_detectors: []
 - filename: docs/edition-60.html
-  checksum: 6f65e51cc70f930c1b342023b44584f996c31653286bb20a57348147b2250857
+  checksum: 37447e396ddcc4ed7d95029bed0177427f2806500b6804058444069f8092fac0
   ignore_detectors: []
 - filename: docs/edition-61.html
-  checksum: a44ecd6c885c56104e18c53881f065ef9b57d7040616ec0fa65deb51846cb57d
+  checksum: 125a45d57d87a97ef75a3cae5854a7d6e3d2b21992c3713dfd18c3bf52e8b499
   ignore_detectors: []
 - filename: docs/edition-62.html
-  checksum: efea854d3ad4b3325158373a9f3e8ff14f2fad302fd0d1586efb0b04aee1e6ba
+  checksum: 7b61a77ee53f57d8f42407ee8c17df2c40b8c05d77fb67a5fc60513088ab1170
   ignore_detectors: []
 - filename: docs/edition-63.html
-  checksum: eced555932b26a2f86d2a1594aa635938bbaf7c65756600a2a4ddc953110149f
+  checksum: 5aa70f80cbeff26140f4c098ce242add2521867f3d077b23c93f30bb7de1f2f8
   ignore_detectors: []
 - filename: docs/edition-64.html
-  checksum: 58a0fe89329f0f7e52c85261e690d2746c9ef47e934c94963b25001d43a30f0f
+  checksum: 87eced92d176522f8f41b277d5e17dd1bb9077a718986889765bce1e68756d96
   ignore_detectors: []
 - filename: docs/edition-65.html
-  checksum: 2e9a4f22a5d79ddc420729f7fcd66ff2b310ec9ab9e0aee6da15f33fd98878e1
+  checksum: d70088a5fcabf30bdd1a8312bd6755fe964b721c0c4a058d54e8ac5058fc8202
   ignore_detectors: []
 - filename: docs/edition-7.html
-  checksum: f400202845506fca4ff80d91f8fb5aac368580edd2071cd3c840965a476018ca
+  checksum: bcd67ea4f1f80f7bf86b73cb75153de5de6505ff26d2c3bb042935c5f17e98b0
   ignore_detectors: []
 - filename: docs/edition-8.html
-  checksum: 8a9d634d6e1e79e31d1735416671b86adca22b01e2ed4af752ed47e22d5ed75f
+  checksum: eb782a48a190ac7c2ee4e2bf7834c9f7ae969896f9d9c39db52d3bfe1f078190
   ignore_detectors: []
 - filename: docs/edition-9.html
-  checksum: 77946d72cde3ec1a4808c3714df6c85d958fa8f5b3ededa19a4d088f225f6c2f
+  checksum: 2b67ed003c9dd80da6eeda507b880f604bddd7e7422728f12de937d582adbc71
   ignore_detectors: []
 - filename: docs/index.html
-  checksum: 470c14ae946577d1fd0eb8d27fe16f3eab8774cf0c00a91f4fea357e2d8829a2
+  checksum: f82721e2a21acb55a6a234319d0d340430ae7a8d70d0f9518f2cce880d4f6592
   ignore_detectors: []
