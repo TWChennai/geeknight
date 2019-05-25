@@ -5,7 +5,7 @@
     <div class="content">
       <div class="speakers">
         <% @item[:agenda] && @item[:agenda].each_with_index do |agenda, i| %>
-          <div class="speaker-details">
+          <div id="talk<%= i+1 %>" class="speaker-details">
             <span class="time">
                 <%= agenda[:time] %> <%= "pm" unless agenda[:time].ends_with?('m') %>
             </span>
