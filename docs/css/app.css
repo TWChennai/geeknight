@@ -322,6 +322,77 @@ html {
         background-color: rgba(255, 255, 255, 0.8); }
       .archive .previous-editions .events .months .event.show {
         display: block; }
+  .archive .previous-editions .select-options, .archive .previous-editions .select-styled {
+    display: none; }
+  @media only screen and (min-width: 1224px) {
+    .archive .previous-editions .select-hidden {
+      display: none;
+      visibility: hidden;
+      padding-right: 10px; }
+    .archive .previous-editions .select {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      font-size: 16px;
+      width: 100px;
+      height: 50px; }
+    .archive .previous-editions .select-styled {
+      position: absolute;
+      display: block;
+      top: 10px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: red;
+      padding: 8px 15px; }
+      .archive .previous-editions .select-styled:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border: 7px solid transparent;
+        border-color: blue transparent transparent transparent;
+        position: absolute;
+        top: 16px;
+        right: 10px;
+        cursor: pointer;
+        -webkit-transition: 0.25s all ease;
+        -o-transition: 0.25s all ease;
+        transition: 0.25s all ease; }
+      .archive .previous-editions .select-styled:hover {
+        background-color: pink; }
+      .archive .previous-editions .select-styled.active {
+        background-color: orange; }
+        .archive .previous-editions .select-styled.active:after {
+          top: 9px;
+          border-color: transparent transparent pink transparent; }
+    .archive .previous-editions .select-options {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      left: 0;
+      z-index: 999;
+      margin: 0;
+      padding: 0;
+      background-color: green; }
+      .archive .previous-editions .select-options .event {
+        display: none; }
+      .archive .previous-editions .select-options li {
+        list-style: none;
+        margin: 0;
+        padding: 12px 0;
+        text-indent: 15px;
+        border-top: 1px solid red;
+        cursor: pointer; }
+        .archive .previous-editions .select-options li:hover {
+          color: blue;
+          background: red; }
+        .archive .previous-editions .select-options li[rel='hide'] {
+          display: none; }
+      .archive .previous-editions .select-options .event.active {
+        background-color: rgba(255, 255, 255, 0.8); }
+      .archive .previous-editions .select-options .event.show {
+        display: block; } }
   .archive .previous-editions .content {
     flex: 1 1 75%; }
     .archive .previous-editions .content .speakers {
@@ -374,10 +445,10 @@ html {
             padding: 0 0 10px 0;
             max-height: 150px;
             overflow: hidden;
-            transition: height .5s; }
+            transition: height 0.5s; }
           .archive .previous-editions .content .speakers .speaker-details .speaker-detail .show {
             max-height: 1000px;
-            transition: height .5s; }
+            transition: height 0.5s; }
           .archive .previous-editions .content .speakers .speaker-details .speaker-detail .name {
             color: #ef5ba1;
             font-size: 15px;

@@ -1,141 +1,234 @@
 .archive {
-  &-heading {
-    height: 90px;
-    line-height: 90px;
-    text-align: center;
-    &-text {
-      font-size: 36px;
-      font-weight: 800;
-      color: $black;      
-      text-transform: uppercase;
+	&-heading {
+		height: 90px;
+		line-height: 90px;
+		text-align: center;
+		&-text {
+			font-size: 36px;
+			font-weight: 800;
+			color: $black;
+			text-transform: uppercase;
+		}
+	}
+	.previous-editions {
+		display: flex;
+		margin: auto;
+		align-content: center;
+		width: 800px;
+		background-color: $archive-bg-content;
+		.events {
+			display: flex;
+			flex-flow: row nowrap;
+			text-align: center;
+			flex: 1 1 25%;
+			.years {
+				flex: 1 1 10%;
+				font-weight: 800;
+				font-size: 15px;
+				background-color: $archive-bg-year;
+				.year {
+					padding: 0px 0 10px 0;
+					height: 20px;
+					padding: 20px;
+					cursor: pointer;
+				}
+				.year.active {
+					background-color: $archive-active;
+				}
+			}
+			.months {
+				flex: 1 1 10%;
+				font-weight: bold;
+				font-size: 15px;
+				background-color: $archive-bg-month;
+				.event {
+					padding: 0px 0 10px 0;
+					height: 20px;
+					padding: 20px;
+					display: none;
+					cursor: pointer;
+				}
+				.event.active {
+					background-color: $archive-active;
+				}
+				.event.show {
+					display: block;
+				}
+			}
     }
-  }
-  .previous-editions {
-    display: flex;
-    margin: auto;
-    align-content: center;
-    width: 800px;
-    background-color: $archive-bg-content;
-    .events {
-      display: flex;
-      flex-flow: row nowrap;
-      text-align: center;
-      flex: 1 1 25%;
-      .years {
-        flex: 1 1 10%;
-        font-weight: 800;
-        font-size: 15px;
-        background-color: $archive-bg-year;
-        .year {
-          padding: 0px 0 10px 0;
-          height: 20px;
-          padding: 20px;
-          cursor: pointer;
-        }
-        .year.active {
-          background-color: $archive-active;
-        }
-      }
-      .months {
-        flex: 1 1 10%;
-        font-weight: bold;
-        font-size: 15px;
-        background-color: $archive-bg-month;        
-        .event {
-          padding: 0px 0 10px 0;
-          height: 20px;
-          padding: 20px;
-          display: none;
-          cursor: pointer;
-        }
-        .event.active {
-          background-color: $archive-active;
-        }
-        .event.show {
-          display: block;
-        }
-      }
-    }    
-    .content {
-      flex: 1 1 75%;
-      .speakers {
+
+    .select-options, .select-styled {
+      display: none;
+    }
+    
+		@media #{$mobile} {      
+      .select-hidden {
         display: none;
-        padding: 20px;
-        background-color: $archive-bg-content;
-        .edition {
-          padding-top: 15px;
-          font-size:24px;
-          font-weight: bold;
-          text-align: center;
-          sup {
-            font-size: 18px;
-          }
-        }
-        .speaker-details {
-          display: flex;
-          border-top: 1px solid $black;
-          padding: 10px 0;
-          &:nth-child(2) {
-            border-top: none;
-          }
-          &:last-child {
-            padding-bottom: 25px;
-          }
-          .time {
-            flex: 1 1 10%;
-            align-self: flex-start;
-            padding-top: 5px;
-            font-weight: 800;
-            text-transform: uppercase;
-          }
-          .speaker-detail {
-            flex: 1 1 85%;
-            .img {
-              border-radius: 32px;
-              width: 32px;
-              height: 32px;
-              margin: 5px 5px 5px 0;
-            }
-            .title {
-              color: $pink;
-              font-size: 20px;
-              font-weight: bold;
-              display: block;            
-            }          
-            .title-default {
-              color: $black;
-              font-size: 20px;
-              font-weight: bold;
-            }
-            .subtitle {
-              display: block;
-              color: $gray;                          
-              font-size: 15px;            
-              font-style: italic;
-              text-align: justify;
-              padding: 0 0 10px 0;
-              max-height: 150px;
-              overflow: hidden;
-              transition: height .5s;
-            }
-            .show {
-                max-height: 1000px;
-                transition: height .5s;
-              }
-            .name {
-              color: $pink;
-              font-size: 15px;
-              font-weight: bold;
-              display: flex;
-              align-items: center;
-              justify-content: flex-start;
-            }
-          }
-        }
+        visibility: hidden;
+        padding-right: 10px;
       }
-      .speakers.active {
+      
+      .select {
+				cursor: pointer;
+				display: inline-block;
+				position: relative;
+				font-size: 16px;
+				width: 100px;
+				height: 50px;
+			}
+
+			.select-styled {
+        position: absolute;
         display: block;
-      }
-    }
-  }
+				top: 10px;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: red;
+				padding: 8px 15px;
+				&:after {
+					content: '';
+					width: 0;
+					height: 0;
+					border: 7px solid transparent;
+					border-color: blue transparent transparent transparent;
+					position: absolute;
+					top: 16px;
+					right: 10px;
+					cursor: pointer;
+					-webkit-transition: 0.25s all ease;
+					-o-transition: 0.25s all ease;
+					transition: 0.25s all ease;
+				}
+				&:hover {
+					background-color: pink;
+				}				
+				&.active {
+					background-color: orange;
+					&:after {
+						top: 9px;
+						border-color: transparent transparent pink transparent;
+					}
+				}
+			}
+
+			.select-options {
+				display: none;
+				position: absolute;
+				top: 100%;
+				right: 0;
+				left: 0;
+				z-index: 999;
+				margin: 0;
+				padding: 0;
+				background-color: green;
+				.event {
+					display: none;
+				}
+				li {
+					list-style: none;
+					margin: 0;
+					padding: 12px 0;
+					text-indent: 15px;
+					border-top: 1px solid red;
+					cursor: pointer;
+
+					&:hover {
+						color: blue;
+						background: red;
+					}
+					&[rel='hide'] {
+						display: none;
+					}
+				}
+				.event.active {
+					background-color: $archive-active;
+				}
+				.event.show {
+					display: block;
+				}
+			}
+		}
+		.content {
+			flex: 1 1 75%;
+			.speakers {
+				display: none;
+				padding: 20px;
+				background-color: $archive-bg-content;
+				.edition {
+					padding-top: 15px;
+					font-size: 24px;
+					font-weight: bold;
+					text-align: center;
+					sup {
+						font-size: 18px;
+					}
+				}
+				.speaker-details {
+					display: flex;
+					border-top: 1px solid $black;
+					padding: 10px 0;
+					&:nth-child(2) {
+						border-top: none;
+					}
+					&:last-child {
+						padding-bottom: 25px;
+					}
+					.time {
+						flex: 1 1 10%;
+						align-self: flex-start;
+						padding-top: 5px;
+						font-weight: 800;
+						text-transform: uppercase;
+					}
+					.speaker-detail {
+						flex: 1 1 85%;
+						.img {
+							border-radius: 32px;
+							width: 32px;
+							height: 32px;
+							margin: 5px 5px 5px 0;
+						}
+						.title {
+							color: $pink;
+							font-size: 20px;
+							font-weight: bold;
+							display: block;
+						}
+						.title-default {
+							color: $black;
+							font-size: 20px;
+							font-weight: bold;
+						}
+						.subtitle {
+							display: block;
+							color: $gray;
+							font-size: 15px;
+							font-style: italic;
+							text-align: justify;
+							padding: 0 0 10px 0;
+							max-height: 150px;
+							overflow: hidden;
+							transition: height 0.5s;
+						}
+						.show {
+							max-height: 1000px;
+							transition: height 0.5s;
+						}
+						.name {
+							color: $pink;
+							font-size: 15px;
+							font-weight: bold;
+							display: flex;
+							align-items: center;
+							justify-content: flex-start;
+						}
+					}
+				}
+			}
+			.speakers.active {
+				display: block;
+			}
+		}
+	}
 }

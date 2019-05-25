@@ -2,14 +2,14 @@
     <div class="archive-heading"><div class="archive-heading-text">All Editions</div></div>
     <div class="previous-editions">
         <div class="events">
-            <div class="years">
+            <div class="years select">
                 <% getEvents.each do |year, events| %>
                     <div id="year-<%= year[0] %>"
                         class="year <%= "active" if events.first == getEvents.values.first[0] %>"
                         onclick="getEventsFor(this.id, this.textContent)"><%= year[0] %></div>
                 <% end %>
             </div>
-            <div class="months">
+            <div class="months select">
                 <% getEvents.each do |year, events| %>
                     <% events.each do |month| %>
                         <div id="<%= year[0] %>"
