@@ -14,6 +14,7 @@
 #   because “*” matches zero or more characters.
 
 ignore '/example.html'
+ignore '/archives/*.html'
 ignore '/static/css/**/*.scss'
 
 compile '/static/css/*.sass' do
@@ -25,7 +26,7 @@ compile '/*.html' do
     # don’t filter binary items
   else
     filter :erb
-    layout start_date.future? ? '/default.html.erb' : '/archive.html.erb'
+    layout '/default.html.erb'
   end
 end
 
