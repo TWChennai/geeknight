@@ -324,7 +324,7 @@ html {
         display: block; }
   .archive .previous-editions .select-options, .archive .previous-editions .select-styled {
     display: none; }
-  @media only screen and (min-width: 1224px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .archive .previous-editions .select-hidden {
       display: none;
       visibility: hidden;
