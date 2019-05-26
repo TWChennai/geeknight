@@ -4,11 +4,17 @@ html {
   min-width: 924px;
   overflow: auto;
   font-family: 'OpenSans', sans-serif;
-
+  @media #{$mobile} {
+    min-width: 300px;
+  }
+  
   body {
     position: relative;
     margin: auto;
     min-width: 924px;
+    @media #{$mobile} {
+      min-width: 300px;
+    }
 
     a {
       color: $pink;

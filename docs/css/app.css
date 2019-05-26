@@ -4,10 +4,16 @@ html {
   min-width: 924px;
   overflow: auto;
   font-family: 'OpenSans', sans-serif; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    html {
+      min-width: 300px; } }
   html body {
     position: relative;
     margin: auto;
     min-width: 924px; }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+      html body {
+        min-width: 300px; } }
     html body a {
       color: #ef5ba1;
       text-decoration: none; }
@@ -290,11 +296,20 @@ html {
   align-content: center;
   width: 800px;
   background-color: #ededed; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .archive .previous-editions {
+      flex-flow: column;
+      background-color: #fff;
+      align-items: center;
+      width: 480px; } }
   .archive .previous-editions .events {
     display: flex;
     flex-flow: row nowrap;
     text-align: center;
     flex: 1 1 25%; }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+      .archive .previous-editions .events {
+        margin: 10px; } }
     .archive .previous-editions .events .years {
       flex: 1 1 10%;
       font-weight: 800;
@@ -334,8 +349,9 @@ html {
       display: inline-block;
       position: relative;
       font-size: 16px;
-      width: 100px;
-      height: 50px; }
+      width: 145px;
+      height: 50px;
+      margin: 0 5px; }
     .archive .previous-editions .select-styled {
       position: absolute;
       display: block;
@@ -343,28 +359,19 @@ html {
       right: 0;
       bottom: 0;
       left: 0;
-      background-color: red;
-      padding: 8px 15px; }
+      background-color: #ededed;
+      padding: 12px;
+      text-align: left; }
       .archive .previous-editions .select-styled:after {
         content: '';
         width: 0;
         height: 0;
         border: 7px solid transparent;
-        border-color: blue transparent transparent transparent;
+        border-color: #ef5ba1 transparent transparent transparent;
         position: absolute;
         top: 16px;
         right: 10px;
-        cursor: pointer;
-        -webkit-transition: 0.25s all ease;
-        -o-transition: 0.25s all ease;
-        transition: 0.25s all ease; }
-      .archive .previous-editions .select-styled:hover {
-        background-color: pink; }
-      .archive .previous-editions .select-styled.active {
-        background-color: orange; }
-        .archive .previous-editions .select-styled.active:after {
-          top: 9px;
-          border-color: transparent transparent pink transparent; }
+        cursor: pointer; }
     .archive .previous-editions .select-options {
       display: none;
       position: absolute;
@@ -374,21 +381,17 @@ html {
       z-index: 999;
       margin: 0;
       padding: 0;
-      background-color: green; }
+      background-color: #ededed; }
       .archive .previous-editions .select-options .event {
         display: none; }
       .archive .previous-editions .select-options li {
         list-style: none;
         margin: 0;
         padding: 12px 0;
-        text-indent: 15px;
-        border-top: 1px solid red;
+        border-left: 1px solid #4a4a4a;
+        border-right: 1px solid #4a4a4a;
+        border-bottom: 1px solid #4a4a4a;
         cursor: pointer; }
-        .archive .previous-editions .select-options li:hover {
-          color: blue;
-          background: red; }
-        .archive .previous-editions .select-options li[rel='hide'] {
-          display: none; }
       .archive .previous-editions .select-options .event.active {
         background-color: rgba(255, 255, 255, 0.8); }
       .archive .previous-editions .select-options .event.show {

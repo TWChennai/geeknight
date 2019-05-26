@@ -14,13 +14,22 @@
 		display: flex;
 		margin: auto;
 		align-content: center;
-		width: 800px;
-		background-color: $archive-bg-content;
+    width: 800px;
+    background-color: $archive-bg-content;
+    @media #{$mobile} {
+      flex-flow: column;      
+      background-color: $white;
+      align-items: center;
+      width: 480px;
+    }
 		.events {
 			display: flex;
 			flex-flow: row nowrap;
 			text-align: center;
-			flex: 1 1 25%;
+      flex: 1 1 25%;
+      @media #{$mobile} {
+        margin: 10px;
+      }
 			.years {
 				flex: 1 1 10%;
 				font-weight: 800;
@@ -49,7 +58,7 @@
 					cursor: pointer;
 				}
 				.event.active {
-					background-color: $archive-active;
+          background-color: $archive-active;
 				}
 				.event.show {
 					display: block;
@@ -61,7 +70,7 @@
       display: none;
     }
     
-		@media #{$mobile} {      
+		@media #{$mobile} {
       .select-hidden {
         display: none;
         visibility: hidden;
@@ -73,8 +82,9 @@
 				display: inline-block;
 				position: relative;
 				font-size: 16px;
-				width: 100px;
-				height: 50px;
+        width: 145px;
+        height: 50px;
+        margin: 0 5px;
 			}
 
 			.select-styled {
@@ -84,31 +94,19 @@
 				right: 0;
 				bottom: 0;
 				left: 0;
-				background-color: red;
-				padding: 8px 15px;
+				background-color: $archive-bg-content;
+        padding: 12px;
+        text-align: left;
 				&:after {
 					content: '';
 					width: 0;
 					height: 0;
 					border: 7px solid transparent;
-					border-color: blue transparent transparent transparent;
+					border-color: $pink transparent transparent transparent;
 					position: absolute;
 					top: 16px;
 					right: 10px;
 					cursor: pointer;
-					-webkit-transition: 0.25s all ease;
-					-o-transition: 0.25s all ease;
-					transition: 0.25s all ease;
-				}
-				&:hover {
-					background-color: pink;
-				}				
-				&.active {
-					background-color: orange;
-					&:after {
-						top: 9px;
-						border-color: transparent transparent pink transparent;
-					}
 				}
 			}
 
@@ -121,7 +119,7 @@
 				z-index: 999;
 				margin: 0;
 				padding: 0;
-				background-color: green;
+				background-color: $archive-bg-content;
 				.event {
 					display: none;
 				}
@@ -129,17 +127,10 @@
 					list-style: none;
 					margin: 0;
 					padding: 12px 0;
-					text-indent: 15px;
-					border-top: 1px solid red;
+          border-left: 1px solid $gray;
+          border-right: 1px solid $gray;
+          border-bottom: 1px solid $gray;
 					cursor: pointer;
-
-					&:hover {
-						color: blue;
-						background: red;
-					}
-					&[rel='hide'] {
-						display: none;
-					}
 				}
 				.event.active {
 					background-color: $archive-active;
