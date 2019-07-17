@@ -49,8 +49,8 @@
 
           .img {
             border-radius: 32px;
-            width: 32px;
-            height: 32px;
+            width: 40px;
+            height: 40px;
             margin: 5px 5px 5px 0;
           }
 
@@ -83,8 +83,12 @@
             display: flex;
             align-items: center;
             justify-content: flex-start;
-          }
 
+            .speaker-description {
+              font-size: 12px;
+              font-weight: normal;
+            }
+          }
         }
 
       }

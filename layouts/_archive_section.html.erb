@@ -48,14 +48,16 @@
                               <% else %>
                                 <img class="img" src="img/speaker/no_user_image.svg" alt="<%= speaker[:name] %>" />
                               <% end %>
-                              <% if speaker[:profile] %>
-                                  <a href="<%= speaker[:profile] %>" rel="nofollow" target="_blank" class="link"><%= speaker[:name] %></a>
-                              <% else %>
-                                  <%= speaker[:name] %>
-                              <% end %>
-                              <% if speaker[:description] %>                      
-                                <%= speaker[:description] %>
-                              <% end %>
+                              <div>
+                                <% if speaker[:profile] %>
+                                    <a href="<%= speaker[:profile] %>" rel="nofollow" target="_blank" class="link"><%= speaker[:name] %></a>
+                                <% else %>
+                                    <%= speaker[:name] %>
+                                <% end %>
+                                <% if speaker[:description] %>
+                                  <div class="speaker-description"><%= speaker[:description] %></div>
+                                <% end %>
+                              </div>
                             </span>
                         <% end %>
                       <% else %>
