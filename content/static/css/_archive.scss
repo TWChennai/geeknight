@@ -14,22 +14,22 @@
 		display: flex;
 		margin: auto;
 		align-content: center;
-    width: 800px;
-    background-color: $archive-bg-content;
-    @media #{$mobile} {
-      flex-flow: column;      
-      background-color: $white;
-      align-items: center;
-      width: 480px;
-    }
+		width: 800px;
+		background-color: $archive-bg-content;
+		@media #{$mobile} {
+			flex-flow: column;
+			background-color: $white;
+			align-items: center;
+			width: 480px;
+		}
 		.events {
 			display: flex;
 			flex-flow: row nowrap;
 			text-align: center;
-      flex: 1 1 25%;
-      @media #{$mobile} {
-        margin: 10px;
-      }
+			flex: 1 1 25%;
+			@media #{$mobile} {
+				margin: 10px;
+			}
 			.years {
 				flex: 1 1 10%;
 				font-weight: 800;
@@ -58,45 +58,43 @@
 					cursor: pointer;
 				}
 				.event.active {
-          background-color: $archive-active;
+					background-color: $archive-active;
 				}
 				.event.show {
 					display: block;
 				}
 			}
-    }
-
-    .select-options, .select-styled {
-      display: none;
-    }
-    
+		}
+		.select-options,.select-styled {
+			display: none;
+		}
 		@media #{$mobile} {
-      .select-hidden {
-        display: none;
-        visibility: hidden;
-        padding-right: 10px;
-      }
-      
-      .select {
+			.select-hidden {
+				display: none;
+				visibility: hidden;
+				padding-right: 10px;
+			}
+
+			.select {
 				cursor: pointer;
 				display: inline-block;
 				position: relative;
 				font-size: 16px;
-        width: 145px;
-        height: 50px;
-        margin: 0 5px;
+				width: 145px;
+				height: 50px;
+				margin: 0 5px;
 			}
 
 			.select-styled {
-        position: absolute;
-        display: block;
+				position: absolute;
+				display: block;
 				top: 10px;
 				right: 0;
 				bottom: 0;
 				left: 0;
 				background-color: $archive-bg-content;
-        padding: 12px;
-        text-align: left;
+				padding: 12px;
+				text-align: left;
 				&:after {
 					content: '';
 					width: 0;
@@ -109,7 +107,6 @@
 					cursor: pointer;
 				}
 			}
-
 			.select-options {
 				display: none;
 				position: absolute;
@@ -127,9 +124,9 @@
 					list-style: none;
 					margin: 0;
 					padding: 12px 0;
-          border-left: 1px solid $gray;
-          border-right: 1px solid $gray;
-          border-bottom: 1px solid $gray;
+					border-left: 1px solid $gray;
+					border-right: 1px solid $gray;
+					border-bottom: 1px solid $gray;
 					cursor: pointer;
 				}
 				.event.active {

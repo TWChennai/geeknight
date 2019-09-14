@@ -1,100 +1,95 @@
 .agenda {
-  &-heading {
-    height: 90px;
-    line-height: 90px;
-    text-align: center;
+	&-heading {
+		height: 90px;
+		line-height: 90px;
+		text-align: center;
 
-    &-text {
-      font-size: 36px;
-      font-weight: 800;
-      color: $black;
-      text-transform: uppercase;
-    }
+		&-text {
+			font-size: 36px;
+			font-weight: 800;
+			color: $black;
+			text-transform: uppercase;
+		}
+	}
 
-  }
+	.content {
+		margin: 0 0 50px 0;
 
-  .content {
-    margin: 0 0 50px 0;
+		.speakers {
+			margin: 0px auto;
+			min-width: 768px;
+			width: 768px;
 
-    .speakers {
-      margin: 0px auto;
-      min-width: 768px;
-      width: 768px;
+			&:first-child {
+				border-top: none;
+			}
 
-      &:first-child {
-        border-top: none;
-      }
+			&:last-child {
+				border-bottom: 1px solid $black;
+			}
 
-      &:last-child {
-        border-bottom: 1px solid $black;
-      }
+			.speaker-details {
+				display: flex;
+				flex-flow: row wrap;
+				align-items: center;
+				border-top: 1px solid $black;
+				padding: 10px 0;
 
-      .speaker-details {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        border-top: 1px solid $black;
-        padding: 10px 0;
+				.time {
+					flex: 1 1 10%;
+					align-self: flex-start;
+					padding-top: 5px;
+					font-weight: 800;
+					text-transform: uppercase;
+				}
 
-        .time {
-          flex: 1 1 10%;
-          align-self: flex-start;
-          padding-top: 5px;
-          font-weight: 800;
-          text-transform: uppercase;
-        }
+				.speaker-detail {
+					flex: 1 1 85%;
 
-        .speaker-detail {
-          flex: 1 1 85%;
+					.img {
+						border-radius: 32px;
+						width: 40px;
+						height: 40px;
+						margin: 5px 5px 5px 0;
+					}
 
-          .img {
-            border-radius: 32px;
-            width: 40px;
-            height: 40px;
-            margin: 5px 5px 5px 0;
-          }
+					.title {
+						color: $pink;
+						font-size: 20px;
+						font-weight: bold;
+						display: block;
+					}
 
-          .title {
-            color: $pink;
-            font-size: 20px;
-            font-weight: bold;
-            display: block;
-          }
+					.title-default {
+						color: $black;
+						font-size: 20px;
+						font-weight: bold;
+					}
 
-          .title-default {
-            color: $black;
-            font-size: 20px;
-            font-weight: bold;
-          }
+					.subtitle {
+						display: block;
+						color: $gray;
+						font-size: 15px;
+						font-style: italic;
+						text-align: justify;
+						padding: 0 0 10px 0;
+					}
 
-          .subtitle {
-            display: block;
-            color: $gray;
-            font-size: 15px;
-            font-style: italic;
-            text-align: justify;
-            padding: 0 0 10px 0;
-          }
+					.name {
+						color: $pink;
+						font-size: 15px;
+						font-weight: bold;
+						display: flex;
+						align-items: center;
+						justify-content: flex-start;
 
-          .name {
-            color: $pink;
-            font-size: 15px;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-
-            .speaker-description {
-              font-size: 12px;
-              font-weight: normal;
-            }
-          }
-        }
-
-      }
-
-    }
-
-  }
-
+						.speaker-description {
+							font-size: 12px;
+							font-weight: normal;
+						}
+					}
+				}
+			}
+		}
+	}
 }

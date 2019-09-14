@@ -1,35 +1,35 @@
 .footer {
-  background: $black;
-  display: flex;
-  position: relative;
-  height: 50px;
-  width: 100%;
-  left: 0;
-  padding: 0;
-  align-items: center;
+	background: $black;
+	display: flex;
+	position: relative;
+	height: 50px;
+	width: 100%;
+	left: 0;
+	padding: 0;
+	align-items: center;
 
-  a {
-    text-decoration: none;
-    color: $white;
-  }
+	a {
+		text-decoration: none;
+		color: $white;
+	}
 
-  .logo-section {
-    display: flex;
-    flex: 1 1 50%;
-    justify-content: center;
-    margin-top: 10px;
-    .sponsored-by {
-      color: $white;
-      font-size: 14px;
-      font-weight: 100;
-    }
-    .logo {
-      background: $tw-logo no-repeat;
-      background-size: 140px;
-      height: 35px;
-      width: 140px;
-      margin-left: 5px;
-      margin-top: 3px;
-    }
-  }
+	.logo-section {
+		display: flex;
+		flex: 1 1 50%;
+		justify-content: center;
+		margin-top: 10px;
+		.sponsored-by {
+			color: $white;
+			font-size: 14px;
+			font-weight: 100;
+		}
+		.logo {
+			background: $tw-logo no-repeat;
+			background-size: 140px;
+			height: 35px;
+			width: 140px;
+			margin-left: 5px;
+			margin-top: 3px;
+		}
+	}
 }

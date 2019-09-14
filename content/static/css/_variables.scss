@@ -3,7 +3,7 @@
 //Colors
 $pink: #ef5ba1;
 $white: #fff;
-$white-90-percent-opacity: rgba(255, 255, 255, 0.90);
+$white-90-percent-opacity: rgba(255, 255, 255, 0.9);
 $black: #000;
 $gray: #4a4a4a;
 $seafoam-blue: #80c9d2;
@@ -15,12 +15,12 @@ $archive-bg-content: #ededed;
 $archive-active: rgba(255, 255, 255, 0.8);
 
 //Images
-$tw-logo: url("../img/tw-logo-white.svg");
-$geeknight-logo: url("../img/geek_night_logo.svg");
-$direction-img: url("../img/direction.svg");
-$intro-background: url("../img/intro_background.jpg");
-$youtube-logo: url("../img/youtube-logo.svg");
+$tw-logo: url('../img/tw-logo-white.svg');
+$geeknight-logo: url('../img/geek_night_logo.svg');
+$direction-img: url('../img/direction.svg');
+$intro-background: url('../img/intro_background.jpg');
+$youtube-logo: url('../img/youtube-logo.svg');
 
 //BreakPoints
-$mobile: "only screen and (min-device-width: 320px) and (max-device-width: 480px)";
-$desktop: "only screen and (min-width : 1224px)";
+$mobile: 'only screen and (min-device-width: 320px) and (max-device-width: 480px)';
+$desktop: 'only screen and (min-width : 1224px)';

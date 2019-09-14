@@ -1,51 +1,49 @@
 html {
-  width: 100%;
-  height: 100%;
-  min-width: 924px;
-  overflow: auto;
-  font-family: 'OpenSans', sans-serif;
-  @media #{$mobile} {
-    min-width: 300px;
-  }
-  
-  body {
-    position: relative;
-    margin: auto;
-    min-width: 924px;
-    @media #{$mobile} {
-      min-width: 300px;
-    }
+	width: 100%;
+	height: 100%;
+	min-width: 924px;
+	overflow: auto;
+	font-family: 'OpenSans', sans-serif;
+	@media #{$mobile} {
+		min-width: 300px;
+	}
 
-    a {
-      color: $pink;
-      text-decoration: none;
-    }
+	body {
+		position: relative;
+		margin: auto;
+		min-width: 924px;
+		@media #{$mobile} {
+			min-width: 300px;
+		}
 
-  }
+		a {
+			color: $pink;
+			text-decoration: none;
+		}
+	}
 
-  .read-more {
-    color: $pink;
-  }
+	.read-more {
+		color: $pink;
+	}
 
-  .read-more::after {
-    content: "Show More";
-    cursor: pointer;
-    text-decoration: underline;
-    font-size: 18px;
-    font-weight: 700;
-  }
+	.read-more::after {
+		content: 'Show More';
+		cursor: pointer;
+		text-decoration: underline;
+		font-size: 18px;
+		font-weight: 700;
+	}
 
-  .toggle:checked ~ label::after {
-    content: "Show Less";
-  }
+	.toggle:checked ~ label::after {
+		content: 'Show Less';
+	}
 
-  .toggle {
-    display: none;
-    visibility: hidden;
-  }
+	.toggle {
+		display: none;
+		visibility: hidden;
+	}
 
-  .link {
-    text-decoration: underline;
-  }
-
+	.link {
+		text-decoration: underline;
+	}
 }
