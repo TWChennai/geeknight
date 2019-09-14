@@ -206,8 +206,8 @@ html {
         flex: 1 1 85%; }
         .agenda .content .speakers .speaker-details .speaker-detail .img {
           border-radius: 32px;
-          width: 32px;
-          height: 32px;
+          width: 40px;
+          height: 40px;
           margin: 5px 5px 5px 0; }
         .agenda .content .speakers .speaker-details .speaker-detail .title {
           color: #ef5ba1;
@@ -232,6 +232,9 @@ html {
           display: flex;
           align-items: center;
           justify-content: flex-start; }
+          .agenda .content .speakers .speaker-details .speaker-detail .name .speaker-description {
+            font-size: 12px;
+            font-weight: normal; }
 
 .location {
   position: relative;
@@ -459,6 +462,9 @@ html {
             display: flex;
             align-items: center;
             justify-content: flex-start; }
+            .archive .previous-editions .content .speakers .speaker-details .speaker-detail .name .speaker-description {
+              font-size: 12px;
+              font-weight: normal; }
     .archive .previous-editions .content .speakers.active {
       display: block; }
 

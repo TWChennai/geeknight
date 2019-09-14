@@ -194,6 +194,12 @@ fileignoreconfig:
 - filename: docs/edition-9.html
   checksum: 2b67ed003c9dd80da6eeda507b880f604bddd7e7422728f12de937d582adbc71
   ignore_detectors: []
+- filename: content/2019-06.html
+  checksum: 66a5731fbfa60b8cb799c3879122e975c666496b7e9a24e0790979c96bbbfef2
+  ignore_detectors: []
+- filename: docs/edition-67.html
+  checksum: f04afffd64688bdbe487eed8659acba1e6381e835f20b0cfcee6cc7c96c50502
+  ignore_detectors: []
 - filename: docs/index.html
-  checksum: f82721e2a21acb55a6a234319d0d340430ae7a8d70d0f9518f2cce880d4f6592
+  checksum: d71b4aef0b5bc1925c4b6b441f72de7288759483c7efbdf648feb6af40493707
   ignore_detectors: []
