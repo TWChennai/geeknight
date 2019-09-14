@@ -1,32 +1,32 @@
 #about {
-  margin-top: 40px;
-  background-color: $section-heading-background;
-  p {
-    padding: 20px 0;
-    margin: 0;
-    &:last-child {
-      padding-bottom: 50px;
-    }
-  }
-  .about-heading {
-    height: 90px;
-    line-height: 90px;
-    text-align: center;
-    background-color: $section-heading-background;
-    &-text {
-      font-size: 36px;
-      font-weight: 800;
-      color: black;
-      text-transform: uppercase;
-    }
-  }
+	margin-top: 40px;
+	background-color: $section-heading-background;
+	p {
+		padding: 20px 0;
+		margin: 0;
+		&:last-child {
+			padding-bottom: 50px;
+		}
+	}
+	.about-heading {
+		height: 90px;
+		line-height: 90px;
+		text-align: center;
+		background-color: $section-heading-background;
+		&-text {
+			font-size: 36px;
+			font-weight: 800;
+			color: black;
+			text-transform: uppercase;
+		}
+	}
 
-  .about-details {
-    font-size: 18px;
-    padding: 0 50px;
-    text-align: justify;
-    max-width: 1024px;
-    margin: auto;
-    background-color: $section-heading-background;
-  }
+	.about-details {
+		font-size: 18px;
+		padding: 0 50px;
+		text-align: justify;
+		max-width: 1024px;
+		margin: auto;
+		background-color: $section-heading-background;
+	}
 }

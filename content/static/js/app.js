@@ -8,13 +8,15 @@ function getAgenda(event, id, value) {
 }
 
 function getEventsFor(id, value) {
+  value = value.trim();
   $('.year').removeClass("active");
   $('.event').removeClass("show");
   $('.event').removeClass("active");
   $('#' + id).addClass("active");
   var months = $("*[id*=" + value + "]");
   months.addClass("show");
-  $(months[1]).trigger("click");
+  $("#"+value).trigger("click");
+  $('div.select-styled')[1].textContent=$('#'+value).text()
 }
 
 function setClickListiners() {
@@ -61,11 +63,67 @@ function highlightMenu() {
   }
 }
 
+function archiveListForMobile() {
+	$('.select').each(function() {
+		var $this = $(this),
+			numberOfOptions = $(this).children('div').length;
+
+		$this.addClass('select-hidden');
+		$this.wrap('<div class="select"></div>');
+		$this.after('<div class="select-styled"></div>');
+		var $styledSelect = $this.next('div.select-styled');
+		$styledSelect.text($this.children('div').eq(0).text());
+
+		var $list = $('<ul />', {
+			class: 'select-options'
+		}).insertAfter($styledSelect);
+
+		for (var i = 0; i < numberOfOptions; i++) {
+			$('<li />', {
+				text: $this.children('div').eq(i).text(),
+				id: $this.children('div').eq(i)[0].id,
+				class: $this.children('div').eq(i).attr('class')
+			}).appendTo($list);
+		}
+
+		var $listItems = $list.children('li');
+
+		$styledSelect.click(function(e) {
+			e.stopPropagation();
+			$('div.select-styled.active').each(function() {
+					$(this).removeClass('active')
+						.next('ul.select-options')
+            .hide();
+            styledSelect.text();
+        }
+      );
+			$(this).toggleClass('active')
+				.next('ul.select-options')
+				.toggle();
+		});
+		$listItems.click(function(e) {
+			e.stopPropagation();
+			$styledSelect.text($(this).text()).removeClass('active');
+			var selectedId = $(this).attr('id');
+			var selectedValue = $(this)[0].textContent;
+      $this.val(selectedValue);
+      (selectedValue.length === 4 && selectedId.length > 4)? getEventsFor(selectedId, selectedValue): getAgenda(e, selectedId, selectedValue);
+      $list.hide();
+		});
+
+		$(document).click(function() {
+			$styledSelect.removeClass('active');
+			$list.hide();
+		});
+	});
+}
+
 $(document).ready(function() {
   $($(".months")[0].childNodes[1]).addClass("active");
   setClickListiners();
   highlightMenu();
   trimLongDescription();
+  archiveListForMobile();
 });
 
 $(document).scroll(function() {
