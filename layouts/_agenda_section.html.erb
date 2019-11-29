@@ -27,7 +27,7 @@
                       <% else %>
                         <img class="img" src="img/speaker/no_user_image.svg" alt="<%= speaker[:name] %>" />
                       <% end %>
-                      <div>
+                      <div class="profile">
                         <% if speaker[:profile] %>
                             <a href="<%= speaker[:profile] %>" rel="nofollow" target="_blank" class="link"><%= speaker[:name] %></a>
                         <% else %>
@@ -50,7 +50,6 @@
                     <span class="subtitle"><%= agenda[:subtitle] %></span>
                 <% end %>
               <% end %>
-
               <% if agenda[:resources] %>
                   <p><small>Resources:
                   <% agenda[:resources].each_with_index do |resource, i| %>
