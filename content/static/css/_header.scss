@@ -1,7 +1,7 @@
 .header {
 	background: $white-90-percent-opacity;
 	position: fixed;
-	height: 100px;
+	height: 80px;
 	width: 100%;
 	z-index: 999;
 	padding: 0;
@@ -16,7 +16,7 @@
 		transition: left 0.5s ease;
 	}
 	.nav-bar {
-		width: 960px;
+		width: 1024px;
 		display: flex;
 		position: relative;
 		top: 15px;
@@ -30,7 +30,6 @@
 				background-size: 140px;
 				height: 65px;
 				width: 160px;
-				margin-left: 5px;
 			}
 		}
 		.menu {
