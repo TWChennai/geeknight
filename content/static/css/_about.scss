@@ -1,12 +1,7 @@
 #about {
-	margin-top: 40px;
-	background-color: $section-heading-background;
 	p {
-		padding: 20px 0;
+		padding: 1rem 0;
 		margin: 0;
-		&:last-child {
-			padding-bottom: 50px;
-		}
 	}
 	.about-heading {
 		height: 90px;
@@ -16,7 +11,7 @@
 		&-text {
 			font-size: 36px;
 			font-weight: 800;
-			color: black;
+			color: $white;
 			text-transform: uppercase;
 		}
 	}
@@ -27,6 +22,6 @@
 		text-align: justify;
 		max-width: 1024px;
 		margin: auto;
-		background-color: $section-heading-background;
+		line-height: 1.5rem;
 	}
 }
