@@ -3,12 +3,14 @@
 		height: 90px;
 		line-height: 90px;
 		text-align: center;
+		background-color: $section-heading-background;
 
 		&-text {
 			font-size: 36px;
 			font-weight: 800;
 			color: $black;
 			text-transform: uppercase;
+			color: #fff;
 		}
 	}
 
@@ -17,34 +19,26 @@
 
 		.speakers {
 			margin: 0px auto;
-			min-width: 768px;
-			width: 768px;
-
-			&:first-child {
-				border-top: none;
-			}
-
-			&:last-child {
-				border-bottom: 1px solid $black;
-			}
+			min-width: 1024px;
+			width: 1024px;
 
 			.speaker-details {
 				display: flex;
 				flex-flow: row wrap;
 				align-items: center;
-				border-top: 1px solid $black;
-				padding: 10px 0;
+				border-bottom: 1px solid $black;
+				padding: 20px 30px;
 
 				.time {
-					flex: 1 1 10%;
-					align-self: flex-start;
+					flex: 1 1 20%;
 					padding-top: 5px;
 					font-weight: 800;
 					text-transform: uppercase;
+					align-self: center;
 				}
 
-				.speaker-detail {
-					flex: 1 1 85%;
+				.speaker-detail, .workshop-detail {
+					flex: 1 1 80%;
 
 					.img {
 						border-radius: 32px;
@@ -73,19 +67,26 @@
 						font-style: italic;
 						text-align: justify;
 						padding: 0 0 10px 0;
+						line-height: 1.5;
 					}
 
 					.name {
-						color: $pink;
 						font-size: 15px;
 						font-weight: bold;
 						display: flex;
 						align-items: center;
 						justify-content: flex-start;
-
+												
 						.speaker-description {
 							font-size: 12px;
 							font-weight: normal;
+							padding-top: 5px;
+							text-align: justify;
+							line-height: 1.5;
+						}
+
+						.profile {
+							width: 95%;
 						}
 					}
 				}
