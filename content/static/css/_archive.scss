@@ -1,4 +1,5 @@
 .archive {
+	margin-bottom: 40px;
 	&-heading {
 		height: 90px;
 		line-height: 90px;
@@ -11,10 +12,11 @@
 		}
 	}
 	.previous-editions {
+		margin: 0px auto;
+		min-width: 1024px;
+		width: 1024px;
 		display: flex;
-		margin: auto;
 		align-content: center;
-		width: 800px;
 		background-color: $archive-bg-content;
 		@media #{$mobile} {
 			flex-flow: column;
@@ -138,7 +140,7 @@
 			}
 		}
 		.content {
-			flex: 1 1 75%;
+			flex: 1 1 120%;
 			.speakers {
 				display: none;
 				padding: 20px;
@@ -171,10 +173,10 @@
 					}
 					.speaker-detail {
 						flex: 1 1 85%;
-						.img {
+						img.img {
 							border-radius: 32px;
-							width: 32px;
-							height: 32px;
+							width: 50px;
+							height: 50px;
 							margin: 5px 5px 5px 0;
 						}
 						.title {
@@ -198,6 +200,7 @@
 							max-height: 150px;
 							overflow: hidden;
 							transition: height 0.5s;
+							padding-right: 5px;
 						}
 						.show {
 							max-height: 1000px;
@@ -210,6 +213,7 @@
 							display: flex;
 							align-items: center;
 							justify-content: flex-start;
+							text-align: justify;
 						}
 					}
 				}
