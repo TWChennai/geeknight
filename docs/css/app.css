@@ -462,13 +462,18 @@ html {
               max-height: 1000px;
               transition: height 0.5s; }
             .archive .previous-editions .content .speakers .speaker-details .speaker-detail .name {
-              color: #ef5ba1;
               font-size: 15px;
               font-weight: bold;
               display: flex;
               align-items: center;
               justify-content: flex-start;
               text-align: justify; }
+              .archive .previous-editions .content .speakers .speaker-details .speaker-detail .name .speaker-description {
+                font-size: 12px;
+                font-weight: normal;
+                padding-top: 5px;
+                text-align: justify;
+                line-height: 1.5; }
       .archive .previous-editions .content .speakers.active {
         display: block; }
 

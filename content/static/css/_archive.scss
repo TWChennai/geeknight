@@ -207,13 +207,20 @@
 							transition: height 0.5s;
 						}
 						.name {
-							color: $pink;
 							font-size: 15px;
 							font-weight: bold;
 							display: flex;
 							align-items: center;
 							justify-content: flex-start;
 							text-align: justify;
+
+							.speaker-description {
+								font-size: 12px;
+								font-weight: normal;
+								padding-top: 5px;
+								text-align: justify;
+								line-height: 1.5;
+							}
 						}
 					}
 				}
