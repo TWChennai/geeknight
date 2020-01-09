@@ -68,6 +68,12 @@
 						text-align: justify;
 						padding: 0 0 10px 0;
 						line-height: 1.5;
+						max-height: 55px;
+						overflow: hidden;
+
+						&.show {
+							max-height: none;
+						}
 					}
 
 					.name {

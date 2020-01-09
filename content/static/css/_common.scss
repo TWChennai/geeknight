@@ -23,6 +23,7 @@ html {
 	}
 
 	.read-more {
+		font-size: .7em;
 		color: $pink;
 	}
 
@@ -30,7 +31,6 @@ html {
 		content: 'Show More';
 		cursor: pointer;
 		text-decoration: underline;
-		font-size: 18px;
 		font-weight: 700;
 	}
 
