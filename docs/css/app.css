@@ -18,12 +18,12 @@ html {
       color: #ef5ba1;
       text-decoration: none; }
   html .read-more {
+    font-size: .7em;
     color: #ef5ba1; }
   html .read-more::after {
     content: 'Show More';
     cursor: pointer;
     text-decoration: underline;
-    font-size: 18px;
     font-weight: 700; }
   html .toggle:checked ~ label::after {
     content: 'Show Less'; }
@@ -222,7 +222,11 @@ html {
           font-style: italic;
           text-align: justify;
           padding: 0 0 10px 0;
-          line-height: 1.5; }
+          line-height: 1.5;
+          max-height: 55px;
+          overflow: hidden; }
+          .agenda .content .speakers .speaker-details .speaker-detail .subtitle.show, .agenda .content .speakers .speaker-details .workshop-detail .subtitle.show {
+            max-height: none; }
         .agenda .content .speakers .speaker-details .speaker-detail .name, .agenda .content .speakers .speaker-details .workshop-detail .name {
           font-size: 15px;
           font-weight: bold;
@@ -454,7 +458,7 @@ html {
               font-style: italic;
               text-align: justify;
               padding: 0 0 10px 0;
-              max-height: 150px;
+              max-height: 60px;
               overflow: hidden;
               transition: height 0.5s;
               padding-right: 5px; }
