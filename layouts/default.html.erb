@@ -2,7 +2,9 @@
     <%= render '/_header_section.*' %>
     <%= render '/_intro_section.*' %>
     <%= render '/_agenda_section.*' %>
-    <%= render '/_location_section.*' %>
+    <% if !item[:isWebinar] %>
+        <%= render '/_location_section.*' %>
+    <% end %>
     <%= render '/_archive_section.*' %>
     <%= render '/_about_section.*' %>
     <%= render '/_footer_section.*' %>

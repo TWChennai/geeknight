@@ -7,7 +7,7 @@
                     <div class="intro-info-place-title">CHENNAI</div>
                     <div class="line"></div>
                 </div>
-                <div class="intro-info-edition"><%= @item[:edition] %><sup><%= @item[:edition].ordinal %></sup> Edition</p></div>
+                <div class="intro-info-edition"><%= @item[:edition] %><sup><%= @item[:edition].ordinal %></sup> Edition <%= @item[:isWebinar] ? '(Webinar)' : '' %> </p></div>
                 <div class="intro-info-date">
                     <%= start_date.strftime("%b").upcase %><%= start_date.strftime(" %-d") %><sup><%= start_date.strftime("%-d").to_i.ordinal %></sup><%= start_date.strftime(", %Y") %>
                 </div>
