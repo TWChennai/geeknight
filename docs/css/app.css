@@ -5,7 +5,6 @@
 html {
   width: 100%;
   height: 100%;
-  min-width: 1024px;
   font-family: 'OpenSans', sans-serif; }
   html body {
     position: relative;
@@ -169,18 +168,17 @@ html {
     margin: 0 50px; }
 
 .agenda-heading {
-  height: 90px;
-  line-height: 90px;
+  padding-top: 20px;
   text-align: center;
-  background-color: #6a2569; }
+   }
   .agenda-heading-text {
     font-size: 36px;
     font-weight: 800;
     color: #000;
     text-transform: uppercase;
-    color: #fff; }
+    }
 .agenda .content {
-  margin: 0 0 50px 0; }
+  margin: 0 0 20px 0; }
   .agenda .content .speakers {
     margin: 0px auto;
     min-width: 1024px;
@@ -221,7 +219,6 @@ html {
           text-align: justify;
           padding: 0 0 10px 0;
           line-height: 1.5;
-          max-height: 55px;
           overflow: hidden; }
           .agenda .content .speakers .speaker-details .speaker-detail .subtitle.show, .agenda .content .speakers .speaker-details .workshop-detail .subtitle.show {
             max-height: none; }
@@ -291,14 +288,13 @@ html {
 .archive {
   margin-bottom: 40px; }
   .archive-heading {
-    height: 90px;
-    line-height: 90px;
     text-align: center; }
     .archive-heading-text {
       font-size: 36px;
       font-weight: 800;
       color: #000;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      padding-bottom: 20px;}
   .archive .previous-editions {
     margin: 0px auto;
     min-width: 1024px;
@@ -319,7 +315,7 @@ html {
       flex: 1 1 25%; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
         .archive .previous-editions .events {
-          margin: 10px; } }
+          margin-bottom: 20px; } }
       .archive .previous-editions .events .years {
         flex: 1 1 10%;
         font-weight: 800;
