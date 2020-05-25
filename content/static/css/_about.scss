@@ -1,4 +1,5 @@
 #about {
+	background-color: $light-gray;
 	p {
 		padding: 1rem 0;
 		margin: 0;
@@ -7,11 +8,9 @@
 		height: 90px;
 		line-height: 90px;
 		text-align: center;
-		background-color: $section-heading-background;
 		&-text {
 			font-size: 36px;
 			font-weight: 800;
-			color: $white;
 			text-transform: uppercase;
 		}
 	}
@@ -22,6 +21,7 @@
 		text-align: justify;
 		max-width: 1024px;
 		margin: auto;
+		background-color: $light-gray;
 		line-height: 1.5rem;
 	}
 }

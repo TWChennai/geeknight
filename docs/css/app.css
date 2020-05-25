@@ -481,26 +481,27 @@ html {
       .archive .previous-editions .content .speakers.active {
         display: block; }
 
-#about p {
-  padding: 1rem 0;
-  margin: 0; }
-#about .about-heading {
-  height: 90px;
-  line-height: 90px;
-  text-align: center;
-  background-color: #6a2569; }
-  #about .about-heading-text {
-    font-size: 36px;
-    font-weight: 800;
-    color: #fff;
-    text-transform: uppercase; }
-#about .about-details {
-  font-size: 18px;
-  padding: 0 50px;
-  text-align: justify;
-  max-width: 1024px;
-  margin: auto;
-  line-height: 1.5rem; }
+#about {
+  background-color: #efefef; }
+  #about p {
+    padding: 1rem 0;
+    margin: 0; }
+  #about .about-heading {
+    height: 90px;
+    line-height: 90px;
+    text-align: center; }
+    #about .about-heading-text {
+      font-size: 36px;
+      font-weight: 800;
+      text-transform: uppercase; }
+  #about .about-details {
+    font-size: 18px;
+    padding: 0 50px;
+    text-align: justify;
+    max-width: 1024px;
+    margin: auto;
+    background-color: #efefef;
+    line-height: 1.5rem; }
 
 .footer {
   background: #000;
