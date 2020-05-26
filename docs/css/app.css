@@ -452,7 +452,7 @@ html {
               font-style: italic;
               text-align: justify;
               padding: 0 0 10px 0;
-              max-height: 60px;
+              max-height: 54px;
               overflow: hidden;
               transition: height 0.5s;
               padding-right: 5px; }
@@ -465,12 +465,12 @@ html {
               display: flex;
               align-items: center;
               justify-content: flex-start;
-              text-align: justify; }
+              text-align: justify;
+              padding-top: 10px;}
               .archive .previous-editions .content .speakers .speaker-details .speaker-detail .name .speaker-description {
                 font-size: 12px;
                 font-weight: normal;
                 padding-top: 5px;
-                text-align: justify;
                 line-height: 1.5; }
       .archive .previous-editions .content .speakers.active {
         display: block; }
