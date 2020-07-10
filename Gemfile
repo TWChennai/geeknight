@@ -13,6 +13,7 @@ gem 'listen', require: false
 gem 'adsf', require: false
 
 group :development do
+  gem 'nanoc-live'
   gem 'pry'
   gem 'rb-readline'
 end
