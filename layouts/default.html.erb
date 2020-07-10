@@ -1,5 +1,9 @@
 <% render '/_layout.*', title: start_date.strftime("%b %Y"), item: @item do %>
-    <%= render '/_header_section.*' %>
+    <% if !item[:isWebinar] %>
+        <%= render '/_header_section.*' %>
+    <% else %>
+        <%= render '/_header_section_webinar.*' %>
+    <% end %>
     <%= render '/_intro_section.*' %>
     <%= render '/_agenda_section.*' %>
     <% if !item[:isWebinar] %>
