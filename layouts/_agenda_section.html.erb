@@ -23,9 +23,9 @@
                 <% agenda[:speakers].each_with_index do |speaker, i| %>
                     <span class="name">
                       <% if speaker[:image] %>
-                        <img class="img" src="img/speaker/<%= speaker[:image] %>" alt="<%= speaker[:name] %>" />
+                        <img class="img" src= <%= baseURL + "img/speaker/" + speaker[:image] %> alt="<%= speaker[:name] %>" />
                       <% else %>
-                        <img class="img" src="img/speaker/no_user_image.svg" alt="<%= speaker[:name] %>" />
+                        <img class="img" src= <%= baseURL + "img/speaker/no_user_image.svg" %> alt="<%= speaker[:name] %>" />
                       <% end %>
                       <div class="profile">
                         <% if speaker[:profile] %>

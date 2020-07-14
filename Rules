@@ -43,8 +43,6 @@ route '/*.html' do
     item.identifier.chop
   elsif item == latest
     '/index.html'
-  else
-    "/edition-#{@item[:edition]}.html"
   end
 end
 

@@ -1,16 +1,5 @@
 <% render '/_layout.*', title: start_date.strftime("%b %Y"), item: @item do %>
-    <% if !item[:isWebinar] %>
-        <%= render '/_header_section.*' %>
-    <% else %>
-        <%= render '/_header_section_webinar.*' %>
-    <% end %>
     <%= render '/_intro_section.*' %>
     <%= render '/_agenda_section.*' %>
-    <% if !item[:isWebinar] %>
-        <%= render '/_location_section.*' %>
-    <% end %>
-    <%= render '/_archive_section.*' %>
-    <%= render '/_about_section.*' %>
-    <%= render '/_footer_section.*' %>
 <% end %>
 <script>window.targetDate = new Date(<%= start_date.to_i %> * 1000)</script>

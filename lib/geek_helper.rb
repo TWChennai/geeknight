@@ -12,6 +12,10 @@ module GeekHelper
     end
   end
 
+  def baseURL
+    "https://chennai.geeknight.in/"
+  end
+
   def groupYearMonths
     return @items.select {|event| !event[:start].nil?}.sort_by { |i| i[:edition]}.reverse.group_by {|i| [i[:start].to_date.year, i[:start].to_date.strftime("%b %d")]}
   end
