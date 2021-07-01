@@ -1,0 +1,54 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ github-actions-test ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  
+  Build:
+    runs-on: ubuntu-latest
+    name: Build with ruby
+    steps: 
+        - uses: ruby/setup-ruby@v1.75.0
+          name: Setup Ruby 2.2.3
+          with:
+              # Engine and version to use, see the syntax in the README. Reads from .ruby-version or .tool-versions if unset.
+            ruby-version: 2.2.3
+            # optional, default is default
+            # The version of Bundler to install. Either 'none', 'latest', 'Gemfile.lock', or a version number (e.g., 1, 2, 2.1.4).For 'Gemfile.lock', the version is determined based on the BUNDLED WITH section from the file Gemfile.lock, $BUNDLE_GEMFILE.lock or gems.locked. Defaults to 'Gemfile.lock' if the file exists and 'latest' otherwise.
+            bundler: true
+            # optional, default is default
+            # Run "bundle install", and cache the result automatically. Either true or false.
+            bundler-cache: true
+            # optional, default is false
+            # The working directory to use for resolving paths for .ruby-version, .tool-versions and Gemfile.lock.
+            working-directory: .
+            # optional, default is .
+            # Arbitrary string that will be added to the cache key of the bundler cache. Set or change it if you need to invalidate the cache.
+
+            cache-version: 0
+            # optional, default is 0
+     
+     
+        - name: Download dependencies
+          run:  bundle install
+        - uses: actions/checkout@v2
+          name: Check out repository
+        - name: Download nanoc
+          run: gem install nanoc
+        - name: Compile 
+          run: nanoc
+          
+        
+
