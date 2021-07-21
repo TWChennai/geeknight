@@ -86,7 +86,7 @@ html {
   padding-top: 100px; }
   .intro .banner {
     flex: 1 1 60%;
-    background: url("../img/intro_background.jpg") center center no-repeat;
+    background: url("../img/intro-banner.png") center center no-repeat;
     background-size: 100%; }
     .intro .banner-overlay {
       margin: auto;
