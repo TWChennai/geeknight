@@ -60,10 +60,10 @@ html {
       display: flex;
       flex: 1 1 50%; }
       .header .nav-bar .logo-section .logo {
-        background: url("../img/geek_night_logo.svg") no-repeat;
-        background-size: 140px;
+        background: url("../img/tw-rebrand-logo.svg") no-repeat center;
+        background-size: 580px;
         height: 65px;
-        width: 160px; }
+        width: 200px; }
     .header .nav-bar .menu {
       display: flex;
       align-items: center;
@@ -86,7 +86,7 @@ html {
   padding-top: 100px; }
   .intro .banner {
     flex: 1 1 60%;
-    background: url("../img/intro_background.jpg") center center no-repeat;
+    background: url("../img/intro-banner.png") center center no-repeat;
     background-size: 100%; }
     .intro .banner-overlay {
       margin: auto;
