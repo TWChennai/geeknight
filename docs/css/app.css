@@ -60,10 +60,10 @@ html {
       display: flex;
       flex: 1 1 50%; }
       .header .nav-bar .logo-section .logo {
-        background: url("../img/geek_night_logo.svg") no-repeat;
-        background-size: 140px;
+        background: url("../img/tw-rebrand-logo.svg") no-repeat center;
+        background-size: 580px;
         height: 65px;
-        width: 160px; }
+        width: 200px; }
     .header .nav-bar .menu {
       display: flex;
       align-items: center;
