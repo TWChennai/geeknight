@@ -76,7 +76,7 @@
 				visibility: hidden;
 				padding-right: 10px;
 			}
-
+			
 			.select {
 				cursor: pointer;
 				display: inline-block;
@@ -86,7 +86,7 @@
 				height: 50px;
 				margin: 0 5px;
 			}
-
+			
 			.select-styled {
 				position: absolute;
 				display: block;
@@ -141,6 +141,9 @@
 		}
 		.content {
 			flex: 1 1 120%;
+			@media #{$mobile} {
+				width: 90%;
+			}
 			.speakers {
 				display: none;
 				padding: 20px;

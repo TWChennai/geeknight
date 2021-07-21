@@ -15,11 +15,11 @@ html {
       html body {
         min-width: 300px; } }
     html body a {
-      color: #ef5ba1;
+      color: #F2617A;
       text-decoration: none; }
   html .read-more {
     font-size: .7em;
-    color: #ef5ba1; }
+    color: #F2617A; }
   html .read-more::after {
     content: 'Show More';
     cursor: pointer;
@@ -45,7 +45,7 @@ html {
   right: 0; }
   .header a {
     text-decoration: none;
-    color: #ef5ba1;
+    color: #F2617A;
     -webkit-transition: left 0.5s ease;
     -moz-transition: left 0.5s ease;
     transition: left 0.5s ease; }
@@ -60,7 +60,7 @@ html {
       display: flex;
       flex: 1 1 50%; }
       .header .nav-bar .logo-section .logo {
-        background: url("../img/tw-rebrand-logo.svg") no-repeat center;
+        background: url("../img/tw-logo-black.svg") no-repeat center;
         background-size: 580px;
         height: 65px;
         width: 200px; }
@@ -71,7 +71,7 @@ html {
       .header .nav-bar .menu-item {
         flex: 1 1 25%; }
       .header .nav-bar .menu .active a {
-        border-bottom: 5px solid #ef5ba1;
+        border-bottom: 5px solid #F2617A;
         padding-bottom: 5px; }
 
 .shadow {
@@ -122,7 +122,7 @@ html {
       font-size: 33px;
       font-weight: 800;
       margin: 0 70px;
-      padding-top: 20px; }
+      padding-top: 50px; }
     .intro-info-edition {
       padding-top: 15px;
       font-size: 18px;
@@ -151,7 +151,7 @@ html {
           font-weight: bold;
           line-height: 60px;
           border-radius: 4px;
-          background-color: #1a73ba;
+          background-color: #003D4F;
           color: #fff; }
         .intro-info-buttons-button-sub-text {
           color: #000;
@@ -174,7 +174,7 @@ html {
   height: 90px;
   line-height: 90px;
   text-align: center;
-  background-color: #6a2569; }
+  background-color: #634F7D; }
   .agenda-heading-text {
     font-size: 36px;
     font-weight: 800;
@@ -207,7 +207,7 @@ html {
           height: 40px;
           margin: 5px 5px 5px 0; }
         .agenda .content .speakers .speaker-details .speaker-detail .title, .agenda .content .speakers .speaker-details .workshop-detail .title {
-          color: #ef5ba1;
+          color: #F2617A;
           font-size: 20px;
           font-weight: bold;
           display: block; }
@@ -268,7 +268,7 @@ html {
       display: flex; }
     .location .map-address {
       flex: 1 1 80%;
-      border-right: 1px solid #ef5ba1; }
+      border-right: 1px solid #F2617A; }
     .location .map-direction {
       position: relative;
       flex: 1 1 20%;
@@ -280,7 +280,7 @@ html {
         background-size: 50px;
         background-position: 30px 20px; }
   .location .location-heading {
-    background-color: #6a2569;
+    background-color: #634F7D;
     height: 90px;
     line-height: 90px;
     text-align: center; }
@@ -333,7 +333,7 @@ html {
           padding: 20px;
           cursor: pointer; }
         .archive .previous-editions .events .years .year.active {
-          background-color: rgba(255, 255, 255, 0.5); }
+          background-color: rgba(71, 161, 173, 0.5); }
       .archive .previous-editions .events .months {
         flex: 1 1 10%;
         font-weight: bold;
@@ -346,7 +346,7 @@ html {
           display: none;
           cursor: pointer; }
         .archive .previous-editions .events .months .event.active {
-          background-color: rgba(255, 255, 255, 0.5); }
+          background-color: rgba(71, 161, 173, 0.5); }
         .archive .previous-editions .events .months .event.show {
           display: block; }
     .archive .previous-editions .select-options, .archive .previous-editions .select-styled {
@@ -379,7 +379,7 @@ html {
           width: 0;
           height: 0;
           border: 7px solid transparent;
-          border-color: #ef5ba1 transparent transparent transparent;
+          border-color: #F2617A transparent transparent transparent;
           position: absolute;
           top: 16px;
           right: 10px;
@@ -405,11 +405,14 @@ html {
           border-bottom: 1px solid #4a4a4a;
           cursor: pointer; }
         .archive .previous-editions .select-options .event.active {
-          background-color: rgba(255, 255, 255, 0.5); }
+          background-color: rgba(71, 161, 173, 0.5); }
         .archive .previous-editions .select-options .event.show {
           display: block; } }
     .archive .previous-editions .content {
       flex: 1 1 120%; }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        .archive .previous-editions .content {
+          width: 90%; } }
       .archive .previous-editions .content .speakers {
         display: none;
         padding: 20px;
@@ -443,7 +446,7 @@ html {
               height: 50px;
               margin: 5px 5px 5px 0; }
             .archive .previous-editions .content .speakers .speaker-details .speaker-detail .title {
-              color: #ef5ba1;
+              color: #F2617A;
               font-size: 20px;
               font-weight: bold;
               display: block; }
@@ -511,23 +514,27 @@ html {
   width: 100%;
   left: 0;
   padding: 0;
-  align-items: center; }
+  align-items: center;
+  justify-content: center; }
   .footer a {
     text-decoration: none;
     color: #fff; }
   .footer .logo-section {
+    flex: 1 1 auto;
     display: flex;
-    flex: 1 1 50%;
-    justify-content: center;
-    margin-top: 10px; }
+    justify-content: space-around;
+    width: 240px; }
+    .footer .logo-section a {
+      display: flex; }
     .footer .logo-section .sponsored-by {
       color: #fff;
       font-size: 14px;
-      font-weight: 100; }
+      font-weight: 500;
+      flex: 1 1 auto;
+      align-self: center; }
     .footer .logo-section .logo {
-      background: url("../img/tw-logo-white.svg") no-repeat;
-      background-size: 140px;
+      background: url("../img/tw-logo-white.svg") no-repeat center center;
+      background-size: 400px;
       height: 35px;
       width: 140px;
-      margin-left: 5px;
-      margin-top: 3px; }
+      flex: 1 1 auto; }

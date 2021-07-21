@@ -7,29 +7,36 @@
 	left: 0;
 	padding: 0;
 	align-items: center;
+	justify-content: center;
 
 	a {
 		text-decoration: none;
 		color: $white;
 	}
-
+	
 	.logo-section {
+		flex: 1 1 auto;
 		display: flex;
-		flex: 1 1 50%;
-		justify-content: center;
-		margin-top: 10px;
+		justify-content: space-around;
+		width: 240px;
+
+		a {
+			display: flex;
+		}
+
 		.sponsored-by {
 			color: $white;
 			font-size: 14px;
-			font-weight: 100;
+			font-weight: 500;
+    		flex: 1 1 auto;
+    		align-self: center;
 		}
 		.logo {
-			background: $tw-logo no-repeat;
-			background-size: 140px;
+			background: $tw-footer-logo no-repeat center center;
+			background-size: 400px;
 			height: 35px;
 			width: 140px;
-			margin-left: 5px;
-			margin-top: 3px;
+			flex: 1 1 auto;
 		}
 	}
 }
