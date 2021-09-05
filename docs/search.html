@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Search GeekNight talks</title>
+</head>
+
+<body>
+    Search:
+    <input id="search" type="text">
+    <br> Results:
+    <ul id="results">
+    </ul>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/lunr/lunr.js"></script>
+    <script type="text/javascript">
+    var lunrIndex,
+        $results,
+        pagesIndex;
+
+    // Initialize lunrjs using our generated index file
+    function initLunr() {
+        $.ajax({url: "index.json"})
+            .done(function(index) {
+                pagesIndex = index;
+
+                // Set up lunrjs by declaring the fields we use
+                // Also provide their boost level for the ranking
+                lunrIndex = lunr(function() {
+                    this.field("title", { boost: 10 });
+                    this.field("subtitle", { boost: 8 });
+                    this.field("speakers_name", {
+                        boost: 5,
+                        extractor: (doc) => {
+                            const speakers_name = doc.speakers && doc.speakers.map((speaker) => {
+                                // console.log(speaker.name); 
+                                return speaker.name;
+                            })
+                            return speakers_name && speakers_name.join(", ");
+                        }
+                    });
+                    // ref is the result item identifier (I chose the page URL)
+                    this.ref("title");
+
+                    pagesIndex.forEach(function (doc) {
+                        // console.log(doc.title);
+                        this.add(doc)
+                    }, this);
+                });
+            })
+            .fail(function(jqxhr, textStatus, error) {
+                var err = textStatus + ", " + error;
+                console.error("Error getting Hugo index flie:", err);
+            });
+        console.log(lunrIndex.toJSON());
+    }
+
+    // Nothing crazy here, just hook up a listener on the input field
+    function initUI() {
+        $results = $("#results");
+        $("#search").keyup(function() {
+            $results.empty();
+
+            // Only trigger a search when 2 chars. at least have been provided
+            var query = $(this).val();
+            if (query.length < 2) {
+                return;
+            }
+
+            var results = search(query);
+
+            renderResults(results);
+        });
+    }
+
+    /**
+     * Trigger a search in lunr and transform the result
+     *
+     * @param  {String} query
+     * @return {Array}  results
+     */
+    function search(query) {
+        // Find the item in our index corresponding to the lunr one to have more info
+        // Lunr result: 
+        //  {ref: "/section/page1", score: 0.2725657778206127}
+        // Our result:
+        //  {title:"Page1", href:"/section/page1", ...}
+        return lunrIndex.search(query).map(function(result) {
+                console.log(result);
+                return pagesIndex.filter(function(page) {
+                    return page.title === result.ref;
+                })[0];
+            });
+    }
+
+    /**
+     * Display the 10 first results
+     *
+     * @param  {Array} results to display
+     */
+    function renderResults(results) {
+        if (!results.length) {
+            return;
+        }
+
+        // Only show the ten first results
+        results.slice(0, 10).forEach(function(result) {
+            console.log(result);
+            var $result = $("<li>");
+            $result.append($("<a>", {
+                // href: result.ref,
+                text: "» " + result.title
+            }));
+            $results.append($result);
+        });
+    }
+
+    // Let's get started
+
+    $(document).ready(function() {
+        initUI();
+        initLunr();
+    });
+    </script>
+</body>
+
+</html>
