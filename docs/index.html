@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Geek Night Chennai - Dec 2021</title>
+    <title>Geek Night Chennai - Jan 2022</title>
     <meta name="description" content="" />
 
     <script type="text/javascript" src="js/vendor/jquery-3.3.1.min.js"></script>
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/app.css" />
 
     <script type="application/ld+json">
-      {"@context":"http://schema.org","@type":"EducationEvent","name":"Geek Night Chennai - Dec 2021","startDate":"2021-12-23T18:00:00+05:30","url":"http://twchennai.github.io/geeknight/","location":{"@type":"Place","name":"ThoughtWorks","address":{"@type":"PostalAddress","addressLocality":"Chennai","addressRegion":"Tamil Nadu","postalCode":"600113","streetAddress":"Ascendas"}}}
+      {"@context":"http://schema.org","@type":"EducationEvent","name":"Geek Night Chennai - Jan 2022","startDate":"2022-01-27T18:00:00+05:30","url":"http://twchennai.github.io/geeknight/","location":{"@type":"Place","name":"ThoughtWorks","address":{"@type":"PostalAddress","addressLocality":"Chennai","addressRegion":"Tamil Nadu","postalCode":"600113","streetAddress":"Ascendas"}}}
     </script>
   </head>
   <body>
@@ -51,15 +51,15 @@
                     <div class="intro-info-place-title">Geek Night Chennai</div>
                     <div class="line"></div>
                 </div>
-                <div class="intro-info-edition">91<sup>st</sup> Edition (Webinar) </p></div>
+                <div class="intro-info-edition">92<sup>nd</sup> Edition (Webinar) </p></div>
                 <div class="intro-info-date">
-                    Dec 23<sup>rd</sup>, 2021
+                    Jan 27<sup>th</sup>, 2022
                 </div>
                 
                 <div class="intro-info-buttons">
                     <div class="intro-info-buttons-button">
                         
-                            <a href="https://www.meetup.com/Chennai-Geek-Night/events/282561377/" target="_blank" rel="nofollow"
+                            <a href="https://www.meetup.com/Chennai-Geek-Night/events/283239280/" target="_blank" rel="nofollow"
                            onclick="ga('send', 'event', 'participate', 'participate')">
                             <div class="intro-info-buttons-button-text">PARTICIPATE</div>
                             </a>
@@ -97,44 +97,25 @@
                 6:00 pm
             </span>
             <div class="speaker-detail">
-              
-                
-                  <span class="title"><a href="https://youtu.be/sJ0-41PrbzM" target="_blank" class="link">Github actions in action</a></span>
-                
 
-                
-                    <div class="subtitle">GitHub Actions is a CI/CD platform that allows us to automate our pipeline. In this talk, we will look at the 101 of github actions and how we can test, build, deploy and automate it. We will also look at the features that help in reusing any actions and building new actions that help us reuse them across workflows</div>
-                                
-                
-                    <span class="name">
-                      
-                        <img class="img" src="img/speaker/Jagajeet.jpg" alt="Jagajeet Kuppala" />
-                      
-                      <div class="profile">
-                        
-                            <a href="https://www.linkedin.com/in/jagajeetkuppala/" rel="nofollow" target="_blank" class="link">Jagajeet Kuppala</a>
-                        
-                        
-                        <div class="speaker-description">An application developer with passion for cloud and devops and currently working at ThoughtWorks</div>
-                        
-                      </div>
-                    </span>
-                
-                    <span class="name">
-                      
-                        <img class="img" src="img/speaker/sowmya.jpg" alt="Sowmya Viswanathan" />
-                      
-                      <div class="profile">
-                        
-                            <a href="https://in.linkedin.com/in/sowmya-viswanathan" rel="nofollow" target="_blank" class="link">Sowmya Viswanathan</a>
-                        
-                        
-                        <div class="speaker-description">An application developer with 6+ years of experience in web development and devops and currently working at ThoughtWorks</div>
-                        
-                      </div>
-                    </span>
-                
+                  <span class="title"><a href="https://www.youtube.com/c/GeekNightChennai/" target="_blank" class="link">Improving Developer's Effectiveness with Developer Portal</a></span>
+                  <div class="subtitle">To mitigate the complexities faced by the Engineers in a team, a centralized tool or portal is needed to improve the organizational and the developer’s effectiveness, one such solution is Backstage. Backstage, an Open Source developer portal with a plugin architecture to help expose all infrastructure products in one place, offering a coherent developer experience and a starting point for engineers to find the information they need.</div>
+                   
+                  <span class="name">
+                      <img class="img" src="img/speaker/Vignesh_Velu.png" alt="Vignesh Velu" />
+                    <div class="profile">
+                          <a href="https://www.linkedin.com/in/vigneshvelu/" rel="nofollow" target="_blank" class="link">Vignesh Velu</a>
+                      <div class="speaker-description">I'm a full stack developer, specialized in building apps in Java and Nodejs. I'm very passionate about technology and love to learn & implement them in solving real world problems.</div>
+                    </div>
+                  </span>
               
+                  <span class="name">
+                      <img class="img" src="img/speaker/Avinash_S.png" alt="Avinash S" />
+                    <div class="profile">
+                          <a href="https://www.linkedin.com/in/avinash-s-2401/" rel="nofollow" target="_blank" class="link">Avinash S</a>
+                      <div class="speaker-description">Application developer with 5.5+ years of experience in the software industry and currently working at Thoughtworks Chennai. Interested in full stack development and DevOps technologies.</div>
+                    </div>
+                  </span>
               
             </div>
           </div>
@@ -149,9 +130,12 @@
     <div class="previous-editions">
         <div class="events">
             <div class="years select">
+                    <div id="year-2022"
+                        class="year active"
+                        onclick="getEventsFor(this.id, this.textContent)">2022</div>
                 
                     <div id="year-2021"
-                        class="year active"
+                        class="year"
                         onclick="getEventsFor(this.id, this.textContent)">2021</div>
                 
                     <div id="year-2020"
@@ -188,6 +172,12 @@
                 
             </div>
             <div class="months select">
+                        <div id="2022"
+                        class="event show"
+                        onclick="getAgenda(event, this.id, this.textContent)">Jan 27
+                        </div>
+
+
                         <div id="2021"
                             class="event show"
                             onclick="getAgenda(event, this.id, this.textContent)">Dec 23
@@ -662,7 +652,39 @@
             </div>
         </div>
         <div class="content">
-              <div id="2021-Dec 23" class="speakers active">
+            <div id="2022-Jan 27" class="speakers active">
+              <div class="edition">92<sup>nd</sup> Edition</p></div>
+
+              <div class="speaker-details">
+                <span class="time">
+                  6:00 pm
+                </span>
+
+                <div class="speaker-detail">
+                  
+                  <span class="title"><a href="https://www.youtube.com/c/GeekNightChennai" target="_blank" class="link">Improving Developer's Effectiveness with Developer Portal</a></span>
+                    <div class="subtitle">To mitigate the complexities faced by the Engineers in a team, a centralized tool or portal is needed to improve the organizational and the developer’s effectiveness, one such solution is Backstage. Backstage, an Open Source developer portal with a plugin architecture to help expose all infrastructure products in one place, offering a coherent developer experience and a starting point for engineers to find the information they need.</div>
+                    
+                    <span class="name">
+                        <img class="img" src="img/speaker/Vignesh_Velu.png" alt="Vignesh Velu" />
+                      <div class="profile">
+                            <a href="https://www.linkedin.com/in/vigneshvelu/" rel="nofollow" target="_blank" class="link">Vignesh Velu</a>
+                        <div class="speaker-description">I'm a full stack developer, specialized in building apps in Java and Nodejs. I'm very passionate about technology and love to learn & implement them in solving real world problems.</div>
+                      </div>
+                    </span>
+                    
+                    <span class="name">
+                        <img class="img" src="img/speaker/Avinash_S.png" alt="Avinash S" />
+                      <div class="profile">
+                            <a href="https://www.linkedin.com/in/avinash-s-2401/" rel="nofollow" target="_blank" class="link">Avinash S</a>
+                        <div class="speaker-description">Application developer with 5.5+ years of experience in the software industry and currently working at Thoughtworks Chennai. Interested in full stack development and DevOps technologies.</div>
+                      </div>
+                    </span>
+
+                </div>
+              </div>
+            </div>
+              <div id="2021-Dec 23" class="speakers">
                 <div class="edition">91<sup>st</sup> Edition</p></div>
                 <div class="speaker-details">
                   <span class="time">
@@ -12332,4 +12354,4 @@
     <!-- End Google Analytics -->
   </body>
 </html>
-<script>window.targetDate = new Date(1640262600 * 1000)</script>
+<script>window.targetDate = new Date(1643306400 * 1000)</script>
