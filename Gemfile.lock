@@ -127,7 +127,7 @@ GEM
       pastel (~> 0.7.0)
     tty-platform (0.2.1)
     tty-which (0.4.1)
-    tzinfo (1.2.7)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     zeitwerk (2.3.0)
 
