@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Geek Night Chennai - Sep 2022</title>
+    <title>Geek Night Chennai - Aug 2024</title>
     <meta name="description" content="" />
 
     <script type="text/javascript" src="js/vendor/jquery-3.3.1.min.js"></script>
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/app.css" />
 
     <script type="application/ld+json">
-      {"@context":"http://schema.org","@type":"EducationEvent","name":"Geek Night Chennai - Sep 2022","startDate":"2022-09-29T17:00:00+05:30","url":"http://twchennai.github.io/geeknight/","location":{"@type":"Place","name":"ThoughtWorks","address":{"@type":"PostalAddress","addressLocality":"Chennai","addressRegion":"Tamil Nadu","postalCode":"600113","streetAddress":"Ascendas"}}}
+      {"@context":"http://schema.org","@type":"EducationEvent","name":"Geek Night Chennai - Aug 2024","startDate":"2024-08-29T16:30:00+05:30","url":"http://twchennai.github.io/geeknight/","location":{"@type":"Place","name":"ThoughtWorks","address":{"@type":"PostalAddress","addressLocality":"Chennai","addressRegion":"Tamil Nadu","postalCode":"600113","streetAddress":"Ascendas"}}}
     </script>
   </head>
   <body>
@@ -51,26 +51,23 @@
                     <div class="intro-info-place-title">Geek Night Chennai</div>
                     <div class="line"></div>
                 </div>
-                <div class="intro-info-edition">97<sup>th</sup> Edition (Webinar) </p></div>
+                <div class="intro-info-edition">98<sup>th</sup> Edition (Webinar) </p></div>
                 <div class="intro-info-date">
-                    SEP 29<sup>th</sup>, 2022
+                    AUG 29<sup>th</sup>, 2024
                 </div>
                 
                 <div class="intro-info-buttons">
                     <div class="intro-info-buttons-button">
                         
-                            <a href="https://www.meetup.com/chennai-geek-night/events/288475402/" target="_blank" rel="nofollow"
-                           onclick="ga('send', 'event', 'participate', 'participate')">
-                            <div class="intro-info-buttons-button-text">PARTICIPATE</div>
-                            </a>
-                            <div class="intro-info-buttons-button-sub-text">
-                                to learn exciting new stuff <br/>
-                            </div>
+                            <div class="intro-info-buttons-button-text"><strike>PARTICIPATE</strike></div>
+                            
+                                <div class="intro-info-buttons-button-sub-text">Registrations not yet open</div>
+                            
                         
                     </div>
                     <div class="intro-info-buttons-button">                        
                         
-                            <a href="https://docs.google.com/forms/d/1llJxKCuEnPXOPHnXUQHnc8Unlt_Y4kPvWJqndjl_6Gg/viewform" target="_blank" rel="nofollow"
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScYXdhJqrAeN0KUm55aI7sGBpWO_z4ULKZ-56IFpHfHMza-Mw/viewform" target="_blank" rel="nofollow"
                                onclick="ga('send', 'event', 'talk', 'talk')">
                                 <div class="intro-info-buttons-button-text">PRESENT</div>
                             </a>
@@ -95,41 +92,50 @@
         
           <div id="talk1" class="speaker-details">
             <span class="time">
-                05:00 pm
+                06:30 pm
             </span>
             <div class="speaker-detail">
               
                 
-                  <span class="title">Essence of Freshworks Developer Platform</span>
+                  <span class="title-default">Talk 1</span>
                 
 
                 
-                    <div class="subtitle">Introduction to enterprise app building on the Freshworks Developer Platform, who uses them, and if you should build one. Bonus: Application development with Freshworks Development Kit/Freshworks SDK.</div>
-                                
+                    <span class="subtitle">Stay tuned for more updates</span>
                 
-                    <span class="name">
-                      
-                        <img class="img" src="img/speaker/teja-kumarikuntla.jpg" alt="Teja Kummarikuntla,(Developer Advocate, Freshworks)" />
-                      
-                      <div class="profile">
-                        
-                            <a href="https://twitter.com/tejakkuntla" rel="nofollow" target="_blank" class="link">Teja Kummarikuntla,(Developer Advocate, Freshworks)</a>
-                        
-                        
-                      </div>
-                    </span>
+              
+              
+            </div>
+          </div>
+        
+          <div id="talk2" class="speaker-details">
+            <span class="time">
+                07:15 pm
+            </span>
+            <div class="speaker-detail">
+              
                 
-                    <span class="name">
-                      
-                        <img class="img" src="img/speaker/raviraj.png" alt="Raviraj Subramanian(Senior Developer Advocate, Freshworks)" />
-                      
-                      <div class="profile">
-                        
-                            <a href="https://twitter.com/ThisIsRaviraj" rel="nofollow" target="_blank" class="link">Raviraj Subramanian(Senior Developer Advocate, Freshworks)</a>
-                        
-                        
-                      </div>
-                    </span>
+                  <span class="title-default">Talk 2</span>
+                
+
+                
+                    <span class="subtitle">Stay tuned for more updates</span>
+                
+              
+              
+            </div>
+          </div>
+        
+          <div id="talk3" class="speaker-details">
+            <span class="time">
+                8:00 pm
+            </span>
+            <div class="speaker-detail">
+              
+                
+                  <span class="title-default">Networking & Dinner</span>
+                
+
                 
               
               
@@ -147,8 +153,12 @@
         <div class="events">
             <div class="years select">
                 
-                    <div id="year-2022"
+                    <div id="year-2024"
                         class="year active"
+                        onclick="getEventsFor(this.id, this.textContent)">2024</div>
+                
+                    <div id="year-2022"
+                        class="year "
                         onclick="getEventsFor(this.id, this.textContent)">2022</div>
                 
                     <div id="year-2021"
@@ -191,33 +201,40 @@
             <div class="months select">
                 
                     
-                        <div id="2022"
+                        <div id="2024"
                             class="event show"
+                            onclick="getAgenda(event, this.id, this.textContent)">Aug 29
+                        </div>
+                    
+                
+                    
+                        <div id="2022"
+                            class="event "
                             onclick="getAgenda(event, this.id, this.textContent)">Sep 29
                         </div>
                     
                         <div id="2022"
-                            class="event show"
+                            class="event "
                             onclick="getAgenda(event, this.id, this.textContent)">Jun 23
                         </div>
                     
                         <div id="2022"
-                            class="event show"
+                            class="event "
                             onclick="getAgenda(event, this.id, this.textContent)">Apr 28
                         </div>
                     
                         <div id="2022"
-                            class="event show"
+                            class="event "
                             onclick="getAgenda(event, this.id, this.textContent)">Mar 31
                         </div>
                     
                         <div id="2022"
-                            class="event show"
+                            class="event "
                             onclick="getAgenda(event, this.id, this.textContent)">Feb 24
                         </div>
                     
                         <div id="2022"
-                            class="event show"
+                            class="event "
                             onclick="getAgenda(event, this.id, this.textContent)">Jan 27
                         </div>
                     
@@ -699,7 +716,67 @@
         </div>
         <div class="content">
             
-              <div id="2022-Sep 29" class="speakers active">
+              <div id="2024-Aug 29" class="speakers active">
+                <div class="edition">98<sup>th</sup> Edition</p></div>
+                
+                  <div class="speaker-details">
+                    <span class="time">
+                        06:30 pm
+                    </span>
+                    <div class="speaker-detail">
+                      
+                        
+                          <span class="title-default">Talk 1</span>
+                        
+
+                        
+                            <span class="subtitle">Stay tuned for more updates</span>
+                        
+                      
+
+                      
+                    </div>
+                  </div>
+                
+                  <div class="speaker-details">
+                    <span class="time">
+                        07:15 pm
+                    </span>
+                    <div class="speaker-detail">
+                      
+                        
+                          <span class="title-default">Talk 2</span>
+                        
+
+                        
+                            <span class="subtitle">Stay tuned for more updates</span>
+                        
+                      
+
+                      
+                    </div>
+                  </div>
+                
+                  <div class="speaker-details">
+                    <span class="time">
+                        8:00 pm
+                    </span>
+                    <div class="speaker-detail">
+                      
+                        
+                          <span class="title-default">Networking & Dinner</span>
+                        
+
+                        
+                      
+
+                      
+                    </div>
+                  </div>
+                
+              </div>
+            
+              <div id="2022-Sep 29" class="speakers ">
                 <div class="edition">97<sup>th</sup> Edition</p></div>
                 
                   <div class="speaker-details">
@@ -12780,4 +12857,4 @@
     <!-- End Google Analytics -->
   </body>
 </html>
-<script>window.targetDate = new Date(1664451000 * 1000)</script>
+<script>window.targetDate = new Date(1724929200 * 1000)</script>
