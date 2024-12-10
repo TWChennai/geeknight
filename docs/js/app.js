@@ -137,7 +137,7 @@ function toggleReadMore(event) {
 
 function trimLongDescription() {
   $.each($('.subtitle'), function(index, subtitle) {
-    if ($(subtitle).text().length > 500) {
+    if ($(subtitle).text().length > 300) {
       $(subtitle).after('<input id="toggle-' + index + '" class="toggle" type="checkbox"><label onclick=toggleReadMore(event) class="read-more" for="toggle-' + index + '"></label>');
     }
   });
